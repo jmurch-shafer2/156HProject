@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<assets>
+<com.tbf.assets.DepositAccount>
+  <assetCode>MONMO1</assetCode>
+  <label>Money Market Savings</label>
+  <apr>0.0105</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>CD1Y3X</assetCode>
+  <label>1-year Rollover CD</label>
+  <apr>0.0275</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>CD1Y3Y</assetCode>
+  <label>1-year Rollover CD</label>
+  <apr>0.0275</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>RSTOR322</assetCode>
+  <label>7&quot; Vinyl Records</label>
+  <baseQuarterlyDividend>2453.21</baseQuarterlyDividend>
+  <baseRateOfReturn>0.021</baseRateOfReturn>
+  <totalAmount>13500.0</totalAmount>
+  <omega>0.54</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.Stock>
+  <assetCode>TWTTER01</assetCode>
+  <label>Twitter Inc.</label>
+  <baseQuarterlyDividend>23.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.11</baseRateOfReturn>
+  <stockSymbol>TWTR</stockSymbol>
+  <sharePrice>324.23</sharePrice>
+  <beta>-0.1</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.DepositAccount>
+  <assetCode>SEARCH8</assetCode>
+  <label>Yahoo</label>
+  <apr>0.0134</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>FOOD12</assetCode>
+  <label>Cluckin&apos;s restaurant chain</label>
+  <baseQuarterlyDividend>35000.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.03</baseRateOfReturn>
+  <totalAmount>1212500.0</totalAmount>
+  <omega>0.32</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>YUOPCT</assetCode>
+  <label>WALMART</label>
+  <baseQuarterlyDividend>4789.32</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0032</baseRateOfReturn>
+  <totalAmount>1004780.66</totalAmount>
+  <omega>0.17</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>REALStr12</assetCode>
+  <label>Fred&apos;s Fabulous Hardware Store</label>
+  <baseQuarterlyDividend>1232.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0123</baseRateOfReturn>
+  <totalAmount>54300.0</totalAmount>
+  <omega>0.13</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.Stock>
+  <assetCode>MSFT007</assetCode>
+  <label>Microsoft Corporation</label>
+  <baseQuarterlyDividend>0.92</baseQuarterlyDividend>
+  <baseRateOfReturn>0.040999999999999995</baseRateOfReturn>
+  <stockSymbol>MSFT</stockSymbol>
+  <sharePrice>31.15</sharePrice>
+  <beta>0.17</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>No1BURR</assetCode>
+  <label>Chipotle Mexican Grill</label>
+  <baseQuarterlyDividend>45.57</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0319</baseRateOfReturn>
+  <stockSymbol>CMG</stockSymbol>
+  <sharePrice>341.91</sharePrice>
+  <beta>0.0</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>N0TPIX</assetCode>
+  <label>3D Systems</label>
+  <baseQuarterlyDividend>0.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0125</baseRateOfReturn>
+  <stockSymbol>DDD</stockSymbol>
+  <sharePrice>35.4</sharePrice>
+  <beta>0.08</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>B0oWM</assetCode>
+  <label>Costco</label>
+  <baseQuarterlyDividend>10.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0225</baseRateOfReturn>
+  <stockSymbol>COST</stockSymbol>
+  <sharePrice>106.13</sharePrice>
+  <beta>0.13</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>RENT445</assetCode>
+  <label>Rental Property</label>
+  <baseQuarterlyDividend>2400.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0025</baseRateOfReturn>
+  <totalAmount>120000.0</totalAmount>
+  <omega>0.15</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.Stock>
+  <assetCode>PEPSI1</assetCode>
+  <label>Pepsi</label>
+  <baseQuarterlyDividend>5.45</baseQuarterlyDividend>
+  <baseRateOfReturn>0.031</baseRateOfReturn>
+  <stockSymbol>PEP</stockSymbol>
+  <sharePrice>41.08</sharePrice>
+  <beta>0.075</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.DepositAccount>
+  <assetCode>VTST</assetCode>
+  <label>Geigco</label>
+  <apr>0.0178</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>CD99312</assetCode>
+  <label>5-year CD</label>
+  <apr>0.0435</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>ESPN001</assetCode>
+  <label>Huskers</label>
+  <apr>0.085</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>BIKE035</assetCode>
+  <label>Buck&apos;s Bike Store</label>
+  <baseQuarterlyDividend>3678.19</baseQuarterlyDividend>
+  <baseRateOfReturn>0.039</baseRateOfReturn>
+  <totalAmount>47800.35</totalAmount>
+  <omega>0.48</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.DepositAccount>
+  <assetCode>RIRA01</assetCode>
+  <label>Roth IRA</label>
+  <apr>0.034</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.Stock>
+  <assetCode>YHOO003</assetCode>
+  <label>Yahoo! Inc.</label>
+  <baseQuarterlyDividend>0.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.034</baseRateOfReturn>
+  <stockSymbol>YHOO</stockSymbol>
+  <sharePrice>28.17</sharePrice>
+  <beta>-0.03</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>SCHROK</assetCode>
+  <label>Schrock Innovation</label>
+  <baseQuarterlyDividend>12.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.032</baseRateOfReturn>
+  <stockSymbol>SSI</stockSymbol>
+  <sharePrice>122.75</sharePrice>
+  <beta>0.01</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>THRE456</assetCode>
+  <label>Three-14 Pi Shop</label>
+  <baseQuarterlyDividend>1050.5</baseQuarterlyDividend>
+  <baseRateOfReturn>0.055999999999999994</baseRateOfReturn>
+  <totalAmount>23006.53</totalAmount>
+  <omega>0.33</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.Stock>
+  <assetCode>MSFT32</assetCode>
+  <label>Microsoft Inc.</label>
+  <baseQuarterlyDividend>12.0</baseQuarterlyDividend>
+  <baseRateOfReturn>1.3E-4</baseRateOfReturn>
+  <stockSymbol>MSFT</stockSymbol>
+  <sharePrice>30.23</sharePrice>
+  <beta>0.45</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>wOOWoo1S</assetCode>
+  <label>Canadian National Railway</label>
+  <baseQuarterlyDividend>2.75</baseQuarterlyDividend>
+  <baseRateOfReturn>0.046</baseRateOfReturn>
+  <stockSymbol>CNI</stockSymbol>
+  <sharePrice>97.75</sharePrice>
+  <beta>0.12</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.DepositAccount>
+  <assetCode>CD4523</assetCode>
+  <label>10-year CD</label>
+  <apr>0.0876</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>ROTIRA</assetCode>
+  <label>Roth IRA</label>
+  <apr>0.034</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.Stock>
+  <assetCode>MILTEC</assetCode>
+  <label>US Army</label>
+  <baseQuarterlyDividend>45.57</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0319</baseRateOfReturn>
+  <stockSymbol>USA</stockSymbol>
+  <sharePrice>341.91</sharePrice>
+  <beta>0.0</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>GOOG001</assetCode>
+  <label>Google Inc.</label>
+  <baseQuarterlyDividend>0.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.055999999999999994</baseRateOfReturn>
+  <stockSymbol>GOOG</stockSymbol>
+  <sharePrice>814.708</sharePrice>
+  <beta>-0.05</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>BUBBAG</assetCode>
+  <label>BubbaGump Shrimp</label>
+  <baseQuarterlyDividend>24.5</baseQuarterlyDividend>
+  <baseRateOfReturn>0.043</baseRateOfReturn>
+  <stockSymbol>BUB</stockSymbol>
+  <sharePrice>429.8</sharePrice>
+  <beta>-0.07</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>WESYT129</assetCode>
+  <label>Bank of America</label>
+  <baseQuarterlyDividend>3.25</baseQuarterlyDividend>
+  <baseRateOfReturn>0.024</baseRateOfReturn>
+  <stockSymbol>BOA</stockSymbol>
+  <sharePrice>143.18</sharePrice>
+  <beta>0.02</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>DIAGEO12</assetCode>
+  <label>Diageo PLC</label>
+  <baseQuarterlyDividend>12.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.032</baseRateOfReturn>
+  <stockSymbol>DEO</stockSymbol>
+  <sharePrice>122.75</sharePrice>
+  <beta>0.01</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.Stock>
+  <assetCode>PWES912</assetCode>
+  <label>PEPSI INC</label>
+  <baseQuarterlyDividend>5.24</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0814</baseRateOfReturn>
+  <stockSymbol>PEP</stockSymbol>
+  <sharePrice>87.25</sharePrice>
+  <beta>0.03</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.DepositAccount>
+  <assetCode>SAVE01</assetCode>
+  <label>Savings Account</label>
+  <apr>0.0025</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>AGTSAV</assetCode>
+  <label>Savings Account</label>
+  <apr>0.0025</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.Stock>
+  <assetCode>BERK-B</assetCode>
+  <label>Berkshire Hathaway</label>
+  <baseQuarterlyDividend>0.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.07200000000000001</baseRateOfReturn>
+  <stockSymbol>BRK-B</stockSymbol>
+  <sharePrice>107.04</sharePrice>
+  <beta>-0.1</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.DepositAccount>
+  <assetCode>BX001-23</assetCode>
+  <label>Money Market Savings</label>
+  <apr>0.0105</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>CPPRD03</assetCode>
+  <label>Copper</label>
+  <baseQuarterlyDividend>1.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0011</baseRateOfReturn>
+  <totalAmount>1111.0</totalAmount>
+  <omega>0.15</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.DepositAccount>
+  <assetCode>SVSVNGS</assetCode>
+  <label>Savings Account</label>
+  <apr>8.0E-4</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>DTh38R</assetCode>
+  <label>Money Market Account</label>
+  <apr>0.0096</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.Stock>
+  <assetCode>TABLET</assetCode>
+  <label>Surface Inc</label>
+  <baseQuarterlyDividend>0.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.055999999999999994</baseRateOfReturn>
+  <stockSymbol>MIC</stockSymbol>
+  <sharePrice>814.708</sharePrice>
+  <beta>-0.05</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>IND321</assetCode>
+  <label>Industrial Widget Manufacturers Inc.</label>
+  <baseQuarterlyDividend>10500.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.02</baseRateOfReturn>
+  <totalAmount>4213333.0</totalAmount>
+  <omega>-0.15</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.Stock>
+  <assetCode>321CC</assetCode>
+  <label>Coca-Cola</label>
+  <baseQuarterlyDividend>5.45</baseQuarterlyDividend>
+  <baseRateOfReturn>0.031</baseRateOfReturn>
+  <stockSymbol>KO</stockSymbol>
+  <sharePrice>41.08</sharePrice>
+  <beta>0.075</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>DR0U7Z5TW</assetCode>
+  <label>TARGET</label>
+  <baseQuarterlyDividend>7812.41</baseQuarterlyDividend>
+  <baseRateOfReturn>0.025</baseRateOfReturn>
+  <totalAmount>58963.27</totalAmount>
+  <omega>0.39</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.Stock>
+  <assetCode>123APP</assetCode>
+  <label>Apple</label>
+  <baseQuarterlyDividend>24.5</baseQuarterlyDividend>
+  <baseRateOfReturn>0.043</baseRateOfReturn>
+  <stockSymbol>AAPL</stockSymbol>
+  <sharePrice>429.8</sharePrice>
+  <beta>-0.07</beta>
+</com.tbf.assets.Stock>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>TEWS4A1MO</assetCode>
+  <label>AMAZON</label>
+  <baseQuarterlyDividend>9631.45</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0064</baseRateOfReturn>
+  <totalAmount>296352.87</totalAmount>
+  <omega>0.25</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>CMPROP0121</assetCode>
+  <label>Commercial Property-Red Oaks Mall</label>
+  <baseQuarterlyDividend>14240.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0535</baseRateOfReturn>
+  <totalAmount>1.0456E7</totalAmount>
+  <omega>0.25</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.PrivateInvestment>
+  <assetCode>GLDSD03</assetCode>
+  <label>Gold</label>
+  <baseQuarterlyDividend>0.0</baseQuarterlyDividend>
+  <baseRateOfReturn>0.0024</baseRateOfReturn>
+  <totalAmount>2343212.0</totalAmount>
+  <omega>0.12</omega>
+</com.tbf.assets.PrivateInvestment>
+<com.tbf.assets.DepositAccount>
+  <assetCode>CD1YER</assetCode>
+  <label>1-year Rollover CD</label>
+  <apr>0.0275</apr>
+</com.tbf.assets.DepositAccount>
+<com.tbf.assets.DepositAccount>
+  <assetCode>CD5YER</assetCode>
+  <label>5-year CD</label>
+  <apr>0.0435</apr>
+</com.tbf.assets.DepositAccount>
+</assets>
