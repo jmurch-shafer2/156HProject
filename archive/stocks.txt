@@ -1,0 +1,31 @@
+Code;S;Label;Quarterly Dividend;BaseRateOfReturen;BetaMeasure;StockSymbol;sharePrice
+0x21;S;Zafgen, Inc.;21.57;00.90;0.45;GFDZ;42.13
+0x22;S;Helix Energy Solutions Group, Inc.;69.75;08.76;0.52;URHB;20.88
+0x23;S;iShares MSCI Europe Financials Sector Index Fund;66.73;08.57;0.32;TANY;09.65
+0x24;S;Special Opportunities Fund Inc.;55.91;06.04;0.28;UEST;18.90
+0x25;S;Zions Bancorporation;91.96;08.25;0.19;CWNK;48.37
+0x26;S;Exa Corporation;65.97;01.97;0.65;IIBQ;76.25
+0x27;S;Resource Capital Corp.;54.20;01.32;0.56;SAAH;05.09
+0x28;S;Aircastle Limited;12.72;04.61;0.62;KJEJ;31.46
+0x29;S;Dillard's, Inc.;64.12;07.88;0.92;QRIW;46.65
+0x2a;S;Regulus Therapeutics Inc.;62.19;07.68;0.69;IDVI;41.68
+0x2b;S;MFS Charter Income Trust;00.98;00.09;0.34;JKDR;84.00
+0x2c;S;Nuveen Ohio Quality Municipal Income Fund;19.27;00.19;0.18;RJVX;31.34
+0x2d;S;NCI, Inc.;96.85;02.35;0.64;ZHRL;65.66
+0x2e;S;Merus N.V.;16.67;01.57;0.83;JAEW;97.51
+0x2f;S;BBVA Banco Frances S.A.;12.37;03.79;0.37;EPRV;79.27
+0x30;S;Paylocity Holding Corporation;98.15;00.21;0.18;GGTN;44.21
+0x31;S;Duke Energy Corporation;28.71;06.42;0.15;JJXK;21.24
+0x32;S;Destination XL Group, Inc.;25.58;03.76;0.85;RZAM;09.31
+0x33;S;Arena Pharmaceuticals, Inc.;95.57;08.40;0.44;IMQJ;80.08
+0x34;S;KKR & Co. L.P.;31.90;00.37;0.26;AJDM;72.40
+0x35;S;Kirby Corporation;16.12;00.11;0.60;ZEME;86.16
+0x36;S;VictoryShares US 500 Enhanced Volatility Wtd ETF;70.81;04.51;0.63;ABCF;25.51
+0x37;S;American Axle & Manufacturing Holdings, Inc.;33.25;09.02;0.26;MLXV;57.41
+0x38;S;Horace Mann Educators Corporation;41.70;07.16;0.73;KGGH;81.41
+0x39;S;Impax Laboratories, Inc.;94.14;00.34;0.41;VDNP;05.40
+0x3a;S;Telefonica SA;80.21;05.97;0.33;MONI;13.00
+0x3b;S;Fogo de Chao, Inc.;17.37;03.44;0.21;KDWA;65.12
+0x3c;S;Guggenheim Enhanced Equity Income Fund;68.79;03.29;0.24;CLIM;43.11
+0x3d;S;Lehman ABS Corporation;12.06;01.67;0.58;DGSI;96.80
+0x3e;S;Safe Bulkers, Inc;52.44;06.10;0.07;YJDT;77.54
