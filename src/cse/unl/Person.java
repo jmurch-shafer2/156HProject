@@ -12,7 +12,7 @@ public class Person {
 	
 	public Person(String personCode, String brokerState, String SECIdentifier, String firstName, String lastname,
 			ArrayList<String> emailAddresses) {
-		super();
+		super(); 
 		this.personCode = personCode;
 		this.brokerState = brokerState;
 		this.SECIdentifier = SECIdentifier;
