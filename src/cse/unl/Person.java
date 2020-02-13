@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.thoughtworks.xstream.XStream;
+
 public class Person {
 	private String personCode;
 	private String brokerState;
@@ -13,20 +15,22 @@ public class Person {
 	private String lastname;
 	private ArrayList<String> emailAddresses= new ArrayList<String>();
 	
-	public Person(String personCode, String brokerState, String SECIdentifier, String firstName, String lastname,
-			ArrayList<String> emailAddresses) {
-		super(); 
-		this.personCode = personCode;
-		this.brokerState = brokerState;
-		this.SECIdentifier = SECIdentifier;
-		this.firstName = firstName;
-		this.lastname = lastname;
-		this.emailAddresses = emailAddresses;
-	}
-	
-	public Person(String personCode, String brokerState, String SECIdentifier, String fullName,
-			String emailAddressesString) {
-		super();
+	public Person(String line) {
+		String[] tokens = line.split(";");
+		
+		String personCode = tokens[0];
+		String brokerData = tokens[1];
+		String fullName = tokens[2];
+		String emailAddressesString = tokens[3];
+		
+		//Separating broker data out
+		String[] arrBroker = brokerData.split(",");
+		if(arrBroker.length == 2) {
+			String brokerState = arrBroker[0];
+			String SECIdentifier = arrBroker[1]; 
+		}
+		
+		
 		this.personCode = personCode;
 		this.brokerState = brokerState;
 		this.SECIdentifier = SECIdentifier;
@@ -40,51 +44,9 @@ public class Person {
 			this.emailAddresses.add(arrEmails[i]);
 		}
 	}
-	
-
-	
-//	public void readLine(String line) {
-//		String[] delimetedStr = line.split(";");
-//		
-//		Person(delimetedStr[0],delimetedStr[1],delimetedStr[2],delimetedStr[3],delimetedStr[4]);
-//		
-//	}
-	
-
-	public String getPersonCode() {
-		return personCode;
-	}
-	public void setPersonCode(String personCode) {
-		this.personCode = personCode;
-	}
-	public String getBrokerState() {
-		return brokerState;
-	}
-	public void setBrokerState(String brokerState) {
-		this.brokerState = brokerState;
-	}
-	public String getSECIdentifier() {
-		return SECIdentifier;
-	}
-	public void setSECIdentifier(String sECIdentifier) {
-		SECIdentifier = sECIdentifier;
-	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastname() {
-		return lastname;
-	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-	public ArrayList<String> getEmailAddresses() {
-		return emailAddresses;
-	}
-	public void setEmailAddresses(ArrayList<String> emailAddresses) {
-		this.emailAddresses = emailAddresses;
+	public void classToXML() {
+		XStream xstream = new XStream();
+		String xml = xstream.toXML(this);
+		System.out.println(xml);
 	}
 }

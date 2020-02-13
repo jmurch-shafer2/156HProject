@@ -4,51 +4,17 @@ public class Stock extends Assets {
 	private double quarterlyDividend;
 	private double baseRateOfReturn;
 	private double betaMeasure;
-	private double stockSymbol;
+	private String stockSymbol;
 	private double sharePrice;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//getters and setters 
-	public double getQuarterlyDividend() {
-		return quarterlyDividend;
-	}
-	public void setQuarterlyDividend(double quarterlyDividend) {
-		this.quarterlyDividend = quarterlyDividend;
-	}
-	public double getBaseRateOfReturn() {
-		return baseRateOfReturn;
-	}
-	public void setBaseRateOfReturn(double baseRateOfReturn) {
-		this.baseRateOfReturn = baseRateOfReturn;
-	}
-	public double getBetaMeasure() {
-		return betaMeasure;
-	}
-	public void setBetaMeasure(double betaMeasure) {
-		this.betaMeasure = betaMeasure;
-	}
-	public double getStockSymbol() {
-		return stockSymbol;
-	}
-	public void setStockSymbol(double stockSymbol) {
+	public Stock(String accountCode, String assetType, String label, String quarterlyDividend,
+			String baseRateOfReturn, String betaMeasure, String StockSymbol, String sharePrice) {
+		super(accountCode, assetType, label);
+		this.quarterlyDividend = Double.valueOf(quarterlyDividend);
+		this.baseRateOfReturn = Double.valueOf(baseRateOfReturn);
+		this.betaMeasure = Double.valueOf(betaMeasure);
 		this.stockSymbol = stockSymbol;
+		this.sharePrice = Double.valueOf(sharePrice);
 	}
-	public double getSharePrice() {
-		return sharePrice;
-	}
-	public void setSharePrice(double sharePrice) {
-		this.sharePrice = sharePrice;
-	}
-	  
+	
 	}
