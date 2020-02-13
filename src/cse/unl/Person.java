@@ -1,6 +1,9 @@
 package cse.unl;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Person {
 	private String personCode;
@@ -37,6 +40,8 @@ public class Person {
 			this.emailAddresses.add(arrEmails[i]);
 		}
 	}
+	
+
 	
 //	public void readLine(String line) {
 //		String[] delimetedStr = line.split(";");
@@ -82,6 +87,4 @@ public class Person {
 	public void setEmailAddresses(ArrayList<String> emailAddresses) {
 		this.emailAddresses = emailAddresses;
 	}
-
-	
 }

@@ -9,15 +9,14 @@ import java.util.Scanner;
  *
  */
 
-public class Testing {
+public class DataConversions {
 	public static void main(String[] argc) {
-//		URL url = getClass().getResource("Persons.dat");
 		
-		File path = new File("C://Users//jmurc//Documents//GitHub//EclipseRootDir//MurckmanConsulting//Assets.dat");
-		System.out.println(path.getAbsolutePath());
-		Scanner scan = null;
+		
+		File assetsFilePath = new File("data//Assets.dat");
 		try {
-			scan = new Scanner(path);
+			Scanner scan = new Scanner(path);
+			int numOfLines = scan.nextInt();
 			while(scan.hasNextLine()) {
 				System.out.println(scan.nextLine());
 				//TODO Call constructor too
@@ -27,11 +26,7 @@ public class Testing {
 			e.printStackTrace();
 		}
 		
-		int numOfLines = scan.nextInt();
-		
 
 		
-		
-		scan.close();
 	}
 }
