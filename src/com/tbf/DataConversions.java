@@ -95,15 +95,16 @@ public class DataConversions {
 		
 		XMLConversions xml = new XMLConversions();
 //		xml.classToXML(listOfPeople.get(0));
-//		xml.arrPeopleToXML(listOfPeople);
-		xml.classToXML(listOfAssets.get(0));
+		xml.arrPeopleToXML(listOfPeople);
+//		xml.classToXML(listOfAssets.get(0));
 		xml.arrAssetsToXML(listOfAssets);
+		JSONConversions json = new JSONConversions();
 		
+//		json.classToJSON(listOfPeople.get(0));
+		json.arrPeopleToJSON(listOfPeople);
 		
-		
-		
-		
-		
+//		json.classToJSON(listOfAssets.get(0));
+		json.arrAssetsToJSON(listOfAssets);
 		
 		
 		
