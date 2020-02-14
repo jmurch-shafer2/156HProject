@@ -1,4 +1,4 @@
-package cse.unl;
+package com.tbf;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,15 +13,15 @@ public class Person {
 	private String SECIdentifier;
 	private String firstName;
 	private String lastname;
-	private ArrayList<String> emailAddresses= new ArrayList<String>();
+	private ArrayList<String> emailList= new ArrayList<>();
 	
 	public Person(String line) {
-		String[] tokens = line.split(";");
+		String[] tokens = line.split(";",-1);
 		
 		String personCode = tokens[0];
 		String brokerData = tokens[1];
 		String fullName = tokens[2];
-		String emailAddressesString = tokens[3];
+		String emailAddressesString = tokens[4];
 		
 		//Separating broker data out
 		String[] arrBroker = brokerData.split(",");
@@ -41,12 +41,7 @@ public class Person {
 		
 		String[] arrEmails = emailAddressesString.split(",");
 		for(int i = 0;i< arrEmails.length;i++) {
-			this.emailAddresses.add(arrEmails[i]);
+			this.emailList.add(arrEmails[i]);
 		}
-	}
-	public void classToXML() {
-		XStream xstream = new XStream();
-		String xml = xstream.toXML(this);
-		System.out.println(xml);
 	}
 }

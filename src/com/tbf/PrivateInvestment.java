@@ -1,4 +1,4 @@
-package cse.unl;
+package com.tbf;
 
 public class PrivateInvestment extends Assets {
 	private double quarterlyDividend;

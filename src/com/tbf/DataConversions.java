@@ -1,10 +1,11 @@
-package cse.unl;
+package com.tbf;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-import cse.unl.*; //TODO make this not like this
+
+import com.tbf.*;
 /**
  * 
  * @author Natalie Ruckman and Joel Murch-Shafer
@@ -92,8 +93,8 @@ public class DataConversions {
 		System.out.println("Done with creating lists of objects");
 		
 		
-		
-		listOfPeople.get(0).classToXML();
+		XMLConversions xml = new XMLConversions();
+		xml.classToXML(listOfPeople.get(0));
 		
 		
 		
