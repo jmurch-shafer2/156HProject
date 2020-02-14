@@ -23,23 +23,24 @@ public class Person {
 		String fullName = tokens[2];
 		String emailAddressesString = tokens[4];
 		
+		String holdingBrokerState = "";
+		String holdingSECIdentifier = "";
 		//Separating broker data out
-		String[] arrBroker = brokerData.split(",");
+		String[] arrBroker = brokerData.split(",",-1);
 		if(arrBroker.length == 2) {
-			String brokerState = arrBroker[0];
-			String SECIdentifier = arrBroker[1]; 
+			holdingBrokerState = arrBroker[0];
+			holdingSECIdentifier = arrBroker[1];
 		}
-		
-		
+
 		this.personCode = personCode;
-		this.brokerState = brokerState;
-		this.SECIdentifier = SECIdentifier;
+		this.brokerState = holdingBrokerState;
+		this.SECIdentifier = holdingSECIdentifier;
 		
-		String[] arrNames = fullName.split(",");
+		String[] arrNames = fullName.split(",",-1);
 		this.firstName = arrNames[0];
 		this.lastname = arrNames[1];
 		
-		String[] arrEmails = emailAddressesString.split(",");
+		String[] arrEmails = emailAddressesString.split(",",-1);
 		for(int i = 0;i< arrEmails.length;i++) {
 			this.emailList.add(arrEmails[i]);
 		}

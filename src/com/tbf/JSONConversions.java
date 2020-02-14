@@ -33,6 +33,7 @@ public class JSONConversions {
 	}
 	public void arrAssetsToJSON(ArrayList assets) {
 		XStream xstream = new XStream(new JsonHierarchicalStreamDriver());
+		xstream.setMode(XStream.NO_REFERENCES);
 		xstream.alias("ListOfAssets", List.class);
 		xstream.alias("Private Investment", PrivateInvestment.class);
 		xstream.alias("Deposit Account", DepositAccount.class);

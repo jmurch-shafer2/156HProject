@@ -12,5 +12,3 @@
   * Phone: 402.237.6743
 
 * The link to the class structure editable draw.io can be found here https://drive.google.com/file/d/1C-1p5RIXBEln0v6GgFpWPumBQLeOw8Kf/view?usp=sharing
-
-* This is Natalie testing things out!

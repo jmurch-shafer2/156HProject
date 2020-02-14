@@ -15,11 +15,11 @@ import com.tbf.*;
 
 //TODO get rid of redundant asset type 
 
-public class DataConversions {
+public class DataConverter {
 	public static void main(String[] argc) {
 		
 		//Look at people
-		String personsPath = "data//inputOutputExamples//inputOutputExamples//Persons.dat";
+		String personsPath = "data//Persons.dat";
 		Scanner scan = null;
 		ArrayList <Person> listOfPeople = new ArrayList();
 		try {
@@ -40,7 +40,7 @@ public class DataConversions {
 		}
 		
 		//look at assets
-		String assetsPath = "data//inputOutputExamples//inputOutputExamples//Assets.dat";
+		String assetsPath = "data//Assets.dat";
 		Scanner assetScan = null;
 		ArrayList <Assets> listOfAssets = new ArrayList();
 		try {
@@ -50,7 +50,7 @@ public class DataConversions {
 		    while (assetScan.hasNextLine()) {
 		        String line = assetScan.nextLine();
 //		        System.out.println(line);
-		        String[] tokens = line.split(";");
+		        String[] tokens = line.split(";",-1);
 		        String accountCode = tokens[0]; 
 		    	String assetType = tokens[1];
 		    	String label = tokens[2];
@@ -90,7 +90,7 @@ public class DataConversions {
 		    	assetScan.close();
 		}
 		
-		System.out.println("Done with creating lists of objects");
+		System.out.println("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>");
 		
 		
 		XMLConversions xml = new XMLConversions();
