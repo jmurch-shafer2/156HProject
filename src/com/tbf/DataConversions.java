@@ -94,9 +94,10 @@ public class DataConversions {
 		
 		
 		XMLConversions xml = new XMLConversions();
-		xml.classToXML(listOfPeople.get(0));
-		
-		
+//		xml.classToXML(listOfPeople.get(0));
+//		xml.arrPeopleToXML(listOfPeople);
+		xml.classToXML(listOfAssets.get(0));
+		xml.arrAssetsToXML(listOfAssets);
 		
 		
 		
