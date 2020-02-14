@@ -15,12 +15,21 @@ public class Address {
 		this.country = country;
 		this.zipcode = zipcode;
 	}
+	// I don't like how ugly this is, 
+	// but java made me do it because it will only let
+	// us call a constructor on the first line of another 
+	// constructor
 	public Address(String line) {
 		String[] tokens = line.split(",",-1);
-		this.street = tokens[0];
-		this.city = tokens[1];
-		this.state = tokens[2];
-		this.country = tokens[3];
-		this.zipcode = tokens[4];
+		String streetTemp = tokens[0];
+		String cityTemp = tokens[1];
+		String stateTemp = tokens[2];
+		String countryTemp = tokens[3];
+		String zipcodeTemp = tokens[4];
+		this.street = streetTemp;
+		this.city = cityTemp;
+		this.state = stateTemp;
+		this.country = countryTemp;
+		this.zipcode = zipcodeTemp;
 	}
 }

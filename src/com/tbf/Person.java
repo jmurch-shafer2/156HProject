@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import com.tbf.Address;
 
 import com.thoughtworks.xstream.XStream;
 
@@ -13,6 +14,7 @@ public class Person {
 	private String SECIdentifier;
 	private String firstName;
 	private String lastname;
+	private Address address;
 	private ArrayList<String> emailList= new ArrayList<>();
 	
 	public Person(String line) {
@@ -21,6 +23,7 @@ public class Person {
 		String personCode = tokens[0];
 		String brokerData = tokens[1];
 		String fullName = tokens[2];
+		this.address = new Address(tokens[3]);
 		String emailAddressesString = tokens[4];
 		
 		String holdingBrokerState = "";
