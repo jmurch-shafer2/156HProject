@@ -1,753 +1,1978 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<root>
-  <row>
-    <Code>00x1</Code>
-    <D>D</D>
-    <Label>3 year CD</Label>
+<ListOfAssets>
+  <Deposit Account>
+    <accountCode>00x1</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
     <apr>0.55</apr>
-  </row>
-  <row>
-    <Code>00x2</Code>
-    <D>D</D>
-    <Label>90 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x2</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
     <apr>0.024</apr>
-  </row>
-  <row>
-    <Code>00x3</Code>
-    <D>D</D>
-    <Label>Savings account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x3</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
     <apr>0.31</apr>
-  </row>
-  <row>
-    <Code>00x4</Code>
-    <D>D</D>
-    <Label>3 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x4</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
     <apr>0.95</apr>
-  </row>
-  <row>
-    <Code>00x5</Code>
-    <D>D</D>
-    <Label>Money Market banana account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x5</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
     <apr>0.18</apr>
-  </row>
-  <row>
-    <Code>00x6</Code>
-    <D>D</D>
-    <Label>Monkey Banana storage account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x6</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
     <apr>0.17</apr>
-  </row>
-  <row>
-    <Code>00x7</Code>
-    <D>D</D>
-    <Label>3 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x7</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
     <apr>0.87</apr>
-  </row>
-  <row>
-    <Code>00x8</Code>
-    <D>D</D>
-    <Label>3 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x8</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
     <apr>0.83</apr>
-  </row>
-  <row>
-    <Code>00x9</Code>
-    <D>D</D>
-    <Label>Monkey Banana storage account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x9</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
     <apr>0.36</apr>
-  </row>
-  <row>
-    <Code>00xa</Code>
-    <D>D</D>
-    <Label>Money Market banana account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xa</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
     <apr>0.75</apr>
-  </row>
-  <row>
-    <Code>00xb</Code>
-    <D>D</D>
-    <Label>Food Deposit Account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xb</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
     <apr>0.052</apr>
-  </row>
-  <row>
-    <Code>00xc</Code>
-    <D>D</D>
-    <Label>6 month CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xc</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
     <apr>0.052</apr>
-  </row>
-  <row>
-    <Code>00xd</Code>
-    <D>D</D>
-    <Label>3 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xd</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
     <apr>0.31</apr>
-  </row>
-  <row>
-    <Code>00xe</Code>
-    <D>D</D>
-    <Label>Money Market banana account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xe</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
     <apr>0.57</apr>
-  </row>
-  <row>
-    <Code>00xf</Code>
-    <D>D</D>
-    <Label>90 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xf</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
     <apr>0.42</apr>
-  </row>
-  <row>
-    <Code>0x10</Code>
-    <D>D</D>
-    <Label>Monkey Banana storage account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x10</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
     <apr>0.55</apr>
-  </row>
-  <row>
-    <Code>0x11</Code>
-    <D>D</D>
-    <Label>90 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x11</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
     <apr>0.17</apr>
-  </row>
-  <row>
-    <Code>0x12</Code>
-    <D>D</D>
-    <Label>Savings account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x12</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
     <apr>0.48</apr>
-  </row>
-  <row>
-    <Code>0x13</Code>
-    <D>D</D>
-    <Label>Savings account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x13</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
     <apr>0.23</apr>
-  </row>
-  <row>
-    <Code>0x14</Code>
-    <D>D</D>
-    <Label>6 month CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x14</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
     <apr>0.68</apr>
-  </row>
-  <row>
-    <Code>0x15</Code>
-    <D>D</D>
-    <Label>Food Deposit Account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x15</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
     <apr>0.18</apr>
-  </row>
-  <row>
-    <Code>0x16</Code>
-    <D>D</D>
-    <Label>Savings account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x16</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
     <apr>0.77</apr>
-  </row>
-  <row>
-    <Code>0x17</Code>
-    <D>D</D>
-    <Label>Money Market banana account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x17</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
     <apr>0.034</apr>
-  </row>
-  <row>
-    <Code>0x18</Code>
-    <D>D</D>
-    <Label>3 year CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x18</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
     <apr>0.57</apr>
-  </row>
-  <row>
-    <Code>0x19</Code>
-    <D>D</D>
-    <Label>Piggy bank</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x19</accountCode>
+    <assetType>D</assetType>
+    <label>Piggy bank</label>
     <apr>0.069</apr>
-  </row>
-  <row>
-    <Code>0x1a</Code>
-    <D>D</D>
-    <Label>6 month CD</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1a</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
     <apr>0.73</apr>
-  </row>
-  <row>
-    <Code>0x1b</Code>
-    <D>D</D>
-    <Label>Food Deposit Account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1b</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
     <apr>0.95</apr>
-  </row>
-  <row>
-    <Code>0x1c</Code>
-    <D>D</D>
-    <Label>Food Deposit Account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1c</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
     <apr>0.36</apr>
-  </row>
-  <row>
-    <Code>0x1d</Code>
-    <D>D</D>
-    <Label>Piggy bank</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1d</accountCode>
+    <assetType>D</assetType>
+    <label>Piggy bank</label>
     <apr>0.24</apr>
-  </row>
-  <row>
-    <Code>0x1e</Code>
-    <D>D</D>
-    <Label>Savings account</Label>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1e</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
     <apr>0.45</apr>
-  </row>
-  <row>
-    <Code>0x21</Code>
-    <S>S</S>
-    <Label>Zafgen, Inc.</Label>
-    <BaseRateOfReturen>00.90</BaseRateOfReturen>
-    <BetaMeasure>0.45</BetaMeasure>
-    <StockSymbol>GFDZ</StockSymbol>
+  </Deposit Account>
+  <Stock>
+    <accountCode>0x21</accountCode>
+    <assetType>S</assetType>
+    <label>Zafgen, Inc.</label>
+    <quarterlyDividend>21.57</quarterlyDividend>
+    <baseRateOfReturn>0.9</baseRateOfReturn>
+    <betaMeasure>0.45</betaMeasure>
     <sharePrice>42.13</sharePrice>
-    <Quarterly_Dividend>21.57</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x22</Code>
-    <S>S</S>
-    <Label>Helix Energy Solutions Group, Inc.</Label>
-    <BaseRateOfReturen>08.76</BaseRateOfReturen>
-    <BetaMeasure>0.52</BetaMeasure>
-    <StockSymbol>URHB</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x22</accountCode>
+    <assetType>S</assetType>
+    <label>Helix Energy Solutions Group, Inc.</label>
+    <quarterlyDividend>69.75</quarterlyDividend>
+    <baseRateOfReturn>8.76</baseRateOfReturn>
+    <betaMeasure>0.52</betaMeasure>
     <sharePrice>20.88</sharePrice>
-    <Quarterly_Dividend>69.75</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x23</Code>
-    <S>S</S>
-    <Label>iShares MSCI Europe Financials Sector Index Fund</Label>
-    <BaseRateOfReturen>08.57</BaseRateOfReturen>
-    <BetaMeasure>0.32</BetaMeasure>
-    <StockSymbol>TANY</StockSymbol>
-    <sharePrice>09.65</sharePrice>
-    <Quarterly_Dividend>66.73</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x24</Code>
-    <S>S</S>
-    <Label>Special Opportunities Fund Inc.</Label>
-    <BaseRateOfReturen>06.04</BaseRateOfReturen>
-    <BetaMeasure>0.28</BetaMeasure>
-    <StockSymbol>UEST</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x23</accountCode>
+    <assetType>S</assetType>
+    <label>iShares MSCI Europe Financials Sector Index Fund</label>
+    <quarterlyDividend>66.73</quarterlyDividend>
+    <baseRateOfReturn>8.57</baseRateOfReturn>
+    <betaMeasure>0.32</betaMeasure>
+    <sharePrice>9.65</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x24</accountCode>
+    <assetType>S</assetType>
+    <label>Special Opportunities Fund Inc.</label>
+    <quarterlyDividend>55.91</quarterlyDividend>
+    <baseRateOfReturn>6.04</baseRateOfReturn>
+    <betaMeasure>0.28</betaMeasure>
     <sharePrice>18.9</sharePrice>
-    <Quarterly_Dividend>55.91</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x25</Code>
-    <S>S</S>
-    <Label>Zions Bancorporation</Label>
-    <BaseRateOfReturen>08.25</BaseRateOfReturen>
-    <BetaMeasure>0.19</BetaMeasure>
-    <StockSymbol>CWNK</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x25</accountCode>
+    <assetType>S</assetType>
+    <label>Zions Bancorporation</label>
+    <quarterlyDividend>91.96</quarterlyDividend>
+    <baseRateOfReturn>8.25</baseRateOfReturn>
+    <betaMeasure>0.19</betaMeasure>
     <sharePrice>48.37</sharePrice>
-    <Quarterly_Dividend>91.96</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x26</Code>
-    <S>S</S>
-    <Label>Exa Corporation</Label>
-    <BaseRateOfReturen>01.97</BaseRateOfReturen>
-    <BetaMeasure>0.65</BetaMeasure>
-    <StockSymbol>IIBQ</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x26</accountCode>
+    <assetType>S</assetType>
+    <label>Exa Corporation</label>
+    <quarterlyDividend>65.97</quarterlyDividend>
+    <baseRateOfReturn>1.97</baseRateOfReturn>
+    <betaMeasure>0.65</betaMeasure>
     <sharePrice>76.25</sharePrice>
-    <Quarterly_Dividend>65.97</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x27</Code>
-    <S>S</S>
-    <Label>Resource Capital Corp.</Label>
-    <BaseRateOfReturen>01.32</BaseRateOfReturen>
-    <BetaMeasure>0.56</BetaMeasure>
-    <StockSymbol>SAAH</StockSymbol>
-    <sharePrice>05.09</sharePrice>
-    <Quarterly_Dividend>54.2</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x28</Code>
-    <S>S</S>
-    <Label>Aircastle Limited</Label>
-    <BaseRateOfReturen>04.61</BaseRateOfReturen>
-    <BetaMeasure>0.62</BetaMeasure>
-    <StockSymbol>KJEJ</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x27</accountCode>
+    <assetType>S</assetType>
+    <label>Resource Capital Corp.</label>
+    <quarterlyDividend>54.2</quarterlyDividend>
+    <baseRateOfReturn>1.32</baseRateOfReturn>
+    <betaMeasure>0.56</betaMeasure>
+    <sharePrice>5.09</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x28</accountCode>
+    <assetType>S</assetType>
+    <label>Aircastle Limited</label>
+    <quarterlyDividend>12.72</quarterlyDividend>
+    <baseRateOfReturn>4.61</baseRateOfReturn>
+    <betaMeasure>0.62</betaMeasure>
     <sharePrice>31.46</sharePrice>
-    <Quarterly_Dividend>12.72</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x29</Code>
-    <S>S</S>
-    <Label>Dillard&#x27;s, Inc.</Label>
-    <BaseRateOfReturen>07.88</BaseRateOfReturen>
-    <BetaMeasure>0.92</BetaMeasure>
-    <StockSymbol>QRIW</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x29</accountCode>
+    <assetType>S</assetType>
+    <label>Dillards, Inc.</label>
+    <quarterlyDividend>64.12</quarterlyDividend>
+    <baseRateOfReturn>7.88</baseRateOfReturn>
+    <betaMeasure>0.92</betaMeasure>
     <sharePrice>46.65</sharePrice>
-    <Quarterly_Dividend>64.12</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x2a</Code>
-    <S>S</S>
-    <Label>Regulus Therapeutics Inc.</Label>
-    <BaseRateOfReturen>07.68</BaseRateOfReturen>
-    <BetaMeasure>0.69</BetaMeasure>
-    <StockSymbol>IDVI</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x2a</accountCode>
+    <assetType>S</assetType>
+    <label>Regulus Therapeutics Inc.</label>
+    <quarterlyDividend>62.19</quarterlyDividend>
+    <baseRateOfReturn>7.68</baseRateOfReturn>
+    <betaMeasure>0.69</betaMeasure>
     <sharePrice>41.68</sharePrice>
-    <Quarterly_Dividend>62.19</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x2b</Code>
-    <S>S</S>
-    <Label>MFS Charter Income Trust</Label>
-    <BaseRateOfReturen>00.09</BaseRateOfReturen>
-    <BetaMeasure>0.34</BetaMeasure>
-    <StockSymbol>JKDR</StockSymbol>
-    <sharePrice>84</sharePrice>
-    <Quarterly_Dividend>00.98</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x2c</Code>
-    <S>S</S>
-    <Label>Nuveen Ohio Quality Municipal Income Fund</Label>
-    <BaseRateOfReturen>00.19</BaseRateOfReturen>
-    <BetaMeasure>0.18</BetaMeasure>
-    <StockSymbol>RJVX</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x2b</accountCode>
+    <assetType>S</assetType>
+    <label>MFS Charter Income Trust</label>
+    <quarterlyDividend>0.98</quarterlyDividend>
+    <baseRateOfReturn>0.09</baseRateOfReturn>
+    <betaMeasure>0.34</betaMeasure>
+    <sharePrice>84.0</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2c</accountCode>
+    <assetType>S</assetType>
+    <label>Nuveen Ohio Quality Municipal Income Fund</label>
+    <quarterlyDividend>19.27</quarterlyDividend>
+    <baseRateOfReturn>0.19</baseRateOfReturn>
+    <betaMeasure>0.18</betaMeasure>
     <sharePrice>31.34</sharePrice>
-    <Quarterly_Dividend>19.27</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x2d</Code>
-    <S>S</S>
-    <Label>NCI, Inc.</Label>
-    <BaseRateOfReturen>02.35</BaseRateOfReturen>
-    <BetaMeasure>0.64</BetaMeasure>
-    <StockSymbol>ZHRL</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x2d</accountCode>
+    <assetType>S</assetType>
+    <label>NCI, Inc.</label>
+    <quarterlyDividend>96.85</quarterlyDividend>
+    <baseRateOfReturn>2.35</baseRateOfReturn>
+    <betaMeasure>0.64</betaMeasure>
     <sharePrice>65.66</sharePrice>
-    <Quarterly_Dividend>96.85</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x2e</Code>
-    <S>S</S>
-    <Label>Merus N.V.</Label>
-    <BaseRateOfReturen>01.57</BaseRateOfReturen>
-    <BetaMeasure>0.83</BetaMeasure>
-    <StockSymbol>JAEW</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x2e</accountCode>
+    <assetType>S</assetType>
+    <label>Merus N.V.</label>
+    <quarterlyDividend>16.67</quarterlyDividend>
+    <baseRateOfReturn>1.57</baseRateOfReturn>
+    <betaMeasure>0.83</betaMeasure>
     <sharePrice>97.51</sharePrice>
-    <Quarterly_Dividend>16.67</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x2f</Code>
-    <S>S</S>
-    <Label>BBVA Banco Frances S.A.</Label>
-    <BaseRateOfReturen>03.79</BaseRateOfReturen>
-    <BetaMeasure>0.37</BetaMeasure>
-    <StockSymbol>EPRV</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x2f</accountCode>
+    <assetType>S</assetType>
+    <label>BBVA Banco Frances S.A.</label>
+    <quarterlyDividend>12.37</quarterlyDividend>
+    <baseRateOfReturn>3.79</baseRateOfReturn>
+    <betaMeasure>0.37</betaMeasure>
     <sharePrice>79.27</sharePrice>
-    <Quarterly_Dividend>12.37</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x30</Code>
-    <S>S</S>
-    <Label>Paylocity Holding Corporation</Label>
-    <BaseRateOfReturen>00.21</BaseRateOfReturen>
-    <BetaMeasure>0.18</BetaMeasure>
-    <StockSymbol>GGTN</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x30</accountCode>
+    <assetType>S</assetType>
+    <label>Paylocity Holding Corporation</label>
+    <quarterlyDividend>98.15</quarterlyDividend>
+    <baseRateOfReturn>0.21</baseRateOfReturn>
+    <betaMeasure>0.18</betaMeasure>
     <sharePrice>44.21</sharePrice>
-    <Quarterly_Dividend>98.15</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x31</Code>
-    <S>S</S>
-    <Label>Duke Energy Corporation</Label>
-    <BaseRateOfReturen>06.42</BaseRateOfReturen>
-    <BetaMeasure>0.15</BetaMeasure>
-    <StockSymbol>JJXK</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x31</accountCode>
+    <assetType>S</assetType>
+    <label>Duke Energy Corporation</label>
+    <quarterlyDividend>28.71</quarterlyDividend>
+    <baseRateOfReturn>6.42</baseRateOfReturn>
+    <betaMeasure>0.15</betaMeasure>
     <sharePrice>21.24</sharePrice>
-    <Quarterly_Dividend>28.71</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x32</Code>
-    <S>S</S>
-    <Label>Destination XL Group, Inc.</Label>
-    <BaseRateOfReturen>03.76</BaseRateOfReturen>
-    <BetaMeasure>0.85</BetaMeasure>
-    <StockSymbol>RZAM</StockSymbol>
-    <sharePrice>09.31</sharePrice>
-    <Quarterly_Dividend>25.58</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x33</Code>
-    <S>S</S>
-    <Label>Arena Pharmaceuticals, Inc.</Label>
-    <BaseRateOfReturen>08.40</BaseRateOfReturen>
-    <BetaMeasure>0.44</BetaMeasure>
-    <StockSymbol>IMQJ</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x32</accountCode>
+    <assetType>S</assetType>
+    <label>Destination XL Group, Inc.</label>
+    <quarterlyDividend>25.58</quarterlyDividend>
+    <baseRateOfReturn>3.76</baseRateOfReturn>
+    <betaMeasure>0.85</betaMeasure>
+    <sharePrice>9.31</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x33</accountCode>
+    <assetType>S</assetType>
+    <label>Arena Pharmaceuticals, Inc.</label>
+    <quarterlyDividend>95.57</quarterlyDividend>
+    <baseRateOfReturn>8.4</baseRateOfReturn>
+    <betaMeasure>0.44</betaMeasure>
     <sharePrice>80.08</sharePrice>
-    <Quarterly_Dividend>95.57</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x34</Code>
-    <S>S</S>
-    <Label>KKR &amp; Co. L.P.</Label>
-    <BaseRateOfReturen>00.37</BaseRateOfReturen>
-    <BetaMeasure>0.26</BetaMeasure>
-    <StockSymbol>AJDM</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x34</accountCode>
+    <assetType>S</assetType>
+    <label>KKR and Co. L.P.</label>
+    <quarterlyDividend>31.9</quarterlyDividend>
+    <baseRateOfReturn>0.37</baseRateOfReturn>
+    <betaMeasure>0.26</betaMeasure>
     <sharePrice>72.4</sharePrice>
-    <Quarterly_Dividend>31.9</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x35</Code>
-    <S>S</S>
-    <Label>Kirby Corporation</Label>
-    <BaseRateOfReturen>00.11</BaseRateOfReturen>
-    <BetaMeasure>0.6</BetaMeasure>
-    <StockSymbol>ZEME</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x35</accountCode>
+    <assetType>S</assetType>
+    <label>Kirby Corporation</label>
+    <quarterlyDividend>16.12</quarterlyDividend>
+    <baseRateOfReturn>0.11</baseRateOfReturn>
+    <betaMeasure>0.6</betaMeasure>
     <sharePrice>86.16</sharePrice>
-    <Quarterly_Dividend>16.12</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x36</Code>
-    <S>S</S>
-    <Label>VictoryShares US 500 Enhanced Volatility Wtd ETF</Label>
-    <BaseRateOfReturen>04.51</BaseRateOfReturen>
-    <BetaMeasure>0.63</BetaMeasure>
-    <StockSymbol>ABCF</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x36</accountCode>
+    <assetType>S</assetType>
+    <label>VictoryShares US 500 Enhanced Volatility Wtd ETF</label>
+    <quarterlyDividend>70.81</quarterlyDividend>
+    <baseRateOfReturn>4.51</baseRateOfReturn>
+    <betaMeasure>0.63</betaMeasure>
     <sharePrice>25.51</sharePrice>
-    <Quarterly_Dividend>70.81</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x37</Code>
-    <S>S</S>
-    <Label>American Axle &amp; Manufacturing Holdings, Inc.</Label>
-    <BaseRateOfReturen>09.02</BaseRateOfReturen>
-    <BetaMeasure>0.26</BetaMeasure>
-    <StockSymbol>MLXV</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x37</accountCode>
+    <assetType>S</assetType>
+    <label>American Axle and Manufacturing Holdings, Inc.</label>
+    <quarterlyDividend>33.25</quarterlyDividend>
+    <baseRateOfReturn>9.02</baseRateOfReturn>
+    <betaMeasure>0.26</betaMeasure>
     <sharePrice>57.41</sharePrice>
-    <Quarterly_Dividend>33.25</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x38</Code>
-    <S>S</S>
-    <Label>Horace Mann Educators Corporation</Label>
-    <BaseRateOfReturen>07.16</BaseRateOfReturen>
-    <BetaMeasure>0.73</BetaMeasure>
-    <StockSymbol>KGGH</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x38</accountCode>
+    <assetType>S</assetType>
+    <label>Horace Mann Educators Corporation</label>
+    <quarterlyDividend>41.7</quarterlyDividend>
+    <baseRateOfReturn>7.16</baseRateOfReturn>
+    <betaMeasure>0.73</betaMeasure>
     <sharePrice>81.41</sharePrice>
-    <Quarterly_Dividend>41.7</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x39</Code>
-    <S>S</S>
-    <Label>Impax Laboratories, Inc.</Label>
-    <BaseRateOfReturen>00.34</BaseRateOfReturen>
-    <BetaMeasure>0.41</BetaMeasure>
-    <StockSymbol>VDNP</StockSymbol>
-    <sharePrice>05.40</sharePrice>
-    <Quarterly_Dividend>94.14</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x3a</Code>
-    <S>S</S>
-    <Label>Telefonica SA</Label>
-    <BaseRateOfReturen>05.97</BaseRateOfReturen>
-    <BetaMeasure>0.33</BetaMeasure>
-    <StockSymbol>MONI</StockSymbol>
-    <sharePrice>13</sharePrice>
-    <Quarterly_Dividend>80.21</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x3b</Code>
-    <S>S</S>
-    <Label>Fogo de Chao, Inc.</Label>
-    <BaseRateOfReturen>03.44</BaseRateOfReturen>
-    <BetaMeasure>0.21</BetaMeasure>
-    <StockSymbol>KDWA</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x39</accountCode>
+    <assetType>S</assetType>
+    <label>Impax Laboratories, Inc.</label>
+    <quarterlyDividend>94.14</quarterlyDividend>
+    <baseRateOfReturn>0.34</baseRateOfReturn>
+    <betaMeasure>0.41</betaMeasure>
+    <sharePrice>5.4</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3a</accountCode>
+    <assetType>S</assetType>
+    <label>Telefonica SA</label>
+    <quarterlyDividend>80.21</quarterlyDividend>
+    <baseRateOfReturn>5.97</baseRateOfReturn>
+    <betaMeasure>0.33</betaMeasure>
+    <sharePrice>13.0</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3b</accountCode>
+    <assetType>S</assetType>
+    <label>Fogo de Chao, Inc.</label>
+    <quarterlyDividend>17.37</quarterlyDividend>
+    <baseRateOfReturn>3.44</baseRateOfReturn>
+    <betaMeasure>0.21</betaMeasure>
     <sharePrice>65.12</sharePrice>
-    <Quarterly_Dividend>17.37</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x3c</Code>
-    <S>S</S>
-    <Label>Guggenheim Enhanced Equity Income Fund</Label>
-    <BaseRateOfReturen>03.29</BaseRateOfReturen>
-    <BetaMeasure>0.24</BetaMeasure>
-    <StockSymbol>CLIM</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x3c</accountCode>
+    <assetType>S</assetType>
+    <label>Guggenheim Enhanced Equity Income Fund</label>
+    <quarterlyDividend>68.79</quarterlyDividend>
+    <baseRateOfReturn>3.29</baseRateOfReturn>
+    <betaMeasure>0.24</betaMeasure>
     <sharePrice>43.11</sharePrice>
-    <Quarterly_Dividend>68.79</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x3d</Code>
-    <S>S</S>
-    <Label>Lehman ABS Corporation</Label>
-    <BaseRateOfReturen>01.67</BaseRateOfReturen>
-    <BetaMeasure>0.58</BetaMeasure>
-    <StockSymbol>DGSI</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x3d</accountCode>
+    <assetType>S</assetType>
+    <label>Lehman ABS Corporation</label>
+    <quarterlyDividend>12.06</quarterlyDividend>
+    <baseRateOfReturn>1.67</baseRateOfReturn>
+    <betaMeasure>0.58</betaMeasure>
     <sharePrice>96.8</sharePrice>
-    <Quarterly_Dividend>12.06</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x3e</Code>
-    <S>S</S>
-    <Label>Safe Bulkers, Inc</Label>
-    <BaseRateOfReturen>06.10</BaseRateOfReturen>
-    <BetaMeasure>0.07</BetaMeasure>
-    <StockSymbol>YJDT</StockSymbol>
+  </Stock>
+  <Stock>
+    <accountCode>0x3e</accountCode>
+    <assetType>S</assetType>
+    <label>Safe Bulkers, Inc</label>
+    <quarterlyDividend>52.44</quarterlyDividend>
+    <baseRateOfReturn>6.1</baseRateOfReturn>
+    <betaMeasure>0.07</betaMeasure>
     <sharePrice>77.54</sharePrice>
-    <Quarterly_Dividend>52.44</Quarterly_Dividend>
-  </row>
-  <row>
-    <Code>0x21</Code>
-    <P>P</P>
-    <Label>Sabrina</Label>
-    <QuarterlyDividend>845742.36</QuarterlyDividend>
-    <BaseRateOfReturn>07.24</BaseRateOfReturn>
+  </Stock>
+  <Private Investment>
+    <accountCode>0x21</accountCode>
+    <assetType>P</assetType>
+    <label>Sabrina</label>
+    <quarterlyDividend>845742.36</quarterlyDividend>
+    <baseRateOfReturn>7.24</baseRateOfReturn>
     <baseOmegaMeasure>0.65</baseOmegaMeasure>
-    <TotalValue>8139000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x22</Code>
-    <P>P</P>
-    <Label>It&#x27;s Alive 2: It Lives Again</Label>
-    <QuarterlyDividend>916867.56</QuarterlyDividend>
-    <BaseRateOfReturn>07.48</BaseRateOfReturn>
+    <totalValue>8.139E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x22</accountCode>
+    <assetType>P</assetType>
+    <label>It is Alive 2: It Lives Again</label>
+    <quarterlyDividend>916867.56</quarterlyDividend>
+    <baseRateOfReturn>7.48</baseRateOfReturn>
     <baseOmegaMeasure>0.83</baseOmegaMeasure>
-    <TotalValue>8423000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x23</Code>
-    <P>P</P>
-    <Label>Costa Brava</Label>
-    <QuarterlyDividend>766192.86</QuarterlyDividend>
-    <BaseRateOfReturn>08.82</BaseRateOfReturn>
+    <totalValue>8.423E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x23</accountCode>
+    <assetType>P</assetType>
+    <label>Costa Brava</label>
+    <quarterlyDividend>766192.86</quarterlyDividend>
+    <baseRateOfReturn>8.82</baseRateOfReturn>
     <baseOmegaMeasure>0.45</baseOmegaMeasure>
-    <TotalValue>0692000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x24</Code>
-    <P>P</P>
-    <Label>Carpool</Label>
-    <QuarterlyDividend>184206.09</QuarterlyDividend>
-    <BaseRateOfReturn>07.90</BaseRateOfReturn>
+    <totalValue>6.92E8</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x24</accountCode>
+    <assetType>P</assetType>
+    <label>Carpool</label>
+    <quarterlyDividend>184206.09</quarterlyDividend>
+    <baseRateOfReturn>7.9</baseRateOfReturn>
     <baseOmegaMeasure>0.23</baseOmegaMeasure>
-    <TotalValue>1117000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x25</Code>
-    <P>P</P>
-    <Label>Yentl</Label>
-    <QuarterlyDividend>469621.31</QuarterlyDividend>
-    <BaseRateOfReturn>06.50</BaseRateOfReturn>
+    <totalValue>1.117E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x25</accountCode>
+    <assetType>P</assetType>
+    <label>Yentl</label>
+    <quarterlyDividend>469621.31</quarterlyDividend>
+    <baseRateOfReturn>6.5</baseRateOfReturn>
     <baseOmegaMeasure>0.75</baseOmegaMeasure>
-    <TotalValue>8357000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x26</Code>
-    <P>P</P>
-    <Label>Real Men</Label>
-    <QuarterlyDividend>082331.41</QuarterlyDividend>
-    <BaseRateOfReturn>01.32</BaseRateOfReturn>
+    <totalValue>8.357E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x26</accountCode>
+    <assetType>P</assetType>
+    <label>Real Men</label>
+    <quarterlyDividend>82331.41</quarterlyDividend>
+    <baseRateOfReturn>1.32</baseRateOfReturn>
     <baseOmegaMeasure>0.54</baseOmegaMeasure>
-    <TotalValue>4322000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x27</Code>
-    <P>P</P>
-    <Label>Monkey&#x27;s Tale, A (Château des singes, Le)</Label>
-    <QuarterlyDividend>733414.36</QuarterlyDividend>
-    <BaseRateOfReturn>03.04</BaseRateOfReturn>
+    <totalValue>4.322E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x27</accountCode>
+    <assetType>P</assetType>
+    <label>Monkey Tail, A (Chateau des singes, Le)</label>
+    <quarterlyDividend>733414.36</quarterlyDividend>
+    <baseRateOfReturn>3.04</baseRateOfReturn>
     <baseOmegaMeasure>0.54</baseOmegaMeasure>
-    <TotalValue>2794000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x28</Code>
-    <P>P</P>
-    <Label>Across 110th Street</Label>
-    <QuarterlyDividend>204681.15</QuarterlyDividend>
-    <BaseRateOfReturn>08.60</BaseRateOfReturn>
+    <totalValue>2.794E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x28</accountCode>
+    <assetType>P</assetType>
+    <label>Across 110th Street</label>
+    <quarterlyDividend>204681.15</quarterlyDividend>
+    <baseRateOfReturn>8.6</baseRateOfReturn>
     <baseOmegaMeasure>0.82</baseOmegaMeasure>
-    <TotalValue>7973000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x29</Code>
-    <P>P</P>
-    <Label>Dogs of War, The</Label>
-    <QuarterlyDividend>382382.85</QuarterlyDividend>
-    <BaseRateOfReturn>00.17</BaseRateOfReturn>
+    <totalValue>7.973E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x29</accountCode>
+    <assetType>P</assetType>
+    <label>Dogs of War, The</label>
+    <quarterlyDividend>382382.85</quarterlyDividend>
+    <baseRateOfReturn>0.17</baseRateOfReturn>
     <baseOmegaMeasure>0.92</baseOmegaMeasure>
-    <TotalValue>5892000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x2a</Code>
-    <P>P</P>
-    <Label>Destiny in Space</Label>
-    <QuarterlyDividend>941199.96</QuarterlyDividend>
-    <BaseRateOfReturn>07.12</BaseRateOfReturn>
+    <totalValue>5.892E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2a</accountCode>
+    <assetType>P</assetType>
+    <label>Destiny in Space</label>
+    <quarterlyDividend>941199.96</quarterlyDividend>
+    <baseRateOfReturn>7.12</baseRateOfReturn>
     <baseOmegaMeasure>0.92</baseOmegaMeasure>
-    <TotalValue>2114000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x2b</Code>
-    <P>P</P>
-    <Label>Day of the Outlaw</Label>
-    <QuarterlyDividend>948127.22</QuarterlyDividend>
-    <BaseRateOfReturn>06.11</BaseRateOfReturn>
+    <totalValue>2.114E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2b</accountCode>
+    <assetType>P</assetType>
+    <label>Day of the Outlaw</label>
+    <quarterlyDividend>948127.22</quarterlyDividend>
+    <baseRateOfReturn>6.11</baseRateOfReturn>
     <baseOmegaMeasure>0.93</baseOmegaMeasure>
-    <TotalValue>6043000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x2c</Code>
-    <P>P</P>
-    <Label>Buffet froid</Label>
-    <QuarterlyDividend>172130.06</QuarterlyDividend>
-    <BaseRateOfReturn>03.98</BaseRateOfReturn>
+    <totalValue>6.043E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2c</accountCode>
+    <assetType>P</assetType>
+    <label>Buffet froid</label>
+    <quarterlyDividend>172130.06</quarterlyDividend>
+    <baseRateOfReturn>3.98</baseRateOfReturn>
     <baseOmegaMeasure>0.05</baseOmegaMeasure>
-    <TotalValue>9908000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x2d</Code>
-    <P>P</P>
-    <Label>Quiet American, The</Label>
-    <QuarterlyDividend>568513.32</QuarterlyDividend>
-    <BaseRateOfReturn>05.37</BaseRateOfReturn>
+    <totalValue>9.908E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2d</accountCode>
+    <assetType>P</assetType>
+    <label>Quiet American, The</label>
+    <quarterlyDividend>568513.32</quarterlyDividend>
+    <baseRateOfReturn>5.37</baseRateOfReturn>
     <baseOmegaMeasure>0.58</baseOmegaMeasure>
-    <TotalValue>9595000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x2e</Code>
-    <P>P</P>
-    <Label>Excalibur</Label>
-    <QuarterlyDividend>524096.51</QuarterlyDividend>
-    <BaseRateOfReturn>04.93</BaseRateOfReturn>
+    <totalValue>9.595E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2e</accountCode>
+    <assetType>P</assetType>
+    <label>Excalibur</label>
+    <quarterlyDividend>524096.51</quarterlyDividend>
+    <baseRateOfReturn>4.93</baseRateOfReturn>
     <baseOmegaMeasure>0.33</baseOmegaMeasure>
-    <TotalValue>5417000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x2f</Code>
-    <P>P</P>
-    <Label>Forever Yours (Ikuisesti sinun)</Label>
-    <QuarterlyDividend>570061.42</QuarterlyDividend>
-    <BaseRateOfReturn>02.04</BaseRateOfReturn>
+    <totalValue>5.417E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2f</accountCode>
+    <assetType>P</assetType>
+    <label>Forever Yours (Ikuisesti sinun)</label>
+    <quarterlyDividend>570061.42</quarterlyDividend>
+    <baseRateOfReturn>2.04</baseRateOfReturn>
     <baseOmegaMeasure>0.12</baseOmegaMeasure>
-    <TotalValue>3940000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x30</Code>
-    <P>P</P>
-    <Label>The First Men in the Moon</Label>
-    <QuarterlyDividend>978699.36</QuarterlyDividend>
-    <BaseRateOfReturn>08.37</BaseRateOfReturn>
+    <totalValue>3.94E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x30</accountCode>
+    <assetType>P</assetType>
+    <label>The First Men in the Moon</label>
+    <quarterlyDividend>978699.36</quarterlyDividend>
+    <baseRateOfReturn>8.37</baseRateOfReturn>
     <baseOmegaMeasure>0.55</baseOmegaMeasure>
-    <TotalValue>7718000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x31</Code>
-    <P>P</P>
-    <Label>Bravo Two Zero</Label>
-    <QuarterlyDividend>957871.72</QuarterlyDividend>
-    <BaseRateOfReturn>00.75</BaseRateOfReturn>
+    <totalValue>7.718E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x31</accountCode>
+    <assetType>P</assetType>
+    <label>Bravo Two Zero </label>
+    <quarterlyDividend>957871.72</quarterlyDividend>
+    <baseRateOfReturn>0.75</baseRateOfReturn>
     <baseOmegaMeasure>0.52</baseOmegaMeasure>
-    <TotalValue>5140000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x32</Code>
-    <P>P</P>
-    <Label>Bounty Hunter, The</Label>
-    <QuarterlyDividend>037512.76</QuarterlyDividend>
-    <BaseRateOfReturn>05.96</BaseRateOfReturn>
+    <totalValue>5.14E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x32</accountCode>
+    <assetType>P</assetType>
+    <label>Bounty Hunter, The</label>
+    <quarterlyDividend>37512.76</quarterlyDividend>
+    <baseRateOfReturn>5.96</baseRateOfReturn>
     <baseOmegaMeasure>0.93</baseOmegaMeasure>
-    <TotalValue>7788000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x33</Code>
-    <P>P</P>
-    <Label>Living Wake, The</Label>
-    <QuarterlyDividend>366285.46</QuarterlyDividend>
-    <BaseRateOfReturn>06.95</BaseRateOfReturn>
+    <totalValue>7.788E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x33</accountCode>
+    <assetType>P</assetType>
+    <label>Living Wake, The</label>
+    <quarterlyDividend>366285.46</quarterlyDividend>
+    <baseRateOfReturn>6.95</baseRateOfReturn>
     <baseOmegaMeasure>0.17</baseOmegaMeasure>
-    <TotalValue>6662000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x34</Code>
-    <P>P</P>
-    <Label>Blood on the Sun</Label>
-    <QuarterlyDividend>205279.87</QuarterlyDividend>
-    <BaseRateOfReturn>00.37</BaseRateOfReturn>
+    <totalValue>6.662E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x34</accountCode>
+    <assetType>P</assetType>
+    <label>Blood on the Sun</label>
+    <quarterlyDividend>205279.87</quarterlyDividend>
+    <baseRateOfReturn>0.37</baseRateOfReturn>
     <baseOmegaMeasure>0.31</baseOmegaMeasure>
-    <TotalValue>8453000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x35</Code>
-    <P>P</P>
-    <Label>World Traveler</Label>
-    <QuarterlyDividend>416934.52</QuarterlyDividend>
-    <BaseRateOfReturn>01.82</BaseRateOfReturn>
+    <totalValue>8.453E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x35</accountCode>
+    <assetType>P</assetType>
+    <label>World Traveler</label>
+    <quarterlyDividend>416934.52</quarterlyDividend>
+    <baseRateOfReturn>1.82</baseRateOfReturn>
     <baseOmegaMeasure>0.22</baseOmegaMeasure>
-    <TotalValue>6172000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x36</Code>
-    <P>P</P>
-    <Label>Brothers Rico, The</Label>
-    <QuarterlyDividend>203497.16</QuarterlyDividend>
-    <BaseRateOfReturn>08.36</BaseRateOfReturn>
+    <totalValue>6.172E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x36</accountCode>
+    <assetType>P</assetType>
+    <label>Brothers Rico, The</label>
+    <quarterlyDividend>203497.16</quarterlyDividend>
+    <baseRateOfReturn>8.36</baseRateOfReturn>
     <baseOmegaMeasure>0.16</baseOmegaMeasure>
-    <TotalValue>2511000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x37</Code>
-    <P>P</P>
-    <Label>Vampire Effect (The Twins Effect) (Chin gei bin)</Label>
-    <QuarterlyDividend>681174.08</QuarterlyDividend>
-    <BaseRateOfReturn>06.43</BaseRateOfReturn>
+    <totalValue>2.511E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x37</accountCode>
+    <assetType>P</assetType>
+    <label>Vampire Effect (The Twins Effect) (Chin gei bin)</label>
+    <quarterlyDividend>681174.08</quarterlyDividend>
+    <baseRateOfReturn>6.43</baseRateOfReturn>
     <baseOmegaMeasure>0.65</baseOmegaMeasure>
-    <TotalValue>8134000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x38</Code>
-    <P>P</P>
-    <Label>Curse of Chucky (Child&#x27;s Play 6)</Label>
-    <QuarterlyDividend>814386.29</QuarterlyDividend>
-    <BaseRateOfReturn>05.84</BaseRateOfReturn>
-    <baseOmegaMeasure>0.49</baseOmegaMeasure>
-    <TotalValue>7963000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x39</Code>
-    <P>P</P>
-    <Label>Battlestar Galactica</Label>
-    <QuarterlyDividend>521248.22</QuarterlyDividend>
-    <BaseRateOfReturn>05.63</BaseRateOfReturn>
-    <baseOmegaMeasure>0.42</baseOmegaMeasure>
-    <TotalValue>8621000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x3a</Code>
-    <P>P</P>
-    <Label>Bullets Don&#x27;t Argue</Label>
-    <QuarterlyDividend>964918.1</QuarterlyDividend>
-    <BaseRateOfReturn>03.97</BaseRateOfReturn>
-    <baseOmegaMeasure>0.01</baseOmegaMeasure>
-    <TotalValue>8966000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x3b</Code>
-    <P>P</P>
-    <Label>Candles on Bay Street</Label>
-    <QuarterlyDividend>353952.15</QuarterlyDividend>
-    <BaseRateOfReturn>09.75</BaseRateOfReturn>
-    <baseOmegaMeasure>0.08</baseOmegaMeasure>
-    <TotalValue>9339000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x3c</Code>
-    <P>P</P>
-    <Label>Not Cool</Label>
-    <QuarterlyDividend>315731.38</QuarterlyDividend>
-    <BaseRateOfReturn>06.11</BaseRateOfReturn>
-    <baseOmegaMeasure>0.9</baseOmegaMeasure>
-    <TotalValue>8598000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x3d</Code>
-    <P>P</P>
-    <Label>Seven Invisible Men (Septyni nematomi zmones)</Label>
-    <QuarterlyDividend>713651.34</QuarterlyDividend>
-    <BaseRateOfReturn>06.80</BaseRateOfReturn>
+    <totalValue>8134000.0</totalValue>
+  </Private Investment>
+</ListOfAssets><?xml version="1.0" encoding="UTF-8" ?>
+<ListOfAssets>
+  <Deposit Account>
+    <accountCode>00x1</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.55</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x2</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
+    <apr>0.024</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x3</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.31</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x4</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.95</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x5</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.18</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x6</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
+    <apr>0.17</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x7</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.87</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x8</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.83</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x9</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
+    <apr>0.36</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xa</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.75</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xb</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.052</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xc</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
+    <apr>0.052</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xd</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.31</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xe</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.57</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xf</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
+    <apr>0.42</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x10</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
+    <apr>0.55</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x11</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
+    <apr>0.17</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x12</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.48</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x13</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.23</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x14</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
+    <apr>0.68</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x15</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.18</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x16</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.77</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x17</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.034</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x18</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.57</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x19</accountCode>
+    <assetType>D</assetType>
+    <label>Piggy bank</label>
+    <apr>0.069</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1a</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
+    <apr>0.73</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1b</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.95</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1c</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.36</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1d</accountCode>
+    <assetType>D</assetType>
+    <label>Piggy bank</label>
+    <apr>0.24</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1e</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.45</apr>
+  </Deposit Account>
+  <Stock>
+    <accountCode>0x21</accountCode>
+    <assetType>S</assetType>
+    <label>Zafgen, Inc.</label>
+    <quarterlyDividend>21.57</quarterlyDividend>
+    <baseRateOfReturn>0.9</baseRateOfReturn>
+    <betaMeasure>0.45</betaMeasure>
+    <sharePrice>42.13</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x22</accountCode>
+    <assetType>S</assetType>
+    <label>Helix Energy Solutions Group, Inc.</label>
+    <quarterlyDividend>69.75</quarterlyDividend>
+    <baseRateOfReturn>8.76</baseRateOfReturn>
+    <betaMeasure>0.52</betaMeasure>
+    <sharePrice>20.88</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x23</accountCode>
+    <assetType>S</assetType>
+    <label>iShares MSCI Europe Financials Sector Index Fund</label>
+    <quarterlyDividend>66.73</quarterlyDividend>
+    <baseRateOfReturn>8.57</baseRateOfReturn>
+    <betaMeasure>0.32</betaMeasure>
+    <sharePrice>9.65</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x24</accountCode>
+    <assetType>S</assetType>
+    <label>Special Opportunities Fund Inc.</label>
+    <quarterlyDividend>55.91</quarterlyDividend>
+    <baseRateOfReturn>6.04</baseRateOfReturn>
+    <betaMeasure>0.28</betaMeasure>
+    <sharePrice>18.9</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x25</accountCode>
+    <assetType>S</assetType>
+    <label>Zions Bancorporation</label>
+    <quarterlyDividend>91.96</quarterlyDividend>
+    <baseRateOfReturn>8.25</baseRateOfReturn>
+    <betaMeasure>0.19</betaMeasure>
+    <sharePrice>48.37</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x26</accountCode>
+    <assetType>S</assetType>
+    <label>Exa Corporation</label>
+    <quarterlyDividend>65.97</quarterlyDividend>
+    <baseRateOfReturn>1.97</baseRateOfReturn>
+    <betaMeasure>0.65</betaMeasure>
+    <sharePrice>76.25</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x27</accountCode>
+    <assetType>S</assetType>
+    <label>Resource Capital Corp.</label>
+    <quarterlyDividend>54.2</quarterlyDividend>
+    <baseRateOfReturn>1.32</baseRateOfReturn>
+    <betaMeasure>0.56</betaMeasure>
+    <sharePrice>5.09</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x28</accountCode>
+    <assetType>S</assetType>
+    <label>Aircastle Limited</label>
+    <quarterlyDividend>12.72</quarterlyDividend>
+    <baseRateOfReturn>4.61</baseRateOfReturn>
+    <betaMeasure>0.62</betaMeasure>
+    <sharePrice>31.46</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x29</accountCode>
+    <assetType>S</assetType>
+    <label>Dillards, Inc.</label>
+    <quarterlyDividend>64.12</quarterlyDividend>
+    <baseRateOfReturn>7.88</baseRateOfReturn>
+    <betaMeasure>0.92</betaMeasure>
+    <sharePrice>46.65</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2a</accountCode>
+    <assetType>S</assetType>
+    <label>Regulus Therapeutics Inc.</label>
+    <quarterlyDividend>62.19</quarterlyDividend>
+    <baseRateOfReturn>7.68</baseRateOfReturn>
+    <betaMeasure>0.69</betaMeasure>
+    <sharePrice>41.68</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2b</accountCode>
+    <assetType>S</assetType>
+    <label>MFS Charter Income Trust</label>
+    <quarterlyDividend>0.98</quarterlyDividend>
+    <baseRateOfReturn>0.09</baseRateOfReturn>
+    <betaMeasure>0.34</betaMeasure>
+    <sharePrice>84.0</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2c</accountCode>
+    <assetType>S</assetType>
+    <label>Nuveen Ohio Quality Municipal Income Fund</label>
+    <quarterlyDividend>19.27</quarterlyDividend>
+    <baseRateOfReturn>0.19</baseRateOfReturn>
+    <betaMeasure>0.18</betaMeasure>
+    <sharePrice>31.34</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2d</accountCode>
+    <assetType>S</assetType>
+    <label>NCI, Inc.</label>
+    <quarterlyDividend>96.85</quarterlyDividend>
+    <baseRateOfReturn>2.35</baseRateOfReturn>
+    <betaMeasure>0.64</betaMeasure>
+    <sharePrice>65.66</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2e</accountCode>
+    <assetType>S</assetType>
+    <label>Merus N.V.</label>
+    <quarterlyDividend>16.67</quarterlyDividend>
+    <baseRateOfReturn>1.57</baseRateOfReturn>
+    <betaMeasure>0.83</betaMeasure>
+    <sharePrice>97.51</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2f</accountCode>
+    <assetType>S</assetType>
+    <label>BBVA Banco Frances S.A.</label>
+    <quarterlyDividend>12.37</quarterlyDividend>
+    <baseRateOfReturn>3.79</baseRateOfReturn>
+    <betaMeasure>0.37</betaMeasure>
+    <sharePrice>79.27</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x30</accountCode>
+    <assetType>S</assetType>
+    <label>Paylocity Holding Corporation</label>
+    <quarterlyDividend>98.15</quarterlyDividend>
+    <baseRateOfReturn>0.21</baseRateOfReturn>
+    <betaMeasure>0.18</betaMeasure>
+    <sharePrice>44.21</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x31</accountCode>
+    <assetType>S</assetType>
+    <label>Duke Energy Corporation</label>
+    <quarterlyDividend>28.71</quarterlyDividend>
+    <baseRateOfReturn>6.42</baseRateOfReturn>
+    <betaMeasure>0.15</betaMeasure>
+    <sharePrice>21.24</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x32</accountCode>
+    <assetType>S</assetType>
+    <label>Destination XL Group, Inc.</label>
+    <quarterlyDividend>25.58</quarterlyDividend>
+    <baseRateOfReturn>3.76</baseRateOfReturn>
+    <betaMeasure>0.85</betaMeasure>
+    <sharePrice>9.31</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x33</accountCode>
+    <assetType>S</assetType>
+    <label>Arena Pharmaceuticals, Inc.</label>
+    <quarterlyDividend>95.57</quarterlyDividend>
+    <baseRateOfReturn>8.4</baseRateOfReturn>
+    <betaMeasure>0.44</betaMeasure>
+    <sharePrice>80.08</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x34</accountCode>
+    <assetType>S</assetType>
+    <label>KKR and Co. L.P.</label>
+    <quarterlyDividend>31.9</quarterlyDividend>
+    <baseRateOfReturn>0.37</baseRateOfReturn>
+    <betaMeasure>0.26</betaMeasure>
+    <sharePrice>72.4</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x35</accountCode>
+    <assetType>S</assetType>
+    <label>Kirby Corporation</label>
+    <quarterlyDividend>16.12</quarterlyDividend>
+    <baseRateOfReturn>0.11</baseRateOfReturn>
+    <betaMeasure>0.6</betaMeasure>
+    <sharePrice>86.16</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x36</accountCode>
+    <assetType>S</assetType>
+    <label>VictoryShares US 500 Enhanced Volatility Wtd ETF</label>
+    <quarterlyDividend>70.81</quarterlyDividend>
+    <baseRateOfReturn>4.51</baseRateOfReturn>
+    <betaMeasure>0.63</betaMeasure>
+    <sharePrice>25.51</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x37</accountCode>
+    <assetType>S</assetType>
+    <label>American Axle and Manufacturing Holdings, Inc.</label>
+    <quarterlyDividend>33.25</quarterlyDividend>
+    <baseRateOfReturn>9.02</baseRateOfReturn>
+    <betaMeasure>0.26</betaMeasure>
+    <sharePrice>57.41</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x38</accountCode>
+    <assetType>S</assetType>
+    <label>Horace Mann Educators Corporation</label>
+    <quarterlyDividend>41.7</quarterlyDividend>
+    <baseRateOfReturn>7.16</baseRateOfReturn>
+    <betaMeasure>0.73</betaMeasure>
+    <sharePrice>81.41</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x39</accountCode>
+    <assetType>S</assetType>
+    <label>Impax Laboratories, Inc.</label>
+    <quarterlyDividend>94.14</quarterlyDividend>
+    <baseRateOfReturn>0.34</baseRateOfReturn>
+    <betaMeasure>0.41</betaMeasure>
+    <sharePrice>5.4</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3a</accountCode>
+    <assetType>S</assetType>
+    <label>Telefonica SA</label>
+    <quarterlyDividend>80.21</quarterlyDividend>
+    <baseRateOfReturn>5.97</baseRateOfReturn>
+    <betaMeasure>0.33</betaMeasure>
+    <sharePrice>13.0</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3b</accountCode>
+    <assetType>S</assetType>
+    <label>Fogo de Chao, Inc.</label>
+    <quarterlyDividend>17.37</quarterlyDividend>
+    <baseRateOfReturn>3.44</baseRateOfReturn>
+    <betaMeasure>0.21</betaMeasure>
+    <sharePrice>65.12</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3c</accountCode>
+    <assetType>S</assetType>
+    <label>Guggenheim Enhanced Equity Income Fund</label>
+    <quarterlyDividend>68.79</quarterlyDividend>
+    <baseRateOfReturn>3.29</baseRateOfReturn>
+    <betaMeasure>0.24</betaMeasure>
+    <sharePrice>43.11</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3d</accountCode>
+    <assetType>S</assetType>
+    <label>Lehman ABS Corporation</label>
+    <quarterlyDividend>12.06</quarterlyDividend>
+    <baseRateOfReturn>1.67</baseRateOfReturn>
+    <betaMeasure>0.58</betaMeasure>
+    <sharePrice>96.8</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3e</accountCode>
+    <assetType>S</assetType>
+    <label>Safe Bulkers, Inc</label>
+    <quarterlyDividend>52.44</quarterlyDividend>
+    <baseRateOfReturn>6.1</baseRateOfReturn>
+    <betaMeasure>0.07</betaMeasure>
+    <sharePrice>77.54</sharePrice>
+  </Stock>
+  <Private Investment>
+    <accountCode>0x21</accountCode>
+    <assetType>P</assetType>
+    <label>Sabrina</label>
+    <quarterlyDividend>845742.36</quarterlyDividend>
+    <baseRateOfReturn>7.24</baseRateOfReturn>
+    <baseOmegaMeasure>0.65</baseOmegaMeasure>
+    <totalValue>8.139E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x22</accountCode>
+    <assetType>P</assetType>
+    <label>It is Alive 2: It Lives Again</label>
+    <quarterlyDividend>916867.56</quarterlyDividend>
+    <baseRateOfReturn>7.48</baseRateOfReturn>
+    <baseOmegaMeasure>0.83</baseOmegaMeasure>
+    <totalValue>8.423E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x23</accountCode>
+    <assetType>P</assetType>
+    <label>Costa Brava</label>
+    <quarterlyDividend>766192.86</quarterlyDividend>
+    <baseRateOfReturn>8.82</baseRateOfReturn>
+    <baseOmegaMeasure>0.45</baseOmegaMeasure>
+    <totalValue>6.92E8</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x24</accountCode>
+    <assetType>P</assetType>
+    <label>Carpool</label>
+    <quarterlyDividend>184206.09</quarterlyDividend>
+    <baseRateOfReturn>7.9</baseRateOfReturn>
+    <baseOmegaMeasure>0.23</baseOmegaMeasure>
+    <totalValue>1.117E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x25</accountCode>
+    <assetType>P</assetType>
+    <label>Yentl</label>
+    <quarterlyDividend>469621.31</quarterlyDividend>
+    <baseRateOfReturn>6.5</baseRateOfReturn>
+    <baseOmegaMeasure>0.75</baseOmegaMeasure>
+    <totalValue>8.357E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x26</accountCode>
+    <assetType>P</assetType>
+    <label>Real Men</label>
+    <quarterlyDividend>82331.41</quarterlyDividend>
+    <baseRateOfReturn>1.32</baseRateOfReturn>
+    <baseOmegaMeasure>0.54</baseOmegaMeasure>
+    <totalValue>4.322E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x27</accountCode>
+    <assetType>P</assetType>
+    <label>Monkey Tail, A (Chateau des singes, Le)</label>
+    <quarterlyDividend>733414.36</quarterlyDividend>
+    <baseRateOfReturn>3.04</baseRateOfReturn>
+    <baseOmegaMeasure>0.54</baseOmegaMeasure>
+    <totalValue>2.794E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x28</accountCode>
+    <assetType>P</assetType>
+    <label>Across 110th Street</label>
+    <quarterlyDividend>204681.15</quarterlyDividend>
+    <baseRateOfReturn>8.6</baseRateOfReturn>
+    <baseOmegaMeasure>0.82</baseOmegaMeasure>
+    <totalValue>7.973E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x29</accountCode>
+    <assetType>P</assetType>
+    <label>Dogs of War, The</label>
+    <quarterlyDividend>382382.85</quarterlyDividend>
+    <baseRateOfReturn>0.17</baseRateOfReturn>
+    <baseOmegaMeasure>0.92</baseOmegaMeasure>
+    <totalValue>5.892E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2a</accountCode>
+    <assetType>P</assetType>
+    <label>Destiny in Space</label>
+    <quarterlyDividend>941199.96</quarterlyDividend>
+    <baseRateOfReturn>7.12</baseRateOfReturn>
+    <baseOmegaMeasure>0.92</baseOmegaMeasure>
+    <totalValue>2.114E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2b</accountCode>
+    <assetType>P</assetType>
+    <label>Day of the Outlaw</label>
+    <quarterlyDividend>948127.22</quarterlyDividend>
+    <baseRateOfReturn>6.11</baseRateOfReturn>
+    <baseOmegaMeasure>0.93</baseOmegaMeasure>
+    <totalValue>6.043E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2c</accountCode>
+    <assetType>P</assetType>
+    <label>Buffet froid</label>
+    <quarterlyDividend>172130.06</quarterlyDividend>
+    <baseRateOfReturn>3.98</baseRateOfReturn>
+    <baseOmegaMeasure>0.05</baseOmegaMeasure>
+    <totalValue>9.908E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2d</accountCode>
+    <assetType>P</assetType>
+    <label>Quiet American, The</label>
+    <quarterlyDividend>568513.32</quarterlyDividend>
+    <baseRateOfReturn>5.37</baseRateOfReturn>
     <baseOmegaMeasure>0.58</baseOmegaMeasure>
-    <TotalValue>3772000000</TotalValue>
-  </row>
-  <row>
-    <Code>0x3e</Code>
-    <P>P</P>
-    <Label>Cold Fever (Á köldum klaka)</Label>
-    <QuarterlyDividend>102399.11</QuarterlyDividend>
-    <BaseRateOfReturn>01.12</BaseRateOfReturn>
-    <baseOmegaMeasure>0.01</baseOmegaMeasure>
-    <TotalValue>4785000000</TotalValue>
-  </row>
-</root>
+    <totalValue>9.595E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2e</accountCode>
+    <assetType>P</assetType>
+    <label>Excalibur</label>
+    <quarterlyDividend>524096.51</quarterlyDividend>
+    <baseRateOfReturn>4.93</baseRateOfReturn>
+    <baseOmegaMeasure>0.33</baseOmegaMeasure>
+    <totalValue>5.417E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2f</accountCode>
+    <assetType>P</assetType>
+    <label>Forever Yours (Ikuisesti sinun)</label>
+    <quarterlyDividend>570061.42</quarterlyDividend>
+    <baseRateOfReturn>2.04</baseRateOfReturn>
+    <baseOmegaMeasure>0.12</baseOmegaMeasure>
+    <totalValue>3.94E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x30</accountCode>
+    <assetType>P</assetType>
+    <label>The First Men in the Moon</label>
+    <quarterlyDividend>978699.36</quarterlyDividend>
+    <baseRateOfReturn>8.37</baseRateOfReturn>
+    <baseOmegaMeasure>0.55</baseOmegaMeasure>
+    <totalValue>7.718E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x31</accountCode>
+    <assetType>P</assetType>
+    <label>Bravo Two Zero </label>
+    <quarterlyDividend>957871.72</quarterlyDividend>
+    <baseRateOfReturn>0.75</baseRateOfReturn>
+    <baseOmegaMeasure>0.52</baseOmegaMeasure>
+    <totalValue>5.14E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x32</accountCode>
+    <assetType>P</assetType>
+    <label>Bounty Hunter, The</label>
+    <quarterlyDividend>37512.76</quarterlyDividend>
+    <baseRateOfReturn>5.96</baseRateOfReturn>
+    <baseOmegaMeasure>0.93</baseOmegaMeasure>
+    <totalValue>7.788E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x33</accountCode>
+    <assetType>P</assetType>
+    <label>Living Wake, The</label>
+    <quarterlyDividend>366285.46</quarterlyDividend>
+    <baseRateOfReturn>6.95</baseRateOfReturn>
+    <baseOmegaMeasure>0.17</baseOmegaMeasure>
+    <totalValue>6.662E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x34</accountCode>
+    <assetType>P</assetType>
+    <label>Blood on the Sun</label>
+    <quarterlyDividend>205279.87</quarterlyDividend>
+    <baseRateOfReturn>0.37</baseRateOfReturn>
+    <baseOmegaMeasure>0.31</baseOmegaMeasure>
+    <totalValue>8.453E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x35</accountCode>
+    <assetType>P</assetType>
+    <label>World Traveler</label>
+    <quarterlyDividend>416934.52</quarterlyDividend>
+    <baseRateOfReturn>1.82</baseRateOfReturn>
+    <baseOmegaMeasure>0.22</baseOmegaMeasure>
+    <totalValue>6.172E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x36</accountCode>
+    <assetType>P</assetType>
+    <label>Brothers Rico, The</label>
+    <quarterlyDividend>203497.16</quarterlyDividend>
+    <baseRateOfReturn>8.36</baseRateOfReturn>
+    <baseOmegaMeasure>0.16</baseOmegaMeasure>
+    <totalValue>2.511E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x37</accountCode>
+    <assetType>P</assetType>
+    <label>Vampire Effect (The Twins Effect) (Chin gei bin)</label>
+    <quarterlyDividend>681174.08</quarterlyDividend>
+    <baseRateOfReturn>6.43</baseRateOfReturn>
+    <baseOmegaMeasure>0.65</baseOmegaMeasure>
+    <totalValue>8134000.0</totalValue>
+  </Private Investment>
+</ListOfAssets><?xml version="1.0" encoding="UTF-8" ?>
+<ListOfAssets>
+  <Deposit Account>
+    <accountCode>00x1</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.55</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x2</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
+    <apr>0.024</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x3</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.31</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x4</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.95</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x5</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.18</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x6</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
+    <apr>0.17</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x7</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.87</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x8</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.83</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00x9</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
+    <apr>0.36</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xa</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.75</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xb</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.052</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xc</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
+    <apr>0.052</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xd</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.31</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xe</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.57</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>00xf</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
+    <apr>0.42</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x10</accountCode>
+    <assetType>D</assetType>
+    <label>Monkey Banana storage account</label>
+    <apr>0.55</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x11</accountCode>
+    <assetType>D</assetType>
+    <label>90 year CD</label>
+    <apr>0.17</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x12</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.48</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x13</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.23</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x14</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
+    <apr>0.68</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x15</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.18</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x16</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.77</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x17</accountCode>
+    <assetType>D</assetType>
+    <label>Money Market banana account</label>
+    <apr>0.034</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x18</accountCode>
+    <assetType>D</assetType>
+    <label>3 year CD</label>
+    <apr>0.57</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x19</accountCode>
+    <assetType>D</assetType>
+    <label>Piggy bank</label>
+    <apr>0.069</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1a</accountCode>
+    <assetType>D</assetType>
+    <label>6 month CD</label>
+    <apr>0.73</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1b</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.95</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1c</accountCode>
+    <assetType>D</assetType>
+    <label>Food Deposit Account</label>
+    <apr>0.36</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1d</accountCode>
+    <assetType>D</assetType>
+    <label>Piggy bank</label>
+    <apr>0.24</apr>
+  </Deposit Account>
+  <Deposit Account>
+    <accountCode>0x1e</accountCode>
+    <assetType>D</assetType>
+    <label>Savings account</label>
+    <apr>0.45</apr>
+  </Deposit Account>
+  <Stock>
+    <accountCode>0x21</accountCode>
+    <assetType>S</assetType>
+    <label>Zafgen, Inc.</label>
+    <quarterlyDividend>21.57</quarterlyDividend>
+    <baseRateOfReturn>0.9</baseRateOfReturn>
+    <betaMeasure>0.45</betaMeasure>
+    <sharePrice>42.13</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x22</accountCode>
+    <assetType>S</assetType>
+    <label>Helix Energy Solutions Group, Inc.</label>
+    <quarterlyDividend>69.75</quarterlyDividend>
+    <baseRateOfReturn>8.76</baseRateOfReturn>
+    <betaMeasure>0.52</betaMeasure>
+    <sharePrice>20.88</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x23</accountCode>
+    <assetType>S</assetType>
+    <label>iShares MSCI Europe Financials Sector Index Fund</label>
+    <quarterlyDividend>66.73</quarterlyDividend>
+    <baseRateOfReturn>8.57</baseRateOfReturn>
+    <betaMeasure>0.32</betaMeasure>
+    <sharePrice>9.65</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x24</accountCode>
+    <assetType>S</assetType>
+    <label>Special Opportunities Fund Inc.</label>
+    <quarterlyDividend>55.91</quarterlyDividend>
+    <baseRateOfReturn>6.04</baseRateOfReturn>
+    <betaMeasure>0.28</betaMeasure>
+    <sharePrice>18.9</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x25</accountCode>
+    <assetType>S</assetType>
+    <label>Zions Bancorporation</label>
+    <quarterlyDividend>91.96</quarterlyDividend>
+    <baseRateOfReturn>8.25</baseRateOfReturn>
+    <betaMeasure>0.19</betaMeasure>
+    <sharePrice>48.37</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x26</accountCode>
+    <assetType>S</assetType>
+    <label>Exa Corporation</label>
+    <quarterlyDividend>65.97</quarterlyDividend>
+    <baseRateOfReturn>1.97</baseRateOfReturn>
+    <betaMeasure>0.65</betaMeasure>
+    <sharePrice>76.25</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x27</accountCode>
+    <assetType>S</assetType>
+    <label>Resource Capital Corp.</label>
+    <quarterlyDividend>54.2</quarterlyDividend>
+    <baseRateOfReturn>1.32</baseRateOfReturn>
+    <betaMeasure>0.56</betaMeasure>
+    <sharePrice>5.09</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x28</accountCode>
+    <assetType>S</assetType>
+    <label>Aircastle Limited</label>
+    <quarterlyDividend>12.72</quarterlyDividend>
+    <baseRateOfReturn>4.61</baseRateOfReturn>
+    <betaMeasure>0.62</betaMeasure>
+    <sharePrice>31.46</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x29</accountCode>
+    <assetType>S</assetType>
+    <label>Dillards, Inc.</label>
+    <quarterlyDividend>64.12</quarterlyDividend>
+    <baseRateOfReturn>7.88</baseRateOfReturn>
+    <betaMeasure>0.92</betaMeasure>
+    <sharePrice>46.65</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2a</accountCode>
+    <assetType>S</assetType>
+    <label>Regulus Therapeutics Inc.</label>
+    <quarterlyDividend>62.19</quarterlyDividend>
+    <baseRateOfReturn>7.68</baseRateOfReturn>
+    <betaMeasure>0.69</betaMeasure>
+    <sharePrice>41.68</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2b</accountCode>
+    <assetType>S</assetType>
+    <label>MFS Charter Income Trust</label>
+    <quarterlyDividend>0.98</quarterlyDividend>
+    <baseRateOfReturn>0.09</baseRateOfReturn>
+    <betaMeasure>0.34</betaMeasure>
+    <sharePrice>84.0</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2c</accountCode>
+    <assetType>S</assetType>
+    <label>Nuveen Ohio Quality Municipal Income Fund</label>
+    <quarterlyDividend>19.27</quarterlyDividend>
+    <baseRateOfReturn>0.19</baseRateOfReturn>
+    <betaMeasure>0.18</betaMeasure>
+    <sharePrice>31.34</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2d</accountCode>
+    <assetType>S</assetType>
+    <label>NCI, Inc.</label>
+    <quarterlyDividend>96.85</quarterlyDividend>
+    <baseRateOfReturn>2.35</baseRateOfReturn>
+    <betaMeasure>0.64</betaMeasure>
+    <sharePrice>65.66</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2e</accountCode>
+    <assetType>S</assetType>
+    <label>Merus N.V.</label>
+    <quarterlyDividend>16.67</quarterlyDividend>
+    <baseRateOfReturn>1.57</baseRateOfReturn>
+    <betaMeasure>0.83</betaMeasure>
+    <sharePrice>97.51</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x2f</accountCode>
+    <assetType>S</assetType>
+    <label>BBVA Banco Frances S.A.</label>
+    <quarterlyDividend>12.37</quarterlyDividend>
+    <baseRateOfReturn>3.79</baseRateOfReturn>
+    <betaMeasure>0.37</betaMeasure>
+    <sharePrice>79.27</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x30</accountCode>
+    <assetType>S</assetType>
+    <label>Paylocity Holding Corporation</label>
+    <quarterlyDividend>98.15</quarterlyDividend>
+    <baseRateOfReturn>0.21</baseRateOfReturn>
+    <betaMeasure>0.18</betaMeasure>
+    <sharePrice>44.21</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x31</accountCode>
+    <assetType>S</assetType>
+    <label>Duke Energy Corporation</label>
+    <quarterlyDividend>28.71</quarterlyDividend>
+    <baseRateOfReturn>6.42</baseRateOfReturn>
+    <betaMeasure>0.15</betaMeasure>
+    <sharePrice>21.24</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x32</accountCode>
+    <assetType>S</assetType>
+    <label>Destination XL Group, Inc.</label>
+    <quarterlyDividend>25.58</quarterlyDividend>
+    <baseRateOfReturn>3.76</baseRateOfReturn>
+    <betaMeasure>0.85</betaMeasure>
+    <sharePrice>9.31</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x33</accountCode>
+    <assetType>S</assetType>
+    <label>Arena Pharmaceuticals, Inc.</label>
+    <quarterlyDividend>95.57</quarterlyDividend>
+    <baseRateOfReturn>8.4</baseRateOfReturn>
+    <betaMeasure>0.44</betaMeasure>
+    <sharePrice>80.08</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x34</accountCode>
+    <assetType>S</assetType>
+    <label>KKR and Co. L.P.</label>
+    <quarterlyDividend>31.9</quarterlyDividend>
+    <baseRateOfReturn>0.37</baseRateOfReturn>
+    <betaMeasure>0.26</betaMeasure>
+    <sharePrice>72.4</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x35</accountCode>
+    <assetType>S</assetType>
+    <label>Kirby Corporation</label>
+    <quarterlyDividend>16.12</quarterlyDividend>
+    <baseRateOfReturn>0.11</baseRateOfReturn>
+    <betaMeasure>0.6</betaMeasure>
+    <sharePrice>86.16</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x36</accountCode>
+    <assetType>S</assetType>
+    <label>VictoryShares US 500 Enhanced Volatility Wtd ETF</label>
+    <quarterlyDividend>70.81</quarterlyDividend>
+    <baseRateOfReturn>4.51</baseRateOfReturn>
+    <betaMeasure>0.63</betaMeasure>
+    <sharePrice>25.51</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x37</accountCode>
+    <assetType>S</assetType>
+    <label>American Axle and Manufacturing Holdings, Inc.</label>
+    <quarterlyDividend>33.25</quarterlyDividend>
+    <baseRateOfReturn>9.02</baseRateOfReturn>
+    <betaMeasure>0.26</betaMeasure>
+    <sharePrice>57.41</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x38</accountCode>
+    <assetType>S</assetType>
+    <label>Horace Mann Educators Corporation</label>
+    <quarterlyDividend>41.7</quarterlyDividend>
+    <baseRateOfReturn>7.16</baseRateOfReturn>
+    <betaMeasure>0.73</betaMeasure>
+    <sharePrice>81.41</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x39</accountCode>
+    <assetType>S</assetType>
+    <label>Impax Laboratories, Inc.</label>
+    <quarterlyDividend>94.14</quarterlyDividend>
+    <baseRateOfReturn>0.34</baseRateOfReturn>
+    <betaMeasure>0.41</betaMeasure>
+    <sharePrice>5.4</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3a</accountCode>
+    <assetType>S</assetType>
+    <label>Telefonica SA</label>
+    <quarterlyDividend>80.21</quarterlyDividend>
+    <baseRateOfReturn>5.97</baseRateOfReturn>
+    <betaMeasure>0.33</betaMeasure>
+    <sharePrice>13.0</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3b</accountCode>
+    <assetType>S</assetType>
+    <label>Fogo de Chao, Inc.</label>
+    <quarterlyDividend>17.37</quarterlyDividend>
+    <baseRateOfReturn>3.44</baseRateOfReturn>
+    <betaMeasure>0.21</betaMeasure>
+    <sharePrice>65.12</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3c</accountCode>
+    <assetType>S</assetType>
+    <label>Guggenheim Enhanced Equity Income Fund</label>
+    <quarterlyDividend>68.79</quarterlyDividend>
+    <baseRateOfReturn>3.29</baseRateOfReturn>
+    <betaMeasure>0.24</betaMeasure>
+    <sharePrice>43.11</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3d</accountCode>
+    <assetType>S</assetType>
+    <label>Lehman ABS Corporation</label>
+    <quarterlyDividend>12.06</quarterlyDividend>
+    <baseRateOfReturn>1.67</baseRateOfReturn>
+    <betaMeasure>0.58</betaMeasure>
+    <sharePrice>96.8</sharePrice>
+  </Stock>
+  <Stock>
+    <accountCode>0x3e</accountCode>
+    <assetType>S</assetType>
+    <label>Safe Bulkers, Inc</label>
+    <quarterlyDividend>52.44</quarterlyDividend>
+    <baseRateOfReturn>6.1</baseRateOfReturn>
+    <betaMeasure>0.07</betaMeasure>
+    <sharePrice>77.54</sharePrice>
+  </Stock>
+  <Private Investment>
+    <accountCode>0x21</accountCode>
+    <assetType>P</assetType>
+    <label>Sabrina</label>
+    <quarterlyDividend>845742.36</quarterlyDividend>
+    <baseRateOfReturn>7.24</baseRateOfReturn>
+    <baseOmegaMeasure>0.65</baseOmegaMeasure>
+    <totalValue>8.139E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x22</accountCode>
+    <assetType>P</assetType>
+    <label>It is Alive 2: It Lives Again</label>
+    <quarterlyDividend>916867.56</quarterlyDividend>
+    <baseRateOfReturn>7.48</baseRateOfReturn>
+    <baseOmegaMeasure>0.83</baseOmegaMeasure>
+    <totalValue>8.423E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x23</accountCode>
+    <assetType>P</assetType>
+    <label>Costa Brava</label>
+    <quarterlyDividend>766192.86</quarterlyDividend>
+    <baseRateOfReturn>8.82</baseRateOfReturn>
+    <baseOmegaMeasure>0.45</baseOmegaMeasure>
+    <totalValue>6.92E8</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x24</accountCode>
+    <assetType>P</assetType>
+    <label>Carpool</label>
+    <quarterlyDividend>184206.09</quarterlyDividend>
+    <baseRateOfReturn>7.9</baseRateOfReturn>
+    <baseOmegaMeasure>0.23</baseOmegaMeasure>
+    <totalValue>1.117E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x25</accountCode>
+    <assetType>P</assetType>
+    <label>Yentl</label>
+    <quarterlyDividend>469621.31</quarterlyDividend>
+    <baseRateOfReturn>6.5</baseRateOfReturn>
+    <baseOmegaMeasure>0.75</baseOmegaMeasure>
+    <totalValue>8.357E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x26</accountCode>
+    <assetType>P</assetType>
+    <label>Real Men</label>
+    <quarterlyDividend>82331.41</quarterlyDividend>
+    <baseRateOfReturn>1.32</baseRateOfReturn>
+    <baseOmegaMeasure>0.54</baseOmegaMeasure>
+    <totalValue>4.322E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x27</accountCode>
+    <assetType>P</assetType>
+    <label>Monkey Tail, A (Chateau des singes, Le)</label>
+    <quarterlyDividend>733414.36</quarterlyDividend>
+    <baseRateOfReturn>3.04</baseRateOfReturn>
+    <baseOmegaMeasure>0.54</baseOmegaMeasure>
+    <totalValue>2.794E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x28</accountCode>
+    <assetType>P</assetType>
+    <label>Across 110th Street</label>
+    <quarterlyDividend>204681.15</quarterlyDividend>
+    <baseRateOfReturn>8.6</baseRateOfReturn>
+    <baseOmegaMeasure>0.82</baseOmegaMeasure>
+    <totalValue>7.973E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x29</accountCode>
+    <assetType>P</assetType>
+    <label>Dogs of War, The</label>
+    <quarterlyDividend>382382.85</quarterlyDividend>
+    <baseRateOfReturn>0.17</baseRateOfReturn>
+    <baseOmegaMeasure>0.92</baseOmegaMeasure>
+    <totalValue>5.892E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2a</accountCode>
+    <assetType>P</assetType>
+    <label>Destiny in Space</label>
+    <quarterlyDividend>941199.96</quarterlyDividend>
+    <baseRateOfReturn>7.12</baseRateOfReturn>
+    <baseOmegaMeasure>0.92</baseOmegaMeasure>
+    <totalValue>2.114E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2b</accountCode>
+    <assetType>P</assetType>
+    <label>Day of the Outlaw</label>
+    <quarterlyDividend>948127.22</quarterlyDividend>
+    <baseRateOfReturn>6.11</baseRateOfReturn>
+    <baseOmegaMeasure>0.93</baseOmegaMeasure>
+    <totalValue>6.043E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2c</accountCode>
+    <assetType>P</assetType>
+    <label>Buffet froid</label>
+    <quarterlyDividend>172130.06</quarterlyDividend>
+    <baseRateOfReturn>3.98</baseRateOfReturn>
+    <baseOmegaMeasure>0.05</baseOmegaMeasure>
+    <totalValue>9.908E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2d</accountCode>
+    <assetType>P</assetType>
+    <label>Quiet American, The</label>
+    <quarterlyDividend>568513.32</quarterlyDividend>
+    <baseRateOfReturn>5.37</baseRateOfReturn>
+    <baseOmegaMeasure>0.58</baseOmegaMeasure>
+    <totalValue>9.595E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2e</accountCode>
+    <assetType>P</assetType>
+    <label>Excalibur</label>
+    <quarterlyDividend>524096.51</quarterlyDividend>
+    <baseRateOfReturn>4.93</baseRateOfReturn>
+    <baseOmegaMeasure>0.33</baseOmegaMeasure>
+    <totalValue>5.417E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x2f</accountCode>
+    <assetType>P</assetType>
+    <label>Forever Yours (Ikuisesti sinun)</label>
+    <quarterlyDividend>570061.42</quarterlyDividend>
+    <baseRateOfReturn>2.04</baseRateOfReturn>
+    <baseOmegaMeasure>0.12</baseOmegaMeasure>
+    <totalValue>3.94E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x30</accountCode>
+    <assetType>P</assetType>
+    <label>The First Men in the Moon</label>
+    <quarterlyDividend>978699.36</quarterlyDividend>
+    <baseRateOfReturn>8.37</baseRateOfReturn>
+    <baseOmegaMeasure>0.55</baseOmegaMeasure>
+    <totalValue>7.718E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x31</accountCode>
+    <assetType>P</assetType>
+    <label>Bravo Two Zero </label>
+    <quarterlyDividend>957871.72</quarterlyDividend>
+    <baseRateOfReturn>0.75</baseRateOfReturn>
+    <baseOmegaMeasure>0.52</baseOmegaMeasure>
+    <totalValue>5.14E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x32</accountCode>
+    <assetType>P</assetType>
+    <label>Bounty Hunter, The</label>
+    <quarterlyDividend>37512.76</quarterlyDividend>
+    <baseRateOfReturn>5.96</baseRateOfReturn>
+    <baseOmegaMeasure>0.93</baseOmegaMeasure>
+    <totalValue>7.788E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x33</accountCode>
+    <assetType>P</assetType>
+    <label>Living Wake, The</label>
+    <quarterlyDividend>366285.46</quarterlyDividend>
+    <baseRateOfReturn>6.95</baseRateOfReturn>
+    <baseOmegaMeasure>0.17</baseOmegaMeasure>
+    <totalValue>6.662E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x34</accountCode>
+    <assetType>P</assetType>
+    <label>Blood on the Sun</label>
+    <quarterlyDividend>205279.87</quarterlyDividend>
+    <baseRateOfReturn>0.37</baseRateOfReturn>
+    <baseOmegaMeasure>0.31</baseOmegaMeasure>
+    <totalValue>8.453E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x35</accountCode>
+    <assetType>P</assetType>
+    <label>World Traveler</label>
+    <quarterlyDividend>416934.52</quarterlyDividend>
+    <baseRateOfReturn>1.82</baseRateOfReturn>
+    <baseOmegaMeasure>0.22</baseOmegaMeasure>
+    <totalValue>6.172E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x36</accountCode>
+    <assetType>P</assetType>
+    <label>Brothers Rico, The</label>
+    <quarterlyDividend>203497.16</quarterlyDividend>
+    <baseRateOfReturn>8.36</baseRateOfReturn>
+    <baseOmegaMeasure>0.16</baseOmegaMeasure>
+    <totalValue>2.511E9</totalValue>
+  </Private Investment>
+  <Private Investment>
+    <accountCode>0x37</accountCode>
+    <assetType>P</assetType>
+    <label>Vampire Effect (The Twins Effect) (Chin gei bin)</label>
+    <quarterlyDividend>681174.08</quarterlyDividend>
+    <baseRateOfReturn>6.43</baseRateOfReturn>
+    <baseOmegaMeasure>0.65</baseOmegaMeasure>
+    <totalValue>8134000.0</totalValue>
+  </Private Investment>
+</ListOfAssets>

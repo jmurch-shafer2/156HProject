@@ -37,7 +37,7 @@
 0x26;S;Exa Corporation;65.97;01.97;0.65;IIBQ;76.25
 0x27;S;Resource Capital Corp.;54.20;01.32;0.56;SAAH;05.09
 0x28;S;Aircastle Limited;12.72;04.61;0.62;KJEJ;31.46
-0x29;S;Dillard's, Inc.;64.12;07.88;0.92;QRIW;46.65
+0x29;S;Dillards, Inc.;64.12;07.88;0.92;QRIW;46.65
 0x2a;S;Regulus Therapeutics Inc.;62.19;07.68;0.69;IDVI;41.68
 0x2b;S;MFS Charter Income Trust;00.98;00.09;0.34;JKDR;84.00
 0x2c;S;Nuveen Ohio Quality Municipal Income Fund;19.27;00.19;0.18;RJVX;31.34
@@ -48,10 +48,10 @@
 0x31;S;Duke Energy Corporation;28.71;06.42;0.15;JJXK;21.24
 0x32;S;Destination XL Group, Inc.;25.58;03.76;0.85;RZAM;09.31
 0x33;S;Arena Pharmaceuticals, Inc.;95.57;08.40;0.44;IMQJ;80.08
-0x34;S;KKR & Co. L.P.;31.90;00.37;0.26;AJDM;72.40
+0x34;S;KKR and Co. L.P.;31.90;00.37;0.26;AJDM;72.40
 0x35;S;Kirby Corporation;16.12;00.11;0.60;ZEME;86.16
 0x36;S;VictoryShares US 500 Enhanced Volatility Wtd ETF;70.81;04.51;0.63;ABCF;25.51
-0x37;S;American Axle & Manufacturing Holdings, Inc.;33.25;09.02;0.26;MLXV;57.41
+0x37;S;American Axle and Manufacturing Holdings, Inc.;33.25;09.02;0.26;MLXV;57.41
 0x38;S;Horace Mann Educators Corporation;41.70;07.16;0.73;KGGH;81.41
 0x39;S;Impax Laboratories, Inc.;94.14;00.34;0.41;VDNP;05.40
 0x3a;S;Telefonica SA;80.21;05.97;0.33;MONI;13.00
@@ -60,12 +60,12 @@
 0x3d;S;Lehman ABS Corporation;12.06;01.67;0.58;DGSI;96.80
 0x3e;S;Safe Bulkers, Inc;52.44;06.10;0.07;YJDT;77.54
 0x21;P;Sabrina;845742.36;07.24;0.65;8139000000
-0x22;P;It's Alive 2: It Lives Again;916867.56;07.48;0.83;8423000000
+0x22;P;It is Alive 2: It Lives Again;916867.56;07.48;0.83;8423000000
 0x23;P;Costa Brava;766192.86;08.82;0.45;0692000000
 0x24;P;Carpool;184206.09;07.90;0.23;1117000000
 0x25;P;Yentl;469621.31;06.50;0.75;8357000000
 0x26;P;Real Men;082331.41;01.32;0.54;4322000000
-0x27;P;Monkey's Tale, A (Château des singes, Le);733414.36;03.04;0.54;2794000000
+0x27;P;Monkey Tail, A (Chateau des singes, Le);733414.36;03.04;0.54;2794000000
 0x28;P;Across 110th Street;204681.15;08.60;0.82;7973000000
 0x29;P;Dogs of War, The;382382.85;00.17;0.92;5892000000
 0x2a;P;Destiny in Space;941199.96;07.12;0.92;2114000000
@@ -82,9 +82,9 @@
 0x35;P;World Traveler;416934.52;01.82;0.22;6172000000
 0x36;P;Brothers Rico, The;203497.16;08.36;0.16;2511000000
 0x37;P;Vampire Effect (The Twins Effect) (Chin gei bin);681174.08;06.43;0.65;8134000000
-0x38;P;Curse of Chucky (Child's Play 6);814386.29;05.84;0.49;7963000000
+0x38;P;Curse of Chucky (Child Play 6);814386.29;05.84;0.49;7963000000
 0x39;P;Battlestar Galactica;521248.22;05.63;0.42;8621000000
-0x3a;P;Bullets Don't Argue;964918.10;03.97;0.01;8966000000
+0x3a;P;Bullets Do NOT Argue;964918.10;03.97;0.01;8966000000
 0x3b;P;Candles on Bay Street ;353952.15;09.75;0.08;9339000000
 0x3c;P;Not Cool;315731.38;06.11;0.90;8598000000
 0x3d;P;Seven Invisible Men (Septyni nematomi zmones);713651.34;06.80;0.58;3772000000

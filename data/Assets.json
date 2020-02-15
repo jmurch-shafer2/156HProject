@@ -1,752 +1,1975 @@
-[
-    {
-        "Code": "00x1",
-        "D": "D",
-        "Label": "3 year CD",
-        "apr": 0.55
-    },
-    {
-        "Code": "00x2",
-        "D": "D",
-        "Label": "90 year CD",
-        "apr": 0.024
-    },
-    {
-        "Code": "00x3",
-        "D": "D",
-        "Label": "Savings account",
-        "apr": 0.31
-    },
-    {
-        "Code": "00x4",
-        "D": "D",
-        "Label": "3 year CD",
-        "apr": 0.95
-    },
-    {
-        "Code": "00x5",
-        "D": "D",
-        "Label": "Money Market banana account",
-        "apr": 0.18
-    },
-    {
-        "Code": "00x6",
-        "D": "D",
-        "Label": "Monkey Banana storage account",
-        "apr": 0.17
-    },
-    {
-        "Code": "00x7",
-        "D": "D",
-        "Label": "3 year CD",
-        "apr": 0.87
-    },
-    {
-        "Code": "00x8",
-        "D": "D",
-        "Label": "3 year CD",
-        "apr": 0.83
-    },
-    {
-        "Code": "00x9",
-        "D": "D",
-        "Label": "Monkey Banana storage account",
-        "apr": 0.36
-    },
-    {
-        "Code": "00xa",
-        "D": "D",
-        "Label": "Money Market banana account",
-        "apr": 0.75
-    },
-    {
-        "Code": "00xb",
-        "D": "D",
-        "Label": "Food Deposit Account",
-        "apr": 0.052
-    },
-    {
-        "Code": "00xc",
-        "D": "D",
-        "Label": "6 month CD",
-        "apr": 0.052
-    },
-    {
-        "Code": "00xd",
-        "D": "D",
-        "Label": "3 year CD",
-        "apr": 0.31
-    },
-    {
-        "Code": "00xe",
-        "D": "D",
-        "Label": "Money Market banana account",
-        "apr": 0.57
-    },
-    {
-        "Code": "00xf",
-        "D": "D",
-        "Label": "90 year CD",
-        "apr": 0.42
-    },
-    {
-        "Code": "0x10",
-        "D": "D",
-        "Label": "Monkey Banana storage account",
-        "apr": 0.55
-    },
-    {
-        "Code": "0x11",
-        "D": "D",
-        "Label": "90 year CD",
-        "apr": 0.17
-    },
-    {
-        "Code": "0x12",
-        "D": "D",
-        "Label": "Savings account",
-        "apr": 0.48
-    },
-    {
-        "Code": "0x13",
-        "D": "D",
-        "Label": "Savings account",
-        "apr": 0.23
-    },
-    {
-        "Code": "0x14",
-        "D": "D",
-        "Label": "6 month CD",
-        "apr": 0.68
-    },
-    {
-        "Code": "0x15",
-        "D": "D",
-        "Label": "Food Deposit Account",
-        "apr": 0.18
-    },
-    {
-        "Code": "0x16",
-        "D": "D",
-        "Label": "Savings account",
-        "apr": 0.77
-    },
-    {
-        "Code": "0x17",
-        "D": "D",
-        "Label": "Money Market banana account",
-        "apr": 0.034
-    },
-    {
-        "Code": "0x18",
-        "D": "D",
-        "Label": "3 year CD",
-        "apr": 0.57
-    },
-    {
-        "Code": "0x19",
-        "D": "D",
-        "Label": "Piggy bank",
-        "apr": 0.069
-    },
-    {
-        "Code": "0x1a",
-        "D": "D",
-        "Label": "6 month CD",
-        "apr": 0.73
-    },
-    {
-        "Code": "0x1b",
-        "D": "D",
-        "Label": "Food Deposit Account",
-        "apr": 0.95
-    },
-    {
-        "Code": "0x1c",
-        "D": "D",
-        "Label": "Food Deposit Account",
-        "apr": 0.36
-    },
-    {
-        "Code": "0x1d",
-        "D": "D",
-        "Label": "Piggy bank",
-        "apr": 0.24
-    },
-    {
-        "Code": "0x1e",
-        "D": "D",
-        "Label": "Savings account",
-        "apr": 0.45
-    },
-    {
-        "Code": "0x21",
-        "S": "S",
-        "Label": "Zafgen, Inc.",
-        "Quarterly Dividend": 21.57,
-        "BaseRateOfReturen": "00.90",
-        "BetaMeasure": 0.45,
-        "StockSymbol": "GFDZ",
-        "sharePrice": 42.13
-    },
-    {
-        "Code": "0x22",
-        "S": "S",
-        "Label": "Helix Energy Solutions Group, Inc.",
-        "Quarterly Dividend": 69.75,
-        "BaseRateOfReturen": "08.76",
-        "BetaMeasure": 0.52,
-        "StockSymbol": "URHB",
-        "sharePrice": 20.88
-    },
-    {
-        "Code": "0x23",
-        "S": "S",
-        "Label": "iShares MSCI Europe Financials Sector Index Fund",
-        "Quarterly Dividend": 66.73,
-        "BaseRateOfReturen": "08.57",
-        "BetaMeasure": 0.32,
-        "StockSymbol": "TANY",
-        "sharePrice": "09.65"
-    },
-    {
-        "Code": "0x24",
-        "S": "S",
-        "Label": "Special Opportunities Fund Inc.",
-        "Quarterly Dividend": 55.91,
-        "BaseRateOfReturen": "06.04",
-        "BetaMeasure": 0.28,
-        "StockSymbol": "UEST",
-        "sharePrice": 18.9
-    },
-    {
-        "Code": "0x25",
-        "S": "S",
-        "Label": "Zions Bancorporation",
-        "Quarterly Dividend": 91.96,
-        "BaseRateOfReturen": "08.25",
-        "BetaMeasure": 0.19,
-        "StockSymbol": "CWNK",
-        "sharePrice": 48.37
-    },
-    {
-        "Code": "0x26",
-        "S": "S",
-        "Label": "Exa Corporation",
-        "Quarterly Dividend": 65.97,
-        "BaseRateOfReturen": "01.97",
-        "BetaMeasure": 0.65,
-        "StockSymbol": "IIBQ",
-        "sharePrice": 76.25
-    },
-    {
-        "Code": "0x27",
-        "S": "S",
-        "Label": "Resource Capital Corp.",
-        "Quarterly Dividend": 54.2,
-        "BaseRateOfReturen": "01.32",
-        "BetaMeasure": 0.56,
-        "StockSymbol": "SAAH",
-        "sharePrice": "05.09"
-    },
-    {
-        "Code": "0x28",
-        "S": "S",
-        "Label": "Aircastle Limited",
-        "Quarterly Dividend": 12.72,
-        "BaseRateOfReturen": "04.61",
-        "BetaMeasure": 0.62,
-        "StockSymbol": "KJEJ",
-        "sharePrice": 31.46
-    },
-    {
-        "Code": "0x29",
-        "S": "S",
-        "Label": "Dillard's, Inc.",
-        "Quarterly Dividend": 64.12,
-        "BaseRateOfReturen": "07.88",
-        "BetaMeasure": 0.92,
-        "StockSymbol": "QRIW",
-        "sharePrice": 46.65
-    },
-    {
-        "Code": "0x2a",
-        "S": "S",
-        "Label": "Regulus Therapeutics Inc.",
-        "Quarterly Dividend": 62.19,
-        "BaseRateOfReturen": "07.68",
-        "BetaMeasure": 0.69,
-        "StockSymbol": "IDVI",
-        "sharePrice": 41.68
-    },
-    {
-        "Code": "0x2b",
-        "S": "S",
-        "Label": "MFS Charter Income Trust",
-        "Quarterly Dividend": "00.98",
-        "BaseRateOfReturen": "00.09",
-        "BetaMeasure": 0.34,
-        "StockSymbol": "JKDR",
-        "sharePrice": 84
-    },
-    {
-        "Code": "0x2c",
-        "S": "S",
-        "Label": "Nuveen Ohio Quality Municipal Income Fund",
-        "Quarterly Dividend": 19.27,
-        "BaseRateOfReturen": "00.19",
-        "BetaMeasure": 0.18,
-        "StockSymbol": "RJVX",
-        "sharePrice": 31.34
-    },
-    {
-        "Code": "0x2d",
-        "S": "S",
-        "Label": "NCI, Inc.",
-        "Quarterly Dividend": 96.85,
-        "BaseRateOfReturen": "02.35",
-        "BetaMeasure": 0.64,
-        "StockSymbol": "ZHRL",
-        "sharePrice": 65.66
-    },
-    {
-        "Code": "0x2e",
-        "S": "S",
-        "Label": "Merus N.V.",
-        "Quarterly Dividend": 16.67,
-        "BaseRateOfReturen": "01.57",
-        "BetaMeasure": 0.83,
-        "StockSymbol": "JAEW",
-        "sharePrice": 97.51
-    },
-    {
-        "Code": "0x2f",
-        "S": "S",
-        "Label": "BBVA Banco Frances S.A.",
-        "Quarterly Dividend": 12.37,
-        "BaseRateOfReturen": "03.79",
-        "BetaMeasure": 0.37,
-        "StockSymbol": "EPRV",
-        "sharePrice": 79.27
-    },
-    {
-        "Code": "0x30",
-        "S": "S",
-        "Label": "Paylocity Holding Corporation",
-        "Quarterly Dividend": 98.15,
-        "BaseRateOfReturen": "00.21",
-        "BetaMeasure": 0.18,
-        "StockSymbol": "GGTN",
-        "sharePrice": 44.21
-    },
-    {
-        "Code": "0x31",
-        "S": "S",
-        "Label": "Duke Energy Corporation",
-        "Quarterly Dividend": 28.71,
-        "BaseRateOfReturen": "06.42",
-        "BetaMeasure": 0.15,
-        "StockSymbol": "JJXK",
-        "sharePrice": 21.24
-    },
-    {
-        "Code": "0x32",
-        "S": "S",
-        "Label": "Destination XL Group, Inc.",
-        "Quarterly Dividend": 25.58,
-        "BaseRateOfReturen": "03.76",
-        "BetaMeasure": 0.85,
-        "StockSymbol": "RZAM",
-        "sharePrice": "09.31"
-    },
-    {
-        "Code": "0x33",
-        "S": "S",
-        "Label": "Arena Pharmaceuticals, Inc.",
-        "Quarterly Dividend": 95.57,
-        "BaseRateOfReturen": "08.40",
-        "BetaMeasure": 0.44,
-        "StockSymbol": "IMQJ",
-        "sharePrice": 80.08
-    },
-    {
-        "Code": "0x34",
-        "S": "S",
-        "Label": "KKR & Co. L.P.",
-        "Quarterly Dividend": 31.9,
-        "BaseRateOfReturen": "00.37",
-        "BetaMeasure": 0.26,
-        "StockSymbol": "AJDM",
-        "sharePrice": 72.4
-    },
-    {
-        "Code": "0x35",
-        "S": "S",
-        "Label": "Kirby Corporation",
-        "Quarterly Dividend": 16.12,
-        "BaseRateOfReturen": "00.11",
-        "BetaMeasure": 0.6,
-        "StockSymbol": "ZEME",
-        "sharePrice": 86.16
-    },
-    {
-        "Code": "0x36",
-        "S": "S",
-        "Label": "VictoryShares US 500 Enhanced Volatility Wtd ETF",
-        "Quarterly Dividend": 70.81,
-        "BaseRateOfReturen": "04.51",
-        "BetaMeasure": 0.63,
-        "StockSymbol": "ABCF",
-        "sharePrice": 25.51
-    },
-    {
-        "Code": "0x37",
-        "S": "S",
-        "Label": "American Axle & Manufacturing Holdings, Inc.",
-        "Quarterly Dividend": 33.25,
-        "BaseRateOfReturen": "09.02",
-        "BetaMeasure": 0.26,
-        "StockSymbol": "MLXV",
-        "sharePrice": 57.41
-    },
-    {
-        "Code": "0x38",
-        "S": "S",
-        "Label": "Horace Mann Educators Corporation",
-        "Quarterly Dividend": 41.7,
-        "BaseRateOfReturen": "07.16",
-        "BetaMeasure": 0.73,
-        "StockSymbol": "KGGH",
-        "sharePrice": 81.41
-    },
-    {
-        "Code": "0x39",
-        "S": "S",
-        "Label": "Impax Laboratories, Inc.",
-        "Quarterly Dividend": 94.14,
-        "BaseRateOfReturen": "00.34",
-        "BetaMeasure": 0.41,
-        "StockSymbol": "VDNP",
-        "sharePrice": "05.40"
-    },
-    {
-        "Code": "0x3a",
-        "S": "S",
-        "Label": "Telefonica SA",
-        "Quarterly Dividend": 80.21,
-        "BaseRateOfReturen": "05.97",
-        "BetaMeasure": 0.33,
-        "StockSymbol": "MONI",
-        "sharePrice": 13
-    },
-    {
-        "Code": "0x3b",
-        "S": "S",
-        "Label": "Fogo de Chao, Inc.",
-        "Quarterly Dividend": 17.37,
-        "BaseRateOfReturen": "03.44",
-        "BetaMeasure": 0.21,
-        "StockSymbol": "KDWA",
-        "sharePrice": 65.12
-    },
-    {
-        "Code": "0x3c",
-        "S": "S",
-        "Label": "Guggenheim Enhanced Equity Income Fund",
-        "Quarterly Dividend": 68.79,
-        "BaseRateOfReturen": "03.29",
-        "BetaMeasure": 0.24,
-        "StockSymbol": "CLIM",
-        "sharePrice": 43.11
-    },
-    {
-        "Code": "0x3d",
-        "S": "S",
-        "Label": "Lehman ABS Corporation",
-        "Quarterly Dividend": 12.06,
-        "BaseRateOfReturen": "01.67",
-        "BetaMeasure": 0.58,
-        "StockSymbol": "DGSI",
-        "sharePrice": 96.8
-    },
-    {
-        "Code": "0x3e",
-        "S": "S",
-        "Label": "Safe Bulkers, Inc",
-        "Quarterly Dividend": 52.44,
-        "BaseRateOfReturen": "06.10",
-        "BetaMeasure": 0.07,
-        "StockSymbol": "YJDT",
-        "sharePrice": 77.54
-    },
-    {
-        "Code": "0x21",
-        "P": "P",
-        "Label": "Sabrina",
-        "QuarterlyDividend": 845742.36,
-        "BaseRateOfReturn": "07.24",
-        "baseOmegaMeasure": 0.65,
-        "TotalValue": 8139000000
-    },
-    {
-        "Code": "0x22",
-        "P": "P",
-        "Label": "It's Alive 2: It Lives Again",
-        "QuarterlyDividend": 916867.56,
-        "BaseRateOfReturn": "07.48",
-        "baseOmegaMeasure": 0.83,
-        "TotalValue": 8423000000
-    },
-    {
-        "Code": "0x23",
-        "P": "P",
-        "Label": "Costa Brava",
-        "QuarterlyDividend": 766192.86,
-        "BaseRateOfReturn": "08.82",
-        "baseOmegaMeasure": 0.45,
-        "TotalValue": "0692000000"
-    },
-    {
-        "Code": "0x24",
-        "P": "P",
-        "Label": "Carpool",
-        "QuarterlyDividend": 184206.09,
-        "BaseRateOfReturn": "07.90",
-        "baseOmegaMeasure": 0.23,
-        "TotalValue": 1117000000
-    },
-    {
-        "Code": "0x25",
-        "P": "P",
-        "Label": "Yentl",
-        "QuarterlyDividend": 469621.31,
-        "BaseRateOfReturn": "06.50",
-        "baseOmegaMeasure": 0.75,
-        "TotalValue": 8357000000
-    },
-    {
-        "Code": "0x26",
-        "P": "P",
-        "Label": "Real Men",
-        "QuarterlyDividend": "082331.41",
-        "BaseRateOfReturn": "01.32",
-        "baseOmegaMeasure": 0.54,
-        "TotalValue": 4322000000
-    },
-    {
-        "Code": "0x27",
-        "P": "P",
-        "Label": "Monkey's Tale, A (Château des singes, Le)",
-        "QuarterlyDividend": 733414.36,
-        "BaseRateOfReturn": "03.04",
-        "baseOmegaMeasure": 0.54,
-        "TotalValue": 2794000000
-    },
-    {
-        "Code": "0x28",
-        "P": "P",
-        "Label": "Across 110th Street",
-        "QuarterlyDividend": 204681.15,
-        "BaseRateOfReturn": "08.60",
-        "baseOmegaMeasure": 0.82,
-        "TotalValue": 7973000000
-    },
-    {
-        "Code": "0x29",
-        "P": "P",
-        "Label": "Dogs of War, The",
-        "QuarterlyDividend": 382382.85,
-        "BaseRateOfReturn": "00.17",
-        "baseOmegaMeasure": 0.92,
-        "TotalValue": 5892000000
-    },
-    {
-        "Code": "0x2a",
-        "P": "P",
-        "Label": "Destiny in Space",
-        "QuarterlyDividend": 941199.96,
-        "BaseRateOfReturn": "07.12",
-        "baseOmegaMeasure": 0.92,
-        "TotalValue": 2114000000
-    },
-    {
-        "Code": "0x2b",
-        "P": "P",
-        "Label": "Day of the Outlaw",
-        "QuarterlyDividend": 948127.22,
-        "BaseRateOfReturn": "06.11",
-        "baseOmegaMeasure": 0.93,
-        "TotalValue": 6043000000
-    },
-    {
-        "Code": "0x2c",
-        "P": "P",
-        "Label": "Buffet froid",
-        "QuarterlyDividend": 172130.06,
-        "BaseRateOfReturn": "03.98",
-        "baseOmegaMeasure": 0.05,
-        "TotalValue": 9908000000
-    },
-    {
-        "Code": "0x2d",
-        "P": "P",
-        "Label": "Quiet American, The",
-        "QuarterlyDividend": 568513.32,
-        "BaseRateOfReturn": "05.37",
-        "baseOmegaMeasure": 0.58,
-        "TotalValue": 9595000000
-    },
-    {
-        "Code": "0x2e",
-        "P": "P",
-        "Label": "Excalibur",
-        "QuarterlyDividend": 524096.51,
-        "BaseRateOfReturn": "04.93",
-        "baseOmegaMeasure": 0.33,
-        "TotalValue": 5417000000
-    },
-    {
-        "Code": "0x2f",
-        "P": "P",
-        "Label": "Forever Yours (Ikuisesti sinun)",
-        "QuarterlyDividend": 570061.42,
-        "BaseRateOfReturn": "02.04",
-        "baseOmegaMeasure": 0.12,
-        "TotalValue": 3940000000
-    },
-    {
-        "Code": "0x30",
-        "P": "P",
-        "Label": "The First Men in the Moon",
-        "QuarterlyDividend": 978699.36,
-        "BaseRateOfReturn": "08.37",
-        "baseOmegaMeasure": 0.55,
-        "TotalValue": 7718000000
-    },
-    {
-        "Code": "0x31",
-        "P": "P",
-        "Label": "Bravo Two Zero",
-        "QuarterlyDividend": 957871.72,
-        "BaseRateOfReturn": "00.75",
-        "baseOmegaMeasure": 0.52,
-        "TotalValue": 5140000000
-    },
-    {
-        "Code": "0x32",
-        "P": "P",
-        "Label": "Bounty Hunter, The",
-        "QuarterlyDividend": "037512.76",
-        "BaseRateOfReturn": "05.96",
-        "baseOmegaMeasure": 0.93,
-        "TotalValue": 7788000000
-    },
-    {
-        "Code": "0x33",
-        "P": "P",
-        "Label": "Living Wake, The",
-        "QuarterlyDividend": 366285.46,
-        "BaseRateOfReturn": "06.95",
-        "baseOmegaMeasure": 0.17,
-        "TotalValue": 6662000000
-    },
-    {
-        "Code": "0x34",
-        "P": "P",
-        "Label": "Blood on the Sun",
-        "QuarterlyDividend": 205279.87,
-        "BaseRateOfReturn": "00.37",
-        "baseOmegaMeasure": 0.31,
-        "TotalValue": 8453000000
-    },
-    {
-        "Code": "0x35",
-        "P": "P",
-        "Label": "World Traveler",
-        "QuarterlyDividend": 416934.52,
-        "BaseRateOfReturn": "01.82",
-        "baseOmegaMeasure": 0.22,
-        "TotalValue": 6172000000
-    },
-    {
-        "Code": "0x36",
-        "P": "P",
-        "Label": "Brothers Rico, The",
-        "QuarterlyDividend": 203497.16,
-        "BaseRateOfReturn": "08.36",
-        "baseOmegaMeasure": 0.16,
-        "TotalValue": 2511000000
-    },
-    {
-        "Code": "0x37",
-        "P": "P",
-        "Label": "Vampire Effect (The Twins Effect) (Chin gei bin)",
-        "QuarterlyDividend": 681174.08,
-        "BaseRateOfReturn": "06.43",
-        "baseOmegaMeasure": 0.65,
-        "TotalValue": 8134000000
-    },
-    {
-        "Code": "0x38",
-        "P": "P",
-        "Label": "Curse of Chucky (Child's Play 6)",
-        "QuarterlyDividend": 814386.29,
-        "BaseRateOfReturn": "05.84",
-        "baseOmegaMeasure": 0.49,
-        "TotalValue": 7963000000
-    },
-    {
-        "Code": "0x39",
-        "P": "P",
-        "Label": "Battlestar Galactica",
-        "QuarterlyDividend": 521248.22,
-        "BaseRateOfReturn": "05.63",
-        "baseOmegaMeasure": 0.42,
-        "TotalValue": 8621000000
-    },
-    {
-        "Code": "0x3a",
-        "P": "P",
-        "Label": "Bullets Don't Argue",
-        "QuarterlyDividend": 964918.1,
-        "BaseRateOfReturn": "03.97",
-        "baseOmegaMeasure": 0.01,
-        "TotalValue": 8966000000
-    },
-    {
-        "Code": "0x3b",
-        "P": "P",
-        "Label": "Candles on Bay Street",
-        "QuarterlyDividend": 353952.15,
-        "BaseRateOfReturn": "09.75",
-        "baseOmegaMeasure": 0.08,
-        "TotalValue": 9339000000
-    },
-    {
-        "Code": "0x3c",
-        "P": "P",
-        "Label": "Not Cool",
-        "QuarterlyDividend": 315731.38,
-        "BaseRateOfReturn": "06.11",
-        "baseOmegaMeasure": 0.9,
-        "TotalValue": 8598000000
-    },
-    {
-        "Code": "0x3d",
-        "P": "P",
-        "Label": "Seven Invisible Men (Septyni nematomi zmones)",
-        "QuarterlyDividend": 713651.34,
-        "BaseRateOfReturn": "06.80",
-        "baseOmegaMeasure": 0.58,
-        "TotalValue": 3772000000
-    },
-    {
-        "Code": "0x3e",
-        "P": "P",
-        "Label": "Cold Fever (Á köldum klaka)",
-        "QuarterlyDividend": 102399.11,
-        "BaseRateOfReturn": "01.12",
-        "baseOmegaMeasure": 0.01,
-        "TotalValue": 4785000000
-    }
-]
+{"ListOfAssets": [
+  {
+    "accountCode": "00x1",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.55
+  },
+  {
+    "accountCode": "00x2",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.024
+  },
+  {
+    "accountCode": "00x3",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.31
+  },
+  {
+    "accountCode": "00x4",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.95
+  },
+  {
+    "accountCode": "00x5",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.18
+  },
+  {
+    "accountCode": "00x6",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.17
+  },
+  {
+    "accountCode": "00x7",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.87
+  },
+  {
+    "accountCode": "00x8",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.83
+  },
+  {
+    "accountCode": "00x9",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.36
+  },
+  {
+    "accountCode": "00xa",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.75
+  },
+  {
+    "accountCode": "00xb",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.052
+  },
+  {
+    "accountCode": "00xc",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.052
+  },
+  {
+    "accountCode": "00xd",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.31
+  },
+  {
+    "accountCode": "00xe",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.57
+  },
+  {
+    "accountCode": "00xf",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.42
+  },
+  {
+    "accountCode": "0x10",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.55
+  },
+  {
+    "accountCode": "0x11",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.17
+  },
+  {
+    "accountCode": "0x12",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.48
+  },
+  {
+    "accountCode": "0x13",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.23
+  },
+  {
+    "accountCode": "0x14",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.68
+  },
+  {
+    "accountCode": "0x15",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.18
+  },
+  {
+    "accountCode": "0x16",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.77
+  },
+  {
+    "accountCode": "0x17",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.034
+  },
+  {
+    "accountCode": "0x18",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.57
+  },
+  {
+    "accountCode": "0x19",
+    "assetType": "D",
+    "label": "Piggy bank",
+    "apr": 0.069
+  },
+  {
+    "accountCode": "0x1a",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.73
+  },
+  {
+    "accountCode": "0x1b",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.95
+  },
+  {
+    "accountCode": "0x1c",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.36
+  },
+  {
+    "accountCode": "0x1d",
+    "assetType": "D",
+    "label": "Piggy bank",
+    "apr": 0.24
+  },
+  {
+    "accountCode": "0x1e",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.45
+  },
+  {
+    "accountCode": "0x21",
+    "assetType": "S",
+    "label": "Zafgen, Inc.",
+    "quarterlyDividend": 21.57,
+    "baseRateOfReturn": 0.9,
+    "betaMeasure": 0.45,
+    "sharePrice": 42.13
+  },
+  {
+    "accountCode": "0x22",
+    "assetType": "S",
+    "label": "Helix Energy Solutions Group, Inc.",
+    "quarterlyDividend": 69.75,
+    "baseRateOfReturn": 8.76,
+    "betaMeasure": 0.52,
+    "sharePrice": 20.88
+  },
+  {
+    "accountCode": "0x23",
+    "assetType": "S",
+    "label": "iShares MSCI Europe Financials Sector Index Fund",
+    "quarterlyDividend": 66.73,
+    "baseRateOfReturn": 8.57,
+    "betaMeasure": 0.32,
+    "sharePrice": 9.65
+  },
+  {
+    "accountCode": "0x24",
+    "assetType": "S",
+    "label": "Special Opportunities Fund Inc.",
+    "quarterlyDividend": 55.91,
+    "baseRateOfReturn": 6.04,
+    "betaMeasure": 0.28,
+    "sharePrice": 18.9
+  },
+  {
+    "accountCode": "0x25",
+    "assetType": "S",
+    "label": "Zions Bancorporation",
+    "quarterlyDividend": 91.96,
+    "baseRateOfReturn": 8.25,
+    "betaMeasure": 0.19,
+    "sharePrice": 48.37
+  },
+  {
+    "accountCode": "0x26",
+    "assetType": "S",
+    "label": "Exa Corporation",
+    "quarterlyDividend": 65.97,
+    "baseRateOfReturn": 1.97,
+    "betaMeasure": 0.65,
+    "sharePrice": 76.25
+  },
+  {
+    "accountCode": "0x27",
+    "assetType": "S",
+    "label": "Resource Capital Corp.",
+    "quarterlyDividend": 54.2,
+    "baseRateOfReturn": 1.32,
+    "betaMeasure": 0.56,
+    "sharePrice": 5.09
+  },
+  {
+    "accountCode": "0x28",
+    "assetType": "S",
+    "label": "Aircastle Limited",
+    "quarterlyDividend": 12.72,
+    "baseRateOfReturn": 4.61,
+    "betaMeasure": 0.62,
+    "sharePrice": 31.46
+  },
+  {
+    "accountCode": "0x29",
+    "assetType": "S",
+    "label": "Dillards, Inc.",
+    "quarterlyDividend": 64.12,
+    "baseRateOfReturn": 7.88,
+    "betaMeasure": 0.92,
+    "sharePrice": 46.65
+  },
+  {
+    "accountCode": "0x2a",
+    "assetType": "S",
+    "label": "Regulus Therapeutics Inc.",
+    "quarterlyDividend": 62.19,
+    "baseRateOfReturn": 7.68,
+    "betaMeasure": 0.69,
+    "sharePrice": 41.68
+  },
+  {
+    "accountCode": "0x2b",
+    "assetType": "S",
+    "label": "MFS Charter Income Trust",
+    "quarterlyDividend": 0.98,
+    "baseRateOfReturn": 0.09,
+    "betaMeasure": 0.34,
+    "sharePrice": 84.0
+  },
+  {
+    "accountCode": "0x2c",
+    "assetType": "S",
+    "label": "Nuveen Ohio Quality Municipal Income Fund",
+    "quarterlyDividend": 19.27,
+    "baseRateOfReturn": 0.19,
+    "betaMeasure": 0.18,
+    "sharePrice": 31.34
+  },
+  {
+    "accountCode": "0x2d",
+    "assetType": "S",
+    "label": "NCI, Inc.",
+    "quarterlyDividend": 96.85,
+    "baseRateOfReturn": 2.35,
+    "betaMeasure": 0.64,
+    "sharePrice": 65.66
+  },
+  {
+    "accountCode": "0x2e",
+    "assetType": "S",
+    "label": "Merus N.V.",
+    "quarterlyDividend": 16.67,
+    "baseRateOfReturn": 1.57,
+    "betaMeasure": 0.83,
+    "sharePrice": 97.51
+  },
+  {
+    "accountCode": "0x2f",
+    "assetType": "S",
+    "label": "BBVA Banco Frances S.A.",
+    "quarterlyDividend": 12.37,
+    "baseRateOfReturn": 3.79,
+    "betaMeasure": 0.37,
+    "sharePrice": 79.27
+  },
+  {
+    "accountCode": "0x30",
+    "assetType": "S",
+    "label": "Paylocity Holding Corporation",
+    "quarterlyDividend": 98.15,
+    "baseRateOfReturn": 0.21,
+    "betaMeasure": 0.18,
+    "sharePrice": 44.21
+  },
+  {
+    "accountCode": "0x31",
+    "assetType": "S",
+    "label": "Duke Energy Corporation",
+    "quarterlyDividend": 28.71,
+    "baseRateOfReturn": 6.42,
+    "betaMeasure": 0.15,
+    "sharePrice": 21.24
+  },
+  {
+    "accountCode": "0x32",
+    "assetType": "S",
+    "label": "Destination XL Group, Inc.",
+    "quarterlyDividend": 25.58,
+    "baseRateOfReturn": 3.76,
+    "betaMeasure": 0.85,
+    "sharePrice": 9.31
+  },
+  {
+    "accountCode": "0x33",
+    "assetType": "S",
+    "label": "Arena Pharmaceuticals, Inc.",
+    "quarterlyDividend": 95.57,
+    "baseRateOfReturn": 8.4,
+    "betaMeasure": 0.44,
+    "sharePrice": 80.08
+  },
+  {
+    "accountCode": "0x34",
+    "assetType": "S",
+    "label": "KKR and Co. L.P.",
+    "quarterlyDividend": 31.9,
+    "baseRateOfReturn": 0.37,
+    "betaMeasure": 0.26,
+    "sharePrice": 72.4
+  },
+  {
+    "accountCode": "0x35",
+    "assetType": "S",
+    "label": "Kirby Corporation",
+    "quarterlyDividend": 16.12,
+    "baseRateOfReturn": 0.11,
+    "betaMeasure": 0.6,
+    "sharePrice": 86.16
+  },
+  {
+    "accountCode": "0x36",
+    "assetType": "S",
+    "label": "VictoryShares US 500 Enhanced Volatility Wtd ETF",
+    "quarterlyDividend": 70.81,
+    "baseRateOfReturn": 4.51,
+    "betaMeasure": 0.63,
+    "sharePrice": 25.51
+  },
+  {
+    "accountCode": "0x37",
+    "assetType": "S",
+    "label": "American Axle and Manufacturing Holdings, Inc.",
+    "quarterlyDividend": 33.25,
+    "baseRateOfReturn": 9.02,
+    "betaMeasure": 0.26,
+    "sharePrice": 57.41
+  },
+  {
+    "accountCode": "0x38",
+    "assetType": "S",
+    "label": "Horace Mann Educators Corporation",
+    "quarterlyDividend": 41.7,
+    "baseRateOfReturn": 7.16,
+    "betaMeasure": 0.73,
+    "sharePrice": 81.41
+  },
+  {
+    "accountCode": "0x39",
+    "assetType": "S",
+    "label": "Impax Laboratories, Inc.",
+    "quarterlyDividend": 94.14,
+    "baseRateOfReturn": 0.34,
+    "betaMeasure": 0.41,
+    "sharePrice": 5.4
+  },
+  {
+    "accountCode": "0x3a",
+    "assetType": "S",
+    "label": "Telefonica SA",
+    "quarterlyDividend": 80.21,
+    "baseRateOfReturn": 5.97,
+    "betaMeasure": 0.33,
+    "sharePrice": 13.0
+  },
+  {
+    "accountCode": "0x3b",
+    "assetType": "S",
+    "label": "Fogo de Chao, Inc.",
+    "quarterlyDividend": 17.37,
+    "baseRateOfReturn": 3.44,
+    "betaMeasure": 0.21,
+    "sharePrice": 65.12
+  },
+  {
+    "accountCode": "0x3c",
+    "assetType": "S",
+    "label": "Guggenheim Enhanced Equity Income Fund",
+    "quarterlyDividend": 68.79,
+    "baseRateOfReturn": 3.29,
+    "betaMeasure": 0.24,
+    "sharePrice": 43.11
+  },
+  {
+    "accountCode": "0x3d",
+    "assetType": "S",
+    "label": "Lehman ABS Corporation",
+    "quarterlyDividend": 12.06,
+    "baseRateOfReturn": 1.67,
+    "betaMeasure": 0.58,
+    "sharePrice": 96.8
+  },
+  {
+    "accountCode": "0x3e",
+    "assetType": "S",
+    "label": "Safe Bulkers, Inc",
+    "quarterlyDividend": 52.44,
+    "baseRateOfReturn": 6.1,
+    "betaMeasure": 0.07,
+    "sharePrice": 77.54
+  },
+  {
+    "accountCode": "0x21",
+    "assetType": "P",
+    "label": "Sabrina",
+    "quarterlyDividend": 845742.36,
+    "baseRateOfReturn": 7.24,
+    "baseOmegaMeasure": 0.65,
+    "totalValue": 8.139E9
+  },
+  {
+    "accountCode": "0x22",
+    "assetType": "P",
+    "label": "It is Alive 2: It Lives Again",
+    "quarterlyDividend": 916867.56,
+    "baseRateOfReturn": 7.48,
+    "baseOmegaMeasure": 0.83,
+    "totalValue": 8.423E9
+  },
+  {
+    "accountCode": "0x23",
+    "assetType": "P",
+    "label": "Costa Brava",
+    "quarterlyDividend": 766192.86,
+    "baseRateOfReturn": 8.82,
+    "baseOmegaMeasure": 0.45,
+    "totalValue": 6.92E8
+  },
+  {
+    "accountCode": "0x24",
+    "assetType": "P",
+    "label": "Carpool",
+    "quarterlyDividend": 184206.09,
+    "baseRateOfReturn": 7.9,
+    "baseOmegaMeasure": 0.23,
+    "totalValue": 1.117E9
+  },
+  {
+    "accountCode": "0x25",
+    "assetType": "P",
+    "label": "Yentl",
+    "quarterlyDividend": 469621.31,
+    "baseRateOfReturn": 6.5,
+    "baseOmegaMeasure": 0.75,
+    "totalValue": 8.357E9
+  },
+  {
+    "accountCode": "0x26",
+    "assetType": "P",
+    "label": "Real Men",
+    "quarterlyDividend": 82331.41,
+    "baseRateOfReturn": 1.32,
+    "baseOmegaMeasure": 0.54,
+    "totalValue": 4.322E9
+  },
+  {
+    "accountCode": "0x27",
+    "assetType": "P",
+    "label": "Monkey Tail, A (Chateau des singes, Le)",
+    "quarterlyDividend": 733414.36,
+    "baseRateOfReturn": 3.04,
+    "baseOmegaMeasure": 0.54,
+    "totalValue": 2.794E9
+  },
+  {
+    "accountCode": "0x28",
+    "assetType": "P",
+    "label": "Across 110th Street",
+    "quarterlyDividend": 204681.15,
+    "baseRateOfReturn": 8.6,
+    "baseOmegaMeasure": 0.82,
+    "totalValue": 7.973E9
+  },
+  {
+    "accountCode": "0x29",
+    "assetType": "P",
+    "label": "Dogs of War, The",
+    "quarterlyDividend": 382382.85,
+    "baseRateOfReturn": 0.17,
+    "baseOmegaMeasure": 0.92,
+    "totalValue": 5.892E9
+  },
+  {
+    "accountCode": "0x2a",
+    "assetType": "P",
+    "label": "Destiny in Space",
+    "quarterlyDividend": 941199.96,
+    "baseRateOfReturn": 7.12,
+    "baseOmegaMeasure": 0.92,
+    "totalValue": 2.114E9
+  },
+  {
+    "accountCode": "0x2b",
+    "assetType": "P",
+    "label": "Day of the Outlaw",
+    "quarterlyDividend": 948127.22,
+    "baseRateOfReturn": 6.11,
+    "baseOmegaMeasure": 0.93,
+    "totalValue": 6.043E9
+  },
+  {
+    "accountCode": "0x2c",
+    "assetType": "P",
+    "label": "Buffet froid",
+    "quarterlyDividend": 172130.06,
+    "baseRateOfReturn": 3.98,
+    "baseOmegaMeasure": 0.05,
+    "totalValue": 9.908E9
+  },
+  {
+    "accountCode": "0x2d",
+    "assetType": "P",
+    "label": "Quiet American, The",
+    "quarterlyDividend": 568513.32,
+    "baseRateOfReturn": 5.37,
+    "baseOmegaMeasure": 0.58,
+    "totalValue": 9.595E9
+  },
+  {
+    "accountCode": "0x2e",
+    "assetType": "P",
+    "label": "Excalibur",
+    "quarterlyDividend": 524096.51,
+    "baseRateOfReturn": 4.93,
+    "baseOmegaMeasure": 0.33,
+    "totalValue": 5.417E9
+  },
+  {
+    "accountCode": "0x2f",
+    "assetType": "P",
+    "label": "Forever Yours (Ikuisesti sinun)",
+    "quarterlyDividend": 570061.42,
+    "baseRateOfReturn": 2.04,
+    "baseOmegaMeasure": 0.12,
+    "totalValue": 3.94E9
+  },
+  {
+    "accountCode": "0x30",
+    "assetType": "P",
+    "label": "The First Men in the Moon",
+    "quarterlyDividend": 978699.36,
+    "baseRateOfReturn": 8.37,
+    "baseOmegaMeasure": 0.55,
+    "totalValue": 7.718E9
+  },
+  {
+    "accountCode": "0x31",
+    "assetType": "P",
+    "label": "Bravo Two Zero ",
+    "quarterlyDividend": 957871.72,
+    "baseRateOfReturn": 0.75,
+    "baseOmegaMeasure": 0.52,
+    "totalValue": 5.14E9
+  },
+  {
+    "accountCode": "0x32",
+    "assetType": "P",
+    "label": "Bounty Hunter, The",
+    "quarterlyDividend": 37512.76,
+    "baseRateOfReturn": 5.96,
+    "baseOmegaMeasure": 0.93,
+    "totalValue": 7.788E9
+  },
+  {
+    "accountCode": "0x33",
+    "assetType": "P",
+    "label": "Living Wake, The",
+    "quarterlyDividend": 366285.46,
+    "baseRateOfReturn": 6.95,
+    "baseOmegaMeasure": 0.17,
+    "totalValue": 6.662E9
+  },
+  {
+    "accountCode": "0x34",
+    "assetType": "P",
+    "label": "Blood on the Sun",
+    "quarterlyDividend": 205279.87,
+    "baseRateOfReturn": 0.37,
+    "baseOmegaMeasure": 0.31,
+    "totalValue": 8.453E9
+  },
+  {
+    "accountCode": "0x35",
+    "assetType": "P",
+    "label": "World Traveler",
+    "quarterlyDividend": 416934.52,
+    "baseRateOfReturn": 1.82,
+    "baseOmegaMeasure": 0.22,
+    "totalValue": 6.172E9
+  },
+  {
+    "accountCode": "0x36",
+    "assetType": "P",
+    "label": "Brothers Rico, The",
+    "quarterlyDividend": 203497.16,
+    "baseRateOfReturn": 8.36,
+    "baseOmegaMeasure": 0.16,
+    "totalValue": 2.511E9
+  },
+  {
+    "accountCode": "0x37",
+    "assetType": "P",
+    "label": "Vampire Effect (The Twins Effect) (Chin gei bin)",
+    "quarterlyDividend": 681174.08,
+    "baseRateOfReturn": 6.43,
+    "baseOmegaMeasure": 0.65,
+    "totalValue": 8134000.0
+  }
+]}{"ListOfAssets": [
+  {
+    "accountCode": "00x1",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.55
+  },
+  {
+    "accountCode": "00x2",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.024
+  },
+  {
+    "accountCode": "00x3",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.31
+  },
+  {
+    "accountCode": "00x4",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.95
+  },
+  {
+    "accountCode": "00x5",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.18
+  },
+  {
+    "accountCode": "00x6",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.17
+  },
+  {
+    "accountCode": "00x7",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.87
+  },
+  {
+    "accountCode": "00x8",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.83
+  },
+  {
+    "accountCode": "00x9",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.36
+  },
+  {
+    "accountCode": "00xa",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.75
+  },
+  {
+    "accountCode": "00xb",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.052
+  },
+  {
+    "accountCode": "00xc",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.052
+  },
+  {
+    "accountCode": "00xd",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.31
+  },
+  {
+    "accountCode": "00xe",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.57
+  },
+  {
+    "accountCode": "00xf",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.42
+  },
+  {
+    "accountCode": "0x10",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.55
+  },
+  {
+    "accountCode": "0x11",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.17
+  },
+  {
+    "accountCode": "0x12",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.48
+  },
+  {
+    "accountCode": "0x13",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.23
+  },
+  {
+    "accountCode": "0x14",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.68
+  },
+  {
+    "accountCode": "0x15",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.18
+  },
+  {
+    "accountCode": "0x16",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.77
+  },
+  {
+    "accountCode": "0x17",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.034
+  },
+  {
+    "accountCode": "0x18",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.57
+  },
+  {
+    "accountCode": "0x19",
+    "assetType": "D",
+    "label": "Piggy bank",
+    "apr": 0.069
+  },
+  {
+    "accountCode": "0x1a",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.73
+  },
+  {
+    "accountCode": "0x1b",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.95
+  },
+  {
+    "accountCode": "0x1c",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.36
+  },
+  {
+    "accountCode": "0x1d",
+    "assetType": "D",
+    "label": "Piggy bank",
+    "apr": 0.24
+  },
+  {
+    "accountCode": "0x1e",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.45
+  },
+  {
+    "accountCode": "0x21",
+    "assetType": "S",
+    "label": "Zafgen, Inc.",
+    "quarterlyDividend": 21.57,
+    "baseRateOfReturn": 0.9,
+    "betaMeasure": 0.45,
+    "sharePrice": 42.13
+  },
+  {
+    "accountCode": "0x22",
+    "assetType": "S",
+    "label": "Helix Energy Solutions Group, Inc.",
+    "quarterlyDividend": 69.75,
+    "baseRateOfReturn": 8.76,
+    "betaMeasure": 0.52,
+    "sharePrice": 20.88
+  },
+  {
+    "accountCode": "0x23",
+    "assetType": "S",
+    "label": "iShares MSCI Europe Financials Sector Index Fund",
+    "quarterlyDividend": 66.73,
+    "baseRateOfReturn": 8.57,
+    "betaMeasure": 0.32,
+    "sharePrice": 9.65
+  },
+  {
+    "accountCode": "0x24",
+    "assetType": "S",
+    "label": "Special Opportunities Fund Inc.",
+    "quarterlyDividend": 55.91,
+    "baseRateOfReturn": 6.04,
+    "betaMeasure": 0.28,
+    "sharePrice": 18.9
+  },
+  {
+    "accountCode": "0x25",
+    "assetType": "S",
+    "label": "Zions Bancorporation",
+    "quarterlyDividend": 91.96,
+    "baseRateOfReturn": 8.25,
+    "betaMeasure": 0.19,
+    "sharePrice": 48.37
+  },
+  {
+    "accountCode": "0x26",
+    "assetType": "S",
+    "label": "Exa Corporation",
+    "quarterlyDividend": 65.97,
+    "baseRateOfReturn": 1.97,
+    "betaMeasure": 0.65,
+    "sharePrice": 76.25
+  },
+  {
+    "accountCode": "0x27",
+    "assetType": "S",
+    "label": "Resource Capital Corp.",
+    "quarterlyDividend": 54.2,
+    "baseRateOfReturn": 1.32,
+    "betaMeasure": 0.56,
+    "sharePrice": 5.09
+  },
+  {
+    "accountCode": "0x28",
+    "assetType": "S",
+    "label": "Aircastle Limited",
+    "quarterlyDividend": 12.72,
+    "baseRateOfReturn": 4.61,
+    "betaMeasure": 0.62,
+    "sharePrice": 31.46
+  },
+  {
+    "accountCode": "0x29",
+    "assetType": "S",
+    "label": "Dillards, Inc.",
+    "quarterlyDividend": 64.12,
+    "baseRateOfReturn": 7.88,
+    "betaMeasure": 0.92,
+    "sharePrice": 46.65
+  },
+  {
+    "accountCode": "0x2a",
+    "assetType": "S",
+    "label": "Regulus Therapeutics Inc.",
+    "quarterlyDividend": 62.19,
+    "baseRateOfReturn": 7.68,
+    "betaMeasure": 0.69,
+    "sharePrice": 41.68
+  },
+  {
+    "accountCode": "0x2b",
+    "assetType": "S",
+    "label": "MFS Charter Income Trust",
+    "quarterlyDividend": 0.98,
+    "baseRateOfReturn": 0.09,
+    "betaMeasure": 0.34,
+    "sharePrice": 84.0
+  },
+  {
+    "accountCode": "0x2c",
+    "assetType": "S",
+    "label": "Nuveen Ohio Quality Municipal Income Fund",
+    "quarterlyDividend": 19.27,
+    "baseRateOfReturn": 0.19,
+    "betaMeasure": 0.18,
+    "sharePrice": 31.34
+  },
+  {
+    "accountCode": "0x2d",
+    "assetType": "S",
+    "label": "NCI, Inc.",
+    "quarterlyDividend": 96.85,
+    "baseRateOfReturn": 2.35,
+    "betaMeasure": 0.64,
+    "sharePrice": 65.66
+  },
+  {
+    "accountCode": "0x2e",
+    "assetType": "S",
+    "label": "Merus N.V.",
+    "quarterlyDividend": 16.67,
+    "baseRateOfReturn": 1.57,
+    "betaMeasure": 0.83,
+    "sharePrice": 97.51
+  },
+  {
+    "accountCode": "0x2f",
+    "assetType": "S",
+    "label": "BBVA Banco Frances S.A.",
+    "quarterlyDividend": 12.37,
+    "baseRateOfReturn": 3.79,
+    "betaMeasure": 0.37,
+    "sharePrice": 79.27
+  },
+  {
+    "accountCode": "0x30",
+    "assetType": "S",
+    "label": "Paylocity Holding Corporation",
+    "quarterlyDividend": 98.15,
+    "baseRateOfReturn": 0.21,
+    "betaMeasure": 0.18,
+    "sharePrice": 44.21
+  },
+  {
+    "accountCode": "0x31",
+    "assetType": "S",
+    "label": "Duke Energy Corporation",
+    "quarterlyDividend": 28.71,
+    "baseRateOfReturn": 6.42,
+    "betaMeasure": 0.15,
+    "sharePrice": 21.24
+  },
+  {
+    "accountCode": "0x32",
+    "assetType": "S",
+    "label": "Destination XL Group, Inc.",
+    "quarterlyDividend": 25.58,
+    "baseRateOfReturn": 3.76,
+    "betaMeasure": 0.85,
+    "sharePrice": 9.31
+  },
+  {
+    "accountCode": "0x33",
+    "assetType": "S",
+    "label": "Arena Pharmaceuticals, Inc.",
+    "quarterlyDividend": 95.57,
+    "baseRateOfReturn": 8.4,
+    "betaMeasure": 0.44,
+    "sharePrice": 80.08
+  },
+  {
+    "accountCode": "0x34",
+    "assetType": "S",
+    "label": "KKR and Co. L.P.",
+    "quarterlyDividend": 31.9,
+    "baseRateOfReturn": 0.37,
+    "betaMeasure": 0.26,
+    "sharePrice": 72.4
+  },
+  {
+    "accountCode": "0x35",
+    "assetType": "S",
+    "label": "Kirby Corporation",
+    "quarterlyDividend": 16.12,
+    "baseRateOfReturn": 0.11,
+    "betaMeasure": 0.6,
+    "sharePrice": 86.16
+  },
+  {
+    "accountCode": "0x36",
+    "assetType": "S",
+    "label": "VictoryShares US 500 Enhanced Volatility Wtd ETF",
+    "quarterlyDividend": 70.81,
+    "baseRateOfReturn": 4.51,
+    "betaMeasure": 0.63,
+    "sharePrice": 25.51
+  },
+  {
+    "accountCode": "0x37",
+    "assetType": "S",
+    "label": "American Axle and Manufacturing Holdings, Inc.",
+    "quarterlyDividend": 33.25,
+    "baseRateOfReturn": 9.02,
+    "betaMeasure": 0.26,
+    "sharePrice": 57.41
+  },
+  {
+    "accountCode": "0x38",
+    "assetType": "S",
+    "label": "Horace Mann Educators Corporation",
+    "quarterlyDividend": 41.7,
+    "baseRateOfReturn": 7.16,
+    "betaMeasure": 0.73,
+    "sharePrice": 81.41
+  },
+  {
+    "accountCode": "0x39",
+    "assetType": "S",
+    "label": "Impax Laboratories, Inc.",
+    "quarterlyDividend": 94.14,
+    "baseRateOfReturn": 0.34,
+    "betaMeasure": 0.41,
+    "sharePrice": 5.4
+  },
+  {
+    "accountCode": "0x3a",
+    "assetType": "S",
+    "label": "Telefonica SA",
+    "quarterlyDividend": 80.21,
+    "baseRateOfReturn": 5.97,
+    "betaMeasure": 0.33,
+    "sharePrice": 13.0
+  },
+  {
+    "accountCode": "0x3b",
+    "assetType": "S",
+    "label": "Fogo de Chao, Inc.",
+    "quarterlyDividend": 17.37,
+    "baseRateOfReturn": 3.44,
+    "betaMeasure": 0.21,
+    "sharePrice": 65.12
+  },
+  {
+    "accountCode": "0x3c",
+    "assetType": "S",
+    "label": "Guggenheim Enhanced Equity Income Fund",
+    "quarterlyDividend": 68.79,
+    "baseRateOfReturn": 3.29,
+    "betaMeasure": 0.24,
+    "sharePrice": 43.11
+  },
+  {
+    "accountCode": "0x3d",
+    "assetType": "S",
+    "label": "Lehman ABS Corporation",
+    "quarterlyDividend": 12.06,
+    "baseRateOfReturn": 1.67,
+    "betaMeasure": 0.58,
+    "sharePrice": 96.8
+  },
+  {
+    "accountCode": "0x3e",
+    "assetType": "S",
+    "label": "Safe Bulkers, Inc",
+    "quarterlyDividend": 52.44,
+    "baseRateOfReturn": 6.1,
+    "betaMeasure": 0.07,
+    "sharePrice": 77.54
+  },
+  {
+    "accountCode": "0x21",
+    "assetType": "P",
+    "label": "Sabrina",
+    "quarterlyDividend": 845742.36,
+    "baseRateOfReturn": 7.24,
+    "baseOmegaMeasure": 0.65,
+    "totalValue": 8.139E9
+  },
+  {
+    "accountCode": "0x22",
+    "assetType": "P",
+    "label": "It is Alive 2: It Lives Again",
+    "quarterlyDividend": 916867.56,
+    "baseRateOfReturn": 7.48,
+    "baseOmegaMeasure": 0.83,
+    "totalValue": 8.423E9
+  },
+  {
+    "accountCode": "0x23",
+    "assetType": "P",
+    "label": "Costa Brava",
+    "quarterlyDividend": 766192.86,
+    "baseRateOfReturn": 8.82,
+    "baseOmegaMeasure": 0.45,
+    "totalValue": 6.92E8
+  },
+  {
+    "accountCode": "0x24",
+    "assetType": "P",
+    "label": "Carpool",
+    "quarterlyDividend": 184206.09,
+    "baseRateOfReturn": 7.9,
+    "baseOmegaMeasure": 0.23,
+    "totalValue": 1.117E9
+  },
+  {
+    "accountCode": "0x25",
+    "assetType": "P",
+    "label": "Yentl",
+    "quarterlyDividend": 469621.31,
+    "baseRateOfReturn": 6.5,
+    "baseOmegaMeasure": 0.75,
+    "totalValue": 8.357E9
+  },
+  {
+    "accountCode": "0x26",
+    "assetType": "P",
+    "label": "Real Men",
+    "quarterlyDividend": 82331.41,
+    "baseRateOfReturn": 1.32,
+    "baseOmegaMeasure": 0.54,
+    "totalValue": 4.322E9
+  },
+  {
+    "accountCode": "0x27",
+    "assetType": "P",
+    "label": "Monkey Tail, A (Chateau des singes, Le)",
+    "quarterlyDividend": 733414.36,
+    "baseRateOfReturn": 3.04,
+    "baseOmegaMeasure": 0.54,
+    "totalValue": 2.794E9
+  },
+  {
+    "accountCode": "0x28",
+    "assetType": "P",
+    "label": "Across 110th Street",
+    "quarterlyDividend": 204681.15,
+    "baseRateOfReturn": 8.6,
+    "baseOmegaMeasure": 0.82,
+    "totalValue": 7.973E9
+  },
+  {
+    "accountCode": "0x29",
+    "assetType": "P",
+    "label": "Dogs of War, The",
+    "quarterlyDividend": 382382.85,
+    "baseRateOfReturn": 0.17,
+    "baseOmegaMeasure": 0.92,
+    "totalValue": 5.892E9
+  },
+  {
+    "accountCode": "0x2a",
+    "assetType": "P",
+    "label": "Destiny in Space",
+    "quarterlyDividend": 941199.96,
+    "baseRateOfReturn": 7.12,
+    "baseOmegaMeasure": 0.92,
+    "totalValue": 2.114E9
+  },
+  {
+    "accountCode": "0x2b",
+    "assetType": "P",
+    "label": "Day of the Outlaw",
+    "quarterlyDividend": 948127.22,
+    "baseRateOfReturn": 6.11,
+    "baseOmegaMeasure": 0.93,
+    "totalValue": 6.043E9
+  },
+  {
+    "accountCode": "0x2c",
+    "assetType": "P",
+    "label": "Buffet froid",
+    "quarterlyDividend": 172130.06,
+    "baseRateOfReturn": 3.98,
+    "baseOmegaMeasure": 0.05,
+    "totalValue": 9.908E9
+  },
+  {
+    "accountCode": "0x2d",
+    "assetType": "P",
+    "label": "Quiet American, The",
+    "quarterlyDividend": 568513.32,
+    "baseRateOfReturn": 5.37,
+    "baseOmegaMeasure": 0.58,
+    "totalValue": 9.595E9
+  },
+  {
+    "accountCode": "0x2e",
+    "assetType": "P",
+    "label": "Excalibur",
+    "quarterlyDividend": 524096.51,
+    "baseRateOfReturn": 4.93,
+    "baseOmegaMeasure": 0.33,
+    "totalValue": 5.417E9
+  },
+  {
+    "accountCode": "0x2f",
+    "assetType": "P",
+    "label": "Forever Yours (Ikuisesti sinun)",
+    "quarterlyDividend": 570061.42,
+    "baseRateOfReturn": 2.04,
+    "baseOmegaMeasure": 0.12,
+    "totalValue": 3.94E9
+  },
+  {
+    "accountCode": "0x30",
+    "assetType": "P",
+    "label": "The First Men in the Moon",
+    "quarterlyDividend": 978699.36,
+    "baseRateOfReturn": 8.37,
+    "baseOmegaMeasure": 0.55,
+    "totalValue": 7.718E9
+  },
+  {
+    "accountCode": "0x31",
+    "assetType": "P",
+    "label": "Bravo Two Zero ",
+    "quarterlyDividend": 957871.72,
+    "baseRateOfReturn": 0.75,
+    "baseOmegaMeasure": 0.52,
+    "totalValue": 5.14E9
+  },
+  {
+    "accountCode": "0x32",
+    "assetType": "P",
+    "label": "Bounty Hunter, The",
+    "quarterlyDividend": 37512.76,
+    "baseRateOfReturn": 5.96,
+    "baseOmegaMeasure": 0.93,
+    "totalValue": 7.788E9
+  },
+  {
+    "accountCode": "0x33",
+    "assetType": "P",
+    "label": "Living Wake, The",
+    "quarterlyDividend": 366285.46,
+    "baseRateOfReturn": 6.95,
+    "baseOmegaMeasure": 0.17,
+    "totalValue": 6.662E9
+  },
+  {
+    "accountCode": "0x34",
+    "assetType": "P",
+    "label": "Blood on the Sun",
+    "quarterlyDividend": 205279.87,
+    "baseRateOfReturn": 0.37,
+    "baseOmegaMeasure": 0.31,
+    "totalValue": 8.453E9
+  },
+  {
+    "accountCode": "0x35",
+    "assetType": "P",
+    "label": "World Traveler",
+    "quarterlyDividend": 416934.52,
+    "baseRateOfReturn": 1.82,
+    "baseOmegaMeasure": 0.22,
+    "totalValue": 6.172E9
+  },
+  {
+    "accountCode": "0x36",
+    "assetType": "P",
+    "label": "Brothers Rico, The",
+    "quarterlyDividend": 203497.16,
+    "baseRateOfReturn": 8.36,
+    "baseOmegaMeasure": 0.16,
+    "totalValue": 2.511E9
+  },
+  {
+    "accountCode": "0x37",
+    "assetType": "P",
+    "label": "Vampire Effect (The Twins Effect) (Chin gei bin)",
+    "quarterlyDividend": 681174.08,
+    "baseRateOfReturn": 6.43,
+    "baseOmegaMeasure": 0.65,
+    "totalValue": 8134000.0
+  }
+]}{"ListOfAssets": [
+  {
+    "accountCode": "00x1",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.55
+  },
+  {
+    "accountCode": "00x2",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.024
+  },
+  {
+    "accountCode": "00x3",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.31
+  },
+  {
+    "accountCode": "00x4",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.95
+  },
+  {
+    "accountCode": "00x5",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.18
+  },
+  {
+    "accountCode": "00x6",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.17
+  },
+  {
+    "accountCode": "00x7",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.87
+  },
+  {
+    "accountCode": "00x8",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.83
+  },
+  {
+    "accountCode": "00x9",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.36
+  },
+  {
+    "accountCode": "00xa",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.75
+  },
+  {
+    "accountCode": "00xb",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.052
+  },
+  {
+    "accountCode": "00xc",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.052
+  },
+  {
+    "accountCode": "00xd",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.31
+  },
+  {
+    "accountCode": "00xe",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.57
+  },
+  {
+    "accountCode": "00xf",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.42
+  },
+  {
+    "accountCode": "0x10",
+    "assetType": "D",
+    "label": "Monkey Banana storage account",
+    "apr": 0.55
+  },
+  {
+    "accountCode": "0x11",
+    "assetType": "D",
+    "label": "90 year CD",
+    "apr": 0.17
+  },
+  {
+    "accountCode": "0x12",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.48
+  },
+  {
+    "accountCode": "0x13",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.23
+  },
+  {
+    "accountCode": "0x14",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.68
+  },
+  {
+    "accountCode": "0x15",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.18
+  },
+  {
+    "accountCode": "0x16",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.77
+  },
+  {
+    "accountCode": "0x17",
+    "assetType": "D",
+    "label": "Money Market banana account",
+    "apr": 0.034
+  },
+  {
+    "accountCode": "0x18",
+    "assetType": "D",
+    "label": "3 year CD",
+    "apr": 0.57
+  },
+  {
+    "accountCode": "0x19",
+    "assetType": "D",
+    "label": "Piggy bank",
+    "apr": 0.069
+  },
+  {
+    "accountCode": "0x1a",
+    "assetType": "D",
+    "label": "6 month CD",
+    "apr": 0.73
+  },
+  {
+    "accountCode": "0x1b",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.95
+  },
+  {
+    "accountCode": "0x1c",
+    "assetType": "D",
+    "label": "Food Deposit Account",
+    "apr": 0.36
+  },
+  {
+    "accountCode": "0x1d",
+    "assetType": "D",
+    "label": "Piggy bank",
+    "apr": 0.24
+  },
+  {
+    "accountCode": "0x1e",
+    "assetType": "D",
+    "label": "Savings account",
+    "apr": 0.45
+  },
+  {
+    "accountCode": "0x21",
+    "assetType": "S",
+    "label": "Zafgen, Inc.",
+    "quarterlyDividend": 21.57,
+    "baseRateOfReturn": 0.9,
+    "betaMeasure": 0.45,
+    "sharePrice": 42.13
+  },
+  {
+    "accountCode": "0x22",
+    "assetType": "S",
+    "label": "Helix Energy Solutions Group, Inc.",
+    "quarterlyDividend": 69.75,
+    "baseRateOfReturn": 8.76,
+    "betaMeasure": 0.52,
+    "sharePrice": 20.88
+  },
+  {
+    "accountCode": "0x23",
+    "assetType": "S",
+    "label": "iShares MSCI Europe Financials Sector Index Fund",
+    "quarterlyDividend": 66.73,
+    "baseRateOfReturn": 8.57,
+    "betaMeasure": 0.32,
+    "sharePrice": 9.65
+  },
+  {
+    "accountCode": "0x24",
+    "assetType": "S",
+    "label": "Special Opportunities Fund Inc.",
+    "quarterlyDividend": 55.91,
+    "baseRateOfReturn": 6.04,
+    "betaMeasure": 0.28,
+    "sharePrice": 18.9
+  },
+  {
+    "accountCode": "0x25",
+    "assetType": "S",
+    "label": "Zions Bancorporation",
+    "quarterlyDividend": 91.96,
+    "baseRateOfReturn": 8.25,
+    "betaMeasure": 0.19,
+    "sharePrice": 48.37
+  },
+  {
+    "accountCode": "0x26",
+    "assetType": "S",
+    "label": "Exa Corporation",
+    "quarterlyDividend": 65.97,
+    "baseRateOfReturn": 1.97,
+    "betaMeasure": 0.65,
+    "sharePrice": 76.25
+  },
+  {
+    "accountCode": "0x27",
+    "assetType": "S",
+    "label": "Resource Capital Corp.",
+    "quarterlyDividend": 54.2,
+    "baseRateOfReturn": 1.32,
+    "betaMeasure": 0.56,
+    "sharePrice": 5.09
+  },
+  {
+    "accountCode": "0x28",
+    "assetType": "S",
+    "label": "Aircastle Limited",
+    "quarterlyDividend": 12.72,
+    "baseRateOfReturn": 4.61,
+    "betaMeasure": 0.62,
+    "sharePrice": 31.46
+  },
+  {
+    "accountCode": "0x29",
+    "assetType": "S",
+    "label": "Dillards, Inc.",
+    "quarterlyDividend": 64.12,
+    "baseRateOfReturn": 7.88,
+    "betaMeasure": 0.92,
+    "sharePrice": 46.65
+  },
+  {
+    "accountCode": "0x2a",
+    "assetType": "S",
+    "label": "Regulus Therapeutics Inc.",
+    "quarterlyDividend": 62.19,
+    "baseRateOfReturn": 7.68,
+    "betaMeasure": 0.69,
+    "sharePrice": 41.68
+  },
+  {
+    "accountCode": "0x2b",
+    "assetType": "S",
+    "label": "MFS Charter Income Trust",
+    "quarterlyDividend": 0.98,
+    "baseRateOfReturn": 0.09,
+    "betaMeasure": 0.34,
+    "sharePrice": 84.0
+  },
+  {
+    "accountCode": "0x2c",
+    "assetType": "S",
+    "label": "Nuveen Ohio Quality Municipal Income Fund",
+    "quarterlyDividend": 19.27,
+    "baseRateOfReturn": 0.19,
+    "betaMeasure": 0.18,
+    "sharePrice": 31.34
+  },
+  {
+    "accountCode": "0x2d",
+    "assetType": "S",
+    "label": "NCI, Inc.",
+    "quarterlyDividend": 96.85,
+    "baseRateOfReturn": 2.35,
+    "betaMeasure": 0.64,
+    "sharePrice": 65.66
+  },
+  {
+    "accountCode": "0x2e",
+    "assetType": "S",
+    "label": "Merus N.V.",
+    "quarterlyDividend": 16.67,
+    "baseRateOfReturn": 1.57,
+    "betaMeasure": 0.83,
+    "sharePrice": 97.51
+  },
+  {
+    "accountCode": "0x2f",
+    "assetType": "S",
+    "label": "BBVA Banco Frances S.A.",
+    "quarterlyDividend": 12.37,
+    "baseRateOfReturn": 3.79,
+    "betaMeasure": 0.37,
+    "sharePrice": 79.27
+  },
+  {
+    "accountCode": "0x30",
+    "assetType": "S",
+    "label": "Paylocity Holding Corporation",
+    "quarterlyDividend": 98.15,
+    "baseRateOfReturn": 0.21,
+    "betaMeasure": 0.18,
+    "sharePrice": 44.21
+  },
+  {
+    "accountCode": "0x31",
+    "assetType": "S",
+    "label": "Duke Energy Corporation",
+    "quarterlyDividend": 28.71,
+    "baseRateOfReturn": 6.42,
+    "betaMeasure": 0.15,
+    "sharePrice": 21.24
+  },
+  {
+    "accountCode": "0x32",
+    "assetType": "S",
+    "label": "Destination XL Group, Inc.",
+    "quarterlyDividend": 25.58,
+    "baseRateOfReturn": 3.76,
+    "betaMeasure": 0.85,
+    "sharePrice": 9.31
+  },
+  {
+    "accountCode": "0x33",
+    "assetType": "S",
+    "label": "Arena Pharmaceuticals, Inc.",
+    "quarterlyDividend": 95.57,
+    "baseRateOfReturn": 8.4,
+    "betaMeasure": 0.44,
+    "sharePrice": 80.08
+  },
+  {
+    "accountCode": "0x34",
+    "assetType": "S",
+    "label": "KKR and Co. L.P.",
+    "quarterlyDividend": 31.9,
+    "baseRateOfReturn": 0.37,
+    "betaMeasure": 0.26,
+    "sharePrice": 72.4
+  },
+  {
+    "accountCode": "0x35",
+    "assetType": "S",
+    "label": "Kirby Corporation",
+    "quarterlyDividend": 16.12,
+    "baseRateOfReturn": 0.11,
+    "betaMeasure": 0.6,
+    "sharePrice": 86.16
+  },
+  {
+    "accountCode": "0x36",
+    "assetType": "S",
+    "label": "VictoryShares US 500 Enhanced Volatility Wtd ETF",
+    "quarterlyDividend": 70.81,
+    "baseRateOfReturn": 4.51,
+    "betaMeasure": 0.63,
+    "sharePrice": 25.51
+  },
+  {
+    "accountCode": "0x37",
+    "assetType": "S",
+    "label": "American Axle and Manufacturing Holdings, Inc.",
+    "quarterlyDividend": 33.25,
+    "baseRateOfReturn": 9.02,
+    "betaMeasure": 0.26,
+    "sharePrice": 57.41
+  },
+  {
+    "accountCode": "0x38",
+    "assetType": "S",
+    "label": "Horace Mann Educators Corporation",
+    "quarterlyDividend": 41.7,
+    "baseRateOfReturn": 7.16,
+    "betaMeasure": 0.73,
+    "sharePrice": 81.41
+  },
+  {
+    "accountCode": "0x39",
+    "assetType": "S",
+    "label": "Impax Laboratories, Inc.",
+    "quarterlyDividend": 94.14,
+    "baseRateOfReturn": 0.34,
+    "betaMeasure": 0.41,
+    "sharePrice": 5.4
+  },
+  {
+    "accountCode": "0x3a",
+    "assetType": "S",
+    "label": "Telefonica SA",
+    "quarterlyDividend": 80.21,
+    "baseRateOfReturn": 5.97,
+    "betaMeasure": 0.33,
+    "sharePrice": 13.0
+  },
+  {
+    "accountCode": "0x3b",
+    "assetType": "S",
+    "label": "Fogo de Chao, Inc.",
+    "quarterlyDividend": 17.37,
+    "baseRateOfReturn": 3.44,
+    "betaMeasure": 0.21,
+    "sharePrice": 65.12
+  },
+  {
+    "accountCode": "0x3c",
+    "assetType": "S",
+    "label": "Guggenheim Enhanced Equity Income Fund",
+    "quarterlyDividend": 68.79,
+    "baseRateOfReturn": 3.29,
+    "betaMeasure": 0.24,
+    "sharePrice": 43.11
+  },
+  {
+    "accountCode": "0x3d",
+    "assetType": "S",
+    "label": "Lehman ABS Corporation",
+    "quarterlyDividend": 12.06,
+    "baseRateOfReturn": 1.67,
+    "betaMeasure": 0.58,
+    "sharePrice": 96.8
+  },
+  {
+    "accountCode": "0x3e",
+    "assetType": "S",
+    "label": "Safe Bulkers, Inc",
+    "quarterlyDividend": 52.44,
+    "baseRateOfReturn": 6.1,
+    "betaMeasure": 0.07,
+    "sharePrice": 77.54
+  },
+  {
+    "accountCode": "0x21",
+    "assetType": "P",
+    "label": "Sabrina",
+    "quarterlyDividend": 845742.36,
+    "baseRateOfReturn": 7.24,
+    "baseOmegaMeasure": 0.65,
+    "totalValue": 8.139E9
+  },
+  {
+    "accountCode": "0x22",
+    "assetType": "P",
+    "label": "It is Alive 2: It Lives Again",
+    "quarterlyDividend": 916867.56,
+    "baseRateOfReturn": 7.48,
+    "baseOmegaMeasure": 0.83,
+    "totalValue": 8.423E9
+  },
+  {
+    "accountCode": "0x23",
+    "assetType": "P",
+    "label": "Costa Brava",
+    "quarterlyDividend": 766192.86,
+    "baseRateOfReturn": 8.82,
+    "baseOmegaMeasure": 0.45,
+    "totalValue": 6.92E8
+  },
+  {
+    "accountCode": "0x24",
+    "assetType": "P",
+    "label": "Carpool",
+    "quarterlyDividend": 184206.09,
+    "baseRateOfReturn": 7.9,
+    "baseOmegaMeasure": 0.23,
+    "totalValue": 1.117E9
+  },
+  {
+    "accountCode": "0x25",
+    "assetType": "P",
+    "label": "Yentl",
+    "quarterlyDividend": 469621.31,
+    "baseRateOfReturn": 6.5,
+    "baseOmegaMeasure": 0.75,
+    "totalValue": 8.357E9
+  },
+  {
+    "accountCode": "0x26",
+    "assetType": "P",
+    "label": "Real Men",
+    "quarterlyDividend": 82331.41,
+    "baseRateOfReturn": 1.32,
+    "baseOmegaMeasure": 0.54,
+    "totalValue": 4.322E9
+  },
+  {
+    "accountCode": "0x27",
+    "assetType": "P",
+    "label": "Monkey Tail, A (Chateau des singes, Le)",
+    "quarterlyDividend": 733414.36,
+    "baseRateOfReturn": 3.04,
+    "baseOmegaMeasure": 0.54,
+    "totalValue": 2.794E9
+  },
+  {
+    "accountCode": "0x28",
+    "assetType": "P",
+    "label": "Across 110th Street",
+    "quarterlyDividend": 204681.15,
+    "baseRateOfReturn": 8.6,
+    "baseOmegaMeasure": 0.82,
+    "totalValue": 7.973E9
+  },
+  {
+    "accountCode": "0x29",
+    "assetType": "P",
+    "label": "Dogs of War, The",
+    "quarterlyDividend": 382382.85,
+    "baseRateOfReturn": 0.17,
+    "baseOmegaMeasure": 0.92,
+    "totalValue": 5.892E9
+  },
+  {
+    "accountCode": "0x2a",
+    "assetType": "P",
+    "label": "Destiny in Space",
+    "quarterlyDividend": 941199.96,
+    "baseRateOfReturn": 7.12,
+    "baseOmegaMeasure": 0.92,
+    "totalValue": 2.114E9
+  },
+  {
+    "accountCode": "0x2b",
+    "assetType": "P",
+    "label": "Day of the Outlaw",
+    "quarterlyDividend": 948127.22,
+    "baseRateOfReturn": 6.11,
+    "baseOmegaMeasure": 0.93,
+    "totalValue": 6.043E9
+  },
+  {
+    "accountCode": "0x2c",
+    "assetType": "P",
+    "label": "Buffet froid",
+    "quarterlyDividend": 172130.06,
+    "baseRateOfReturn": 3.98,
+    "baseOmegaMeasure": 0.05,
+    "totalValue": 9.908E9
+  },
+  {
+    "accountCode": "0x2d",
+    "assetType": "P",
+    "label": "Quiet American, The",
+    "quarterlyDividend": 568513.32,
+    "baseRateOfReturn": 5.37,
+    "baseOmegaMeasure": 0.58,
+    "totalValue": 9.595E9
+  },
+  {
+    "accountCode": "0x2e",
+    "assetType": "P",
+    "label": "Excalibur",
+    "quarterlyDividend": 524096.51,
+    "baseRateOfReturn": 4.93,
+    "baseOmegaMeasure": 0.33,
+    "totalValue": 5.417E9
+  },
+  {
+    "accountCode": "0x2f",
+    "assetType": "P",
+    "label": "Forever Yours (Ikuisesti sinun)",
+    "quarterlyDividend": 570061.42,
+    "baseRateOfReturn": 2.04,
+    "baseOmegaMeasure": 0.12,
+    "totalValue": 3.94E9
+  },
+  {
+    "accountCode": "0x30",
+    "assetType": "P",
+    "label": "The First Men in the Moon",
+    "quarterlyDividend": 978699.36,
+    "baseRateOfReturn": 8.37,
+    "baseOmegaMeasure": 0.55,
+    "totalValue": 7.718E9
+  },
+  {
+    "accountCode": "0x31",
+    "assetType": "P",
+    "label": "Bravo Two Zero ",
+    "quarterlyDividend": 957871.72,
+    "baseRateOfReturn": 0.75,
+    "baseOmegaMeasure": 0.52,
+    "totalValue": 5.14E9
+  },
+  {
+    "accountCode": "0x32",
+    "assetType": "P",
+    "label": "Bounty Hunter, The",
+    "quarterlyDividend": 37512.76,
+    "baseRateOfReturn": 5.96,
+    "baseOmegaMeasure": 0.93,
+    "totalValue": 7.788E9
+  },
+  {
+    "accountCode": "0x33",
+    "assetType": "P",
+    "label": "Living Wake, The",
+    "quarterlyDividend": 366285.46,
+    "baseRateOfReturn": 6.95,
+    "baseOmegaMeasure": 0.17,
+    "totalValue": 6.662E9
+  },
+  {
+    "accountCode": "0x34",
+    "assetType": "P",
+    "label": "Blood on the Sun",
+    "quarterlyDividend": 205279.87,
+    "baseRateOfReturn": 0.37,
+    "baseOmegaMeasure": 0.31,
+    "totalValue": 8.453E9
+  },
+  {
+    "accountCode": "0x35",
+    "assetType": "P",
+    "label": "World Traveler",
+    "quarterlyDividend": 416934.52,
+    "baseRateOfReturn": 1.82,
+    "baseOmegaMeasure": 0.22,
+    "totalValue": 6.172E9
+  },
+  {
+    "accountCode": "0x36",
+    "assetType": "P",
+    "label": "Brothers Rico, The",
+    "quarterlyDividend": 203497.16,
+    "baseRateOfReturn": 8.36,
+    "baseOmegaMeasure": 0.16,
+    "totalValue": 2.511E9
+  },
+  {
+    "accountCode": "0x37",
+    "assetType": "P",
+    "label": "Vampire Effect (The Twins Effect) (Chin gei bin)",
+    "quarterlyDividend": 681174.08,
+    "baseRateOfReturn": 6.43,
+    "baseOmegaMeasure": 0.65,
+    "totalValue": 8134000.0
+  }
+]}

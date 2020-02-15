@@ -78,14 +78,14 @@ public class DataConverter {
 //		    	Checks the type of asset and instantiates the corresponding object
 		        if (assetType.equals("D")) {
 		        	
-//		        	Creates a deposit account object from the tolkenized line
+//		        	Creates a deposit account object from the tokenized line
 		        	String apr = tokens[3];
 		        	DepositAccount holdingAsset = new DepositAccount(accountCode, assetType, label, apr);
 		        	listOfAssets.add(holdingAsset);
 		        
 		        } else if (assetType.equals("S")) {
 		        	
-//		        	Creates a stock object from the tolkenized line
+//		        	Creates a stock object from the tokenized line
 		        	String quarterlyDividend = tokens[3];
 		        	String baseRateOfReturn = tokens[4];
 		        	String betaMeasure = tokens[5];
@@ -117,78 +117,15 @@ public class DataConverter {
 		    	assetScan.close();
 		}
 		
-		
 //		Creating XML and JSON objects, then saving them to a file in /data
-		System.out.println();
 		
 		XMLConversions xml = new XMLConversions();
-
-		xml.arrPeopleToXML(listOfPeople,"data//people2.xml");
-
-//		xml.arrAssetsToXML(listOfAssets);
-		
-		
+		xml.arrPeopleToXML(listOfPeople,"data//Persons.xml");
+		xml.arrAssetsToXML(listOfAssets,"data//Assets.xml");
 		
 		JSONConversions json = new JSONConversions();
-		
-//		json.arrPeopleToJSON(listOfPeople);		
+		json.arrPeopleToJSON(listOfPeople,"data//Persons.json");		
+		json.arrAssetsToJSON(listOfAssets,"data//Assets.json");
 
-//		json.arrAssetsToJSON(listOfAssets);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
