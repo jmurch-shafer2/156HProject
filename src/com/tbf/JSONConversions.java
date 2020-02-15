@@ -6,6 +6,12 @@ import java.util.List;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
 
+/**
+ * 
+ * @author Natalie Ruckman and Joel Murch-Shafer
+ *
+ */
+
 public class JSONConversions {
 	public void classToJSON(Person chris) {
 		XStream xstream = new XStream(new JsonHierarchicalStreamDriver());

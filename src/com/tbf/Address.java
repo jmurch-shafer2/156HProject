@@ -1,5 +1,11 @@
 package com.tbf;
 
+/**
+ * 
+ * @author Natalie Ruckman and Joel Murch-Shafer
+ *
+ */
+
 public class Address {
 	private String street;
 	private String city;
@@ -12,8 +18,9 @@ public class Address {
 		this.street = street;
 		this.city = city;
 		this.state = state;
-		this.country = country;
 		this.zipcode = zipcode;
+		this.country = country;
+		
 	}
 	// I don't like how ugly this is, 
 	// but java made me do it because it will only let
@@ -24,12 +31,13 @@ public class Address {
 		String streetTemp = tokens[0];
 		String cityTemp = tokens[1];
 		String stateTemp = tokens[2];
-		String countryTemp = tokens[3];
-		String zipcodeTemp = tokens[4];
+		String zipcodeTemp = tokens[3];
+		String countryTemp = tokens[4];
 		this.street = streetTemp;
 		this.city = cityTemp;
 		this.state = stateTemp;
-		this.country = countryTemp;
 		this.zipcode = zipcodeTemp;
+		this.country = countryTemp;
+		
 	}
 }

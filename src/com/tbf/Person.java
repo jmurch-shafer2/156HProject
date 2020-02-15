@@ -5,8 +5,14 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import com.tbf.Address;
-
 import com.thoughtworks.xstream.XStream;
+
+
+/**
+ * 
+ * @author Natalie Ruckman and Joel Murch-Shafer
+ *
+ */
 
 public class Person {
 	private String personCode;

@@ -1,5 +1,11 @@
 package com.tbf;
 
+/**
+ * 
+ * @author Natalie Ruckman and Joel Murch-Shafer
+ *
+ */
+
 public class Stock extends Assets {
 	private double quarterlyDividend;
 	private double baseRateOfReturn;

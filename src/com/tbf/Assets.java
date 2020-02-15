@@ -1,5 +1,11 @@
 package com.tbf;
 
+/**
+ * 
+ * @author Natalie Ruckman and Joel Murch-Shafer
+ *
+ */
+
 import java.util.ArrayList;
 
 public abstract class Assets {
