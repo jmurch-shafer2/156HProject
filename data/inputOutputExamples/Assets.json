@@ -1,0 +1,372 @@
+{
+"assets": [
+  {
+    "apr": 0.0105,
+    "assetCode": "MONMO1",
+    "label": "Money Market Savings"
+  },
+  {
+    "apr": 0.0275,
+    "assetCode": "CD1Y3X",
+    "label": "1-year Rollover CD"
+  },
+  {
+    "apr": 0.0275,
+    "assetCode": "CD1Y3Y",
+    "label": "1-year Rollover CD"
+  },
+  {
+    "totalAmount": 13500.0,
+    "omega": 0.54,
+    "baseQuarterlyDividend": 2453.21,
+    "baseRateOfReturn": 0.021,
+    "assetCode": "RSTOR322",
+    "label": "7\" Vinyl Records"
+  },
+  {
+    "stockSymbol": "TWTR",
+    "sharePrice": 324.23,
+    "beta": -0.1,
+    "baseQuarterlyDividend": 23.0,
+    "baseRateOfReturn": 0.11,
+    "assetCode": "TWTTER01",
+    "label": "Twitter Inc."
+  },
+  {
+    "apr": 0.0134,
+    "assetCode": "SEARCH8",
+    "label": "Yahoo"
+  },
+  {
+    "totalAmount": 1212500.0,
+    "omega": 0.32,
+    "baseQuarterlyDividend": 35000.0,
+    "baseRateOfReturn": 0.03,
+    "assetCode": "FOOD12",
+    "label": "Cluckin\u0027s restaurant chain"
+  },
+  {
+    "totalAmount": 1004780.66,
+    "omega": 0.17,
+    "baseQuarterlyDividend": 4789.32,
+    "baseRateOfReturn": 0.0032,
+    "assetCode": "YUOPCT",
+    "label": "WALMART"
+  },
+  {
+    "totalAmount": 54300.0,
+    "omega": 0.13,
+    "baseQuarterlyDividend": 1232.0,
+    "baseRateOfReturn": 0.0123,
+    "assetCode": "REALStr12",
+    "label": "Fred\u0027s Fabulous Hardware Store"
+  },
+  {
+    "stockSymbol": "MSFT",
+    "sharePrice": 31.15,
+    "beta": 0.17,
+    "baseQuarterlyDividend": 0.92,
+    "baseRateOfReturn": 0.040999999999999995,
+    "assetCode": "MSFT007",
+    "label": "Microsoft Corporation"
+  },
+  {
+    "stockSymbol": "CMG",
+    "sharePrice": 341.91,
+    "beta": 0.0,
+    "baseQuarterlyDividend": 45.57,
+    "baseRateOfReturn": 0.0319,
+    "assetCode": "No1BURR",
+    "label": "Chipotle Mexican Grill"
+  },
+  {
+    "stockSymbol": "DDD",
+    "sharePrice": 35.4,
+    "beta": 0.08,
+    "baseQuarterlyDividend": 0.0,
+    "baseRateOfReturn": 0.0125,
+    "assetCode": "N0TPIX",
+    "label": "3D Systems"
+  },
+  {
+    "stockSymbol": "COST",
+    "sharePrice": 106.13,
+    "beta": 0.13,
+    "baseQuarterlyDividend": 10.0,
+    "baseRateOfReturn": 0.0225,
+    "assetCode": "B0oWM",
+    "label": "Costco"
+  },
+  {
+    "totalAmount": 120000.0,
+    "omega": 0.15,
+    "baseQuarterlyDividend": 2400.0,
+    "baseRateOfReturn": 0.0025,
+    "assetCode": "RENT445",
+    "label": "Rental Property"
+  },
+  {
+    "stockSymbol": "PEP",
+    "sharePrice": 41.08,
+    "beta": 0.075,
+    "baseQuarterlyDividend": 5.45,
+    "baseRateOfReturn": 0.031,
+    "assetCode": "PEPSI1",
+    "label": "Pepsi"
+  },
+  {
+    "apr": 0.0178,
+    "assetCode": "VTST",
+    "label": "Geigco"
+  },
+  {
+    "apr": 0.0435,
+    "assetCode": "CD99312",
+    "label": "5-year CD"
+  },
+  {
+    "apr": 0.085,
+    "assetCode": "ESPN001",
+    "label": "Huskers"
+  },
+  {
+    "totalAmount": 47800.35,
+    "omega": 0.48,
+    "baseQuarterlyDividend": 3678.19,
+    "baseRateOfReturn": 0.039,
+    "assetCode": "BIKE035",
+    "label": "Buck\u0027s Bike Store"
+  },
+  {
+    "apr": 0.034,
+    "assetCode": "RIRA01",
+    "label": "Roth IRA"
+  },
+  {
+    "stockSymbol": "YHOO",
+    "sharePrice": 28.17,
+    "beta": -0.03,
+    "baseQuarterlyDividend": 0.0,
+    "baseRateOfReturn": 0.034,
+    "assetCode": "YHOO003",
+    "label": "Yahoo! Inc."
+  },
+  {
+    "stockSymbol": "SSI",
+    "sharePrice": 122.75,
+    "beta": 0.01,
+    "baseQuarterlyDividend": 12.0,
+    "baseRateOfReturn": 0.032,
+    "assetCode": "SCHROK",
+    "label": "Schrock Innovation"
+  },
+  {
+    "totalAmount": 23006.53,
+    "omega": 0.33,
+    "baseQuarterlyDividend": 1050.5,
+    "baseRateOfReturn": 0.055999999999999994,
+    "assetCode": "THRE456",
+    "label": "Three-14 Pi Shop"
+  },
+  {
+    "stockSymbol": "MSFT",
+    "sharePrice": 30.23,
+    "beta": 0.45,
+    "baseQuarterlyDividend": 12.0,
+    "baseRateOfReturn": 1.3E-4,
+    "assetCode": "MSFT32",
+    "label": "Microsoft Inc."
+  },
+  {
+    "stockSymbol": "CNI",
+    "sharePrice": 97.75,
+    "beta": 0.12,
+    "baseQuarterlyDividend": 2.75,
+    "baseRateOfReturn": 0.046,
+    "assetCode": "wOOWoo1S",
+    "label": "Canadian National Railway"
+  },
+  {
+    "apr": 0.0876,
+    "assetCode": "CD4523",
+    "label": "10-year CD"
+  },
+  {
+    "apr": 0.034,
+    "assetCode": "ROTIRA",
+    "label": "Roth IRA"
+  },
+  {
+    "stockSymbol": "USA",
+    "sharePrice": 341.91,
+    "beta": 0.0,
+    "baseQuarterlyDividend": 45.57,
+    "baseRateOfReturn": 0.0319,
+    "assetCode": "MILTEC",
+    "label": "US Army"
+  },
+  {
+    "stockSymbol": "GOOG",
+    "sharePrice": 814.708,
+    "beta": -0.05,
+    "baseQuarterlyDividend": 0.0,
+    "baseRateOfReturn": 0.055999999999999994,
+    "assetCode": "GOOG001",
+    "label": "Google Inc."
+  },
+  {
+    "stockSymbol": "BUB",
+    "sharePrice": 429.8,
+    "beta": -0.07,
+    "baseQuarterlyDividend": 24.5,
+    "baseRateOfReturn": 0.043,
+    "assetCode": "BUBBAG",
+    "label": "BubbaGump Shrimp"
+  },
+  {
+    "stockSymbol": "BOA",
+    "sharePrice": 143.18,
+    "beta": 0.02,
+    "baseQuarterlyDividend": 3.25,
+    "baseRateOfReturn": 0.024,
+    "assetCode": "WESYT129",
+    "label": "Bank of America"
+  },
+  {
+    "stockSymbol": "DEO",
+    "sharePrice": 122.75,
+    "beta": 0.01,
+    "baseQuarterlyDividend": 12.0,
+    "baseRateOfReturn": 0.032,
+    "assetCode": "DIAGEO12",
+    "label": "Diageo PLC"
+  },
+  {
+    "stockSymbol": "PEP",
+    "sharePrice": 87.25,
+    "beta": 0.03,
+    "baseQuarterlyDividend": 5.24,
+    "baseRateOfReturn": 0.0814,
+    "assetCode": "PWES912",
+    "label": "PEPSI INC"
+  },
+  {
+    "apr": 0.0025,
+    "assetCode": "SAVE01",
+    "label": "Savings Account"
+  },
+  {
+    "apr": 0.0025,
+    "assetCode": "AGTSAV",
+    "label": "Savings Account"
+  },
+  {
+    "stockSymbol": "BRK-B",
+    "sharePrice": 107.04,
+    "beta": -0.1,
+    "baseQuarterlyDividend": 0.0,
+    "baseRateOfReturn": 0.07200000000000001,
+    "assetCode": "BERK-B",
+    "label": "Berkshire Hathaway"
+  },
+  {
+    "apr": 0.0105,
+    "assetCode": "BX001-23",
+    "label": "Money Market Savings"
+  },
+  {
+    "totalAmount": 1111.0,
+    "omega": 0.15,
+    "baseQuarterlyDividend": 1.0,
+    "baseRateOfReturn": 0.0011,
+    "assetCode": "CPPRD03",
+    "label": "Copper"
+  },
+  {
+    "apr": 8.0E-4,
+    "assetCode": "SVSVNGS",
+    "label": "Savings Account"
+  },
+  {
+    "apr": 0.0096,
+    "assetCode": "DTh38R",
+    "label": "Money Market Account"
+  },
+  {
+    "stockSymbol": "MIC",
+    "sharePrice": 814.708,
+    "beta": -0.05,
+    "baseQuarterlyDividend": 0.0,
+    "baseRateOfReturn": 0.055999999999999994,
+    "assetCode": "TABLET",
+    "label": "Surface Inc"
+  },
+  {
+    "totalAmount": 4213333.0,
+    "omega": -0.15,
+    "baseQuarterlyDividend": 10500.0,
+    "baseRateOfReturn": 0.02,
+    "assetCode": "IND321",
+    "label": "Industrial Widget Manufacturers Inc."
+  },
+  {
+    "stockSymbol": "KO",
+    "sharePrice": 41.08,
+    "beta": 0.075,
+    "baseQuarterlyDividend": 5.45,
+    "baseRateOfReturn": 0.031,
+    "assetCode": "321CC",
+    "label": "Coca-Cola"
+  },
+  {
+    "totalAmount": 58963.27,
+    "omega": 0.39,
+    "baseQuarterlyDividend": 7812.41,
+    "baseRateOfReturn": 0.025,
+    "assetCode": "DR0U7Z5TW",
+    "label": "TARGET"
+  },
+  {
+    "stockSymbol": "AAPL",
+    "sharePrice": 429.8,
+    "beta": -0.07,
+    "baseQuarterlyDividend": 24.5,
+    "baseRateOfReturn": 0.043,
+    "assetCode": "123APP",
+    "label": "Apple"
+  },
+  {
+    "totalAmount": 296352.87,
+    "omega": 0.25,
+    "baseQuarterlyDividend": 9631.45,
+    "baseRateOfReturn": 0.0064,
+    "assetCode": "TEWS4A1MO",
+    "label": "AMAZON"
+  },
+  {
+    "totalAmount": 1.0456E7,
+    "omega": 0.25,
+    "baseQuarterlyDividend": 14240.0,
+    "baseRateOfReturn": 0.0535,
+    "assetCode": "CMPROP0121",
+    "label": "Commercial Property-Red Oaks Mall"
+  },
+  {
+    "totalAmount": 2343212.0,
+    "omega": 0.12,
+    "baseQuarterlyDividend": 0.0,
+    "baseRateOfReturn": 0.0024,
+    "assetCode": "GLDSD03",
+    "label": "Gold"
+  },
+  {
+    "apr": 0.0275,
+    "assetCode": "CD1YER",
+    "label": "1-year Rollover CD"
+  },
+  {
+    "apr": 0.0435,
+    "assetCode": "CD5YER",
+    "label": "5-year CD"
+  }
+]}
