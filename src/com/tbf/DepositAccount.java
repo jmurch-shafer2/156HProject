@@ -8,7 +8,7 @@ package com.tbf;
  *
  */
 
-public class DepositAccount extends Assets {
+public class DepositAccount extends Asset {
 	private double apr;
 	
 	/**

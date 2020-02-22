@@ -8,7 +8,7 @@ package com.tbf;
  *
  */
 
-public class PrivateInvestment extends Assets {
+public class PrivateInvestment extends Asset {
 	private double quarterlyDividend;
 	private double baseRateOfReturn;
 	private double baseOmegaMeasure;
