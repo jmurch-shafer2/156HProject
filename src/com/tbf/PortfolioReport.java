@@ -1,5 +1,244 @@
 package com.tbf;
 
-public class PortfolioReport {
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
+public class PortfolioReport {
+	public static void main(String[] argv) {
+//		Loads a file where People objects will be created
+		String personsPath = "data//inputOutputExamples//Persons.dat";
+		Scanner scan = null;
+		ArrayList <Person> listOfPeople = new ArrayList();
+		
+//		Implementing a try, catch, finally to safely read from the file and check for a file not found exception
+		ArrayList <String> linesOfPeople = new ArrayList();
+		try {
+			File personsFilePath = new File(personsPath);
+		    scan = new Scanner(personsFilePath);
+		    String numberOfLines = scan.nextLine();
+//	  		Reads the Persons.dat and stores each line in an iterable array
+		    while (scan.hasNextLine()) {
+		    	String tempLine = scan.nextLine();
+		    	linesOfPeople.add(tempLine);
+		    }
+		} catch (FileNotFoundException e) {
+		    System.out.println(e.getMessage());
+		} finally {
+		    if (scan != null)
+		        scan.close();
+		}
+		for(String line: linesOfPeople) {
+	//		Initialize all of the variables
+			String localPersonCode = "";
+			String brokerData = "";
+			String localBrokerState = "";
+			String localSECIdentifier = "";
+			String fullName = "";
+	        String localFirstName = "";
+			String localLastName = "";
+	        String localAddress = "";
+	        ArrayList<String> localEmailList= new ArrayList<>();
+	        String[] tokens = line.split(";",-1);
+			localPersonCode = tokens[0];
+			brokerData = tokens[1];
+			fullName = tokens[2];
+			localAddress = tokens[3];
+			String emailAddressesString = tokens[4];
+			//Separating broker data out
+			String[] arrBroker = brokerData.split(",",-1);
+			if(arrBroker.length == 2) {
+				localBrokerState = arrBroker[0];
+				localSECIdentifier = arrBroker[1];
+			}
+			String[] arrNames = fullName.split(",",-1);
+			localFirstName = arrNames[0];
+			localLastName = arrNames[1];
+			String[] arrEmails = emailAddressesString.split(",",-1);
+			for(int i = 0;i< arrEmails.length;i++) {
+				localEmailList.add(arrEmails[i]);
+			}
+			Address addressTemp = null;
+	//		Creating an instance of an address
+			String[] addressTokens = localAddress.split(",",-1);
+			String streetTemp = addressTokens[0];
+			String cityTemp = addressTokens[1];
+			String stateTemp = addressTokens[2];
+			String zipcodeTemp = addressTokens[3];
+			String countryTemp = addressTokens[4];
+			addressTemp = new Address(streetTemp, cityTemp, stateTemp, countryTemp, zipcodeTemp);
+	//        	Create an instance of a person 			
+			Person localPerson = new Person(localPersonCode, localBrokerState, localSECIdentifier, localFirstName, localLastName,
+					addressTemp, localEmailList);
+	//        Appends each person to an array list of people
+	        listOfPeople.add(localPerson);
+	    }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	//	Loads a file where Asset objects will be created
+		String assetsPath = "data//inputOutputExamples//Assets.dat";
+		//	Implementing a try, catch, finally to safely read from the file and check for a file not found exception
+		ArrayList <Asset> listOfAssets = new ArrayList();
+		ArrayList <String> linesOfAssets = new ArrayList();
+		try {
+			File assetFilePath = new File(assetsPath);
+		    scan = new Scanner(assetFilePath);
+		    String numberOfLines = scan.nextLine();
+		    
+	//	    Reads the Assets.dat and stores each line in an iterable array
+		    while (scan.hasNextLine()) {
+		    	String tempLine = scan.nextLine();
+		    	linesOfAssets.add(tempLine);
+		    }
+		} catch (FileNotFoundException e) {
+		    System.out.println(e.getMessage());
+		} finally {
+		    if (scan != null)
+		        scan.close();
+		}
+		for(String line:linesOfAssets) {
+//	        Splits each line 
+	        String[] tokens = line.split(";",-1);
+	        String accountCode = tokens[0]; 
+	    	String assetType = tokens[1];
+	    	String label = tokens[2];
+//	    	Checks the type of asset and instantiates the corresponding object
+	        if (assetType.equals("D")) {
+//	        	Creates a deposit account object from the tokenized line
+	        	String apr = tokens[3];
+	        	DepositAccount holdingAsset = new DepositAccount(accountCode, assetType, label, apr);
+	        	listOfAssets.add(holdingAsset);
+	        } else if (assetType.equals("S")) {
+//	        	Creates a stock object from the tokenized line
+	        	String quarterlyDividend = tokens[3];
+	        	String baseRateOfReturn = tokens[4];
+	        	String betaMeasure = tokens[5];
+	        	String stockSymbol = tokens[6];
+	        	String sharePrice = tokens[7];
+	        	Stock holdingAsset = new Stock(accountCode, assetType, label, quarterlyDividend, 
+	        			baseRateOfReturn, betaMeasure, stockSymbol, sharePrice);
+	        	listOfAssets.add(holdingAsset);
+	        } else if (assetType.equals("P")) {
+//	        	Creates a private investment object from the tolkenized line
+	        	String quarterlyDividend = tokens[3];
+	        	String baseRateOfReturn = tokens[4];
+	        	String baseOmegaMeasure = tokens[5];
+	        	String totalValue = tokens[6];
+	        	PrivateInvestment holdingAsset = new PrivateInvestment(accountCode, assetType, label, 
+	        			quarterlyDividend, baseRateOfReturn, baseOmegaMeasure, totalValue);
+	        	listOfAssets.add(holdingAsset);
+	        } else {
+	        	System.out.println("There is an asset that does not have a specified type. This asset will not be created.");
+	        }
+	    }
+		
+		
+		
+		
+		
+		
+		
+		
+		String portfolioPath = "data//inputOutputExamples//Portfolio.dat";
+		//	Implementing a try, catch, finally to safely read from the file and check for a file not found exception
+		ArrayList <Portfolio> listOfPortfolios = new ArrayList();
+		ArrayList <String> linesOfPortfolios = new ArrayList();
+		try {
+			File portfolioFilePath = new File(portfolioPath);
+		    scan = new Scanner(portfolioFilePath);
+		    String numberOfLines = scan.nextLine();
+		    
+	//	    Reads the Assets.dat and stores each line in an iterable array
+		    while (scan.hasNextLine()) {
+		    	String tempLine = scan.nextLine();
+		    	linesOfPortfolios.add(tempLine);
+		    }
+		} catch (FileNotFoundException e) {
+		    System.out.println(e.getMessage());
+		} finally {
+		    if (scan != null)
+		        scan.close();
+		}
+		
+		
+		for(String line:linesOfPortfolios) {
+			String[] tokens = line.split(";",-1);
+			String portfolioCode = tokens[0];
+			String ownerCode = tokens[1];
+			String managerCode = tokens[2];
+			String beneficiaryCode = tokens[3];
+			String assetList = tokens[4];
+			
+			String[] assetTokens = assetList.split(",");
+			for(int i=0;i<assetTokens.length;i++) {
+				String[] asset = assetTokens[i].split(":");
+				String identifier = asset[0];
+				double value = Double.valueOf(asset[1]);
+				for(Asset thing:listOfAssets) {
+					String assetType = thing.getAssetType();
+					if(assetType =="Private Investment") {
+						PrivateInvestment tempAsset = new PrivateInvestment((PrivateInvestment)thing,value);
+					}else if(assetType =="Deposit Account") {
+						
+					}else if(assetType =="Stock") {
+						
+					}else {
+						// TODO you dun fucked up
+					}
+				
+				}
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 }

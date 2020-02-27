@@ -106,30 +106,6 @@ public class DataConverter {
 //	        Appends each person to an array list of people
 	        listOfPeople.add(localPerson);
 	    }
-
-			
-		
-		
-		
-		
-	    
-        
-        
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 //		Loads a file where Asset objects will be created
 		String assetsPath = "data//Assets.dat";

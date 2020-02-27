@@ -24,4 +24,12 @@ public class DepositAccount extends Asset {
 		super(accountCode,assetType,label);
 		this.apr = Double.valueOf(apr);
 	}
+	
+	public String getAssetType() {
+		return "Deposit Account";
+	}
+
+	public double getApr() {
+		return apr;
+	}
 	}

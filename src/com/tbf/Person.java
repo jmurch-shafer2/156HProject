@@ -36,4 +36,33 @@ public class Person {
 		this.address = address;
 		this.emailList = emailList;
 	}
+
+	public String getPersonCode() {
+		return personCode;
+	}
+
+	public String getBrokerState() {
+		return brokerState;
+	}
+
+	public String getSECIdentifier() {
+		return SECIdentifier;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public ArrayList<String> getEmailList() {
+		return emailList;
+	}
+	
 }

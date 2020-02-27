@@ -38,4 +38,28 @@ public class Stock extends Asset {
 		this.sharePrice = Double.valueOf(sharePrice);
 	}
 	
+	public String getAssetType() {
+		return "Stock";
+	}
+
+	public double getQuarterlyDividend() {
+		return quarterlyDividend;
+	}
+
+	public double getBaseRateOfReturn() {
+		return baseRateOfReturn;
+	}
+
+	public double getBetaMeasure() {
+		return betaMeasure;
+	}
+
+	public String getStockSymbol() {
+		return stockSymbol;
+	}
+
+	public double getSharePrice() {
+		return sharePrice;
+	}
+	
 	}

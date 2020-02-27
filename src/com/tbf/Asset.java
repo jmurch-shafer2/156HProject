@@ -20,6 +20,8 @@ public abstract class Asset {
 		this.assetType = assetType;
 		this.label = label;
 	}
+
+	protected abstract String getAssetType();
 	
 }
 
