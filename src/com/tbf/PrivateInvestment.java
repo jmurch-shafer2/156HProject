@@ -43,6 +43,12 @@ public class PrivateInvestment extends Asset {
 		return percentageOwned;
 	}
 	
+	
+	public double getReturn() {
+		double returnVal = ((this.baseRateOfReturn * this.totalValue/100) + (4 * this.quarterlyDividend))* this.percentageOwned/100;
+		return returnVal;
+	}
+	
 
 	public PrivateInvestment(String accountCode, String assetType, String label, String quarterlyDividend, String baseRateOfReturn, String baseOmegaMeasure, String totalValue) {
 		super(accountCode, assetType, label);

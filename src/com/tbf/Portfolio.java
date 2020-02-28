@@ -65,7 +65,7 @@ public class Portfolio {
 		return owner;
 	}
 	public String getOwnerName() {
-		return owner.getLastName() + ", " + owner.getFirstName();
+		return owner.getFirstName() + ", " + owner.getLastName();
 	}
 
 	public Person getManager() {
@@ -75,7 +75,7 @@ public class Portfolio {
 		if(manager == null) {
 			return "";
 		} else {
-			return manager.getLastName() + ", " + manager.getFirstName();
+			return manager.getFirstName() + ", " + manager.getLastName();
 		} 	
 	}
 
@@ -130,6 +130,59 @@ public class Portfolio {
 			aggregateRisk += riskFactor*(value/totalValue);	
 		}
 		return aggregateRisk;
+	}
+
+	
+	
+	
+	
+	
+	public double getReturn() {
+		double totalReturn = 0;
+		for(int i=0;i<assetList.size();i++) {
+			Asset asset = assetList.get(i);
+			String assetType = "";
+			assetType = asset.getAssetType();
+			if(assetType =="Private Investment") {
+				totalReturn += ((PrivateInvestment)asset).getReturn();
+			}else if(assetType =="Deposit Account") {
+				totalReturn += ((DepositAccount)asset).getReturn();
+			}else if(assetType =="Stock") {
+				totalReturn += ((Stock)asset).getReturn();
+			}else {
+				// TODO you dun fucked up
+			}	
+		}
+		return totalReturn;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	public double getCommision() {
+//		
+//	}
+//	
+//	
+//
+//	
+	public double getFees() {
+		double totalFees = 0;
+		if(this.manager.getBrokerState().equals("E")) {
+			totalFees = 75*this.assetList.size();
+		}
+		return totalFees;
 	}
 
 }

@@ -43,6 +43,11 @@ public class DepositAccount extends Asset {
 		return value;
 	}
 
+	public double getReturn() {
+		double returnVal = this.getValue() *(Math.exp(this.apr/100) - 1);
+		return returnVal;
+	}
+	
 	public double getApr() {
 		return apr;
 	}

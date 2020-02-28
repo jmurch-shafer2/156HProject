@@ -3,6 +3,8 @@ package com.tbf;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class PortfolioReport {
@@ -74,13 +76,6 @@ public class PortfolioReport {
 	//        Appends each person to an array list of people
 	        listOfPeople.add(localPerson);
 	    }
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
@@ -223,14 +218,19 @@ public class PortfolioReport {
 					beneficiary = new Person(loopPerson);
 				}
 			}
-			if(owner == null) {
-				
-			} else {
-				Portfolio localPortfolio = new Portfolio(portfolioCode,owner,manager,beneficiary,localAssetList);
-				listOfPortfolios.add(localPortfolio);
-			}
+			if(manager == null) {
+				manager = owner;
+			} 
+			Portfolio localPortfolio = new Portfolio(portfolioCode,owner,manager,beneficiary,localAssetList);
+			listOfPortfolios.add(localPortfolio);
 			
 		}
+		
+		Collections.sort(listOfPortfolios,new Comparator<Portfolio>() {
+			public int compare(Portfolio port, Portfolio that) {
+				return port.getOwnerName().compareTo(that.getOwnerName());
+			}
+		});
 		
 		
 		

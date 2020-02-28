@@ -52,6 +52,11 @@ public class Stock extends Asset {
 		return betaMeasure;
 	}
 	
+	public double getReturn() {
+		double returnVal = ((this.baseRateOfReturn * this.sharePrice/100) + (4 * this.quarterlyDividend)) * this.sharesOwned;
+		return returnVal;
+	}
+	
 	public double getValue() {
 		return sharePrice * sharesOwned;
 	}

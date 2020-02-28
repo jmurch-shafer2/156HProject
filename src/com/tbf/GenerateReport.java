@@ -8,7 +8,10 @@ public class GenerateReport {
 		String owner = p.getOwnerName();
 		String manager = p.getManagerName();
 		double weightedRisk = p.getAggregateRisk();
-		String str = String.format("%-10.10s %-20.25s %-20.25s $%17.2f   $%17.2f    %17.4f   $%17.2f   $%17.2f",code,owner,manager,0.0,0.0,weightedRisk,0.0,0.0);
+		double commisions = 0;
+		double fees = p.getFees();
+		double returnVal = p.getReturn();
+		String str = String.format("%-10.10s %-20.25s %-20.25s $%17.2f   $%17.2f    %17.4f   $%17.2f   $%17.2f",code,owner,manager,fees,commisions,weightedRisk,returnVal,0.0);
 		System.out.println(str);
 	}
 	public void executiveReport(ArrayList<Portfolio> portfolioList) {
