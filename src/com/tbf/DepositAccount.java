@@ -9,8 +9,12 @@ package com.tbf;
  */
 
 public class DepositAccount extends Asset {
-	private double apr;
 	
+	private double apr;
+	private double value;
+	
+	
+
 	/**
 	 * A constructor that creates an instance of a DepositAccount
 	 * class.
@@ -25,8 +29,18 @@ public class DepositAccount extends Asset {
 		this.apr = Double.valueOf(apr);
 	}
 	
+//	Copy constructor
+	public DepositAccount(DepositAccount that, double value) {
+		super(that.accountCode, that.assetType, that.label);
+		this.apr = that.apr;
+		this.value = value;
+	}
+	
 	public String getAssetType() {
 		return "Deposit Account";
+	}
+	public double getValue() {
+		return value;
 	}
 
 	public double getApr() {

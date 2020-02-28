@@ -147,12 +147,7 @@ public class PortfolioReport {
 		
 		
 		
-		
-		
-		
-		
-		
-		String portfolioPath = "data//inputOutputExamples//Portfolio.dat";
+		String portfolioPath = "data//inputOutputExamples//Portfolios.dat";
 		//	Implementing a try, catch, finally to safely read from the file and check for a file not found exception
 		ArrayList <Portfolio> listOfPortfolios = new ArrayList();
 		ArrayList <String> linesOfPortfolios = new ArrayList();
@@ -181,38 +176,59 @@ public class PortfolioReport {
 			String managerCode = tokens[2];
 			String beneficiaryCode = tokens[3];
 			String assetList = tokens[4];
+			ArrayList<Asset> localAssetList = new ArrayList();
 			
 			String[] assetTokens = assetList.split(",");
-			for(int i=0;i<assetTokens.length;i++) {
-				String[] asset = assetTokens[i].split(":");
-				String identifier = asset[0];
-				double value = Double.valueOf(asset[1]);
-				for(Asset thing:listOfAssets) {
-					String assetType = thing.getAssetType();
-					if(assetType =="Private Investment") {
-						PrivateInvestment tempAsset = new PrivateInvestment((PrivateInvestment)thing,value);
-					}else if(assetType =="Deposit Account") {
-						
-					}else if(assetType =="Stock") {
-						
-					}else {
-						// TODO you dun fucked up
+			if(!assetTokens[0].equals("")) {
+				for(int i=0;i<assetTokens.length;i++) {
+					String[] asset = assetTokens[i].split(":");
+					String identifier = asset[0];
+					double value = Double.valueOf(asset[1]);
+
+					for(Asset thing:listOfAssets) {
+						String assetType = thing.getAssetType();
+						if(assetType =="Private Investment") {
+							if(identifier.equals(thing.getAccountCode())) {
+								PrivateInvestment tempAsset = new PrivateInvestment((PrivateInvestment)thing,value);
+								localAssetList.add(tempAsset);
+							}
+						}else if(assetType =="Deposit Account") {
+							if(identifier.equals(thing.getAccountCode())) {
+								DepositAccount tempAsset = new DepositAccount((DepositAccount)thing,value);
+								localAssetList.add(tempAsset);
+							}
+						}else if(assetType =="Stock") {
+							if(identifier.equals(thing.getAccountCode())) {
+								Stock tempAsset = new Stock((Stock)thing,value);
+								localAssetList.add(tempAsset);
+							}
+						}else {
+							// TODO you dun fucked up
+						}
 					}
-				
 				}
-				
-				
+
 			}
+			Person owner = null;
+			Person manager = null;
+			Person beneficiary = null;
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			for(Person loopPerson:listOfPeople) {
+				String personCode = loopPerson.getPersonCode();
+				if(personCode.equals(ownerCode)) {
+					owner = new Person(loopPerson);
+				} else if(personCode.equals(managerCode)) {
+					manager = new Person(loopPerson);
+				} else if(personCode.equals(beneficiaryCode)) {
+					beneficiary = new Person(loopPerson);
+				}
+			}
+			if(owner == null) {
+				
+			} else {
+				Portfolio localPortfolio = new Portfolio(portfolioCode,owner,manager,beneficiary,localAssetList);
+				listOfPortfolios.add(localPortfolio);
+			}
 			
 		}
 		
@@ -220,8 +236,8 @@ public class PortfolioReport {
 		
 		
 		
-		
-		
+		GenerateReport gen = new GenerateReport();
+		gen.executiveReport(listOfPortfolios);
 		
 		
 		

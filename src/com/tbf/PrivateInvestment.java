@@ -1,5 +1,5 @@
 package com.tbf;
-
+import java.lang.Math;
 /**
  * This is a subclass of an Asset that models a real
  * world Private Investment.
@@ -23,17 +23,26 @@ public class PrivateInvestment extends Asset {
 		return baseRateOfReturn;
 	}
 
-	public double getBaseOmegaMeasure() {
-		return baseOmegaMeasure;
+	public double getOmegaMeasure() {
+		return baseOmegaMeasure + Math.exp(-125500/this.totalValue);
 	}
 
 	public double getTotalValue() {
 		return totalValue;
 	}
 	
+	public double getValue() {
+		return totalValue * percentageOwned/ 100;
+	}
+	
 	public String getAssetType() {
 		return "Private Investment";
 	}
+
+	public double getPercentageOwned() {
+		return percentageOwned;
+	}
+	
 
 	public PrivateInvestment(String accountCode, String assetType, String label, String quarterlyDividend, String baseRateOfReturn, String baseOmegaMeasure, String totalValue) {
 		super(accountCode, assetType, label);

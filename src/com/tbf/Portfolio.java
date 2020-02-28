@@ -48,7 +48,7 @@ public class Portfolio {
 	}
 	
 	public double getRisk(PrivateInvestment acc) {
-		return acc.getBaseOmegaMeasure();
+		return acc.getOmegaMeasure();
 	}
 	public double getRisk(Stock stonk) {
 		return stonk.getBetaMeasure();
@@ -57,19 +57,79 @@ public class Portfolio {
 		return 0.0;
 	}
 
+	public String getPortfolioCode() {
+		return portfolioCode;
+	}
+
+	public Person getOwner() {
+		return owner;
+	}
+	public String getOwnerName() {
+		return owner.getLastName() + ", " + owner.getFirstName();
+	}
+
+	public Person getManager() {
+		return manager;
+	}
+	public String getManagerName() {
+		if(manager == null) {
+			return "";
+		} else {
+			return manager.getLastName() + ", " + manager.getFirstName();
+		} 	
+	}
+
+	public Person getBeneficiary() {
+		return beneficiary;
+	}
+
+	public double getExpectedAnnualReturn() {
+		return expectedAnnualReturn;
+	}
+
+	public ArrayList<Asset> getAssetList() {
+		return assetList;
+	}
 	
-	
-//	public double getAggregateRisk() {
-//		double sum;
-//		for(int i=0;i<assetList.size();i++) {
-//			sum += getRisk(this.assetList.get(i));
-//		}
-//		double aggregateRisk;
-//		for(int i=0;i<assetList.size();i++) {
-//			aggregate += getRisk(this.assetList.get(i));
-//		}
-//		
-//		return aggregateRisk;
-//	}
+	public double getAggregateRisk() {
+		double totalValue = 0;
+		for(int i=0;i<assetList.size();i++) {
+			Asset asset = assetList.get(i);
+			String assetType = "";
+			assetType = asset.getAssetType();
+			if(assetType =="Private Investment") {
+				totalValue += ((PrivateInvestment)asset).getValue();
+			}else if(assetType =="Deposit Account") {
+				totalValue += ((DepositAccount)asset).getValue();
+			}else if(assetType =="Stock") {
+				totalValue += ((Stock)asset).getValue();
+			}else {
+				// TODO you dun fucked up
+			}	
+		}
+//		System.out.println(totalValue);
+		double aggregateRisk = 0;
+		for(int j=0;j<assetList.size();j++) {
+			double riskFactor = 0;
+			Asset asset = assetList.get(j);
+			String assetType = asset.getAssetType();
+			double value = 0;
+			
+			if(assetType =="Private Investment") {
+				riskFactor = ((PrivateInvestment)asset).getOmegaMeasure();
+				value = ((PrivateInvestment)asset).getValue();
+			}else if(assetType =="Deposit Account") {
+				riskFactor = 0;
+				value = ((DepositAccount)asset).getValue();
+			}else if(assetType =="Stock") {
+				riskFactor = ((Stock)asset).getBetaMeasure();
+				value = ((Stock)asset).getValue();
+			}else {
+				// TODO you dun fucked up
+			}
+			aggregateRisk += riskFactor*(value/totalValue);	
+		}
+		return aggregateRisk;
+	}
 
 }

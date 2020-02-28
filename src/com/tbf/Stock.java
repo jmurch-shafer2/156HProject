@@ -14,20 +14,8 @@ public class Stock extends Asset {
 	private double betaMeasure;
 	private String stockSymbol;
 	private double sharePrice;
+	private double sharesOwned;
 	
-	/**
-	 * A constructor that creates an instance of the Stock 
-	 * class.
-	 * 
-	 * @param accountCode
-	 * @param assetType
-	 * @param label
-	 * @param quarterlyDividend
-	 * @param baseRateOfReturn
-	 * @param betaMeasure
-	 * @param StockSymbol
-	 * @param sharePrice
-	 */
 	public Stock(String accountCode, String assetType, String label, String quarterlyDividend,
 			String baseRateOfReturn, String betaMeasure, String StockSymbol, String sharePrice) {
 		super(accountCode, assetType, label);
@@ -38,6 +26,16 @@ public class Stock extends Asset {
 		this.sharePrice = Double.valueOf(sharePrice);
 	}
 	
+	public Stock(Stock that, double sharesOwned) {
+		super(that.accountCode, that.assetType, that.label);
+		this.quarterlyDividend = that.quarterlyDividend;
+		this.baseRateOfReturn = that.baseRateOfReturn;
+		this.betaMeasure = that.betaMeasure;
+		this.stockSymbol = that.stockSymbol;
+		this.sharePrice = that.sharePrice;
+		this.sharesOwned = sharesOwned;
+	}
+
 	public String getAssetType() {
 		return "Stock";
 	}
@@ -53,6 +51,10 @@ public class Stock extends Asset {
 	public double getBetaMeasure() {
 		return betaMeasure;
 	}
+	
+	public double getValue() {
+		return sharePrice * sharesOwned;
+	}
 
 	public String getStockSymbol() {
 		return stockSymbol;
@@ -60,6 +62,10 @@ public class Stock extends Asset {
 
 	public double getSharePrice() {
 		return sharePrice;
+	}
+
+	public double getSharesOwned() {
+		return sharesOwned;
 	}
 	
 	}

@@ -25,16 +25,27 @@ public class Person {
 	private Address address;
 	private ArrayList<String> emailList= new ArrayList<>();
 	
-	public Person(String personCode, String brokerState, String sECIdentifier, String firstName, String lastName,
+	public Person(String personCode, String brokerState, String SECIdentifier, String firstName, String lastName,
 			Address address, ArrayList<String> emailList) {
 		super();
 		this.personCode = personCode;
 		this.brokerState = brokerState;
-		SECIdentifier = sECIdentifier;
+		this.SECIdentifier = SECIdentifier;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
 		this.emailList = emailList;
+	}
+	
+	public Person(Person that) {
+		super();
+		this.personCode = that.personCode;
+		this.brokerState = that.brokerState;
+		this.SECIdentifier = that.SECIdentifier;
+		this.firstName = that.firstName;
+		this.lastName = that.lastName;
+		this.address = that.address;
+		this.emailList = that.emailList;
 	}
 
 	public String getPersonCode() {

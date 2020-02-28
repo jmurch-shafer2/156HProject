@@ -23,6 +23,9 @@ public abstract class Asset {
 
 	protected abstract String getAssetType();
 	
+	public String getAccountCode() {
+		return accountCode;
+	}
 }
 
 
