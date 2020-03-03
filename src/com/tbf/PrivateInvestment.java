@@ -31,6 +31,11 @@ public class PrivateInvestment extends Asset {
 		return totalValue;
 	}
 	
+	/**
+	 * Calculates the owned value of the private investment
+	 * 
+	 * @return total value of the stock
+	 */
 	public double getValue() {
 		return totalValue * percentageOwned/ 100;
 	}
@@ -43,13 +48,24 @@ public class PrivateInvestment extends Asset {
 		return percentageOwned;
 	}
 	
+	/**
+	 * Calculates the rate of return for a private investment
+	 * @return
+	 */
+	public double getReturnRate() {
+		return this.getReturn()/this.getValue()*100;
+	}
 	
+	/**
+	 * Calculates the return for a private investment
+	 * 
+	 * @return
+	 */
 	public double getReturn() {
 		double returnVal = ((this.baseRateOfReturn * this.totalValue/100) + (4 * this.quarterlyDividend))* this.percentageOwned/100;
 		return returnVal;
 	}
 	
-
 	public PrivateInvestment(String accountCode, String assetType, String label, String quarterlyDividend, String baseRateOfReturn, String baseOmegaMeasure, String totalValue) {
 		super(accountCode, assetType, label);
 		this.quarterlyDividend = Double.valueOf(quarterlyDividend);
@@ -57,7 +73,13 @@ public class PrivateInvestment extends Asset {
 		this.baseOmegaMeasure = Double.valueOf(baseOmegaMeasure);
 		this.totalValue = Double.valueOf(totalValue);
 	}
-
+	
+	/**
+	 * A copy constructor that allows a private investment to be copied with
+	 * a percentage owned attribute 
+	 * @param that
+	 * @param percentageOwned
+	 */
 	public PrivateInvestment(PrivateInvestment that, double percentageOwned) {
 		super(that.accountCode, that.assetType, that.label);
 		this.quarterlyDividend = that.quarterlyDividend;

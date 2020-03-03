@@ -25,6 +25,10 @@ public class Portfolio {
 		this.assetList = assetList;
 	}
 	
+	/**
+	 * Calculates total fees for a portfolio
+	 * @return
+	 */
 	public double getTotalFee() {
 		if(this.manager.getBrokerState() == "J") {
 			return 75.0;
@@ -35,6 +39,10 @@ public class Portfolio {
 		}
 	}
 
+	/**
+	 * Calculates total commission for a portfolio with a broker
+	 * @return
+	 */
 	public double getTotalCommission() {
 		if(this.manager.getBrokerState() == "J") {
 			double commissionRate = 0.0125;
@@ -47,6 +55,11 @@ public class Portfolio {
 		}
 	}
 	
+	/**
+	 * Calculates total risk for a portfolio
+	 * @param acc
+	 * @return
+	 */
 	public double getRisk(PrivateInvestment acc) {
 		return acc.getOmegaMeasure();
 	}
@@ -68,9 +81,15 @@ public class Portfolio {
 		return owner.getFirstName() + ", " + owner.getLastName();
 	}
 
+	//return manager with an extra check if the manager exists
 	public Person getManager() {
-		return manager;
+		if(manager == null) {
+			return owner;
+		} else {
+			return manager;
+		}
 	}
+	//returns manager name with an extra check if manager doesn't exist
 	public String getManagerName() {
 		if(manager == null) {
 			return "";
@@ -79,8 +98,15 @@ public class Portfolio {
 		} 	
 	}
 
+	//returns beneficiary with check if a beneficiary is listed
 	public Person getBeneficiary() {
-		return beneficiary;
+		if(beneficiary == null) {
+			ArrayList <String> arr = new ArrayList();
+			Address add = new Address("", "", "", "", "");
+			return new Person("None","","","None","",add,arr);
+		} else {
+			return beneficiary;
+		}
 	}
 
 	public double getExpectedAnnualReturn() {
@@ -91,6 +117,11 @@ public class Portfolio {
 		return assetList;
 	}
 	
+	
+	/**
+	 * Calculates aggregate risk of a portfolio
+	 * @return
+	 */
 	public double getAggregateRisk() {
 		double totalValue = 0;
 		for(int i=0;i<assetList.size();i++) {
@@ -103,11 +134,8 @@ public class Portfolio {
 				totalValue += ((DepositAccount)asset).getValue();
 			}else if(assetType =="Stock") {
 				totalValue += ((Stock)asset).getValue();
-			}else {
-				// TODO you dun fucked up
-			}	
+			}
 		}
-//		System.out.println(totalValue);
 		double aggregateRisk = 0;
 		for(int j=0;j<assetList.size();j++) {
 			double riskFactor = 0;
@@ -124,19 +152,16 @@ public class Portfolio {
 			}else if(assetType =="Stock") {
 				riskFactor = ((Stock)asset).getBetaMeasure();
 				value = ((Stock)asset).getValue();
-			}else {
-				// TODO you dun fucked up
 			}
 			aggregateRisk += riskFactor*(value/totalValue);	
 		}
 		return aggregateRisk;
 	}
 
-	
-	
-	
-	
-	
+	/**
+	 * Calculates total return for a portfolio
+	 * @return
+	 */
 	public double getReturn() {
 		double totalReturn = 0;
 		for(int i=0;i<assetList.size();i++) {
@@ -149,40 +174,57 @@ public class Portfolio {
 				totalReturn += ((DepositAccount)asset).getReturn();
 			}else if(assetType =="Stock") {
 				totalReturn += ((Stock)asset).getReturn();
-			}else {
-				// TODO you dun fucked up
-			}	
+			}
 		}
 		return totalReturn;
 	}
 
 	
+	/**
+	 * Calculates total commision for a portfolio
+	 * @return
+	 */
+	public double getCommision() {
+		double brokerCommisionRate;
+		if(this.manager.getBrokerState().equals("J")) {
+			brokerCommisionRate = 0.0125;
+		} else if(this.manager.getBrokerState().equals("E")) {
+			brokerCommisionRate = 0.0375;
+		} else {
+			brokerCommisionRate = 0;
+		}
+		return this.getReturn() * brokerCommisionRate;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	public double getCommision() {
-//		
-//	}
-//	
-//	
-//
-//	
 	public double getFees() {
 		double totalFees = 0;
-		if(this.manager.getBrokerState().equals("E")) {
+		if(this.manager.getBrokerState().equals("J")) {
 			totalFees = 75*this.assetList.size();
 		}
 		return totalFees;
+	}
+	
+	/**
+	 * Calculates the total value of a portfolio
+	 * @return
+	 */
+	public double getTotalValue() {
+		double totalVal = 0;
+		
+		for(int i=0;i<assetList.size();i++) {
+			Asset asset = assetList.get(i);
+			String assetType = "";
+			assetType = asset.getAssetType();
+			if(assetType =="Private Investment") {
+				totalVal += ((PrivateInvestment)asset).getValue();
+			}else if(assetType =="Deposit Account") {
+				totalVal += ((DepositAccount)asset).getValue();
+			}else if(assetType =="Stock") {
+
+				totalVal += ((Stock)asset).getValue();
+			}	
+		}
+		return totalVal;
 	}
 
 }

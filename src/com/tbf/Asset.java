@@ -23,6 +23,10 @@ public abstract class Asset {
 
 	protected abstract String getAssetType();
 	
+	public String getLabel() {
+		return label;
+	}
+
 	public String getAccountCode() {
 		return accountCode;
 	}

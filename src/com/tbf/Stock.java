@@ -26,6 +26,12 @@ public class Stock extends Asset {
 		this.sharePrice = Double.valueOf(sharePrice);
 	}
 	
+	/**
+	 * A copy constructor to create and instance of an a stock with the shares owned attribute.
+	 * 
+	 * @param Stock
+	 * @param sharesOwned
+	 */
 	public Stock(Stock that, double sharesOwned) {
 		super(that.accountCode, that.assetType, that.label);
 		this.quarterlyDividend = that.quarterlyDividend;
@@ -51,10 +57,21 @@ public class Stock extends Asset {
 	public double getBetaMeasure() {
 		return betaMeasure;
 	}
-	
+	/**
+	 * Calculates the estimated return 
+	 * @return annual return
+	 */
 	public double getReturn() {
 		double returnVal = ((this.baseRateOfReturn * this.sharePrice/100) + (4 * this.quarterlyDividend)) * this.sharesOwned;
 		return returnVal;
+	}
+	
+	/**
+	 * Calculates the annual return rate
+	 * @return
+	 */
+	public double getReturnRate() {
+		return this.getReturn()/this.getValue() * 100;
 	}
 	
 	public double getValue() {

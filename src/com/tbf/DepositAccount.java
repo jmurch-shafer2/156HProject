@@ -29,7 +29,11 @@ public class DepositAccount extends Asset {
 		this.apr = Double.valueOf(apr);
 	}
 	
-//	Copy constructor
+	/**
+	 * copy constructor
+	 * @param that
+	 * @param value
+	 */
 	public DepositAccount(DepositAccount that, double value) {
 		super(that.accountCode, that.assetType, that.label);
 		this.apr = that.apr;
@@ -42,7 +46,19 @@ public class DepositAccount extends Asset {
 	public double getValue() {
 		return value;
 	}
+	
+	/**
+	 * Calculates annual return rate
+	 * @return
+	 */
+	public double getReturnRate() {
+		return this.getReturn()/this.getValue()*100;
+	}
 
+	/**
+	 * Calculates annual return
+	 * @return
+	 */
 	public double getReturn() {
 		double returnVal = this.getValue() *(Math.exp(this.apr/100) - 1);
 		return returnVal;

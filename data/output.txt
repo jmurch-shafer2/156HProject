@@ -1,0 +1,1198 @@
+Portfolio Executive Report
+===========================================================================================================================================================
+Portfolio  Owner                Manager              Fees                 Commisions           Weighted Risk        Return               Total               
+170        Avey, Georgeta       Maker, Ewell         $             0.00   $        855034.47               1.2200   $      22800919.11   $    1234401723.20
+100        Ballston, Dorry      Le Breton, Alisander $             0.00   $         30998.06               1.1200   $        826614.94   $      39400079.27
+410        Blissitt, Lazar      Saye, Verina         $             0.00   $         22462.47               1.1548   $        598999.28   $       7970544.66
+140        Brain, Benny         Grigolon, Wakefield  $           150.00   $         54933.09               1.5400   $       4394647.21   $     139700025.45
+290        Brands, Celestina    Marran, Lolita       $             0.00   $       2324860.84               1.1200   $      61996289.10   $    2955028945.25
+050        Brasier, Myrle       Gniewosz, Morissa    $             0.00   $      23146019.39               1.9199   $     617227183.77   $    8456016672.00
+340        Brinkworth, Ev       Mount, Danette       $           225.00   $         15672.33               1.7499   $       1253786.21   $      19222233.13
+060        Cardoe, Standford    Gniewosz, Morissa    $             0.00   $    1398825781.65               1.9300   $   37302020844.00   $  604300840000.00
+110        Crumby, Aviva        Le Breton, Alisander $             0.00   $     316850950.03               1.5500   $    8449358667.41   $  100334057473.00
+430        Dowrey, Marje        Mount, Danette       $           150.00   $           202.23               0.3529   $         16178.71   $         51072.80
+490        Edmons, Martainn     Marran, Lolita       $             0.00   $      23046314.42               1.3510   $     614568384.45   $   12840688344.20
+000        Elphinston, Brent    Gniewosz, Morissa    $             0.00   $       2961279.84               1.1699   $      78967462.51   $    1132620361.36
+090        Feltham, Axel        Maker, Ewell         $             0.00   $       1164520.01               1.5800   $      31053866.85   $     575700393.96
+270        Firmin, Barbara      Cooke, Devy          $           225.00   $        476922.66               1.5200   $      38153813.03   $    4626006490.60
+480        Flamank, Eudora      Mount, Danette       $           225.00   $        419648.00               1.9300   $      33571840.40   $     543876756.00
+300        Greave, Herta        Marran, Lolita       $             0.00   $       1816838.84               1.3300   $      48449035.63   $     975062255.18
+420        Gueinn, Edin         Gniewosz, Morissa    $             0.00   $      22614748.06               0.0001   $     603059948.35   $ 1012199611706.43
+200        Hargreves, Hamlen    Grigolon, Wakefield  $           225.00   $       1090267.23               1.7500   $      87221378.47   $    1337121750.84
+030        Hazelgrove, Waylan   Bamforth, Francene   $           150.00   $        257438.23               1.8200   $      20595058.73   $     239190094.38
+260        Heald, Brenda        Bains, Aluino        $             0.00   $             0.00               1.9299   $      69648822.97   $    1168223139.65
+360        Hexter, Aldin        Saye, Verina         $             0.00   $           428.58               0.1548   $         11428.71   $         14049.08
+120        Himpson, Jessie      Gniewosz, Morissa    $             0.00   $         97838.27               1.5224   $       2609020.66   $     157537357.53
+320        Ivanyutin, Duff      Bains, Aluino        $             0.00   $             0.00               1.8200   $     336385964.84   $    3906787999.54
+070        Johnsey, Lu          Bamforth, Francene   $           150.00   $    2962759756.46               1.0500   $  237020780516.76   $ 5944801880400.00
+220        Kersey, Merrili      Mount, Danette       $           150.00   $         80157.43               1.4498   $       6412594.61   $      69200096.50
+160        Kidby, Alessandra    Grigolon, Wakefield  $           150.00   $       6498261.95               1.2200   $     519860955.74   $   28144359288.96
+450        Lavies, Bo           Saye, Verina         $             0.00   $          6783.22               0.2358   $        180885.98   $         28693.94
+240        Leadbeater, Tadd     Mount, Danette       $           225.00   $      18594585.67               1.6500   $    1487566853.37   $   20428900919.51
+180        Looks, Tania         Gniewosz, Morissa    $             0.00   $       1955288.60               1.3078   $      52141029.37   $   10547859058.26
+210        Mantle, Cloe         Marran, Lolita       $             0.00   $        834412.72               1.2299   $      22251005.95   $     279250863.22
+380        Mattiello, Sib       Marran, Lolita       $             0.00   $        694383.58               1.9198   $      18516895.38   $     253697099.16
+310        Monan, Gonzales      Marran, Lolita       $             0.00   $         65092.60               1.9200   $       1735802.75   $     883802571.75
+280        Noone, Husein        Mount, Danette       $           225.00   $       1056170.03               1.5500   $      84493602.51   $    1003342233.73
+010        O'Shevlin, Maurits   Braxay, Ty           $             0.00   $          1431.79               0.0000   $         38181.07   $       4000000.00
+250        Orgel, Rozanna       Gniewosz, Morissa    $             0.00   $      62359215.03               1.1599   $    1662912400.73   $   19811810627.39
+440        Pooly, Mandel        Marran, Lolita       $             0.00   $           184.14               0.0048   $          4910.47   $         24705.88
+190        Prime, Annabela      Mount, Danette       $           150.00   $          7175.78               1.5400   $        574062.64   $      43220076.25
+470        Rysdale, Dick        Mount, Danette       $           225.00   $         79217.89               1.8295   $       6337430.94   $      84253020.88
+040        Sancias, Fifi        Bamforth, Francene   $           150.00   $         23143.89               1.9200   $       1851511.52   $     942720746.40
+230        Shakspeare, Hedi     Gniewosz, Morissa    $             0.00   $      26380406.11               1.8300   $     703477496.29   $    9349532915.68
+130        Sharrem, Leonie      Le Breton, Alisander $             0.00   $      94722324.08               1.9300   $    2525928642.17   $   42366725064.64
+400        Simmen, Consolata    Marran, Lolita       $             0.00   $         29337.72               1.4495   $        782339.30   $       8444033.77
+370        Slopier, Fredia      Gniewosz, Morissa    $             0.00   $          4960.13               0.7153   $        132270.16   $         63177.19
+150        Strowthers, Marjory  Marran, Lolita       $             0.00   $       1045154.35               1.1700   $      27870782.55   $     399720480.48
+460        Tampling, Erik       Cooke, Devy          $           225.00   $        370409.57               1.6500   $      29632765.85   $     406958065.65
+080        Thrasher, Irma       Maker, Ewell         $             0.00   $        403741.96               1.3300   $      10766452.29   $     216680390.04
+330        Timmis, Melany       Gniewosz, Morissa    $             0.00   $       1184004.20               1.5400   $      31573445.24   $    2377104693.75
+020        Tregona, Jaquenette  Cooke, Devy          $           225.00   $        124426.29               1.3100   $       9954102.84   $    2620432744.40
+390        Winsom, Nehemiah     Cooke, Devy          $           150.00   $             1.20               0.0000   $            95.83   $         56100.00
+350        Yoakley, Batholomew  Bains, Aluino        $             0.00   $             0.00               1.5399   $      44825410.19   $    1424945070.59
+                                                     ------------------------------------------------------------------------------------------------------
+                                TOTALS:              $          3375.00   $    4975353185.11                        $  292695392597.88   $ 7843658142605.53
+
+
+
+
+Portfolio Details 
+======================================================================================
+
+Portfolio 170
+------------------------------------------
+Owner:
+Avey, Georgeta
+[gavey3@salon.com]
+Dwight
+Los Angeles, United States, 90045
+
+Manager:
+Maker, Ewell
+
+Beneficiary:
+Docharty, Orelie
+[odocharty1p@tripadvisor.com]
+Porter
+Cleveland, United States, 44125
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x35            Kirby Corp                         74.95%       0.60     $      1291.50   $      1723.20
+0x35            World Trav                          1.85%       1.22     $  22799627.62   $1234400000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.2200     $  22800919.11   $1234401723.20
+Portfolio 100
+------------------------------------------
+Owner:
+Ballston, Dorry
+[dballston1y@wordpress.org]
+Nobel
+Monticello, United States, 55585
+
+Manager:
+Le Breton, Alisander
+
+Beneficiary:
+Bamforth, Francene
+[]
+Namekagon
+Fort Wayne, United States, 46805
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2f            BBVA Banco                         66.21%       0.37     $        52.48   $        79.27
+0x2f            Forever Yo                          2.10%       1.12     $    826562.46   $  39400000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.1200     $    826614.94   $  39400079.27
+Portfolio 410
+------------------------------------------
+Owner:
+Blissitt, Lazar
+[lblissittv@g.co, lblissittv@netlog.com]
+Ridgeview
+Boca Raton, United States, 33487
+
+Manager:
+Saye, Verina
+
+Beneficiary:
+Ivatt, Terri-jo
+[tivatt1x@ebay.co.uk]
+Mockingbird
+San Antonio, United States, 78285
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x24               Carpool                          7.97%       1.23     $    596164.82   $   7483900.00
+0x10            Monkey Ban                          0.55%       0.00     $      2683.85   $    486632.00
+0x24            Special Op                       1189.32%       0.28     $       150.60   $        12.66
+                                             -----------------------------------------------------------
+                                                   Totals     1.1548     $    598999.28   $   7970544.66
+Portfolio 140
+------------------------------------------
+Owner:
+Brain, Benny
+[]
+Blue Bill Park
+Cleveland, United States, 44105
+
+Manager:
+Grigolon, Wakefield
+
+Beneficiary:
+Stedall, Danette
+[dstedall1o@ask.com]
+Springs
+Portland, United States, 97211
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x27            Monkey Tai                          3.14%       1.54     $   4393562.87   $ 139700000.00
+0x27            Resource C                       4260.65%       0.56     $      1084.34   $        25.45
+                                             -----------------------------------------------------------
+                                                   Totals     1.5400     $   4394647.21   $ 139700025.45
+Portfolio 290
+------------------------------------------
+Owner:
+Brands, Celestina
+[cbrands1d@so-net.ne.jp]
+Fulton
+Phoenix, United States, 85015
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Tarling, Dian
+[dtarling1w@mapy.cz, dtarling1w@freewebs.com]
+Packers
+Rochester, United States, 55905
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x1a            6 month CD                          0.73%       0.00     $       168.51   $     23000.00
+0x2f            BBVA Banco                         66.21%       0.37     $      3936.32   $      5945.25
+0x2f            Forever Yo                          2.10%       1.12     $  61992184.26   $2955000000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.1200     $  61996289.10   $2955028945.25
+Portfolio 050
+------------------------------------------
+Owner:
+Brasier, Myrle
+[mbrasier16@vk.com, mbrasier16@alexa.com]
+Spohn
+Cheyenne, United States, 82007
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Johnsey, Lu
+[ljohnsey1m@about.com]
+Pleasure
+Des Moines, United States, 50347
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2a            Destiny in                          7.30%       1.92     $ 617126399.36   $8456000000.00
+0x2a            Regulus Th                        604.51%       0.69     $    100784.41   $     16672.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.9199     $ 617227183.77   $8456016672.00
+Portfolio 340
+------------------------------------------
+Owner:
+Brinkworth, Ev
+[]
+Maple Wood
+Washington, United States, 20409
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Dallemore, Esra
+[edallemore1t@google.it, edallemore1t@gizmodo.com]
+Shopko
+Saint Louis, United States, 63150
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x16            Savings ac                          0.77%       0.00     $         8.67   $      1122.00
+0x25                 Yentl                          6.52%       1.75     $   1253692.02   $  19221100.00
+0x25            Zions Banc                        768.72%       0.19     $        85.52   $        11.13
+                                             -----------------------------------------------------------
+                                                   Totals     1.7499     $   1253786.21   $  19222233.13
+Portfolio 060
+------------------------------------------
+Owner:
+Cardoe, Standford
+[scardoe17@theatlantic.com, scardoe17@indiatimes.com]
+Arkansas
+San Rafael, United States, 94913
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Johnsey, Lu
+[ljohnsey1m@about.com]
+Pleasure
+Des Moines, United States, 50347
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2b            Day of the                          6.17%       1.93     $37301980888.00   $604300000000.00
+0x2b            MFS Charte                          4.76%       0.34     $     39956.00   $    840000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.9300     $37302020844.00   $604300840000.00
+Portfolio 110
+------------------------------------------
+Owner:
+Crumby, Aviva
+[acrumby20@bloomberg.com]
+Blaine
+Miami, United States, 33129
+
+Manager:
+Le Breton, Alisander
+
+Beneficiary:
+Bamforth, Francene
+[]
+Namekagon
+Fort Wayne, United States, 46805
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x30            Paylocity                         888.24%       0.18     $    510500.69   $     57473.00
+0x30            The First                           8.42%       1.55     $8448848166.72   $100334000000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.5500     $8449358667.41   $100334057473.00
+Portfolio 430
+------------------------------------------
+Owner:
+Dowrey, Marje
+[mdowreyu@thetimes.co.uk]
+Hauk
+Peoria, United States, 61640
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Gainforth, Yolanda
+[]
+Clarendon
+Bronx, United States, 10459
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00x7             3 year CD                          0.87%       0.00     $       174.76   $     20000.00
+0x3d            Lehman ABS                         51.50%       0.58     $     16003.96   $     31072.80
+                                             -----------------------------------------------------------
+                                                   Totals     0.3529     $     16178.71   $     51072.80
+Portfolio 490
+------------------------------------------
+Owner:
+Edmons, Martainn
+[medmonss@indiegogo.com]
+Scofield
+Pittsburgh, United States, 15286
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Gainforth, Yolanda
+[]
+Clarendon
+Bronx, United States, 10459
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2c            Buffet fro                          3.99%       1.05     $ 221215075.33   $5548480000.00
+00xe            Money Mark                          0.57%       0.00     $         9.14   $      1599.00
+0x2d             NCI, Inc.                        592.36%       0.64     $     29559.67   $      4990.16
+0x2c            Nuveen Ohi                        246.14%       0.18     $      4319.81   $      1755.04
+0x2d            Quiet Amer                          5.39%       1.58     $ 393319420.49   $7292200000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.3510     $ 614568384.45   $12840688344.20
+Portfolio 000
+------------------------------------------
+Owner:
+Elphinston, Brent
+[belphinston11@taobao.com, belphinston11@cbc.ca]
+Chinook
+Fullerton, United States, 92640
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Feltham, Axel
+[afeltham1l@4shared.com]
+Paget
+Tulsa, United States, 74116
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x33            Arena Phar                        485.77%       0.44     $      6613.11   $      1361.36
+0x33            Living Wak                          6.97%       1.17     $  78960604.11   $1132540000.00
+00x3            Savings ac                          0.31%       0.00     $       245.28   $     79000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.1699     $  78967462.51   $1132620361.36
+Portfolio 090
+------------------------------------------
+Owner:
+Feltham, Axel
+[afeltham1l@4shared.com]
+Paget
+Tulsa, United States, 74116
+
+Manager:
+Maker, Ewell
+
+Beneficiary:
+Bamforth, Francene
+[]
+Namekagon
+Fort Wayne, United States, 46805
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2d             NCI, Inc.                        592.36%       0.64     $      2333.66   $       393.96
+0x2d            Quiet Amer                          5.39%       1.58     $  31051533.20   $ 575700000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.5800     $  31053866.85   $ 575700393.96
+Portfolio 270
+------------------------------------------
+Owner:
+Firmin, Barbara
+[]
+Gina
+Atlanta, United States, 31132
+
+Manager:
+Cooke, Devy
+
+Beneficiary:
+Caress, Ashlen
+[acaress1r@sciencedirect.com, acaress1r@godaddy.com]
+Washington
+Pasadena, United States, 91109
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x31            Bravo Two                           0.82%       1.52     $  38143338.19   $4626000000.00
+0x31            Duke Energ                        547.10%       0.15     $     10458.32   $      1911.60
+0x1c            Food Depos                          0.36%       0.00     $        16.51   $      4579.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.5200     $  38153813.03   $4626006490.60
+Portfolio 480
+------------------------------------------
+Owner:
+Flamank, Eudora
+[eflamankr@plala.or.jp, eflamankr@walmart.com]
+Harbort
+Virginia Beach, United States, 23459
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Gainforth, Yolanda
+[]
+Clarendon
+Bronx, United States, 10459
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2b            Day of the                          6.17%       1.93     $  33571782.80   $ 543870000.00
+0x2b            MFS Charte                          4.76%       0.34     $        35.96   $       756.00
+00x9            Monkey Ban                          0.36%       0.00     $        21.64   $      6000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.9300     $  33571840.40   $ 543876756.00
+Portfolio 300
+------------------------------------------
+Owner:
+Greave, Herta
+[hgreave1c@is.gd, hgreave1c@mozilla.org]
+Stoughton
+Pasadena, United States, 91103
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Tarling, Dian
+[dtarling1w@mapy.cz, dtarling1w@freewebs.com]
+Packers
+Rochester, United States, 55905
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2e             Excalibur                          4.97%       1.33     $  48447807.49   $ 975060000.00
+0x2e            Merus N.V.                         69.95%       0.83     $      1227.80   $      1755.18
+0x19            Piggy bank                          0.07%       0.00     $         0.35   $       500.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.3300     $  48449035.63   $ 975062255.18
+Portfolio 420
+------------------------------------------
+Owner:
+Gueinn, Edin
+[egueinnk@digg.com]
+Victoria
+Greensboro, United States, 27415
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Ivatt, Terri-jo
+[tivatt1x@ebay.co.uk]
+Mockingbird
+San Antonio, United States, 78285
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00xf            90 year CD                          0.42%       0.00     $  51016150.21   $12121212212.00
+0x37            American A                        240.69%       0.26     $    133065.78   $     55285.83
+00xb            Food Depos                          0.05%       0.00     $ 520135223.44   $1000000000000.00
+0x39            Impax Labo                       6973.67%       0.41     $    246282.25   $      3531.60
+0x3a            Telefonica                       2473.97%       0.33     $    253755.10   $     10257.00
+0x37            Vampire Ef                         39.93%       1.63     $  31275471.57   $  78330420.00
+                                             -----------------------------------------------------------
+                                                   Totals     0.0001     $ 603059948.35   $1012199611706.43
+Portfolio 200
+------------------------------------------
+Owner:
+Hargreves, Hamlen
+[hhargreves22@soup.io, hhargreves22@friendfeed.com]
+Tony
+Asheville, United States, 28805
+
+Manager:
+Grigolon, Wakefield
+
+Beneficiary:
+Double, Catriona
+[cdouble1q@naver.com, cdouble1q@ameblo.jp]
+La Follette
+Saint Louis, United States, 63167
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x38            Horace Man                        212.05%       0.73     $      2071.55   $       976.92
+0x25                 Yentl                          6.52%       1.75     $  87213357.64   $1337120000.00
+0x25            Zions Banc                        768.72%       0.19     $      5949.29   $       773.92
+                                             -----------------------------------------------------------
+                                                   Totals     1.7500     $  87221378.47   $1337121750.84
+Portfolio 030
+------------------------------------------
+Owner:
+Hazelgrove, Waylan
+[whazelgrove13@goo.gl, whazelgrove13@samsung.com]
+Eastlawn
+Amarillo, United States, 79165
+
+Manager:
+Bamforth, Francene
+
+Beneficiary:
+Johnsey, Lu
+[ljohnsey1m@about.com]
+Pleasure
+Des Moines, United States, 50347
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x28            Across 110                          8.61%       1.82     $  20594901.74   $ 239190000.00
+0x28            Aircastle                         166.34%       0.62     $       156.99   $        94.38
+                                             -----------------------------------------------------------
+                                                   Totals     1.8200     $  20595058.73   $ 239190094.38
+Portfolio 260
+------------------------------------------
+Owner:
+Heald, Brenda
+[bheald1f@washington.edu]
+Annamark
+Riverside, United States, 92519
+
+Manager:
+Bains, Aluino
+
+Beneficiary:
+Caress, Ashlen
+[acaress1r@sciencedirect.com, acaress1r@godaddy.com]
+Washington
+Pasadena, United States, 91109
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x32            Bounty Hun                          5.96%       1.93     $  69647227.66   $1168200000.00
+0x32            Destinatio                       1102.79%       0.85     $      1540.05   $       139.65
+0x1d            Piggy bank                          0.24%       0.00     $        55.27   $     23000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.9299     $  69648822.97   $1168223139.65
+Portfolio 360
+------------------------------------------
+Owner:
+Hexter, Aldin
+[ahexter19@miibeian.gov.cn, ahexter19@a8.net]
+Cascade
+Lancaster, United States, 17605
+
+Manager:
+Saye, Verina
+
+Beneficiary:
+Dallemore, Esra
+[edallemore1t@google.it, edallemore1t@gizmodo.com]
+Shopko
+Saint Louis, United States, 63150
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x14            6 month CD                          0.68%       0.00     $        25.21   $      3695.00
+0x3b            Fogo de Ch                        110.14%       0.21     $     11403.50   $     10354.08
+                                             -----------------------------------------------------------
+                                                   Totals     0.1548     $     11428.71   $     14049.08
+Portfolio 120
+------------------------------------------
+Owner:
+Himpson, Jessie
+[jhimpson24@cyberchimps.com]
+Northview
+Baton Rouge, United States, 70826
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Stedall, Danette
+[dstedall1o@ask.com]
+Springs
+Portland, United States, 97211
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x37            American A                        240.69%       0.26     $      5665.31   $      2353.81
+0x31            Bravo Two                           0.82%       1.52     $   1271444.61   $ 154200000.00
+0x31            Duke Energ                        547.10%       0.15     $       348.61   $        63.72
+0x37            Vampire Ef                         39.93%       1.63     $   1331562.13   $   3334940.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.5224     $   2609020.66   $ 157537357.53
+Portfolio 320
+------------------------------------------
+Owner:
+Ivanyutin, Duff
+[divanyutinn@fema.gov]
+Scofield
+Cape Coral, United States, 33915
+
+Manager:
+Bains, Aluino
+
+Beneficiary:
+Tarling, Dian
+[dtarling1w@mapy.cz, dtarling1w@freewebs.com]
+Packers
+Rochester, United States, 55905
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x28            Across 110                          8.61%       1.82     $ 336383395.05   $3906770000.00
+0x28            Aircastle                         166.34%       0.62     $      2564.18   $      1541.54
+0x17            Money Mark                          0.03%       0.00     $         5.60   $     16458.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.8200     $ 336385964.84   $3906787999.54
+Portfolio 070
+------------------------------------------
+Owner:
+Johnsey, Lu
+[ljohnsey1m@about.com]
+Pleasure
+Des Moines, United States, 50347
+
+Manager:
+Bamforth, Francene
+
+Beneficiary:
+Feltham, Axel
+[afeltham1l@4shared.com]
+Paget
+Tulsa, United States, 74116
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2c            Buffet fro                          3.99%       1.05     $237016152144.00   $5944800000000.00
+0x2c            Nuveen Ohi                        246.14%       0.18     $   4628372.76   $   1880400.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.0500     $237020780516.76   $5944801880400.00
+Portfolio 220
+------------------------------------------
+Owner:
+Kersey, Merrili
+[mkersey1z@bluehost.com]
+Golden Leaf
+Saint Petersburg, United States, 33742
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Double, Catriona
+[cdouble1q@naver.com, cdouble1q@ameblo.jp]
+La Follette
+Saint Louis, United States, 63167
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x23            Costa Brav                          9.26%       1.45     $   6409917.14   $  69200000.00
+0x23            iShares MS                       2774.58%       0.32     $      2677.47   $        96.50
+                                             -----------------------------------------------------------
+                                                   Totals     1.4498     $   6412594.61   $  69200096.50
+Portfolio 160
+------------------------------------------
+Owner:
+Kidby, Alessandra
+[akidby4@xrea.com]
+Green Ridge
+Des Moines, United States, 50305
+
+Manager:
+Grigolon, Wakefield
+
+Beneficiary:
+Docharty, Orelie
+[odocharty1p@tripadvisor.com]
+Porter
+Cleveland, United States, 44125
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x35            Kirby Corp                         74.95%       0.60     $     29446.10   $     39288.96
+0x35            World Trav                          1.85%       1.22     $ 519831509.64   $28144320000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.2200     $ 519860955.74   $28144359288.96
+Portfolio 450
+------------------------------------------
+Owner:
+Lavies, Bo
+[blaviesj@ovh.net]
+Novick
+New York City, United States, 10090
+
+Manager:
+Saye, Verina
+
+Beneficiary:
+Gainforth, Yolanda
+[]
+Clarendon
+Bronx, United States, 10459
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x3c            Guggenheim                        641.56%       0.24     $    180882.22   $     28193.94
+00xa            Money Mark                          0.75%       0.00     $         3.76   $       500.00
+                                             -----------------------------------------------------------
+                                                   Totals     0.2358     $    180885.98   $     28693.94
+Portfolio 240
+------------------------------------------
+Owner:
+Leadbeater, Tadd
+[tleadbeater1h@meetup.com]
+Thackeray
+El Paso, United States, 79928
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Caress, Ashlen
+[acaress1r@sciencedirect.com, acaress1r@godaddy.com]
+Washington
+Pasadena, United States, 91109
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x3c            Guggenheim                        641.56%       0.24     $      2212.63   $       344.88
+0x21               Sabrina                          7.28%       1.65     $1487542889.29   $20428890000.00
+0x21            Zafgen, In                        205.69%       0.45     $     21751.45   $     10574.63
+                                             -----------------------------------------------------------
+                                                   Totals     1.6500     $1487566853.37   $20428900919.51
+Portfolio 180
+------------------------------------------
+Owner:
+Looks, Tania
+[tlooks1j@gov.uk, tlooks1j@unc.edu]
+Kropf
+Jacksonville, United States, 32209
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Double, Catriona
+[cdouble1q@naver.com, cdouble1q@ameblo.jp]
+La Follette
+Saint Louis, United States, 63167
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x34            Blood on t                          0.38%       1.31     $  39479579.96   $10397190000.00
+0x36            Brothers R                          8.39%       1.16     $  12644015.32   $ 150660000.00
+0x34            KKR and Co                        176.61%       0.26     $     15727.75   $      8905.20
+0x36            VictorySha                       1114.82%       0.63     $      1706.34   $       153.06
+                                             -----------------------------------------------------------
+                                                   Totals     1.3078     $  52141029.37   $10547859058.26
+Portfolio 210
+------------------------------------------
+Owner:
+Mantle, Cloe
+[cmantle21@indiatimes.com, cmantle21@printfriendly.com]
+Atwood
+Wilmington, United States, 19805
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Double, Catriona
+[cdouble1q@naver.com, cdouble1q@ameblo.jp]
+La Follette
+Saint Louis, United States, 63167
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x24               Carpool                          7.97%       1.23     $  22244956.09   $ 279250000.00
+0x3b            Fogo de Ch                        110.14%       0.21     $       430.32   $       390.72
+0x24            Special Op                       1189.32%       0.28     $      5619.54   $       472.50
+                                             -----------------------------------------------------------
+                                                   Totals     1.2299     $  22251005.95   $ 279250863.22
+Portfolio 380
+------------------------------------------
+Owner:
+Mattiello, Sib
+[smattiellom@tiny.cc, smattiellom@ucoz.ru]
+Clemons
+Virginia Beach, United States, 23471
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Arnowitz, Xenos
+[xarnowitz2q@instagram.com]
+Cherokee
+New York City, United States, 10203
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2a            Destiny in                          7.30%       1.92     $  18513791.98   $ 253680000.00
+0x2a            Regulus Th                        604.51%       0.69     $      3023.53   $       500.16
+0x12            Savings ac                          0.48%       0.00     $        79.87   $     16599.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.9198     $  18516895.38   $ 253697099.16
+Portfolio 310
+------------------------------------------
+Owner:
+Monan, Gonzales
+[gmonan1b@github.io]
+Carberry
+San Rafael, United States, 94913
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Tarling, Dian
+[dtarling1w@mapy.cz, dtarling1w@freewebs.com]
+Packers
+Rochester, United States, 55905
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x18             3 year CD                          0.57%       0.00     $        10.70   $      1872.00
+0x29            Dillards,                         557.68%       0.92     $      3902.34   $       699.75
+0x29            Dogs of Wa                          0.20%       1.92     $   1731889.71   $ 883800000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.9200     $   1735802.75   $ 883802571.75
+Portfolio 280
+------------------------------------------
+Owner:
+Noone, Husein
+[hnoone1e@ovh.net, hnoone1e@huffingtonpost.com]
+Dayton
+Tulsa, United States, 74108
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Caress, Ashlen
+[acaress1r@sciencedirect.com, acaress1r@godaddy.com]
+Washington
+Pasadena, United States, 91109
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x1b            Food Depos                          0.95%       0.00     $        15.84   $      1659.00
+0x30            Paylocity                         888.24%       0.18     $      5105.01   $       574.73
+0x30            The First                           8.42%       1.55     $  84488481.67   $1003340000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.5500     $  84493602.51   $1003342233.73
+Portfolio 010
+------------------------------------------
+Owner:
+O'Shevlin, Maurits
+[moshevlin0@netscape.com]
+Barby
+Columbus, United States, 31914
+
+Manager:
+Braxay, Ty
+
+Beneficiary:
+Feltham, Axel
+[afeltham1l@4shared.com]
+Paget
+Tulsa, United States, 74116
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00x4             3 year CD                          0.95%       0.00     $     38181.07   $   4000000.00
+                                             -----------------------------------------------------------
+                                                   Totals     0.0000     $     38181.07   $   4000000.00
+Portfolio 250
+------------------------------------------
+Owner:
+Orgel, Rozanna
+[rorgel1g@addthis.com]
+Bartelt
+Odessa, United States, 79764
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Caress, Ashlen
+[acaress1r@sciencedirect.com, acaress1r@godaddy.com]
+Washington
+Pasadena, United States, 91109
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x36            Brothers R                          8.39%       1.16     $1662688014.37   $19811790000.00
+0x1e            Savings ac                          0.45%       0.00     $         2.26   $       500.00
+0x36            VictorySha                       1114.82%       0.63     $    224384.11   $     20127.39
+                                             -----------------------------------------------------------
+                                                   Totals     1.1599     $1662912400.73   $19811810627.39
+Portfolio 440
+------------------------------------------
+Owner:
+Pooly, Mandel
+[mpoolyq@51.la, mpoolyq@booking.com]
+Center
+Philadelphia, United States, 19191
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Gainforth, Yolanda
+[]
+Clarendon
+Bronx, United States, 10459
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00x8             3 year CD                          0.83%       0.00     $       191.69   $     23000.00
+0x3e            Safe Bulke                        276.62%       0.07     $      4718.78   $      1705.88
+                                             -----------------------------------------------------------
+                                                   Totals     0.0048     $      4910.47   $     24705.88
+Portfolio 190
+------------------------------------------
+Owner:
+Prime, Annabela
+[aprime23@nih.gov]
+Park Meadow
+Washington, United States, 20370
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Double, Catriona
+[cdouble1q@naver.com, cdouble1q@ameblo.jp]
+La Follette
+Saint Louis, United States, 63167
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x26            Exa Corpor                        348.04%       0.65     $       265.38   $        76.25
+0x26              Real Men                          1.33%       1.54     $    573797.26   $  43220000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.5400     $    574062.64   $  43220076.25
+Portfolio 470
+------------------------------------------
+Owner:
+Rysdale, Dick
+[drysdalep@admin.ch, drysdalep@amazon.com]
+Milwaukee
+Lexington, United States, 40576
+
+Manager:
+Mount, Danette
+
+Beneficiary:
+Gainforth, Yolanda
+[]
+Clarendon
+Bronx, United States, 10459
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00xd             3 year CD                          0.31%       0.00     $        71.41   $     23000.00
+0x22            Helix Ener                       1344.97%       0.52     $       280.83   $        20.88
+0x22            It is Aliv                          7.52%       1.83     $   6337078.70   $  84230000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.8295     $   6337430.94   $  84253020.88
+Portfolio 040
+------------------------------------------
+Owner:
+Sancias, Fifi
+[fsancias14@ovh.net, fsancias14@cdbaby.com]
+Boyd
+Phoenix, United States, 85010
+
+Manager:
+Bamforth, Francene
+
+Beneficiary:
+Johnsey, Lu
+[ljohnsey1m@about.com]
+Pleasure
+Des Moines, United States, 50347
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x29            Dillards,                         557.68%       0.92     $      4162.50   $       746.40
+0x29            Dogs of Wa                          0.20%       1.92     $   1847349.02   $ 942720000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.9200     $   1851511.52   $ 942720746.40
+Portfolio 230
+------------------------------------------
+Owner:
+Shakspeare, Hedi
+[hshakspeare1i@tamu.edu, hshakspeare1i@printfriendly.com]
+Merrick
+Modesto, United States, 95397
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Caress, Ashlen
+[acaress1r@sciencedirect.com, acaress1r@godaddy.com]
+Washington
+Pasadena, United States, 91109
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x22            Helix Ener                       1344.97%       0.52     $     31172.03   $      2317.68
+0x39            Impax Labo                       6973.67%       0.41     $     24477.59   $       351.00
+0x22            It is Aliv                          7.52%       1.83     $ 703415735.97   $9349530000.00
+0x3a            Telefonica                       2473.97%       0.33     $      6110.71   $       247.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.8300     $ 703477496.29   $9349532915.68
+Portfolio 130
+------------------------------------------
+Owner:
+Sharrem, Leonie
+[]
+Ohio
+Kalamazoo, United States, 49006
+
+Manager:
+Le Breton, Alisander
+
+Beneficiary:
+Stedall, Danette
+[dstedall1o@ask.com]
+Springs
+Portland, United States, 97211
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x32            Bounty Hun                          5.96%       1.93     $2525872789.66   $42366720000.00
+0x32            Destinatio                       1102.79%       0.85     $     55852.51   $      5064.64
+                                             -----------------------------------------------------------
+                                                   Totals     1.9300     $2525928642.17   $42366725064.64
+Portfolio 400
+------------------------------------------
+Owner:
+Simmen, Consolata
+[csimmeni@archive.org]
+Heath
+Houston, United States, 77255
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Ivatt, Terri-jo
+[tivatt1x@ebay.co.uk]
+Mockingbird
+San Antonio, United States, 78285
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x11            90 year CD                          0.17%       0.00     $         2.76   $      1622.00
+0x23            Costa Brav                          9.26%       1.45     $    782009.89   $   8442400.00
+0x23            iShares MS                       2774.58%       0.32     $       326.65   $        11.77
+                                             -----------------------------------------------------------
+                                                   Totals     1.4495     $    782339.30   $   8444033.77
+Portfolio 370
+------------------------------------------
+Owner:
+Slopier, Fredia
+[fslopier18@indiegogo.com]
+South
+Miami, United States, 33111
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Ballston, Dorry
+[dballston1y@wordpress.org]
+Nobel
+Monticello, United States, 55585
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x38            Horace Man                        212.05%       0.73     $    129989.60   $     61301.73
+0x3d            Lehman ABS                         51.50%       0.58     $       349.00   $       677.60
+0x3e            Safe Bulke                        276.62%       0.07     $      1930.41   $       697.86
+0x13            Savings ac                          0.23%       0.00     $         1.15   $       500.00
+                                             -----------------------------------------------------------
+                                                   Totals     0.7153     $    132270.16   $     63177.19
+Portfolio 150
+------------------------------------------
+Owner:
+Strowthers, Marjory
+[mstrowthers7@amazon.co.jp, mstrowthers7@engadget.com]
+Del Sol
+Jamaica, United States, 11407
+
+Manager:
+Marran, Lolita
+
+Beneficiary:
+Docharty, Orelie
+[odocharty1p@tripadvisor.com]
+Porter
+Cleveland, United States, 44125
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x33            Arena Phar                        485.77%       0.44     $      2334.04   $       480.48
+0x33            Living Wak                          6.97%       1.17     $  27868448.51   $ 399720000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.1700     $  27870782.55   $ 399720480.48
+Portfolio 460
+------------------------------------------
+Owner:
+Tampling, Erik
+[etamplingt@hc360.com, etamplingt@meetup.com]
+Magdeline
+Toledo, United States, 43635
+
+Manager:
+Cooke, Devy
+
+Beneficiary:
+Gainforth, Yolanda
+[]
+Clarendon
+Bronx, United States, 10459
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00xc            6 month CD                          0.05%       0.00     $         4.09   $      7855.00
+0x21               Sabrina                          7.28%       1.65     $  29632328.47   $ 406950000.00
+0x21            Zafgen, In                        205.69%       0.45     $       433.30   $       210.65
+                                             -----------------------------------------------------------
+                                                   Totals     1.6500     $  29632765.85   $ 406958065.65
+Portfolio 080
+------------------------------------------
+Owner:
+Thrasher, Irma
+[ithrasher1k@timesonline.co.uk]
+Express
+Jacksonville, United States, 32255
+
+Manager:
+Maker, Ewell
+
+Beneficiary:
+Johnsey, Lu
+[ljohnsey1m@about.com]
+Pleasure
+Des Moines, United States, 50347
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x2e             Excalibur                          4.97%       1.33     $  10766179.44   $ 216680000.00
+0x2e            Merus N.V.                         69.95%       0.83     $       272.84   $       390.04
+                                             -----------------------------------------------------------
+                                                   Totals     1.3300     $  10766452.29   $ 216680390.04
+Portfolio 330
+------------------------------------------
+Owner:
+Timmis, Melany
+[mtimmis1a@msn.com, mtimmis1a@theatlantic.com]
+Red Cloud
+Fort Lauderdale, United States, 33310
+
+Manager:
+Gniewosz, Morissa
+
+Beneficiary:
+Tarling, Dian
+[dtarling1w@mapy.cz, dtarling1w@freewebs.com]
+Packers
+Rochester, United States, 55905
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00x2            90 year CD                          0.02%       0.00     $         0.12   $       500.00
+0x26            Exa Corpor                        348.04%       0.65     $     14596.02   $      4193.75
+0x26              Real Men                          1.33%       1.54     $  31558849.10   $2377100000.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.5400     $  31573445.24   $2377104693.75
+Portfolio 020
+------------------------------------------
+Owner:
+Tregona, Jaquenette
+[jtregona12@noaa.gov, jtregona12@java.com]
+Emmet
+Memphis, United States, 38126
+
+Manager:
+Cooke, Devy
+
+Beneficiary:
+Feltham, Axel
+[afeltham1l@4shared.com]
+Paget
+Tulsa, United States, 74116
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x34            Blood on t                          0.38%       1.31     $   9950138.04   $2620430000.00
+0x34            KKR and Co                        176.61%       0.26     $      3963.90   $      2244.40
+00x5            Money Mark                          0.18%       0.00     $         0.90   $       500.00
+                                             -----------------------------------------------------------
+                                                   Totals     1.3100     $   9954102.84   $2620432744.40
+Portfolio 390
+------------------------------------------
+Owner:
+Winsom, Nehemiah
+[nwinsom15@facebook.com]
+Donald
+Knoxville, United States, 37939
+
+Manager:
+Cooke, Devy
+
+Beneficiary:
+Ballston, Dorry
+[dballston1y@wordpress.org]
+Nobel
+Monticello, United States, 55585
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+00x1             3 year CD                          0.55%       0.00     $         0.55   $       100.00
+00x6            Monkey Ban                          0.17%       0.00     $        95.28   $     56000.00
+                                             -----------------------------------------------------------
+                                                   Totals     0.0000     $        95.83   $     56100.00
+Portfolio 350
+------------------------------------------
+Owner:
+Yoakley, Batholomew
+[byoakleyo@tumblr.com, byoakleyo@tinyurl.com]
+Sherman
+Sacramento, United States, 95865
+
+Manager:
+Bains, Aluino
+
+Beneficiary:
+Dallemore, Esra
+[edallemore1t@google.it, edallemore1t@gizmodo.com]
+Shopko
+Saint Louis, United States, 63150
+
+Code                 Asset                    Return Rate       Risk      Annual Return            Value
+0x15            Food Depos                          0.18%       0.00     $         8.67   $      4811.00
+0x27            Monkey Tai                          3.14%       1.54     $  44814341.29   $1424940000.00
+0x27            Resource C                       4260.65%       0.56     $     11060.23   $       259.59
+                                             -----------------------------------------------------------
+                                                   Totals     1.5399     $  44825410.19   $1424945070.59

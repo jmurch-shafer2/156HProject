@@ -36,7 +36,11 @@ public class Person {
 		this.address = address;
 		this.emailList = emailList;
 	}
-	
+	/**
+	 * A basic copy constructor 
+	 * @param Person to be copied 
+	 * 
+	 */
 	public Person(Person that) {
 		super();
 		this.personCode = that.personCode;
