@@ -1,73 +1,91 @@
 use joelm;
 
+drop table if exists Stock;
+drop table if exists DepositAccount;
+drop table if exists PrivateInvestment;
 drop table if exists Portfolio;
-create table Portfolio(
-	portfolioId int not null primary key auto_increment
-);
-
+drop table if exists Address;
+drop table if exists Email;
 drop table if exists Person;
+
 create table Person(
 	personId int not null primary key auto_increment,
-    portfolioId int not null, 
-    firstName varchar(50),
-    lastName varchar(50),
-    personType varchar(1),
+    firstName varchar(50) not null,
+    lastName varchar(50) not null,
     brokerType varchar(1),
-    secIdentifier varchar(10),
-    foreign key (portfolioId) references Portfolio(portfolioId)
+    secIdentifier varchar(10)    
 );
-
-drop table if exists Email;
 create table Email(
 	emailId int not null primary key auto_increment,
-	email varchar(100),
+	email varchar(100) not null,
     personId int not null,
     foreign key (personId) references Person(personId)
 );
 
-drop table if exists Address;
 create table Address(
 	addressId int not null primary key auto_increment,
-    personId int,
-    street varchar(50),
-    city varchar(50),
-    zipCode int,
+    personId int not null,
+    street varchar(50) not null,
+    city varchar(50) not null,
+    zipCode int not null,
     country varchar(50),
 	foreign key (personId) references Person(personId)
 );
 
-drop table if exists DepositAccount;
+create table Portfolio(
+	portfolioId int not null primary key auto_increment,
+    ownerId int not null,
+    managerId int not null,
+    beneficiaryId int,
+    foreign key (ownerId) references Person(personId),
+    foreign key (managerId) references Person(personId)
+);
+
+
+
 create table DepositAccount(
 	depositAccountId int not null primary key auto_increment,
-	portfolioId int,
-    apr int,
-    value double,
+	portfolioId int not null,
+    apr int not null,
+    totalValue double not null,
     foreign key (portfolioId) references Portfolio(portfolioId)
 );
 
-drop table if exists PrivateInvestment;
 create table PrivateInvestment(
 	privateInvestmentId int not null primary key auto_increment,
-	portfolioId int,
-    baseRateReturn double,
-    quarterlyDividend double,
-    baseOmegaMeasure double,
-    totalValue double,
-    percentageOwned double,
+	portfolioId int not null,
+    baseRateReturn double not null,
+    quarterlyDividend double not null,
+    baseOmegaMeasure double not null,
+    totalValue double not null,
+    percentageOwned double not null,
     foreign key (portfolioId) references Portfolio(portfolioId)
 );
 
-drop table if exists Stock;
 create table Stock(
 	stockId int not null primary key auto_increment,
-	portfolioId int,
-    sharesOwned int,
-    quarterlyDividend double,
-    sharePrice double,
-    betaMeasure double,
-    baseRateReturn double,
+	portfolioId int not null,
+    stockSymbol varchar(10) not null,
+    sharesOwned int not null,
+    quarterlyDividend double not null,
+    sharePrice double not null,
+    betaMeasure double not null,
+    baseRateReturn double not null,
     foreign key (portfolioId) references Portfolio(portfolioId)
 );
 
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Brent","Elphinston","","");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("O'Shevlin","Maurits","","");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Tregona","Jaquenette","","");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Hazelgrove","Waylan","","");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Sancias","Fifi","","");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Gniewosz","Morissa","E","005");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Braxay","Ty","E","006");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Cooke","Devy","J","001");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Bamforth","Francene","J","009");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Feltham","Axel","","");
+insert Person(firstName, lastName, brokerType, secIdentifier) values ("Johnsey","Lu","","");
 
+insert Email(personId,email) values();
 
+insert Address
