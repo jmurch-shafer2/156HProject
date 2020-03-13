@@ -1,4 +1,4 @@
-use joelm;
+
 
 -- This RDB was created by Joel Murch-Shafer and Natalie Ruckman 
 -- This DB holds infomation to model the all assets, people and portfolios 
@@ -79,6 +79,7 @@ create table PrivateInvestment(
 	privateInvestmentId int not null primary key auto_increment,
     assetCode varchar(255) not null unique,
 	assetId int not null,
+    name varchar(255),
     baseRateReturn double not null,
     quarterlyDividend double not null,
     baseOmegaMeasure double not null,
@@ -201,7 +202,7 @@ insert DepositAccount(assetCode,assetId,apr,totalValue) values ("00c",(select as
 insert DepositAccount(assetCode,assetId,apr,totalValue) values ("008",(select assetId from Asset where assetCode = "008"),0.83,23000);
 
 -- PrivateInvestment
-insert PrivateInvestment(assetCode,assetId,baseRateReturn,quarterlyDividend,baseOmegaMeasure,totalValue,percentageOwned) values ("0ff",(select assetId from Asset where assetCode = "033"),06.95,366285.46,0.17,6662000000,14);
+insert PrivateInvestment(name,assetCode,assetId,baseRateReturn,quarterlyDividend,baseOmegaMeasure,totalValue,percentageOwned) values ("Living Wake, The","0ff",(select assetId from Asset where assetCode = "033"),06.95,366285.46,0.17,6662000000,14);
 
 
 -- Stock 
