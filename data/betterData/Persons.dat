@@ -1,22 +1,50 @@
-11
-02a;;,;,,,,United States;,
+insert Email(personId,email) values((select personId from Person where personCode = "02a"),"belphinston11@taobao.com"); -- "Brent","Elphinston"
+insert Email(personId,email) values((select personId from Person where personCode = "02a"),"belphinston11@cbc.ca"); -- "Brent","Elphinston"
+insert Email(personId,email) values((select personId from Person where personCode = "005"),"moshevlin0@netscape.com"); -- "O'Shevlin","Maurits"
+insert Email(personId,email) values((select personId from Person where personCode = "02b"),"jtregona12@noaa.gov"); -- "Tregona","Jaquenette"
+insert Email(personId,email) values((select personId from Person where personCode = "02b"),"jtregona12@java.com"); -- "Tregona","Jaquenette"
+insert Email(personId,email) values((select personId from Person where personCode = "02c"),"whazelgrove13@goo.gl"); -- "Hazelgrove","Waylan"
+insert Email(personId,email) values((select personId from Person where personCode = "02c"),"whazelgrove13@samsung.com"); -- "Hazelgrove","Waylan"
+insert Email(personId,email) values((select personId from Person where personCode = "02d"),"fsancias14@ovh.net"); -- "Sancias","Fifi"
+insert Email(personId,email) values((select personId from Person where personCode = "02d"),"fsancias14@cdbaby.com"); -- "Sancias","Fifi"
+insert Email(personId,email) values((select personId from Person where personCode = "014"),"mgniewoszf@livejournal.com"); -- "Gniewosz","Morissa"
+insert Email(personId,email) values((select personId from Person where personCode = "025"),"tbraxayw@house.gov"); -- "Braxay","Ty"
+insert Email(personId,email) values((select personId from Person where personCode = "025"),"tbraxayw@sbwire.com"); -- "Braxay","Ty"
+insert Email(personId,email) values((select personId from Person where personCode = "00a"),"dcooke5@imgur.com"); -- "Cooke","Devy"
+insert Email(personId,email) values((select personId from Person where personCode = "00a"),"dcooke5@purevolume.com"); -- "Cooke","Devy"
+-- "Bamforth","Francene" no emails
+insert Email(personId,email) values((select personId from Person where personCode = "03e"),"afeltham1l@4shared.com"); -- "Feltham","Axel"
+insert Email(personId,email) values((select personId from Person where personCode = "03f"),"ljohnsey1m@about.com"); -- "Johnsey","Lu"
 
-005;;,;Barby,Columbus,GA,31914,United States;
 
-02b;;,;Emmet,Memphis,TN,38126,United States;,
 
-02c;;,;Eastlawn,Amarillo,TX,79165,United States;,
 
-02d;;,;Boyd,Phoenix,AZ,85010,United States;,
 
-014;,;,;Morrow,Fort Wayne,IN,46814,United States;
 
-025;,;,;Chinook,Newark,NJ,07188,United States;,
 
-00a;,;,;Basil,Albany,GA,31704,United States;
 
-040;,;,;Namekagon,Fort Wayne,IN,46805,United States;
 
-03e;;,;Paget,Tulsa,OK,74116,United States;
 
-03f;;,;Pleasure,Des Moines,IA,50347,United States;
+
+
+
+
+
+
+
+
+
+
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02a"),"Chinook","Fullerton","CA",92640,"United States"); -- "Brent","Elphinston"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "005"),"Barby","Columbus","GA",31914,"United States"); -- "O'Shevlin","Maurits"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02b"),"Emmet","Memphis","TN",38126,"United States"); -- "Tregona","Jaquenette"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02c"),"Eastlawn","Amarillo","TX",79165,"United States"); -- "Hazelgrove","Waylan"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02d"),"Boyd","Phoenix","AZ",85010,"United States"); -- "Sancias","Fifi"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "014"),"Morrow","Fort Wayne","IN",46814,"United States"); -- "Gniewosz","Morissa"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "025"),"Chinook","Newark","NJ",07188,"United States"); -- "Braxay","Ty"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "00a"),"Basil","Albany","GA",31704,"United States"); -- "Cooke","Devy"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "040"),"Namekagon","Fort Wayne","IN",46805,"United States"); -- "Bamforth","Francene"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "03e"),"Paget","Tulsa","OK",74116,"United States"); -- "Feltham","Axel"
+insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "03f"),"Pleasure","Des Moines","IA",50347,"United States"); -- "Johnsey","Lu"
+
+
