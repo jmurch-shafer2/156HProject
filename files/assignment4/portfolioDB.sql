@@ -51,7 +51,7 @@ create table Portfolio(
 	portfolioId int not null primary key auto_increment,
     portfolioCode varchar(255) not null unique,
     ownerId int not null,
-    managerId int not null,
+    managerId int,
     beneficiaryId int,
     foreign key (ownerId) references Person(personId),
     foreign key (managerId) references Person(personId),
