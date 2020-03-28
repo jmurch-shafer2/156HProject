@@ -2662,4 +2662,8 @@ select a.albumId as "Album ID", b.bandId as "Band ID",a.year as "Album Year",a.n
     join Musician m on m.musicianId = bm.musicianId
     where a.albumId = 1;
 
+insert into Band(name) values ("Joel's test band");
 
+-- select bandId from Band where name = "Joel's test band";
+
+insert into Album(title,year,number,bandId) values ("test  title",2001,3,(select bandId from Band where name = "Joel's test band"));
