@@ -30,6 +30,8 @@ create table Email(
     foreign key (personId) references Person(personId)
 );
 
+-- TODO state and country need to be normalized
+-- Person should be referencing an addressId as multiple people could be living in the same address . Data would need to be duplicated if someone multiple people lived in the same address.
 create table Address(
 	addressId int not null primary key auto_increment,
     personId int not null,
@@ -41,6 +43,7 @@ create table Address(
 	foreign key (personId) references Person(personId)
 );
 
+-- Bonus: not preventing duplicates
 create table Asset(
 	assetId int not null primary key auto_increment,
     assetCode varchar(255) not null unique,

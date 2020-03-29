@@ -80,13 +80,13 @@ insert PortfolioAsset(assetId,portfolioId) values ((select assetId from Asset wh
 
 -- 12. A query to find the total number of portfolios owned by each person
 select p.personId as "Person Code", p.firstName as "First Name", p.lastName as "Last Name", count(por.ownerId) as "Number of Portfolios per Person" from Person p
-	join Portfolio por on p.personId = por.ownerId
+	left join Portfolio por on p.personId = por.ownerId
     group by por.ownerId;
 
 
 -- 13. A query to find the total number of portfolios managed by each person
 select p.personId as "Person ID", p.firstName as "First Name", p.lastName as "Last Name", count(por.managerId) as "Number of Portfolios Managed" from Person p
-	join Portfolio por on p.personId = por.managerId
+	left join Portfolio por on p.personId = por.managerId
     group by por.managerId;
 
 
@@ -103,7 +103,7 @@ select p.portfolioId as "Portfolio ID",a.assetCode as "Asset Code",pi.privateInv
 	join PortfolioAsset pa on p.portfolioId = pa.portfolioId
     join Asset a on a.assetId = pa.assetId
     join PrivateInvestment pi on pi.assetId = a.assetId
-    where 100 > (select sum(pi.percentageOwned) from Portfolio p
+    where 100 < (select sum(pi.percentageOwned) from Portfolio p
 					join PortfolioAsset pa on p.portfolioId = pa.portfolioId
 					join Asset a on a.assetId = pa.assetId
 					join PrivateInvestment pi on pi.assetId = a.assetId);
