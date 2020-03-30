@@ -3,7 +3,7 @@
 
  -- 1. A query to retrieve the major Fields for every person
 select p.personId as "ID", p.personCode as "Person Code", p.firstName as "First Name", p.lastName as "Last Name", e.email as "Email", a.Street as "Street", a.City as "City", a.state as "State" from Person p
-	join Address a on a.personId = p.personId
+	join Address a on a.addressId = p.addressId
     join Email e on e.personId = p.personId;
 
 
@@ -24,7 +24,6 @@ update Email set email = "championhotbeef@cse.unl.edu"
 
 -- 5. A query (or series of queries) to remove a given person record
 delete from Email where personId = 1;
-delete from Address where personId = 1;
 delete from PortfolioAsset where portfolioAssetId = 1;
 delete from PortfolioAsset where portfolioAssetId = 2;
 delete from Portfolio where ownerId = 1; 
@@ -32,10 +31,10 @@ update Portfolio set managerId = null
 	where managerId = 1;
 delete from Portfolio where beneficiaryId = 1;
 delete from Person where personId = 1;
-
+delete from Address where addressId = (select addressId from Person where personId = 1);
 
 -- 6. A query to create a person record
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("badundam", "Rick", "Riarodian","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("badundam", 1, "Rick", "Riarodian","","");
 
 
 -- 7. A query to get all the assets in a particular portfolio
@@ -66,9 +65,9 @@ insert DepositAccount(assetCode,assetId,apr,totalValue) values ("codeName",(sele
 
 -- 10. A query to create a new portfolio record
 -- making new people to make a new portfolio for
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("newOwner","new","owner","","");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("newManager","new","manager","E","00000000000");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("newBeneficiary","new","hedgeFundChild","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("newOwner",1,"new","owner","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("newManager",1,"new","manager","E","00000000000");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("newBeneficiary",1,"new","hedgeFundChild","","");
 -- Making the new portfolio
 insert Portfolio(portfolioCode,ownerId,managerId,beneficiaryId) values ("newPortfolio",(select personId from Person where personCode = "newOwner"),(select personId from Person where personCode = "newManager"),(select personId from Person where personCode = "newBeneficiary"));
 

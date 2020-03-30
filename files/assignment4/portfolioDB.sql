@@ -9,38 +9,36 @@ drop table if exists DepositAccount;
 drop table if exists PrivateInvestment;
 drop table if exists PortfolioAsset;
 drop table if exists Portfolio;
-drop table if exists Address;
 drop table if exists Email;
 drop table if exists Person;
 drop table if exists Asset;
+drop table if exists Address;
 
-
+-- TODO state and country need to be normalized
+-- Person should be referencing an addressId as multiple people could be living in the same address . Data would need to be duplicated if someone multiple people lived in the same address.
+create table Address(
+	addressId int not null primary key auto_increment,
+    street varchar(255) not null,
+    city varchar(255) not null,
+    state varchar(255) not null,
+    zipCode int not null,
+    country varchar(255)
+);
 create table Person(
 	personId int not null primary key auto_increment,
     personCode varchar(255) not null unique,
+    addressId int not null,
     firstName varchar(255) not null,
     lastName varchar(255) not null,
     brokerType varchar(255),
-    secIdentifier varchar(255)    
+    secIdentifier varchar(255),
+    foreign key (addressId) references Address(addressId)
 );
 create table Email(
 	emailId int not null primary key auto_increment,
 	email varchar(255) not null,
     personId int not null,
     foreign key (personId) references Person(personId)
-);
-
--- TODO state and country need to be normalized
--- Person should be referencing an addressId as multiple people could be living in the same address . Data would need to be duplicated if someone multiple people lived in the same address.
-create table Address(
-	addressId int not null primary key auto_increment,
-    personId int not null,
-    street varchar(255) not null,
-    city varchar(255) not null,
-    state varchar(255) not null,
-    zipCode int not null,
-    country varchar(255),
-	foreign key (personId) references Person(personId)
 );
 
 -- Bonus: not preventing duplicates
@@ -105,18 +103,31 @@ create table Stock(
     foreign key (assetId) references Asset(assetId)
 );
 
+-- Address
+insert Address (street, city, state, zipCode, country) values ("Chinook","Fullerton","CA",92640,"United States"); -- "Brent","Elphinston"
+insert Address (street, city, state, zipCode, country) values ("Barby","Columbus","GA",31914,"United States"); -- "O'Shevlin","Maurits"
+insert Address (street, city, state, zipCode, country) values ("Emmet","Memphis","TN",38126,"United States"); -- "Tregona","Jaquenette"
+insert Address (street, city, state, zipCode, country) values ("Eastlawn","Amarillo","TX",79165,"United States"); -- "Hazelgrove","Waylan"
+insert Address (street, city, state, zipCode, country) values ("Boyd","Phoenix","AZ",85010,"United States"); -- "Sancias","Fifi"
+insert Address (street, city, state, zipCode, country) values ("Morrow","Fort Wayne","IN",46814,"United States"); -- "Gniewosz","Morissa"
+insert Address (street, city, state, zipCode, country) values ("Chinook","Newark","NJ",07188,"United States"); -- "Braxay","Ty"
+insert Address (street, city, state, zipCode, country) values ("Basil","Albany","GA",31704,"United States"); -- "Cooke","Devy"
+insert Address (street, city, state, zipCode, country) values ("Namekagon","Fort Wayne","IN",46805,"United States"); -- "Bamforth","Francene"
+insert Address (street, city, state, zipCode, country) values ("Paget","Tulsa","OK",74116,"United States"); -- "Feltham","Axel"
+insert Address (street, city, state, zipCode, country) values ("Pleasure","Des Moines","IA",50347,"United States"); -- "Johnsey","Lu"
+
 -- Person
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("02a","Brent","Elphinston","","");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("005","O'Shevlin","Maurits","","");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("02b","Tregona","Jaquenette","","");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("02c","Hazelgrove","Waylan","","");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("02d","Sancias","Fifi","","");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("014","Gniewosz","Morissa","E","005");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("025","Braxay","Ty","E","006");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("00a","Cooke","Devy","J","001");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("040","Bamforth","Francene","J","009");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("03e","Feltham","Axel","","");
-insert Person(personCode, firstName, lastName, brokerType, secIdentifier) values ("03f","Johnsey","Lu","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("02a",1,"Brent","Elphinston","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("005",2,"O'Shevlin","Maurits","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("02b",3,"Tregona","Jaquenette","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("02c",4,"Hazelgrove","Waylan","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("02d",5,"Sancias","Fifi","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("014",6,"Gniewosz","Morissa","E","005");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("025",7,"Braxay","Ty","E","006");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("00a",8,"Cooke","Devy","J","001");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("040",9,"Bamforth","Francene","J","009");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("03e",10,"Feltham","Axel","","");
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("03f",11,"Johnsey","Lu","","");
 
 -- Email
 insert Email(personId,email) values((select personId from Person where personCode = "02a"),"belphinston11@taobao.com"); -- "Brent","Elphinston"
@@ -137,18 +148,6 @@ insert Email(personId,email) values((select personId from Person where personCod
 insert Email(personId,email) values((select personId from Person where personCode = "03e"),"afeltham1l@4shared.com"); -- "Feltham","Axel"
 insert Email(personId,email) values((select personId from Person where personCode = "03f"),"ljohnsey1m@about.com"); -- "Johnsey","Lu"
 
--- Address
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02a"),"Chinook","Fullerton","CA",92640,"United States"); -- "Brent","Elphinston"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "005"),"Barby","Columbus","GA",31914,"United States"); -- "O'Shevlin","Maurits"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02b"),"Emmet","Memphis","TN",38126,"United States"); -- "Tregona","Jaquenette"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02c"),"Eastlawn","Amarillo","TX",79165,"United States"); -- "Hazelgrove","Waylan"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "02d"),"Boyd","Phoenix","AZ",85010,"United States"); -- "Sancias","Fifi"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "014"),"Morrow","Fort Wayne","IN",46814,"United States"); -- "Gniewosz","Morissa"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "025"),"Chinook","Newark","NJ",07188,"United States"); -- "Braxay","Ty"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "00a"),"Basil","Albany","GA",31704,"United States"); -- "Cooke","Devy"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "040"),"Namekagon","Fort Wayne","IN",46805,"United States"); -- "Bamforth","Francene"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "03e"),"Paget","Tulsa","OK",74116,"United States"); -- "Feltham","Axel"
-insert Address (personId, street, city, state, zipCode, country) values ((select personId from Person where personCode = "03f"),"Pleasure","Des Moines","IA",50347,"United States"); -- "Johnsey","Lu"
 
 -- Asset
 insert Asset (assetCode,typeOfAsset) values ("003","D");
