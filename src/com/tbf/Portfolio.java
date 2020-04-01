@@ -102,7 +102,7 @@ public class Portfolio {
 	public Person getBeneficiary() {
 		if(beneficiary == null) {
 			ArrayList <String> arr = new ArrayList();
-			Address add = new Address("", "", "", "", "");
+			Address add = new Address(0,"", "", "", "", "");
 			return new Person("None","","","None","",add,arr);
 		} else {
 			return beneficiary;
