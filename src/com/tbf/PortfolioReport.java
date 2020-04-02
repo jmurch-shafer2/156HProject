@@ -11,6 +11,9 @@ public class PortfolioReport {
 
 		System.out.println(listOfPeople.toString());
 		
+		ArrayList<Asset> listOfAsset = Asset.getAllAssets();
+		
+		System.out.println(listOfPeople.toString());
 		
 		
 		
