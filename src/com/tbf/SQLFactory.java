@@ -10,8 +10,10 @@ public class SQLFactory {
 	Connection conn;
 	PreparedStatement ps;
 	ResultSet rs;
+	int counter = 1;
+
 	public void startConnection() {
-		
+
 		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 
 		try {
@@ -20,7 +22,7 @@ public class SQLFactory {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
-		
+
 		try {
 			conn = DriverManager.getConnection(DatabaseInfo.url, DatabaseInfo.username, DatabaseInfo.password);
 		} catch (SQLException e) {
@@ -29,7 +31,7 @@ public class SQLFactory {
 			throw new RuntimeException(e);
 		}
 	}
-	
+
 	public void prepareQuery(String query) {
 		try {
 			this.ps = conn.prepareStatement(query);
@@ -37,7 +39,7 @@ public class SQLFactory {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void runQuery() {
 		rs = null;
 		try {
@@ -46,10 +48,10 @@ public class SQLFactory {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public boolean next() {
-		try{
-			if(this.rs != null && this.rs.next()) {
+		try {
+			if (this.rs != null && this.rs.next()) {
 				return true;
 			} else {
 				return false;
@@ -59,7 +61,25 @@ public class SQLFactory {
 		}
 		return false;
 	}
-	
+
+	public void setInt(int temp) {
+		try {
+			this.ps.setInt(this.counter, temp);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		counter++;
+	}
+
+	public void setString(String temp) {
+		try {
+			this.ps.setString(this.counter, temp);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		counter++;
+	}
+
 	public int getInt(String name) {
 		int tempInt = 0;
 		try {
@@ -69,6 +89,7 @@ public class SQLFactory {
 		}
 		return tempInt;
 	}
+
 	public String getString(String name) {
 		String tempString = null;
 		try {
@@ -78,33 +99,7 @@ public class SQLFactory {
 		}
 		return tempString;
 	}
-//	
-//	while (conn.next()) {
-//
-//		personId = rs.getInt("personId");
-//		personCode = rs.getString("personCode");
-//		addressId = rs.getInt("addressId");
-//		firstName = rs.getString("firstName");
-//		lastName = rs.getString("lastName");
-//		brokerType = rs.getString("brokerType");
-//		secIdentifier = rs.getString("secIdentifier");
-//		tempAdd = Address.getAddress(addressId);
-//		emailList = Person.getEmails(personId);
-//		p = new Person(personId, personCode, brokerType, secIdentifier, firstName, lastName, tempAdd,
-//				emailList);
-//		peopleList.add(p);
-//	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	public void endConnection() {
 		try {
 			if (this.rs != null && !this.rs.isClosed())

@@ -34,59 +34,22 @@ public class Address {
 	public static Address getAddress(int addressId) {
 		Address a = null;
 
-	  	String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
+	  	SQLFactory conn = new SQLFactory();
 	  	
-	  	try {
-			
-			Class.forName(DRIVER_CLASS).getDeclaredConstructor().newInstance();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-		
-		Connection conn = null;
-		
-		try {
-			conn = DriverManager.getConnection(DatabaseInfo.url, DatabaseInfo.username, DatabaseInfo.password);
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
 		
 		// using sql ? to protect against injection attacks
 		String query = "select addressId, street, city, state, zipCode, country from Address where addressId = ?;";
 
-		PreparedStatement ps = null;
-		ResultSet rs = null;
-
-		try {
-			ps = conn.prepareStatement(query);
-			ps.setInt(1, addressId);
-			rs = ps.executeQuery();
-			if(rs.next()) {
-				a = new Address(addressId, rs.getString("street"),rs.getString("city"),rs.getString("state"),rs.getString("country"),rs.getString("zipCode"));
-			} else {
-				throw new IllegalStateException("no such Address with addressId = " + addressId);
-			}
-			rs.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
-
-		try {
-			if(rs != null && !rs.isClosed())
-				rs.close();
-			if(ps != null && !ps.isClosed())
-				ps.close();
-			if(conn != null && !conn.isClosed())
-				conn.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
+		conn.startConnection();
+		conn.prepareQuery(query);
+		conn.setInt(addressId);
+		conn.runQuery();
+		
+		if(conn.next()) {
+			a = new Address(addressId, conn.getString("street"),conn.getString("city"),conn.getString("state"),conn.getString("country"),conn.getString("zipCode"));
+		} 
+		
+		conn.endConnection();
 		return a;
 	}
 

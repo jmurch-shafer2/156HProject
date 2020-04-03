@@ -69,60 +69,18 @@ public class Person {
 	public static ArrayList<String> getEmails(int personId) {
 		ArrayList<String> emailList = new ArrayList<String>();
 
-		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
+		SQLFactory conn = new SQLFactory();
 
-		try {
-			Class.forName(DRIVER_CLASS).getDeclaredConstructor().newInstance();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
+		String query = "select emailId, email from Email where personId = ?;";
+
+		conn.startConnection();
+		conn.prepareQuery(query);
+		conn.setInt(personId);
+		conn.runQuery();
+		while (conn.next()) {
+			emailList.add(conn.getString("email"));
 		}
-
-		Connection conn = null;
-
-		try {
-			conn = DriverManager.getConnection(DatabaseInfo.url, DatabaseInfo.username, DatabaseInfo.password);
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
-
-		// using sql ? to protect against injection attacks
-		String query = "select emailId, email from Email" + "	where personId = ?;";
-
-		PreparedStatement ps = null;
-		ResultSet rs = null;
-
-		try {
-			ps = conn.prepareStatement(query);
-			ps.setInt(1, personId);
-			rs = ps.executeQuery();
-			if (rs.next()) {
-				while (rs.next()) {
-					emailList.add(rs.getString("email"));
-				}
-			} else {
-//				throw new IllegalStateException("no such email with for person with PersonId = " + personId);
-			}
-			rs.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
-
-		try {
-			if (rs != null && !rs.isClosed())
-				rs.close();
-			if (ps != null && !ps.isClosed())
-				ps.close();
-			if (conn != null && !conn.isClosed())
-				conn.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
+		conn.endConnection();
 
 		return emailList;
 	}
@@ -136,31 +94,16 @@ public class Person {
 	public static Person getPerson(int personId) {
 		Person p = null;
 
-		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
+		SQLFactory conn = new SQLFactory();
 
-		try {
-
-			Class.forName(DRIVER_CLASS).getDeclaredConstructor().newInstance();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-
-		Connection conn = null;
-
-		try {
-			conn = DriverManager.getConnection(DatabaseInfo.url, DatabaseInfo.username, DatabaseInfo.password);
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
-
-		// using sql ? to protect against injection attacks
 		String query = "select personId, personCode, addressId, firstName, lastName, brokerType, secIdentifier from Person p"
 				+ "	where personId = ?;";
 
-		PreparedStatement ps = null;
-		ResultSet rs = null;
+		conn.startConnection();
+		conn.prepareQuery(query);
+		conn.setInt(personId);
+
+		conn.runQuery();
 
 		String personCode = null;
 		int addressId;
@@ -169,43 +112,21 @@ public class Person {
 		String brokerType = null;
 		String secIdentifier = null;
 
-		try {
-			ps = conn.prepareStatement(query);
-			ps.setInt(1, personId);
-			rs = ps.executeQuery();
-			if (rs.next()) {
-				personCode = rs.getString("personCode");
-				addressId = rs.getInt("addressId");
-				firstName = rs.getString("firstName");
-				lastName = rs.getString("lastName");
-				brokerType = rs.getString("brokerType");
-				secIdentifier = rs.getString("secIdentifier");
-				Address tempAdd = Address.getAddress(addressId);
-				ArrayList<String> emailList = Person.getEmails(personId);
-				p = new Person(personId, personCode, brokerType, secIdentifier, firstName, lastName, tempAdd,
-						emailList);
-			} else {
-				throw new IllegalStateException("no such person with personId = " + personId);
-			}
-			rs.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
+		if (conn.next()) {
+			personCode = conn.getString("personCode");
+			addressId = conn.getInt("addressId");
+			firstName = conn.getString("firstName");
+			lastName = conn.getString("lastName");
+			brokerType = conn.getString("brokerType");
+			secIdentifier = conn.getString("secIdentifier");
+			Address tempAdd = Address.getAddress(addressId);
+			ArrayList<String> emailList = Person.getEmails(personId);
+			p = new Person(personId, personCode, brokerType, secIdentifier, firstName, lastName, tempAdd, emailList);
+		} else {
+			throw new IllegalStateException("no such person with personId = " + personId);
 		}
 
-		try {
-			if (rs != null && !rs.isClosed())
-				rs.close();
-			if (ps != null && !ps.isClosed())
-				ps.close();
-			if (conn != null && !conn.isClosed())
-				conn.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
+		conn.endConnection();
 		return p;
 	}
 
@@ -221,13 +142,13 @@ public class Person {
 		Person p = null;
 
 		SQLFactory conn = new SQLFactory();
-		
+
 		String query = "select personId, personCode, addressId, firstName, lastName, brokerType, secIdentifier from Person p";
-		
+
 		conn.startConnection();
 		conn.prepareQuery(query);
 		conn.runQuery();
-		
+
 		int personId;
 		String personCode = null;
 		int addressId;
@@ -248,12 +169,10 @@ public class Person {
 			secIdentifier = conn.getString("secIdentifier");
 			tempAdd = Address.getAddress(addressId);
 			emailList = Person.getEmails(personId);
-			p = new Person(personId, personCode, brokerType, secIdentifier, firstName, lastName, tempAdd,
-					emailList);
+			p = new Person(personId, personCode, brokerType, secIdentifier, firstName, lastName, tempAdd, emailList);
 			peopleList.add(p);
 		}
 		conn.endConnection();
-
 		return peopleList;
 	}
 

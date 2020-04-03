@@ -11,10 +11,10 @@ public class PortfolioReport {
 
 		System.out.println(listOfPeople.toString());
 		
-		ArrayList<Asset> listOfAsset = Asset.getAllAssets();
+//		ArrayList<Asset> listOfAsset = Asset.getAllAssets();
 		
-		System.out.println(listOfPeople.toString());
-		
+//		System.out.println(listOfAsset.toString());
+//		System.out.println(Person.getPerson(3).toString());
 		
 		
 		
