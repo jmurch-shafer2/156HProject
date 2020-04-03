@@ -66,12 +66,20 @@ public class PrivateInvestment extends Asset {
 		return returnVal;
 	}
 	
-	public PrivateInvestment(String accountCode, String assetType, String label, String quarterlyDividend, String baseRateOfReturn, String baseOmegaMeasure, String totalValue) {
-		super(accountCode, assetType, label);
+	public PrivateInvestment(int assetId, String accountCode, String assetType, String label, String quarterlyDividend, String baseRateOfReturn, String baseOmegaMeasure, String totalValue) {
+		super(assetId, accountCode, assetType, label);
 		this.quarterlyDividend = Double.valueOf(quarterlyDividend);
 		this.baseRateOfReturn = Double.valueOf(baseRateOfReturn);
 		this.baseOmegaMeasure = Double.valueOf(baseOmegaMeasure);
 		this.totalValue = Double.valueOf(totalValue);
+	}
+	
+	public PrivateInvestment(int assetId, String accountCode, String assetType, String label, double quarterlyDividend, double baseRateOfReturn, double baseOmegaMeasure, double totalValue) {
+		super(assetId, accountCode, assetType, label);
+		this.quarterlyDividend = quarterlyDividend;
+		this.baseRateOfReturn = baseRateOfReturn;
+		this.baseOmegaMeasure = baseOmegaMeasure;
+		this.totalValue = totalValue;
 	}
 	
 	/**
@@ -81,7 +89,7 @@ public class PrivateInvestment extends Asset {
 	 * @param percentageOwned
 	 */
 	public PrivateInvestment(PrivateInvestment that, double percentageOwned) {
-		super(that.accountCode, that.assetType, that.label);
+		super(that.assetId, that.assetCode, that.typeOfAsset, that.label);
 		this.quarterlyDividend = that.quarterlyDividend;
 		this.baseRateOfReturn = that.baseRateOfReturn;
 		this.baseOmegaMeasure = that.baseOmegaMeasure;

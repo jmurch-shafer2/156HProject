@@ -22,3 +22,5 @@ select * from Asset a
     left join PrivateInvestment pi on a.assetId = pi.assetId;
     
 select * from Asset;
+
+select * from Portfolio;

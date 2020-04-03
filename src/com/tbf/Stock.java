@@ -16,14 +16,24 @@ public class Stock extends Asset {
 	private double sharePrice;
 	private double sharesOwned;
 	
-	public Stock(String accountCode, String assetType, String label, String quarterlyDividend,
+	public Stock(int assetId, String accountCode, String assetType, String label, String quarterlyDividend,
 			String baseRateOfReturn, String betaMeasure, String StockSymbol, String sharePrice) {
-		super(accountCode, assetType, label);
+		super(assetId, accountCode, assetType, label);
 		this.quarterlyDividend = Double.valueOf(quarterlyDividend);
 		this.baseRateOfReturn = Double.valueOf(baseRateOfReturn);
 		this.betaMeasure = Double.valueOf(betaMeasure);
-		this.stockSymbol = stockSymbol;
+		this.stockSymbol = StockSymbol;
 		this.sharePrice = Double.valueOf(sharePrice);
+	}
+	
+	public Stock(int assetId, String accountCode, String assetType, String label, double quarterlyDividend,
+			double baseRateOfReturn, double betaMeasure, String StockSymbol, double sharePrice) {
+		super(assetId, accountCode, assetType, label);
+		this.quarterlyDividend = quarterlyDividend;
+		this.baseRateOfReturn = baseRateOfReturn;
+		this.betaMeasure = betaMeasure;
+		this.stockSymbol = StockSymbol;
+		this.sharePrice = sharePrice;
 	}
 	
 	/**
@@ -33,7 +43,7 @@ public class Stock extends Asset {
 	 * @param sharesOwned
 	 */
 	public Stock(Stock that, double sharesOwned) {
-		super(that.accountCode, that.assetType, that.label);
+		super(that.assetId, that.assetCode, that.typeOfAsset, that.label);
 		this.quarterlyDividend = that.quarterlyDividend;
 		this.baseRateOfReturn = that.baseRateOfReturn;
 		this.betaMeasure = that.betaMeasure;

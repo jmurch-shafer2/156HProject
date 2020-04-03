@@ -204,6 +204,10 @@ public class Person {
 		return emailList;
 	}
 
+	public int getPersonId() {
+		return personId;
+	}
+
 	public String toString() {
 		String str = String.format(
 				"ID: %d, Code: %s, Broker Type: %s, SEC: %s\nName: %s, %s\nAddress: %s \nEmailList: %s " + "", personId,

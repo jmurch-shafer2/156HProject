@@ -24,9 +24,14 @@ public class DepositAccount extends Asset {
 	 * @param label
 	 * @param apr
 	 */
-	public DepositAccount(String accountCode, String assetType, String label, String apr) {
-		super(accountCode,assetType,label);
+	public DepositAccount(int assetId, String accountCode, String assetType, String label, String apr) {
+		super(assetId,accountCode,assetType,label);
 		this.apr = Double.valueOf(apr);
+	}
+	
+	public DepositAccount(int assetId,String accountCode, String assetType, String label, double apr) {
+		super(assetId,accountCode,assetType,label);
+		this.apr = apr;
 	}
 	
 	/**
@@ -35,7 +40,7 @@ public class DepositAccount extends Asset {
 	 * @param value
 	 */
 	public DepositAccount(DepositAccount that, double value) {
-		super(that.accountCode, that.assetType, that.label);
+		super(that.assetId, that.assetCode, that.typeOfAsset, that.label);
 		this.apr = that.apr;
 		this.value = value;
 	}

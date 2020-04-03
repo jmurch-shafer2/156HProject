@@ -9,18 +9,20 @@ public class PortfolioReport {
 
 		ArrayList<Person> listOfPeople = Person.getAllPeople();
 
-		System.out.println(listOfPeople.toString());
+//		System.out.println(listOfPeople.toString());
 		
-//		ArrayList<Asset> listOfAsset = Asset.getAllAssets();
+		ArrayList<Asset> listOfAsset = Asset.getAllAssets();
 		
 //		System.out.println(listOfAsset.toString());
 //		System.out.println(Person.getPerson(3).toString());
 		
 		
+//		System.out.println(Portfolio.getPortfolio(2, listOfAsset, listOfPeople).toString());
 		
-		
-		
-		
+		ArrayList<Portfolio> aids = Portfolio.getAllPortfolios(listOfAsset,listOfPeople);
+		for(Portfolio aid: aids) {
+			System.out.println(aid.toString());
+		}
 		
 		
 		

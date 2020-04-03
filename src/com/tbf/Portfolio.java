@@ -33,143 +33,166 @@ public class Portfolio {
 		this.assetList = assetList;
 	}
 
-	public ArrayList<Integer> getAssetId(int portfolioId) {
+	public static ArrayList<Integer> getAssetId(int portfolioId) {
 		ArrayList<Integer> assetIdList = new ArrayList<Integer>();
 
-		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
+		SQLFactory conn = new SQLFactory();
 
-		try {
-
-			Class.forName(DRIVER_CLASS).getDeclaredConstructor().newInstance();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-
-		Connection conn = null;
-
-		try {
-			conn = DriverManager.getConnection(DatabaseInfo.url, DatabaseInfo.username, DatabaseInfo.password);
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
-
-		// using sql ? to protect against injection attacks
 		String query = "select assetId from Portfolio p"
-				+ "	left join PortfolioAsset pa on p.portfolioId = pa.portfolioId" + "	where portfolioId = ?;";
+				+ "	left join PortfolioAsset pa on p.portfolioId = pa.portfolioId where p.portfolioId = ?;";
 
-		PreparedStatement ps = null;
-		ResultSet rs = null;
+		conn.startConnection();
+		conn.prepareQuery(query);
+		conn.setInt(portfolioId);
+		conn.runQuery();
 
-		try {
-			ps = conn.prepareStatement(query);
-			ps.setInt(1, portfolioId);
-			rs = ps.executeQuery();
-			if (rs.next()) {
-				while (rs.next()) {
-					int assetIdTemp = rs.getInt("assetId");
-					assetIdList.add(assetIdTemp);
-				}
-			}
-			rs.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
+		while (conn.next()) {
+			int assetIdTemp = conn.getInt("assetId");
+			assetIdList.add(assetIdTemp);
 		}
-
-		try {
-			if (rs != null && !rs.isClosed())
-				rs.close();
-			if (ps != null && !ps.isClosed())
-				ps.close();
-			if (conn != null && !conn.isClosed())
-				conn.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
+		conn.endConnection();
 
 		return assetIdList;
 	}
 
-	public static Portfolio getPortfolio(int portfolioId) {
+	public static Portfolio getPortfolio(int portfolioId, ArrayList<Asset> fullAssetList, ArrayList<Person> peopleList) {
 		Portfolio port = null;
 
-		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
+		SQLFactory conn = new SQLFactory();
 
-		try {
-
-			Class.forName(DRIVER_CLASS).getDeclaredConstructor().newInstance();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-
-		Connection conn = null;
-
-		try {
-			conn = DriverManager.getConnection(DatabaseInfo.url, DatabaseInfo.username, DatabaseInfo.password);
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
-
-		// using sql ? to protect against injection attacks
 		String query = "select portfolioId, portfolioCode, ownerId, managerId, beneficiaryId from Portfolio"
 				+ "	where portfolioId = ?;";
 
-		PreparedStatement ps = null;
-		ResultSet rs = null;
+		conn.startConnection();
+		conn.prepareQuery(query);
+		conn.setInt(portfolioId);
+		conn.runQuery();
 
 		String portfolioCode = null;
 		int ownerId;
 		int managerId;
 		int beneficiaryId;
-		ArrayList<Asset> assetList = null;
+		Person owner = null;
+		Person manager = null;
+		Person beneficiary = null;
+		ArrayList<Integer> assetIdList = null;
+		ArrayList<Asset> tempAssetList = new ArrayList<>();
 
-		try {
-			ps = conn.prepareStatement(query);
-			ps.setInt(1, portfolioId);
-			rs = ps.executeQuery();
-			if (rs.next()) {
-				portfolioCode = rs.getString("portfolioCode");
-				ownerId = rs.getInt("ownerId");
-				managerId = rs.getInt("managerId");
-				beneficiaryId = rs.getInt("beneficiaryId");
-				// TODO change list of asset IDs to actual assets
-//				assetList = Portfolio.getAssetId(portfolioId);
+		if (conn.next()) {
+			portfolioCode = conn.getString("portfolioCode");
+			ownerId = conn.getInt("ownerId");
+			managerId = conn.getInt("managerId");
+			beneficiaryId = conn.getInt("beneficiaryId");
+			assetIdList = Portfolio.getAssetId(portfolioId);
 
-				port = new Portfolio(portfolioId, portfolioCode, Person.getPerson(ownerId), Person.getPerson(managerId),
-						Person.getPerson(beneficiaryId), assetList);
-
-			} else {
-				throw new IllegalStateException("no such person with portfolioId = " + portfolioId);
+			for (Person bourke : peopleList) {
+				if (bourke.getPersonId() == ownerId) {
+					owner = bourke;
+				}
+				if (bourke.getPersonId() == managerId) {
+					manager = bourke;
+				}
+				if (bourke.getPersonId() == beneficiaryId) {
+					beneficiary = bourke;
+				}
+				if (owner != null && manager != null && beneficiary != null) {
+					break;
+				}
 			}
-			rs.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
 
-		try {
-			if (rs != null && !rs.isClosed())
-				rs.close();
-			if (ps != null && !ps.isClosed())
-				ps.close();
-			if (conn != null && !conn.isClosed())
-				conn.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
+			for (int id : assetIdList) {
+				for (Asset ass : fullAssetList) {
+					
+					if (ass.getAssetId() == id) {
+						tempAssetList.add(ass);
+					}
+				}
+			}
 
+			port = new Portfolio(portfolioId, portfolioCode, owner, manager, beneficiary, tempAssetList);
+
+		}
+		conn.endConnection();
 		return port;
 	}
+	
+	
+	public static ArrayList<Portfolio> getAllPortfolios(ArrayList<Asset> fullAssetList, ArrayList<Person> peopleList) {
+		ArrayList<Portfolio> portList = new ArrayList<>();
+		
+
+		SQLFactory conn = new SQLFactory();
+
+		String query = "select portfolioId, portfolioCode, ownerId, managerId, beneficiaryId from Portfolio;";
+
+		conn.startConnection();
+		conn.prepareQuery(query);
+		
+		conn.runQuery();
+
+		int portfolioId;
+		String portfolioCode = null;
+		int ownerId;
+		int managerId;
+		int beneficiaryId;
+		Person owner = null;
+		Person manager = null;
+		Person beneficiary = null;
+		ArrayList<Integer> assetIdList = null;
+		ArrayList<Asset> tempAssetList = new ArrayList<>();
+
+		while (conn.next()) {
+			portfolioId = conn.getInt("portfolioId");
+			portfolioCode = conn.getString("portfolioCode");
+			ownerId = conn.getInt("ownerId");
+			managerId = conn.getInt("managerId");
+			beneficiaryId = conn.getInt("beneficiaryId");
+			assetIdList = Portfolio.getAssetId(portfolioId);
+
+			for (Person bourke : peopleList) {
+				if (bourke.getPersonId() == ownerId) {
+					owner = bourke;
+				}
+				if (bourke.getPersonId() == managerId) {
+					manager = bourke;
+				}
+				if (bourke.getPersonId() == beneficiaryId) {
+					beneficiary = bourke;
+				}
+				if (owner != null && manager != null && beneficiary != null) {
+					break;
+				}	
+			}
+
+			for (int id : assetIdList) {
+				for (Asset ass : fullAssetList) {
+					
+					if (ass.getAssetId() == id) {
+						tempAssetList.add(ass);
+					}
+				}
+			}
+
+			Portfolio port = new Portfolio(portfolioId, portfolioCode, owner, manager, beneficiary, tempAssetList);
+			portList.add(port);
+		}
+		conn.endConnection();
+		return portList;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	/**
 	 * Calculates total fees for a portfolio
@@ -381,6 +404,20 @@ public class Portfolio {
 			}
 		}
 		return totalVal;
+	}
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("ID: " + portfolioId + " \n");
+		sb.append("Code: " + portfolioCode + " \n");
+		sb.append(this.owner.toString() + " \n");
+		sb.append(this.manager.toString() + " \n");
+		if(beneficiary != null) {
+			sb.append(this.beneficiary.toString() + " \n");
+		}
+		for(Asset ass:this.assetList) {
+			sb.append(ass.toString());
+		}		
+		return sb.toString();
 	}
 
 }

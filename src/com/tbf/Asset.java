@@ -11,14 +11,21 @@ package com.tbf;
 import java.util.ArrayList;
 
 public abstract class Asset {
-	protected String accountCode; 
-	protected String assetType;
+	protected String assetCode; 
+	protected String typeOfAsset;
 	protected String label;
+	protected int assetId;
 	
-	public Asset(String accountCode, String assetType, String label) {
-		this.accountCode = accountCode;
-		this.assetType = assetType;
+	public Asset(int assetId,String assetCode, String assetType, String label) {
+		this.assetId = assetId;
+		this.assetCode = assetCode;
+		this.typeOfAsset = assetType;
 		this.label = label;
+	}
+
+
+	public int getAssetId() {
+		return assetId;
 	}
 
 
@@ -27,11 +34,10 @@ public abstract class Asset {
 		PrivateInvestment pi = null;
 		DepositAccount da = null;
 		Stock s = null;
-		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 
 		SQLFactory conn = new SQLFactory();
 
-		String query = "SELECT accountCode, assetType, label, quarterlyDividend, baseRateOfReturn, betaMeasure, stockSymbol, sharePrice, " +
+		String query = "SELECT assetId, assetCode, typeOfAsset, label, quarterlyDividend, baseRateReturn, betaMeasure, stockSymbol, sharePrice, " +
 				"baseOmegaMeasure, totalValue, apr FROM Asset a;";
 
 		conn.startConnection();
@@ -39,18 +45,18 @@ public abstract class Asset {
 		conn.runQuery();
 
 		while(conn.next()) {
-			if (conn.getString("assetType") == "S") {
-				s = new Stock(conn.getString("accountCode"), conn.getString("assetType"), conn.getString("label"),
-						conn.getDouble("quarterlyDividend"), conn.getDouble("baseRateOfReturn"), conn.getDouble("betaMeasure"),
-						conn.getDouble("stockSymbol"), conn.getDouble("sharePrice"));
+			if (conn.getString("typeOfAsset").equals("S")) {
+				s = new Stock(conn.getInt("assetId"),conn.getString("assetCode"), conn.getString("typeOfAsset"), conn.getString("label"),
+						conn.getDouble("quarterlyDividend"), conn.getDouble("baseRateReturn"), conn.getDouble("betaMeasure"),
+						conn.getString("stockSymbol"), conn.getDouble("sharePrice"));
+				
 				assets.add(s);
-			} else if (conn.getString("assetType") == "D") {
-				da = new DepositAccount(conn.getString("accountCode"), conn.getString("assetType"), conn.getString("label"), conn.getDouble("apr"));
+			} else if (conn.getString("typeOfAsset").equals("D")) {
+				da = new DepositAccount(conn.getInt("assetId"),conn.getString("assetCode"), conn.getString("typeOfAsset"), conn.getString("label"), conn.getDouble("apr"));
 				assets.add(da);
-
-			} else if (conn.getString("assetType") == "P") {
-				pi = new PrivateInvestment(conn.getString("accountCode"), conn.getString("assetType"), conn.getString("label"),
-						conn.getDouble("quarterlyDividend"), conn.getDouble("baseRateOfReturn"), conn.getDouble("baseOmegaMeasure"),
+			} else if (conn.getString("typeOfAsset").equals("P")) {
+				pi = new PrivateInvestment(conn.getInt("assetId"),conn.getString("assetCode"), conn.getString("typeOfAsset"), conn.getString("label"),
+						conn.getDouble("quarterlyDividend"), conn.getDouble("baseRateReturn"), conn.getDouble("baseOmegaMeasure"),
 						conn.getDouble("totalValue"));
 				assets.add(pi);
 			}
@@ -65,7 +71,7 @@ public abstract class Asset {
 		return label;
 	}
 
-	public String getAccountCode() {
-		return accountCode;
+	public String getAssetCode() {
+		return assetCode;
 	}
 }

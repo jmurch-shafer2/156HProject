@@ -89,9 +89,7 @@ public class SQLFactory {
 		}
 		return tempInt;
 	}
-<<<<<<< HEAD
 
-=======
 	public double getDouble(String name) {
 		double tempDouble = 0;
 		try {
@@ -101,7 +99,7 @@ public class SQLFactory {
 		}
 		return tempDouble;
 	}
->>>>>>> f68d8962a0d846872936a00473d14465c6fc449c
+
 	public String getString(String name) {
 		String tempString = null;
 		try {
