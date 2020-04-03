@@ -69,6 +69,15 @@ public class SQLFactory {
 		}
 		return tempInt;
 	}
+	public double getDouble(String name) {
+		double tempDouble = 0;
+		try {
+			tempDouble = this.rs.getDouble(name);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return tempDouble;
+	}
 	public String getString(String name) {
 		String tempString = null;
 		try {
