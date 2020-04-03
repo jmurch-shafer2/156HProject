@@ -59,13 +59,19 @@ public class Person {
 		this.emailList = that.emailList;
 	}
 
+	/**
+	 * Connects to a SQL database, and returns the email in the form of an array
+	 * list of strings from a person
+	 * 
+	 * @param personId
+	 * @return ArrayList of email Strings
+	 */
 	public static ArrayList<String> getEmails(int personId) {
 		ArrayList<String> emailList = new ArrayList<String>();
 
 		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 
 		try {
-
 			Class.forName(DRIVER_CLASS).getDeclaredConstructor().newInstance();
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -121,6 +127,12 @@ public class Person {
 		return emailList;
 	}
 
+	/**
+	 * Connects to a SQL database, and returns a person object from the personID
+	 * 
+	 * @param personId
+	 * @return Person
+	 */
 	public static Person getPerson(int personId) {
 		Person p = null;
 
@@ -197,84 +209,51 @@ public class Person {
 		return p;
 	}
 
+	/**
+	 * Connects to a SQL database, and returns all people in the form of an
+	 * ArrayList of people objects
+	 * 
+	 * @return ArrayList of all people
+	 */
 	public static ArrayList<Person> getAllPeople() {
 		ArrayList<Person> peopleList = new ArrayList<Person>();
 
 		Person p = null;
 
-		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
-
-		try {
-
-			Class.forName(DRIVER_CLASS).getDeclaredConstructor().newInstance();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-
-		Connection conn = null;
-
-		try {
-			conn = DriverManager.getConnection(DatabaseInfo.url, DatabaseInfo.username, DatabaseInfo.password);
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
-
-		// using sql ? to protect against injection attacks
+		SQLFactory conn = new SQLFactory();
+		
 		String query = "select personId, personCode, addressId, firstName, lastName, brokerType, secIdentifier from Person p";
+		
+		conn.startConnection();
+		conn.prepareQuery(query);
+		conn.runQuery();
+		
+		int personId;
+		String personCode = null;
+		int addressId;
+		String firstName = null;
+		String lastName = null;
+		String brokerType = null;
+		String secIdentifier = null;
+		Address tempAdd = null;
+		ArrayList<String> emailList = null;
 
-		PreparedStatement ps = null;
-		ResultSet rs = null;
-
-		try {
-			ps = conn.prepareStatement(query);
-			rs = ps.executeQuery();
-
-			int personId;
-			String personCode = null;
-			int addressId;
-			String firstName = null;
-			String lastName = null;
-			String brokerType = null;
-			String secIdentifier = null;
-			Address tempAdd = null;
-			ArrayList<String> emailList = null;
-			
-			while (rs.next()) {
-
-				personId = rs.getInt("personId");
-				personCode = rs.getString("personCode");
-				addressId = rs.getInt("addressId");
-				firstName = rs.getString("firstName");
-				lastName = rs.getString("lastName");
-				brokerType = rs.getString("brokerType");
-				secIdentifier = rs.getString("secIdentifier");
-				tempAdd = Address.getAddress(addressId);
-				emailList = Person.getEmails(personId);
-				p = new Person(personId, personCode, brokerType, secIdentifier, firstName, lastName, tempAdd,
-						emailList);
-				peopleList.add(p);
-			}
-			rs.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
+		while (conn.next()) {
+			personId = conn.getInt("personId");
+			personCode = conn.getString("personCode");
+			addressId = conn.getInt("addressId");
+			firstName = conn.getString("firstName");
+			lastName = conn.getString("lastName");
+			brokerType = conn.getString("brokerType");
+			secIdentifier = conn.getString("secIdentifier");
+			tempAdd = Address.getAddress(addressId);
+			emailList = Person.getEmails(personId);
+			p = new Person(personId, personCode, brokerType, secIdentifier, firstName, lastName, tempAdd,
+					emailList);
+			peopleList.add(p);
 		}
+		conn.endConnection();
 
-		try {
-			if (rs != null && !rs.isClosed())
-				rs.close();
-			if (ps != null && !ps.isClosed())
-				ps.close();
-			if (conn != null && !conn.isClosed())
-				conn.close();
-		} catch (SQLException e) {
-			System.out.println("SQLException: ");
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
 		return peopleList;
 	}
 

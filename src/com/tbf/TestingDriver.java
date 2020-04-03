@@ -9,5 +9,10 @@ public class TestingDriver {
 		System.out.println("Person");
 		Person perp = Person.getPerson(3);
 		System.out.println(perp.toString() + "\n");
+		
+		System.out.println("Portfolios");
+		Portfolio port = Portfolio.getPortfolio(2);
+		System.out.println(port.toString() + "\n");
+		
 	}
 }
