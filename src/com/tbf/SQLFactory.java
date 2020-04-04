@@ -49,6 +49,9 @@ public class SQLFactory {
 		}
 	}
 
+	/**
+	 * Runs the query and returns a result set stored in the instance of the class
+	 */
 	public void runQuery() {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		rs = null;
@@ -59,6 +62,10 @@ public class SQLFactory {
 		}
 	}
 
+	/**
+	 * Returns true if there is a next row in the result set
+	 * @return
+	 */
 	public boolean next() {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
@@ -73,6 +80,11 @@ public class SQLFactory {
 		return false;
 	}
 
+	/**
+	 * sets the next int in a prepared statement stored in the
+	 * instance of the class
+	 * @param temp
+	 */
 	public void setInt(int temp) {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
@@ -83,6 +95,11 @@ public class SQLFactory {
 		counter++;
 	}
 
+	/**
+	 * sets the next String in a prepared statement 
+	 * stored in the instance of the class 
+	 * @param temp
+	 */
 	public void setString(String temp) {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
@@ -93,6 +110,12 @@ public class SQLFactory {
 		counter++;
 	}
 
+	/**
+	 * Returns the integer in the column with the column
+	 * title of the parameter
+	 * @param name
+	 * @return
+	 */
 	public int getInt(String name) {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		int tempInt = 0;
@@ -104,6 +127,12 @@ public class SQLFactory {
 		return tempInt;
 	}
 
+	/**
+	 * Returns the double in the column with the column
+	 * title of the parameter
+	 * @param name
+	 * @return
+	 */
 	public double getDouble(String name) {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		double tempDouble = 0;
@@ -115,6 +144,12 @@ public class SQLFactory {
 		return tempDouble;
 	}
 
+	/**
+	 * Returns the String in the column with the column
+	 * title of the parameter
+	 * @param name
+	 * @return
+	 */
 	public String getString(String name) {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		String tempString = null;
@@ -126,6 +161,9 @@ public class SQLFactory {
 		return tempString;
 	}
 
+	/**
+	 * ends the connection to the database
+	 */
 	public void endConnection() {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
