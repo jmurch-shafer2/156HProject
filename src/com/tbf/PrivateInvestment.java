@@ -15,6 +15,15 @@ public class PrivateInvestment extends Asset {
 	private double totalValue;
 	private double percentageOwned;
 	
+	public PrivateInvestment(int assetId, String accountCode, String assetType, String label, double quarterlyDividend, double baseRateOfReturn, double baseOmegaMeasure, double totalValue, double percentageOwned) {
+		super(assetId, accountCode, assetType, label);
+		this.quarterlyDividend = quarterlyDividend;
+		this.baseRateOfReturn = baseRateOfReturn;
+		this.baseOmegaMeasure = baseOmegaMeasure;
+		this.totalValue = totalValue;
+		this.percentageOwned = percentageOwned;
+	}
+	
 	public double getQuarterlyDividend() {
 		return quarterlyDividend;
 	}

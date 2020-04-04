@@ -24,3 +24,4 @@ select * from Asset a
 select * from Asset;
 
 select * from Portfolio;
+select * from Person;

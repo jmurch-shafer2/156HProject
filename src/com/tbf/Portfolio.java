@@ -1,10 +1,5 @@
 package com.tbf;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
@@ -32,167 +27,6 @@ public class Portfolio {
 		this.beneficiary = beneficiary;
 		this.assetList = assetList;
 	}
-
-	public static ArrayList<Integer> getAssetId(int portfolioId) {
-		ArrayList<Integer> assetIdList = new ArrayList<Integer>();
-
-		SQLFactory conn = new SQLFactory();
-
-		String query = "select assetId from Portfolio p"
-				+ "	left join PortfolioAsset pa on p.portfolioId = pa.portfolioId where p.portfolioId = ?;";
-
-		conn.startConnection();
-		conn.prepareQuery(query);
-		conn.setInt(portfolioId);
-		conn.runQuery();
-
-		while (conn.next()) {
-			int assetIdTemp = conn.getInt("assetId");
-			assetIdList.add(assetIdTemp);
-		}
-		conn.endConnection();
-
-		return assetIdList;
-	}
-
-	public static Portfolio getPortfolio(int portfolioId, ArrayList<Asset> fullAssetList, ArrayList<Person> peopleList) {
-		Portfolio port = null;
-
-		SQLFactory conn = new SQLFactory();
-
-		String query = "select portfolioId, portfolioCode, ownerId, managerId, beneficiaryId from Portfolio"
-				+ "	where portfolioId = ?;";
-
-		conn.startConnection();
-		conn.prepareQuery(query);
-		conn.setInt(portfolioId);
-		conn.runQuery();
-
-		String portfolioCode = null;
-		int ownerId;
-		int managerId;
-		int beneficiaryId;
-		Person owner = null;
-		Person manager = null;
-		Person beneficiary = null;
-		ArrayList<Integer> assetIdList = null;
-		ArrayList<Asset> tempAssetList = new ArrayList<>();
-
-		if (conn.next()) {
-			portfolioCode = conn.getString("portfolioCode");
-			ownerId = conn.getInt("ownerId");
-			managerId = conn.getInt("managerId");
-			beneficiaryId = conn.getInt("beneficiaryId");
-			assetIdList = Portfolio.getAssetId(portfolioId);
-
-			for (Person bourke : peopleList) {
-				if (bourke.getPersonId() == ownerId) {
-					owner = bourke;
-				}
-				if (bourke.getPersonId() == managerId) {
-					manager = bourke;
-				}
-				if (bourke.getPersonId() == beneficiaryId) {
-					beneficiary = bourke;
-				}
-				if (owner != null && manager != null && beneficiary != null) {
-					break;
-				}
-			}
-
-			for (int id : assetIdList) {
-				for (Asset ass : fullAssetList) {
-					
-					if (ass.getAssetId() == id) {
-						tempAssetList.add(ass);
-					}
-				}
-			}
-
-			port = new Portfolio(portfolioId, portfolioCode, owner, manager, beneficiary, tempAssetList);
-
-		}
-		conn.endConnection();
-		return port;
-	}
-	
-	
-	public static ArrayList<Portfolio> getAllPortfolios(ArrayList<Asset> fullAssetList, ArrayList<Person> peopleList) {
-		ArrayList<Portfolio> portList = new ArrayList<>();
-		
-
-		SQLFactory conn = new SQLFactory();
-
-		String query = "select portfolioId, portfolioCode, ownerId, managerId, beneficiaryId from Portfolio;";
-
-		conn.startConnection();
-		conn.prepareQuery(query);
-		
-		conn.runQuery();
-
-		int portfolioId;
-		String portfolioCode = null;
-		int ownerId;
-		int managerId;
-		int beneficiaryId;
-		Person owner = null;
-		Person manager = null;
-		Person beneficiary = null;
-		ArrayList<Integer> assetIdList = null;
-		ArrayList<Asset> tempAssetList = new ArrayList<>();
-
-		while (conn.next()) {
-			portfolioId = conn.getInt("portfolioId");
-			portfolioCode = conn.getString("portfolioCode");
-			ownerId = conn.getInt("ownerId");
-			managerId = conn.getInt("managerId");
-			beneficiaryId = conn.getInt("beneficiaryId");
-			assetIdList = Portfolio.getAssetId(portfolioId);
-
-			for (Person bourke : peopleList) {
-				if (bourke.getPersonId() == ownerId) {
-					owner = bourke;
-				}
-				if (bourke.getPersonId() == managerId) {
-					manager = bourke;
-				}
-				if (bourke.getPersonId() == beneficiaryId) {
-					beneficiary = bourke;
-				}
-				if (owner != null && manager != null && beneficiary != null) {
-					break;
-				}	
-			}
-
-			for (int id : assetIdList) {
-				for (Asset ass : fullAssetList) {
-					
-					if (ass.getAssetId() == id) {
-						tempAssetList.add(ass);
-					}
-				}
-			}
-
-			Portfolio port = new Portfolio(portfolioId, portfolioCode, owner, manager, beneficiary, tempAssetList);
-			portList.add(port);
-		}
-		conn.endConnection();
-		return portList;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 	/**
 	 * Calculates total fees for a portfolio
@@ -405,18 +239,19 @@ public class Portfolio {
 		}
 		return totalVal;
 	}
+
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("ID: " + portfolioId + " \n");
 		sb.append("Code: " + portfolioCode + " \n");
 		sb.append(this.owner.toString() + " \n");
 		sb.append(this.manager.toString() + " \n");
-		if(beneficiary != null) {
+		if (beneficiary != null) {
 			sb.append(this.beneficiary.toString() + " \n");
 		}
-		for(Asset ass:this.assetList) {
+		for (Asset ass : this.assetList) {
 			sb.append(ass.toString());
-		}		
+		}
 		return sb.toString();
 	}
 

@@ -171,21 +171,21 @@ insert Email(personId,email) values((select personId from Person where personCod
 
 
 -- Asset
-insert Asset (assetCode,typeOfAsset,apr,totalValue) values ("003","D",0.31,79000);
+insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("003","D",0.31,79000,"3 year CD");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("033","S","IMQJ",17,95.57,80.08,0.44,08.40,"Arena Pharmaceuticals, Inc.");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("03c","S", "CLIM",654,68.79,43.11,0.24,03.29,"Guggenheim Enhanced Equity Income Fun");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("034","S", "AJDM",31,31.90,72.40,0.26,00.37,"KKR and Co. L.P.");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("028","S", "KJEJ",3,12.72,31.46,0.62,04.61,"Aircastle Limited");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("029","S", "QRIW",16,64.12,46.65,0.92,07.88,"Dillards, Inc.");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("02d","S", "ZHRL",76,96.85,65.66,0.64,02.35,"NCI, Inc.");
-insert Asset (assetCode,typeOfAsset,apr,totalValue) values ("004","D",0.95,4000000);
-insert Asset (assetCode,typeOfAsset,apr,totalValue) values ("00a","D",0.75,500);
-insert Asset (assetCode,typeOfAsset,apr,totalValue) values ("005","D",0.18,500);
-insert Asset (assetCode,typeOfAsset,apr,totalValue) values ("00e","D",0.57,1599);
+insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("004","D",0.95,4000000,"Money Market banana account");
+insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("00a","D",0.75,500,"Money Market banana account");
+insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("005","D",0.18,500,"Money Market banana account");
+insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("00e","D",0.57,1599,"Savings account");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("02c","S", "RJVX",56,19.27,31.34,0.18,00.19,"Nuveen Ohio Quality Municipal Income Fund");
-insert Asset (assetCode,typeOfAsset,apr,totalValue) values ("00c","D",0.05,7855);
+insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("00c","D",0.05,7855,"6 month CD");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("021","S", "GFDZ",5,21.57,42.13,0.45,00.90,"Zafgen, Inc.");
-insert Asset (assetCode,typeOfAsset,apr,totalValue) values ("008","D",0.83,23000);
+insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("008","D",0.83,23000,"3 year CD");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("03e","S", "YJDT",22,52.44,77.54,0.07,06.10,"Safe Bulkers Inc");
 insert Asset (assetCode,typeOfAsset,name,baseRateReturn,quarterlyDividend,baseOmegaMeasure,totalValue,percentageOwned) values ("0ff","P","Living Wake, The",06.95,366285.46,0.17,6662000000,14);
 

@@ -84,7 +84,7 @@ public class GenerateReport {
 			}
 			totalAnnReturn += annReturn;
 			totalTotal += totalVal;
-			String assetStr = String.format("%.10s %36.30s %15.2f%% %10.2f   $%15.2f   $%13.2f",a.getAccountCode(),a.getLabel(),returnRate,risk,annReturn,totalVal);
+			String assetStr = String.format("%.10s %36.30s %15.2f%% %10.2f   $%15.2f   $%13.2f",a.getAssetCode(),a.getLabel(),returnRate,risk,annReturn,totalVal);
 			System.out.println(assetStr);
 		}
 		System.out.println("                                             -----------------------------------------------------------");

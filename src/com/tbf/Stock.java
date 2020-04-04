@@ -36,6 +36,17 @@ public class Stock extends Asset {
 		this.sharePrice = sharePrice;
 	}
 	
+	public Stock(int assetId, String accountCode, String assetType, String label, double quarterlyDividend,
+			double baseRateOfReturn, double betaMeasure, String StockSymbol, double sharePrice, double sharesOwned) {
+		super(assetId, accountCode, assetType, label);
+		this.quarterlyDividend = quarterlyDividend;
+		this.baseRateOfReturn = baseRateOfReturn;
+		this.betaMeasure = betaMeasure;
+		this.stockSymbol = StockSymbol;
+		this.sharePrice = sharePrice;
+		this.sharesOwned = sharesOwned;
+	}
+	
 	/**
 	 * A copy constructor to create and instance of an a stock with the shares owned attribute.
 	 * 

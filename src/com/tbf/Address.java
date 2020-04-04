@@ -30,28 +30,6 @@ public class Address {
 		this.country = country;
 		
 	}
-	
-	public static Address getAddress(int addressId) {
-		Address a = null;
-
-	  	SQLFactory conn = new SQLFactory();
-	  	
-		
-		// using sql ? to protect against injection attacks
-		String query = "select addressId, street, city, state, zipCode, country from Address where addressId = ?;";
-
-		conn.startConnection();
-		conn.prepareQuery(query);
-		conn.setInt(addressId);
-		conn.runQuery();
-		
-		if(conn.next()) {
-			a = new Address(addressId, conn.getString("street"),conn.getString("city"),conn.getString("state"),conn.getString("country"),conn.getString("zipCode"));
-		} 
-		
-		conn.endConnection();
-		return a;
-	}
 
 	/**
 	 * A toString method that does additional checking to return a correct address
