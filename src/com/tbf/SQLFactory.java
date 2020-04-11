@@ -13,11 +13,11 @@ public class SQLFactory {
 	PreparedStatement ps;
 	ResultSet rs;
 	int counter = 1;
-	
+
 	/**
-	 * begins connection with database
+	 * Begins connection with database and prepares query
 	 */
-	public void startConnection() {
+	public void startConnection(String query) {
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 
@@ -35,13 +35,6 @@ public class SQLFactory {
 			e.printStackTrace();
 			log.error(e, new RuntimeException(e));
 		}
-	}
-
-	/**
-	 * prepares query
-	 */
-	public void prepareQuery(String query) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
 			this.ps = conn.prepareStatement(query);
 		} catch (SQLException e) {

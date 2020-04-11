@@ -3,7 +3,7 @@ package com.tbf;
 import java.util.ArrayList;
 
 public class DataLoader {
-	
+
 	public static Address getAddress(int addressId) {
 		Address a = null;
 
@@ -12,8 +12,7 @@ public class DataLoader {
 		// using sql ? to protect against injection attacks
 		String query = "select addressId, street, city, state, zipCode, country from Address where addressId = ?;";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 		conn.setInt(addressId);
 		conn.runQuery();
 
@@ -40,8 +39,7 @@ public class DataLoader {
 
 		String query = "select emailId, email from Email where personId = ?;";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 		conn.setInt(personId);
 		conn.runQuery();
 		while (conn.next()) {
@@ -67,8 +65,7 @@ public class DataLoader {
 
 		String query = "select personId, personCode, addressId, firstName, lastName, brokerType, secIdentifier from Person p";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 		conn.runQuery();
 
 		int personId;
@@ -112,8 +109,7 @@ public class DataLoader {
 		String query = "select personId, personCode, addressId, firstName, lastName, brokerType, secIdentifier from Person p"
 				+ "	where personId = ?;";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 		conn.setInt(personId);
 
 		conn.runQuery();
@@ -154,8 +150,7 @@ public class DataLoader {
 		String query = "SELECT assetId, assetCode, typeOfAsset, label, quarterlyDividend, baseRateReturn, betaMeasure, stockSymbol, sharePrice, "
 				+ "baseOmegaMeasure, totalValue, percentageOwned, sharesOwned, apr FROM Asset;";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 		conn.runQuery();
 
 		while (conn.next()) {
@@ -182,7 +177,7 @@ public class DataLoader {
 		conn.endConnection();
 		return assets;
 	}
-	
+
 	/**
 	 * Connects to a SQL database, and returns all AssetIds
 	 * 
@@ -196,8 +191,7 @@ public class DataLoader {
 		String query = "select assetId from Portfolio p"
 				+ "	left join PortfolioAsset pa on p.portfolioId = pa.portfolioId where p.portfolioId = ?;";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 		conn.setInt(portfolioId);
 		conn.runQuery();
 
@@ -224,8 +218,7 @@ public class DataLoader {
 		String query = "select portfolioId, portfolioCode, ownerId, managerId, beneficiaryId from Portfolio"
 				+ "	where portfolioId = ?;";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 		conn.setInt(portfolioId);
 		conn.runQuery();
 
@@ -284,14 +277,13 @@ public class DataLoader {
 	 * @return ArrayList of all people
 	 */
 	public static ArrayList<Portfolio> getAllPortfolios(ArrayList<Asset> fullAssetList, ArrayList<Person> peopleList) {
-		ArrayList<Portfolio> portList = new ArrayList<>(); 
+		ArrayList<Portfolio> portList = new ArrayList<>();
 
 		SQLFactory conn = new SQLFactory();
 
 		String query = "select portfolioId, portfolioCode, ownerId, managerId, beneficiaryId from Portfolio;";
 
-		conn.startConnection();
-		conn.prepareQuery(query);
+		conn.startConnection(query);
 
 		conn.runQuery();
 
