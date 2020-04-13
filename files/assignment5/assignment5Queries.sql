@@ -1,5 +1,7 @@
 use joelm;
 
+-- File for testing
+
 select addressId, street, city, state, zipCode, country from Address where addressId = ?;
 
 select personId, personCode, addressId, firstName, lastName, brokerType, secIdentifier from Person p

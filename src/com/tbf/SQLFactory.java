@@ -8,17 +8,21 @@ import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
 
+/**
+ * Factory class to help automate connecting to a MariaDB 
+ *
+ */
 public class SQLFactory {
 	Connection conn;
 	PreparedStatement ps;
 	ResultSet rs;
 	int counter = 1;
+	Logger log = Logger.getLogger(PortfolioReport.class);
 
 	/**
 	 * Begins connection with database and prepares query
 	 */
 	public void startConnection(String query) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 
 		try {
@@ -46,7 +50,6 @@ public class SQLFactory {
 	 * Runs the query and returns a result set stored in the instance of the class
 	 */
 	public void runQuery() {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		rs = null;
 		try {
 			rs = this.ps.executeQuery();
@@ -60,7 +63,6 @@ public class SQLFactory {
 	 * @return
 	 */
 	public boolean next() {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
 			if (this.rs != null && this.rs.next()) {
 				return true;
@@ -79,7 +81,6 @@ public class SQLFactory {
 	 * @param temp
 	 */
 	public void setInt(int temp) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
 			this.ps.setInt(this.counter, temp);
 		} catch (SQLException e) {
@@ -94,7 +95,6 @@ public class SQLFactory {
 	 * @param temp
 	 */
 	public void setString(String temp) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
 			this.ps.setString(this.counter, temp);
 		} catch (SQLException e) {
@@ -110,7 +110,6 @@ public class SQLFactory {
 	 * @return
 	 */
 	public int getInt(String name) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		int tempInt = 0;
 		try {
 			tempInt = this.rs.getInt(name);
@@ -127,7 +126,6 @@ public class SQLFactory {
 	 * @return
 	 */
 	public double getDouble(String name) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		double tempDouble = 0;
 		try {
 			tempDouble = this.rs.getDouble(name);
@@ -144,7 +142,6 @@ public class SQLFactory {
 	 * @return
 	 */
 	public String getString(String name) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		String tempString = null;
 		try {
 			tempString = this.rs.getString(name);
@@ -158,7 +155,6 @@ public class SQLFactory {
 	 * ends the connection to the database
 	 */
 	public void endConnection() {
-		Logger log = Logger.getLogger(PortfolioReport.class);
 		try {
 			if (this.rs != null && !this.rs.isClosed())
 				this.rs.close();

@@ -6,26 +6,22 @@ import java.util.Comparator;
 import org.apache.log4j.*;
 
 /**
-	 * calls functions to produce and print portfolio report. Also uses log4j as a logging system.
-	 * 
-	 * @return ArrayList of all people
-	 */
+ * calls functions to produce and print portfolio report. Also uses log4j as a
+ * logging system.
+ * 
+ * @return ArrayList of all people
+ */
 
 public class PortfolioReport {
 	public static void main(String[] argv) {
 
 		Logger log = Logger.getLogger(PortfolioReport.class);
 		BasicConfigurator.configure();
-		
-		
+
 		log.info("Loading all people, assets, and portfolios.");
 		ArrayList<Person> listOfPeople = DataLoader.getAllPeople();
 
-//		System.out.println(listOfPeople.toString());
-
 		ArrayList<Asset> listOfAsset = DataLoader.getAllAssets();
-
-//		System.out.println(Portfolio.getPortfolio(2, listOfAsset, listOfPeople).toString());
 
 		ArrayList<Portfolio> listOfPortfolios = DataLoader.getAllPortfolios(listOfAsset, listOfPeople);
 
@@ -36,7 +32,7 @@ public class PortfolioReport {
 				return port.getOwnerName().compareTo(that.getOwnerName());
 			}
 		});
-		
+
 		// Sorts assets in each portfolio into lexiagraphic order
 		for (Portfolio port : listOfPortfolios) {
 			Collections.sort(port.getAssetList(), new Comparator<Asset>() {

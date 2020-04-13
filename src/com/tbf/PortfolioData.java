@@ -10,7 +10,9 @@ public class PortfolioData {
 	/**
 	 * Method that removes every person record from the database
 	 */
-	public static void removeAllPersons() {}
+	public static void removeAllPersons() {
+		
+	}
 	
 	/**
 	 * Removes the person record from the database corresponding to the
