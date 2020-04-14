@@ -4,9 +4,9 @@
 -- This DB holds infomation to model the all assets, people and portfolios 
 -- held by TBF banking
 
-drop table if exists Stock;
-drop table if exists DepositAccount;
-drop table if exists PrivateInvestment;
+-- drop table if exists Stock;
+-- drop table if exists DepositAccount;
+-- drop table if exists PrivateInvestment;
 drop table if exists PortfolioAsset;
 drop table if exists Portfolio;
 drop table if exists Email;

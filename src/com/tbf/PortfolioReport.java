@@ -49,5 +49,8 @@ public class PortfolioReport {
 		System.out.println("\n\n\n");
 		gen.fullReport(listOfPortfolios);
 
+		PortfolioData.removeAllPortfolios();
+		PortfolioData.removeAllPersons();
+		System.out.println("done");
 	}
 }

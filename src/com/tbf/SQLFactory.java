@@ -17,12 +17,13 @@ public class SQLFactory {
 	PreparedStatement ps;
 	ResultSet rs;
 	int counter = 1;
-	Logger log = Logger.getLogger(PortfolioReport.class);
+	Logger log = Logger.getLogger(PortfolioReport.class);;
 
 	/**
 	 * Begins connection with database and prepares query
 	 */
 	public void startConnection(String query) {
+//		Logger log = Logger.getLogger(PortfolioReport.class);;
 		String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 
 		try {
@@ -53,6 +54,18 @@ public class SQLFactory {
 		rs = null;
 		try {
 			rs = this.ps.executeQuery();
+		} catch (SQLException e) {
+			log.error(e, new RuntimeException(e));
+		}
+	}
+	
+	/**
+	 * Runs the query in the case of an update or deletion
+	 */
+	public void runUpdate() {
+//		Logger log = Logger.getLogger(PortfolioReport.class);;
+		try {
+			this.ps.executeUpdate();
 		} catch (SQLException e) {
 			log.error(e, new RuntimeException(e));
 		}
@@ -155,6 +168,7 @@ public class SQLFactory {
 	 * ends the connection to the database
 	 */
 	public void endConnection() {
+//		Logger log = Logger.getLogger(PortfolioReport.class);;
 		try {
 			if (this.rs != null && !this.rs.isClosed())
 				this.rs.close();

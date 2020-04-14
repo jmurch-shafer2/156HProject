@@ -26,4 +26,6 @@ select * from Asset a
 select * from Asset;
 
 select * from Portfolio;
+
+delete from Person where personId = (select personId from Person);
 select * from Person;
