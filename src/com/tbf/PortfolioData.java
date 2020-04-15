@@ -6,7 +6,7 @@ package com.tbf;
  *
  */
 public class PortfolioData {
-	//DONEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+	// DONEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 	/**
 	 * Method that removes every person record from the database
 	 */
@@ -25,6 +25,8 @@ public class PortfolioData {
 
 		conn.endConnection();
 	}
+	
+//	TODO add in check for duplicate addresses
 
 	/**
 	 * Removes the person record from the database corresponding to the provided
@@ -33,9 +35,7 @@ public class PortfolioData {
 	 * @param personCode
 	 */
 	public static void removePerson(String personCode) {
-		
-		
-		
+
 	}
 
 	/**
