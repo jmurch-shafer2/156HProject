@@ -59,11 +59,12 @@ public class PortfolioData {
 		// check the titles of table names, differentiate between the column title and
 		// the passed in variable
 		// how to connect person with address
-		String address = "INSERT INTO Addresses (street, city, state, zip, country) VALUES (street, city, state, zip, country)";
-		String person = "INSERT INTO Person (personCode, firstName, lastName, brokerType, secIdentifier) VALUES (personCode, firstName, lastName, address, brokerType, secBrokerId)";
+		String address = "INSERT Address (street, city, state, zip, country) VALUES (street, city, state, zip, country)";
+		String person = "INSERT Person(personCode, firstName, lastName, brokerType, secIdentifier) VALUES (personCode, firstName, lastName, address, brokerType, secBrokerId)";
 
 		SQLFactory conn = new SQLFactory();
 		conn.startConnection(address);
+		
 		conn.runUpdate();
 		conn.startConnection(person);
 		conn.runUpdate();
