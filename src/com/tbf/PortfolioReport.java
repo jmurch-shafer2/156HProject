@@ -49,8 +49,12 @@ public class PortfolioReport {
 		System.out.println("\n\n\n");
 		gen.fullReport(listOfPortfolios);
 
-		PortfolioData.removeAllPortfolios();
-		PortfolioData.removeAllPersons();
+//		PortfolioData.removeAllPortfolios();
+//		PortfolioData.removeAllPersons();
+		
+		
+		PortfolioData.addEmail("32","Johnjapplesauce@yahhhhhhh.com");
+		
 		System.out.println("done");
 	}
 }

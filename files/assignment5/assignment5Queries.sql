@@ -17,7 +17,6 @@ select assetId from Portfolio p
 	left join PortfolioAsset pa on p.portfolioId = pa.portfolioId
     where p.portfolioId = 2;
     
-	
 select * from Asset a 
 	left join DepositAccount da on a.assetId = da.assetId
     left join Stock s on a.assetId = s.assetId

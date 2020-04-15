@@ -11,21 +11,21 @@ public class PortfolioData {
 	 * Method that removes every person record from the database
 	 */
 	public static void removeAllPersons() {
-		String email = "delete from Email;";
-		String person = "delete from Person;";
-		String address = "delete from Address;";
+		String emailDel = "delete from Email;";
+		String personDel = "delete from Person;";
+		String addressDel = "delete from Address;";
 
 		SQLFactory conn = new SQLFactory();
-		conn.startConnection(email);
+		conn.startConnection(emailDel);
 		conn.runUpdate();
-		conn.startConnection(person);
+		conn.startConnection(personDel);
 		conn.runUpdate();
-		conn.startConnection(address);
+		conn.startConnection(addressDel);
 		conn.runUpdate();
 
 		conn.endConnection();
 	}
-	
+
 //	TODO add in check for duplicate addresses
 
 	/**
@@ -55,13 +55,13 @@ public class PortfolioData {
 	 */
 	public static void addPerson(String personCode, String firstName, String lastName, String street, String city,
 			String state, String zip, String country, String brokerType, String secBrokerId) {
-		//check for duplicates, dont add a repeat person or address
-		//check the titles of table names, differentiate between the column title and the passed in variable
-		//how to connect person with address
+		// check for duplicates, dont add a repeat person or address
+		// check the titles of table names, differentiate between the column title and
+		// the passed in variable
+		// how to connect person with address
 		String address = "INSERT INTO Addresses (street, city, state, zip, country) VALUES (street, city, state, zip, country)";
 		String person = "INSERT INTO Person (personCode, firstName, lastName, brokerType, secIdentifier) VALUES (personCode, firstName, lastName, address, brokerType, secBrokerId)";
-		
-		
+
 		SQLFactory conn = new SQLFactory();
 		conn.startConnection(address);
 		conn.runUpdate();
@@ -78,11 +78,13 @@ public class PortfolioData {
 	 * @param email
 	 */
 	public static void addEmail(String personCode, String email) {
-		//personcode or personId
-		String email = "INSERT INTO Emails (personCode, email) VALUES (personCode, email)";
-		
+		// personcode or personId
+		String query = "INSERT Email(personCode, email) VALUES (?,?)";
+
 		SQLFactory conn = new SQLFactory();
-		conn.startConnection(email);
+		conn.startConnection(query);
+		conn.setInt(Integer.parseInt(personCode));
+		conn.setString(email);
 		conn.runUpdate();
 		conn.endConnection();
 	}
@@ -91,7 +93,7 @@ public class PortfolioData {
 	 * Removes all asset records from the database
 	 */
 	public static void removeAllAssets() {
-		
+		"delete from Asset;"
 	}
 
 	/**
@@ -101,6 +103,7 @@ public class PortfolioData {
 	 * @param assetCode
 	 */
 	public static void removeAsset(String assetCode) {
+		
 	}
 
 	/**
@@ -111,8 +114,10 @@ public class PortfolioData {
 	 * @param apr
 	 */
 	public static void addDepositAccount(String assetCode, String label, double apr) {
+		"insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ('00e','D',0.57,1599,'Savings account');"
+
 		String depositAccount = "INSERT INTO Asset (assetCode, label, apr) VALUES (assetCode, label, apr)";
-		
+
 		SQLFactory conn = new SQLFactory();
 		conn.startConnection(depositAccount);
 		conn.runUpdate();
@@ -132,7 +137,7 @@ public class PortfolioData {
 	 */
 	public static void addPrivateInvestment(String assetCode, String label, Double quarterlyDividend,
 			Double baseRateOfReturn, Double baseOmega, Double totalValue) {
-		String privateInvestment = "INSERT INTO Asset (assetCode, label, quarterlyDividend, baseRateOfReturn, baseOmega, totalValue) VALUES (assetCode, label, quarterlyDividend, baseRateOfReturn, baseOmega, totalValue)"; 
+		String privateInvestment = "INSERT INTO Asset (assetCode, label, quarterlyDividend, baseRateOfReturn, baseOmega, totalValue) VALUES (assetCode, label, quarterlyDividend, baseRateOfReturn, baseOmega, totalValue)";
 		SQLFactory conn = new SQLFactory();
 		conn.startConnection(privateInvestment);
 		conn.runUpdate();
@@ -197,7 +202,7 @@ public class PortfolioData {
 	public static void addPortfolio(String portfolioCode, String ownerCode, String managerCode,
 			String beneficiaryCode) {
 		String portfolio = "INSERT INTO Portfolio (portfolioCode, ownerId, managerId, beneficiaryID) VALUES (portfolioCode, ownerCode, managerCode, beneficiaryCode)";
-		
+
 		SQLFactory conn = new SQLFactory();
 		conn.startConnection(portfolio);
 		conn.runUpdate();
