@@ -55,6 +55,19 @@ public class PortfolioData {
 	 */
 	public static void addPerson(String personCode, String firstName, String lastName, String street, String city,
 			String state, String zip, String country, String brokerType, String secBrokerId) {
+		//check for duplicates, dont add a repeat person or address
+		//check the titles of table names, differentiate between the column title and the passed in variable
+		//how to connect person with address
+		String address = "INSERT INTO Addresses (street, city, state, zip, country) VALUES (street, city, state, zip, country)";
+		String person = "INSERT INTO Person (personCode, firstName, lastName, brokerType, secIdentifier) VALUES (personCode, firstName, lastName, address, brokerType, secBrokerId)";
+		
+		
+		SQLFactory conn = new SQLFactory();
+		conn.startConnection(address);
+		conn.runUpdate();
+		conn.startConnection(person);
+		conn.runUpdate();
+		conn.endConnection();
 	}
 
 	/**
@@ -65,12 +78,20 @@ public class PortfolioData {
 	 * @param email
 	 */
 	public static void addEmail(String personCode, String email) {
+		//personcode or personId
+		String email = "INSERT INTO Emails (personCode, email) VALUES (personCode, email)";
+		
+		SQLFactory conn = new SQLFactory();
+		conn.startConnection(email);
+		conn.runUpdate();
+		conn.endConnection();
 	}
 
 	/**
 	 * Removes all asset records from the database
 	 */
 	public static void removeAllAssets() {
+		
 	}
 
 	/**
@@ -90,6 +111,12 @@ public class PortfolioData {
 	 * @param apr
 	 */
 	public static void addDepositAccount(String assetCode, String label, double apr) {
+		String depositAccount = "INSERT INTO Asset (assetCode, label, apr) VALUES (assetCode, label, apr)";
+		
+		SQLFactory conn = new SQLFactory();
+		conn.startConnection(depositAccount);
+		conn.runUpdate();
+		conn.endConnection();
 	}
 
 	/**
@@ -105,6 +132,11 @@ public class PortfolioData {
 	 */
 	public static void addPrivateInvestment(String assetCode, String label, Double quarterlyDividend,
 			Double baseRateOfReturn, Double baseOmega, Double totalValue) {
+		String privateInvestment = "INSERT INTO Asset (assetCode, label, quarterlyDividend, baseRateOfReturn, baseOmega, totalValue) VALUES (assetCode, label, quarterlyDividend, baseRateOfReturn, baseOmega, totalValue)"; 
+		SQLFactory conn = new SQLFactory();
+		conn.startConnection(privateInvestment);
+		conn.runUpdate();
+		conn.endConnection();
 	}
 
 	/**
@@ -120,6 +152,11 @@ public class PortfolioData {
 	 */
 	public static void addStock(String assetCode, String label, Double quarterlyDividend, Double baseRateOfReturn,
 			Double beta, String stockSymbol, Double sharePrice) {
+		String stock = "INSERT INTO Asset (assetCode, label, quarterlyDividend, baseRateOfReturn, beta, stockSymbol, sharePrice) VALUES (assetCode, label, quarterlyDividend, baseRateOfReturn, beta, stockSymbol, sharePrice)";
+		SQLFactory conn = new SQLFactory();
+		conn.startConnection(stock);
+		conn.runUpdate();
+		conn.endConnection();
 	}
 
 	/**
@@ -159,6 +196,12 @@ public class PortfolioData {
 	 */
 	public static void addPortfolio(String portfolioCode, String ownerCode, String managerCode,
 			String beneficiaryCode) {
+		String portfolio = "INSERT INTO Portfolio (portfolioCode, ownerId, managerId, beneficiaryID) VALUES (portfolioCode, ownerCode, managerCode, beneficiaryCode)";
+		
+		SQLFactory conn = new SQLFactory();
+		conn.startConnection(portfolio);
+		conn.runUpdate();
+		conn.endConnection();
 	}
 
 	/**
