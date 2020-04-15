@@ -1,5 +1,6 @@
 package com.tbf;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class DataLoader {
@@ -94,7 +95,27 @@ public class DataLoader {
 		conn.endConnection();
 		return peopleList;
 	}
-
+	
+	
+	/**
+	 * Connects to a sql database and then returns the personId from a personCode
+	 * @param personId
+	 * @return
+	 */
+	public static int getPersonId(String personCode) {
+		SQLFactory request = new SQLFactory();
+	
+		String personIdQuery = "SELECT personId from Person where personCode = ?;";
+		request.startConnection(personIdQuery);
+		request.setString(personCode);
+		request.runQuery();
+		int personId = 0;
+		if(request.next()) {
+			personId = request.getInt("personId");
+		} 
+		request.endConnection();
+		return personId;
+	}
 	/**
 	 * Connects to a SQL database, and returns a person object from the personID
 	 * 

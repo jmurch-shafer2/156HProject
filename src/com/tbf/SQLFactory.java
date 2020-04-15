@@ -115,6 +115,20 @@ public class SQLFactory {
 		}
 		counter++;
 	}
+	
+	/**
+	 * sets the next Double in a prepared statement 
+	 * stored in the instance of the class 
+	 * @param temp
+	 */
+	public void setDouble(Double temp) {
+		try {
+			this.ps.setDouble(this.counter, temp);
+		} catch (SQLException e) {
+			log.error(e, new RuntimeException(e));
+		}
+		counter++;
+	}
 
 	/**
 	 * Returns the integer in the column with the column

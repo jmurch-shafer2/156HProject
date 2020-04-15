@@ -53,8 +53,9 @@ public class PortfolioReport {
 //		PortfolioData.removeAllPersons();
 		
 		
-		PortfolioData.addEmail("32","Johnjapplesauce@yahhhhhhh.com");
-		
+//		PortfolioData.addEmail("02a","Johnjapplesauce@yahhhhhhh.com");
+//		PortfolioData.removePerson("02a");
+		PortfolioData.removeAsset("003");
 		System.out.println("done");
 	}
 }
