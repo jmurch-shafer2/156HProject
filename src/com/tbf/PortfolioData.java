@@ -6,7 +6,6 @@ package com.tbf;
  *
  */
 public class PortfolioData {
-	// DONEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE, TODO need to test
 	/**
 	 * Method that removes every person record from the database
 	 */
@@ -58,7 +57,7 @@ public class PortfolioData {
 	
 	
 	
-	
+//	This should work, needs to be tested
 	/**
 	 * Method to add a person record to the database with the provided data. The
 	 * <code>brokerType</code> will either be "E" or "J" (Expert or Junior) or
@@ -73,38 +72,56 @@ public class PortfolioData {
 	 * @param zip
 	 * @param country
 	 * @param brokerType
+	 * @throws Exception 
 	 */
 	public static void addPerson(String personCode, String firstName, String lastName, String street, String city,
-			String state, String zip, String country, String brokerType, String secBrokerId) {
-		// TODO check for duplicate address
-
-		// dont have to check for duplicates because the design of the database will not
-		// allow duplicate personCodes
-
-		String address = "INSERT Address(street, city, state, zipCode, country) VALUES (?, ?, ?, ?, ?);";
-		String person = "INSERT Person(personCode, firstName, lastName, brokerType, secIdentifier) VALUES (?, ?, ?, ?, ?);";
-
-		SQLFactory conn = new SQLFactory();
-
-		conn.startConnection(address);
-		conn.setString(street);
-		conn.setString(city);
-		conn.setString(state);
-		conn.setInt(Integer.parseInt(zip));
-		conn.setString(country);
-		conn.runUpdate();
-		// run select to find address id
-		// String newQuery = "SELECT addressId where
-
-		conn.startConnection(person);
-		conn.setString(personCode);
-		conn.setString(firstName);
-		conn.setString(lastName);
-		conn.setString(brokerType);
-		conn.setString(secBrokerId);
-		conn.runUpdate();
-
-		conn.endConnection();
+			String state, String zip, String country, String brokerType, String secBrokerId) throws Exception {
+		String duplicateQuery = "select personCode from Person";
+		SQLFactory duplicateConn = new SQLFactory();
+		duplicateConn.startConnection(duplicateQuery);
+		duplicateConn.runQuery();
+		while(duplicateConn.next()) {
+			if(duplicateConn.getString("personCode").equals(personCode)) {
+				throw new Exception("Attempting to add a duplicate person");
+			}
+		}
+		duplicateConn.endConnection();
+		
+		String addressQuery = "insert Address (street, city, state, zipCode, country) values (?,?,?,?,?);";
+		SQLFactory addressConn = new SQLFactory();
+		addressConn.startConnection(addressQuery);
+		addressConn.setString(street);
+		addressConn.setString(city);
+		addressConn.setString(state);
+		addressConn.setInt(Integer.parseInt(zip));
+		addressConn.setString(country);
+		addressConn.runUpdate();
+		addressConn.endConnection();
+		
+		String request = "select addressId from Address"
+				+ "where street = ? && city = ? && state = ?;";
+		SQLFactory requestConn = new SQLFactory();
+		requestConn.startConnection(request);
+		requestConn.setString(street);
+		requestConn.setString(city);
+		requestConn.setString(street);
+		int addressId = 0;
+		if(requestConn.next()) {
+			addressId = requestConn.getInt("addressId");
+		}
+		requestConn.endConnection();
+		
+		String person = "insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values (?,?,?,?,?,?);";
+		SQLFactory personConn = new SQLFactory();
+		personConn.startConnection(person);
+		personConn.setString(personCode);
+		personConn.setInt(addressId);
+		personConn.setString(firstName);
+		personConn.setString(lastName);
+		personConn.setString(brokerType);
+		personConn.setString(secBrokerId);
+		personConn.runUpdate();
+		personConn.endConnection();
 	}
 	
 	// WORKS Great for now

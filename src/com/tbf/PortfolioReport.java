@@ -55,7 +55,14 @@ public class PortfolioReport {
 		
 //		PortfolioData.addEmail("02a","Johnjapplesauce@yahhhhhhh.com");
 //		PortfolioData.removePerson("02a");
-		PortfolioData.removeAsset("003");
+//		PortfolioData.removeAsset("003");
+		try {
+			PortfolioData.addPerson("code", "first", "last", "street", "city", "state", "68008", "country", "brokerType", "secBrokerId");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
 		System.out.println("done");
 	}
 }
