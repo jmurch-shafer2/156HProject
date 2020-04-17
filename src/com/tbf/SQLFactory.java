@@ -58,6 +58,17 @@ public class SQLFactory {
 			log.error(e, new RuntimeException(e));
 		}
 	}
+	/**
+	 * Sets a ? in a prepared statment to null
+	 */
+	public void setNullInt() {
+		try {
+			this.ps.setNull(this.counter, java.sql.Types.INTEGER);
+		} catch (SQLException e) {
+			log.error(e, new RuntimeException(e));
+		}
+		counter++;
+	}
 	
 	/**
 	 * Runs the query in the case of an update or deletion

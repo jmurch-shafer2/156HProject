@@ -17,4 +17,24 @@ insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentif
 select addressId from Address
 	where street = "Chinook" && city = "Fullerton" && state = "CA";
 
+-- PortfolioData.addPerson("code", "first", "last", "street", "city", "state", "68008", "country", "brokerType", "secBrokerId");
+insert Address (street, city, state, zipCode, country) values ("street","city","state",68008,"country");
 
+select addressId from Address
+	where street = "street" && city = "city" && state = "state";
+
+insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("code",12,?,?,?,?);
+
+select * from Asset where assetCode = "codename 007";
+
+-- private investment
+update Asset set percentageOwned = 32 where assetId = 18;
+
+-- deposit account
+update Asset set totalValue = 32 where assetId = 18;
+
+-- stock
+update Asset set sharesOwned = 32 where assetId = 18;
+
+select * from Portfolio;
+select * from PortfolioAsset;

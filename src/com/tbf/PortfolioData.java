@@ -1,5 +1,7 @@
 package com.tbf;
 
+import org.apache.log4j.Logger;
+
 /**
  * This is a collection of utility methods that define a general API for
  * interacting with the database supporting this application.
@@ -25,7 +27,6 @@ public class PortfolioData {
 		conn.endConnection();
 	}
 
-	// DONEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE, TODO need to test
 	/**
 	 * Removes the person record from the database corresponding to the provided
 	 * <code>personCode</code>
@@ -34,14 +35,14 @@ public class PortfolioData {
 	 */
 	public static void removePerson(String personCode) {
 		int personId = DataLoader.getPersonId(personCode);
-		
+
 		SQLFactory emailDel = new SQLFactory();
 		String emailQuery = "delete from Email where personId = ?";
 		emailDel.startConnection(emailQuery);
 		emailDel.setInt(personId);
 		emailDel.runUpdate();
 		emailDel.endConnection();
-		
+
 		SQLFactory personDel = new SQLFactory();
 		String personQuery = "delete from Person where personId = ?";
 		personDel.startConnection(personQuery);
@@ -50,14 +51,6 @@ public class PortfolioData {
 		personDel.endConnection();
 	}
 
-	
-	
-	
-	
-	
-	
-	
-//	This should work, needs to be tested
 	/**
 	 * Method to add a person record to the database with the provided data. The
 	 * <code>brokerType</code> will either be "E" or "J" (Expert or Junior) or
@@ -72,45 +65,49 @@ public class PortfolioData {
 	 * @param zip
 	 * @param country
 	 * @param brokerType
-	 * @throws Exception 
 	 */
 	public static void addPerson(String personCode, String firstName, String lastName, String street, String city,
-			String state, String zip, String country, String brokerType, String secBrokerId) throws Exception {
+			String state, String zip, String country, String brokerType, String secBrokerId) {
+		Logger log = Logger.getLogger(PortfolioReport.class);
 		String duplicateQuery = "select personCode from Person";
 		SQLFactory duplicateConn = new SQLFactory();
 		duplicateConn.startConnection(duplicateQuery);
 		duplicateConn.runQuery();
-		while(duplicateConn.next()) {
-			if(duplicateConn.getString("personCode").equals(personCode)) {
-				throw new Exception("Attempting to add a duplicate person");
+		while (duplicateConn.next()) {
+			if (duplicateConn.getString("personCode").equals(personCode)) {
+				log.error("Attempting to add a duplicate person");
 			}
 		}
 		duplicateConn.endConnection();
-		
+
 		String addressQuery = "insert Address (street, city, state, zipCode, country) values (?,?,?,?,?);";
 		SQLFactory addressConn = new SQLFactory();
 		addressConn.startConnection(addressQuery);
 		addressConn.setString(street);
 		addressConn.setString(city);
 		addressConn.setString(state);
-		addressConn.setInt(Integer.parseInt(zip));
+		try {
+			addressConn.setInt(Integer.parseInt(zip));
+		} catch(Exception e) {
+			System.out.println(e);
+		}
 		addressConn.setString(country);
 		addressConn.runUpdate();
 		addressConn.endConnection();
-		
-		String request = "select addressId from Address"
-				+ "where street = ? && city = ? && state = ?;";
+
+		String request = "select addressId from Address" + " where street = ? && city = ? && state = ?;";
 		SQLFactory requestConn = new SQLFactory();
 		requestConn.startConnection(request);
 		requestConn.setString(street);
 		requestConn.setString(city);
-		requestConn.setString(street);
+		requestConn.setString(state);
+		requestConn.runQuery();
 		int addressId = 0;
-		if(requestConn.next()) {
+		if (requestConn.next()) {
 			addressId = requestConn.getInt("addressId");
 		}
 		requestConn.endConnection();
-		
+
 		String person = "insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values (?,?,?,?,?,?);";
 		SQLFactory personConn = new SQLFactory();
 		personConn.startConnection(person);
@@ -123,8 +120,7 @@ public class PortfolioData {
 		personConn.runUpdate();
 		personConn.endConnection();
 	}
-	
-	// WORKS Great for now
+
 	/**
 	 * Adds an email record corresponding person record corresponding to the
 	 * provided <code>personCode</code>
@@ -145,12 +141,6 @@ public class PortfolioData {
 		conn.endConnection();
 	}
 
-	
-	
-	
-	
-	
-	// Should work TODO need to test, has not been tested
 	/**
 	 * Removes all asset records from the database
 	 */
@@ -164,15 +154,6 @@ public class PortfolioData {
 		conn.endConnection();
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	// WORKS, need TODO test more throughly
 	/**
 	 * Removes the asset record from the database corresponding to the provided
 	 * <code>assetCode</code>
@@ -186,56 +167,46 @@ public class PortfolioData {
 		request.setString(assetCode);
 		request.runQuery();
 		int assetId = 0;
-		if(request.next()) {
+		if (request.next()) {
 			assetId = request.getInt("assetId");
 		}
-		
+
 		SQLFactory portfolioAssetDel = new SQLFactory();
 		String portfolioAssetQuery = "delete from PortfolioAsset where assetId = ?";
 		portfolioAssetDel.startConnection(portfolioAssetQuery);
 		portfolioAssetDel.setInt(assetId);
 		portfolioAssetDel.runUpdate();
 		portfolioAssetDel.endConnection();
-		
-		
+
 		SQLFactory assetDel = new SQLFactory();
 		String assetQuery = "delete from Asset where assetId = ?";
 		assetDel.startConnection(assetQuery);
 		assetDel.setInt(assetId);
 		assetDel.runUpdate();
 		assetDel.endConnection();
-		
-		
+
 	}
 
-	
-
-	
-	
-	
-	 
-	
-	// TODO finish/fix query comparing assetCode of account to be added to all other, I THINK DONE??? PLEASE CHECK TODO TODO
 	/**
 	 * Adds a deposit account asset record to the database with the provided data.
 	 * 
 	 * @param assetCode
 	 * @param label
 	 * @param apr
-	 * @throws Exception 
 	 */
-	public static void addDepositAccount(String assetCode, String label, double apr) throws Exception {
+	public static void addDepositAccount(String assetCode, String label, double apr) {
+		Logger log = Logger.getLogger(PortfolioReport.class);
 		String checkAssetCode = "SELECT assetCode from Asset;";
 		SQLFactory check = new SQLFactory();
 		check.startConnection(checkAssetCode);
 		check.runQuery();
-		while(check.next()) {
-			if(check.getString("assetCode").equals(assetCode)) {
-				throw new Exception("Duplicate deposit Account in database");
+		while (check.next()) {
+			if (check.getString("assetCode").equals(assetCode)) {
+				log.error("Duplicate deposit Account in database");
 			}
 		}
 		check.endConnection();
-		
+
 		String depositAccountQuery = "insert Asset (typeOfAsset,assetCode,label,apr) values ('D',?,?,?);";
 
 		SQLFactory depositAccountConn = new SQLFactory();
@@ -247,7 +218,6 @@ public class PortfolioData {
 		depositAccountConn.endConnection();
 	}
 
-	// TODO finish/fix query comparing assetCode of account to be added to all other, I THINK DONE??? PLEASE CHECK TODO TODO
 	/**
 	 * Adds a private investment asset record to the database with the provided
 	 * data.
@@ -258,22 +228,22 @@ public class PortfolioData {
 	 * @param baseRateOfReturn
 	 * @param baseOmega
 	 * @param totalValue
-	 * @throws Exception 
 	 */
 	public static void addPrivateInvestment(String assetCode, String label, Double quarterlyDividend,
-		Double baseRateOfReturn, Double baseOmega, Double totalValue) throws Exception {
+			Double baseRateOfReturn, Double baseOmega, Double totalValue) {
+		Logger log = Logger.getLogger(PortfolioReport.class);
 		String checkAssetCode = "SELECT assetCode from Asset;";
 		SQLFactory check = new SQLFactory();
 		check.startConnection(checkAssetCode);
 		check.runQuery();
-		while(check.next()) {
-			if(check.getString("assetCode").equals(assetCode)) {
-				throw new Exception("Duplicate Private Investment in database");
+		while (check.next()) {
+			if (check.getString("assetCode").equals(assetCode)) {
+				log.error("Duplicate Private Investment in database");
 			}
 		}
 		check.endConnection();
-		
-		String privateInvestmentQuery = "insert Asset (typeOfAsset,assetCode,name,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue) values ('P',?,?,?,?,?,?,?);";
+
+		String privateInvestmentQuery = "insert Asset (typeOfAsset,assetCode,name,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue) values ('P',?,?,?,?,?,?);";
 		SQLFactory PIConn = new SQLFactory();
 		PIConn.startConnection(privateInvestmentQuery);
 		PIConn.setString(assetCode);
@@ -285,8 +255,7 @@ public class PortfolioData {
 		PIConn.runUpdate();
 		PIConn.endConnection();
 	}
-	
-	// TODO finish/fix query comparing assetCode of account to be added to all other, I THINK DONE??? PLEASE CHECK TODO TODO
+
 	/**
 	 * Adds a stock asset record to the database with the provided data.
 	 * 
@@ -297,21 +266,21 @@ public class PortfolioData {
 	 * @param beta
 	 * @param stockSymbol
 	 * @param sharePrice
-	 * @throws Exception 
 	 */
 	public static void addStock(String assetCode, String label, Double quarterlyDividend, Double baseRateOfReturn,
-			Double beta, String stockSymbol, Double sharePrice) throws Exception {
+			Double beta, String stockSymbol, Double sharePrice) {
+		Logger log = Logger.getLogger(PortfolioReport.class);
 		String checkAssetCode = "SELECT assetCode from Asset;";
 		SQLFactory check = new SQLFactory();
 		check.startConnection(checkAssetCode);
 		check.runQuery();
-		while(check.next()) {
-			if(check.getString("assetCode").equals(assetCode)) {
-				throw new Exception("Duplicate Stock in database");
+		while (check.next()) {
+			if (check.getString("assetCode").equals(assetCode)) {
+				log.error("Duplicate Stock in database");
 			}
 		}
 		check.endConnection();
-		
+
 		String query = "insert Asset (typeOfAsset,assetCode,label,quarterlyDividend,baseRateReturn,betaMeasure,stockSymbol,sharePrice) values ('S',?,?,?,?,?,?,?);";
 		SQLFactory conn = new SQLFactory();
 		conn.startConnection(query);
@@ -326,17 +295,6 @@ public class PortfolioData {
 		conn.endConnection();
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	// Works well
 	/**
 	 * Removes all portfolio records from the database
 	 */
@@ -352,17 +310,6 @@ public class PortfolioData {
 		conn.endConnection();
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	// TODO should work but don't know	
 	/**
 	 * Removes the portfolio record from the database corresponding to the provided
 	 * <code>portfolioCode</code>
@@ -376,17 +323,17 @@ public class PortfolioData {
 		request.setString(portfolioCode);
 		request.runQuery();
 		int portfolioId = 0;
-		if(request.next()) {
+		if (request.next()) {
 			portfolioId = request.getInt("portfolioId");
 		}
-		
+
 		SQLFactory portfolioAssetDel = new SQLFactory();
 		String portfolioAssetQuery = "delete from PortfolioAsset where portfolioId = ?";
 		portfolioAssetDel.startConnection(portfolioAssetQuery);
 		portfolioAssetDel.setInt(portfolioId);
 		portfolioAssetDel.runUpdate();
 		portfolioAssetDel.endConnection();
-		
+
 		SQLFactory portfolioDel = new SQLFactory();
 		String assetQuery = "delete from Portfolio where portfolioId = ?";
 		portfolioDel.startConnection(assetQuery);
@@ -395,11 +342,6 @@ public class PortfolioData {
 		portfolioDel.endConnection();
 	}
 
-	
-	
-	
-	
-	// TODO should work but don't know
 	/**
 	 * Adds a portfolio records to the database with the given data. If the
 	 * portfolio has no beneficiary, the <code>beneficiaryCode</code> will be
@@ -414,7 +356,8 @@ public class PortfolioData {
 			String beneficiaryCode) {
 		int ownerId = DataLoader.getPersonId(ownerCode);
 		int managerId = DataLoader.getPersonId(managerCode);
-		int beneficiaryId = DataLoader.getPersonId(beneficiaryCode);
+		int beneficiaryId;
+
 		String query = "insert Portfolio(portfolioCode,ownerId,managerId,beneficiaryId) values (?,?,?,?);";
 
 		SQLFactory conn = new SQLFactory();
@@ -422,16 +365,16 @@ public class PortfolioData {
 		conn.setString(portfolioCode);
 		conn.setInt(ownerId);
 		conn.setInt(managerId);
-		conn.setInt(beneficiaryId);
+		if (beneficiaryCode == null || beneficiaryCode.equals("")) {
+			conn.setNullInt();
+		} else {
+			beneficiaryId = DataLoader.getPersonId(beneficiaryCode);
+			conn.setInt(beneficiaryId);
+		}
 		conn.runUpdate();
 		conn.endConnection();
 	}
 
-	
-	
-	
-	
-	
 	/**
 	 * Associates the asset record corresponding to <code>assetCode</code> with the
 	 * portfolio corresponding to the provided <code>portfolioCode</code>. The third
@@ -444,13 +387,60 @@ public class PortfolioData {
 	 * @param value
 	 */
 	public static void addAsset(String portfolioCode, String assetCode, double value) {
-		String query = "INSERT Asset(portfolioCode, assetCode, value) VALUES (?, ?, ?);";
+		Logger log = Logger.getLogger(PortfolioReport.class);
+		int assetId = 0;
+		int portfolioId = 0;
+		String typeOfAsset = null;
+
+		String assetQuery = "select assetId,typeOfAsset from Asset where assetCode = ?";
+		SQLFactory assetRequest = new SQLFactory();
+		assetRequest.startConnection(assetQuery);
+		assetRequest.setString(assetCode);
+		assetRequest.runQuery();
+		if (assetRequest.next()) {
+			assetId = assetRequest.getInt("assetId");
+			typeOfAsset = assetRequest.getString("typeOfAsset");
+		} else {
+			log.error("Asset does not exist");
+		}
+		assetRequest.endConnection();
+
+		SQLFactory updateValue = new SQLFactory();
+		if (typeOfAsset.equals("P")) {
+			String privateQuery = "update Asset set percentageOwned = ? where assetId = ?;";
+			updateValue.startConnection(privateQuery);
+		} else if (typeOfAsset.equals("D")) {
+			String privateQuery = "update Asset set totalValue = ? where assetId = ?;";
+			updateValue.startConnection(privateQuery);
+		} else if (typeOfAsset.equals("S")) {
+			String privateQuery = "update Asset set sharesOwned = ? where assetId = ?;";
+			updateValue.startConnection(privateQuery);
+		} else {
+			log.error("Asset type is invalid");
+		}
+		updateValue.setDouble(value);
+		updateValue.setInt(assetId);
+		updateValue.runUpdate();
+		updateValue.endConnection();
+
+		String portfolioQuery = "select portfolioId from Portfolio where portfolioCode = ?";
+		SQLFactory portfolioRequest = new SQLFactory();
+		portfolioRequest.startConnection(portfolioQuery);
+		portfolioRequest.setString(portfolioCode);
+		portfolioRequest.runQuery();
+		if (portfolioRequest.next()) {
+			portfolioId = portfolioRequest.getInt("portfolioId");
+		} else {
+			log.error("Portfolio does not exist");
+		}
+		portfolioRequest.endConnection();
+
+		String query = "insert PortfolioAsset(assetId,portfolioId) values (?,?);";
 
 		SQLFactory conn = new SQLFactory();
 		conn.startConnection(query);
-		conn.setString(portfolioCode);
-		conn.setString(assetCode);
-		conn.setDouble(value);
+		conn.setInt(assetId);
+		conn.setInt(portfolioId);
 		conn.runUpdate();
 		conn.endConnection();
 	}
