@@ -94,7 +94,7 @@ public class Person {
 	public String toString() {
 		String str = String.format(
 				"ID: %d, Code: %s, Broker Type: %s, SEC: %s\nName: %s, %s\nAddress: %s \nEmailList: %s " + "", personId,
-				personCode, brokerState, SECIdentifier, firstName, lastName, this.address.toString(),
+				personCode, brokerState, SECIdentifier, lastName, firstName, this.address.toString(),
 				emailList.toString());
 		return str;
 	}

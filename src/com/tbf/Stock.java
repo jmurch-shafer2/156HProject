@@ -1,8 +1,7 @@
 package com.tbf;
 
 /**
- * This is a subclass of an Asset that models a real
- * world Stock.
+ * This is a subclass of an Asset that models a real world Stock.
  * 
  * @author Natalie Ruckman and Joel Murch-Shafer
  *
@@ -15,7 +14,7 @@ public class Stock extends Asset {
 	private String stockSymbol;
 	private double sharePrice;
 	private double sharesOwned;
-	
+
 	public Stock(int assetId, String accountCode, String assetType, String label, String quarterlyDividend,
 			String baseRateOfReturn, String betaMeasure, String StockSymbol, String sharePrice) {
 		super(assetId, accountCode, assetType, label);
@@ -25,7 +24,7 @@ public class Stock extends Asset {
 		this.stockSymbol = StockSymbol;
 		this.sharePrice = Double.valueOf(sharePrice);
 	}
-	
+
 	public Stock(int assetId, String accountCode, String assetType, String label, double quarterlyDividend,
 			double baseRateOfReturn, double betaMeasure, String StockSymbol, double sharePrice) {
 		super(assetId, accountCode, assetType, label);
@@ -35,7 +34,7 @@ public class Stock extends Asset {
 		this.stockSymbol = StockSymbol;
 		this.sharePrice = sharePrice;
 	}
-	
+
 	public Stock(int assetId, String accountCode, String assetType, String label, double quarterlyDividend,
 			double baseRateOfReturn, double betaMeasure, String StockSymbol, double sharePrice, double sharesOwned) {
 		super(assetId, accountCode, assetType, label);
@@ -46,9 +45,10 @@ public class Stock extends Asset {
 		this.sharePrice = sharePrice;
 		this.sharesOwned = sharesOwned;
 	}
-	
+
 	/**
-	 * A copy constructor to create and instance of an a stock with the shares owned attribute.
+	 * A copy constructor to create and instance of an a stock with the shares owned
+	 * attribute.
 	 * 
 	 * @param Stock
 	 * @param sharesOwned
@@ -78,23 +78,27 @@ public class Stock extends Asset {
 	public double getBetaMeasure() {
 		return betaMeasure;
 	}
+
 	/**
-	 * Calculates the estimated return 
+	 * Calculates the estimated return
+	 * 
 	 * @return annual return
 	 */
 	public double getReturn() {
-		double returnVal = ((this.baseRateOfReturn * this.sharePrice/100) + (4 * this.quarterlyDividend)) * this.sharesOwned;
+		double returnVal = ((this.baseRateOfReturn * this.sharePrice) + (4 * this.quarterlyDividend))
+				* this.sharesOwned;
 		return returnVal;
 	}
-	
+
 	/**
 	 * Calculates the annual return rate
+	 * 
 	 * @return
 	 */
 	public double getReturnRate() {
-		return this.getReturn()/this.getValue() * 100;
+		return this.getReturn() / this.getValue() * 100;
 	}
-	
+
 	public double getValue() {
 		return sharePrice * sharesOwned;
 	}
@@ -110,5 +114,5 @@ public class Stock extends Asset {
 	public double getSharesOwned() {
 		return sharesOwned;
 	}
-	
-	}
+
+}

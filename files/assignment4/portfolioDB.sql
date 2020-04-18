@@ -21,7 +21,7 @@ create table Address(
     street varchar(255) not null,
     city varchar(255) not null,
     state varchar(255) not null,
-    zipCode int not null,
+    zipCode varchar(255) not null,
     country varchar(255)
 );
 create table Person(
@@ -58,7 +58,6 @@ create table Asset(
     
     apr double,
    
-    name varchar(255),
     baseOmegaMeasure double,
     percentageOwned double,
     
@@ -125,17 +124,17 @@ create table PortfolioAsset(
 -- );
 
 -- Address
-insert Address (street, city, state, zipCode, country) values ("Chinook","Fullerton","CA",92640,"United States"); -- "Brent","Elphinston"
-insert Address (street, city, state, zipCode, country) values ("Barby","Columbus","GA",31914,"United States"); -- "O'Shevlin","Maurits"
-insert Address (street, city, state, zipCode, country) values ("Emmet","Memphis","TN",38126,"United States"); -- "Tregona","Jaquenette"
-insert Address (street, city, state, zipCode, country) values ("Eastlawn","Amarillo","TX",79165,"United States"); -- "Hazelgrove","Waylan"
-insert Address (street, city, state, zipCode, country) values ("Boyd","Phoenix","AZ",85010,"United States"); -- "Sancias","Fifi"
-insert Address (street, city, state, zipCode, country) values ("Morrow","Fort Wayne","IN",46814,"United States"); -- "Gniewosz","Morissa"
-insert Address (street, city, state, zipCode, country) values ("Chinook","Newark","NJ",07188,"United States"); -- "Braxay","Ty"
-insert Address (street, city, state, zipCode, country) values ("Basil","Albany","GA",31704,"United States"); -- "Cooke","Devy"
-insert Address (street, city, state, zipCode, country) values ("Namekagon","Fort Wayne","IN",46805,"United States"); -- "Bamforth","Francene"
-insert Address (street, city, state, zipCode, country) values ("Paget","Tulsa","OK",74116,"United States"); -- "Feltham","Axel"
-insert Address (street, city, state, zipCode, country) values ("Pleasure","Des Moines","IA",50347,"United States"); -- "Johnsey","Lu"
+insert Address (street, city, state, zipCode, country) values ("Chinook","Fullerton","CA","92640","United States"); -- "Brent","Elphinston"
+insert Address (street, city, state, zipCode, country) values ("Barby","Columbus","GA","31914","United States"); -- "O'Shevlin","Maurits"
+insert Address (street, city, state, zipCode, country) values ("Emmet","Memphis","TN","38126","United States"); -- "Tregona","Jaquenette"
+insert Address (street, city, state, zipCode, country) values ("Eastlawn","Amarillo","TX","79165","United States"); -- "Hazelgrove","Waylan"
+insert Address (street, city, state, zipCode, country) values ("Boyd","Phoenix","AZ","85010","United States"); -- "Sancias","Fifi"
+insert Address (street, city, state, zipCode, country) values ("Morrow","Fort Wayne","IN","46814","United States"); -- "Gniewosz","Morissa"
+insert Address (street, city, state, zipCode, country) values ("Chinook","Newark","NJ","07188","United States"); -- "Braxay","Ty"
+insert Address (street, city, state, zipCode, country) values ("Basil","Albany","GA","31704","United States"); -- "Cooke","Devy"
+insert Address (street, city, state, zipCode, country) values ("Namekagon","Fort Wayne","IN","46805","United States"); -- "Bamforth","Francene"
+insert Address (street, city, state, zipCode, country) values ("Paget","Tulsa","OK","74116","United States"); -- "Feltham","Axel"
+insert Address (street, city, state, zipCode, country) values ("Pleasure","Des Moines","IA","50347","United States"); -- "Johnsey","Lu"
 
 -- Person
 insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("02a",1,"Brent","Elphinston","","");
@@ -187,7 +186,7 @@ insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("00c","D",0.05
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("021","S", "GFDZ",5,21.57,42.13,0.45,00.90,"Zafgen, Inc.");
 insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values ("008","D",0.83,23000,"3 year CD");
 insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values ("03e","S", "YJDT",22,52.44,77.54,0.07,06.10,"Safe Bulkers Inc");
-insert Asset (assetCode,typeOfAsset,name,baseRateReturn,quarterlyDividend,baseOmegaMeasure,totalValue,percentageOwned) values ("0ff","P","Living Wake, The",06.95,366285.46,0.17,6662000000,14);
+insert Asset (assetCode,typeOfAsset,label,baseRateReturn,quarterlyDividend,baseOmegaMeasure,totalValue,percentageOwned) values ("0ff","P","Living Wake, The",06.95,366285.46,0.17,6662000000,14);
 
 
 

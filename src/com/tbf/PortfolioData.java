@@ -86,11 +86,7 @@ public class PortfolioData {
 		addressConn.setString(street);
 		addressConn.setString(city);
 		addressConn.setString(state);
-		try {
-			addressConn.setInt(Integer.parseInt(zip));
-		} catch(Exception e) {
-			System.out.println(e);
-		}
+		addressConn.setString(zip);
 		addressConn.setString(country);
 		addressConn.runUpdate();
 		addressConn.endConnection();
@@ -243,7 +239,7 @@ public class PortfolioData {
 		}
 		check.endConnection();
 
-		String privateInvestmentQuery = "insert Asset (typeOfAsset,assetCode,name,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue) values ('P',?,?,?,?,?,?);";
+		String privateInvestmentQuery = "insert Asset (typeOfAsset,assetCode,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue) values ('P',?,?,?,?,?,?);";
 		SQLFactory PIConn = new SQLFactory();
 		PIConn.startConnection(privateInvestmentQuery);
 		PIConn.setString(assetCode);
@@ -326,6 +322,7 @@ public class PortfolioData {
 		if (request.next()) {
 			portfolioId = request.getInt("portfolioId");
 		}
+		request.endConnection();
 
 		SQLFactory portfolioAssetDel = new SQLFactory();
 		String portfolioAssetQuery = "delete from PortfolioAsset where portfolioId = ?";

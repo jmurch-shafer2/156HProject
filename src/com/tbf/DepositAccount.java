@@ -62,8 +62,8 @@ public class DepositAccount extends Asset {
 	 * @return
 	 */
 	public double getReturnRate() {
-		return this.getReturn();
-//		return this.getReturn() / this.getValue() * 100;
+//		return this.getReturn();
+		return this.getReturn() / this.getValue() * 100;
 	}
 
 	/**
@@ -72,7 +72,7 @@ public class DepositAccount extends Asset {
 	 * @return
 	 */
 	public double getReturn() {
-		double returnVal = this.getValue() * (Math.exp(this.apr / 100) - 1);
+		double returnVal = this.getValue() * (Math.exp(this.apr) - 1);
 		return returnVal;
 	}
 

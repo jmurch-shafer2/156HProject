@@ -88,7 +88,7 @@ public class Portfolio {
 	}
 
 	public String getOwnerName() {
-		return owner.getFirstName() + ", " + owner.getLastName();
+		return owner.getLastName() + ", " + owner.getFirstName();
 	}
 
 	// return manager with an extra check if the manager exists
@@ -105,7 +105,7 @@ public class Portfolio {
 		if (manager == null) {
 			return "";
 		} else {
-			return manager.getFirstName() + ", " + manager.getLastName();
+			return manager.getLastName() + ", " + manager.getFirstName();
 		}
 	}
 
