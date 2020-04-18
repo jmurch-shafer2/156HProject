@@ -401,7 +401,7 @@ public class PortfolioData {
 			log.error("Asset does not exist");
 		}
 		assetRequest.endConnection();
-
+	
 		SQLFactory updateValue = new SQLFactory();
 		if (typeOfAsset.equals("P")) {
 			String privateQuery = "update Asset set percentageOwned = ? where assetId = ?;";

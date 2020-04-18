@@ -51,7 +51,5 @@ public class PortfolioReport {
 		gen.executiveReport(listOfPortfolios);
 		System.out.println("\n\n\n");
 		gen.fullReport(listOfPortfolios);
-
-		System.out.println("done");
 	}
 }

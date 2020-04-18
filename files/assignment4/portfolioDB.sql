@@ -50,7 +50,7 @@ create table Email(
 
 create table Asset(
 	assetId int not null primary key auto_increment,
-    assetCode varchar(255) not null unique,
+    assetCode varchar(255) not null,
 	typeOfAsset varchar(255) not null,
 	baseRateReturn double,
     totalValue double,

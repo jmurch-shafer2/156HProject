@@ -38,3 +38,9 @@ update Asset set sharesOwned = 32 where assetId = 18;
 
 select * from Portfolio;
 select * from PortfolioAsset;
+
+select * from Asset;
+select assetId from Asset where assetcode = "BSS007" && percentageOwned = null && totalValue = null && sharesOwned = null;
+
+select typeOfAsset,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue,apr,betaMeasure,stockSymbol,sharePrice from Asset where assetCode = ?;
+
