@@ -19,7 +19,11 @@ public class TestingDriver {
 		
 		
 //		Assignment 6
-		PortfolioData.removeAllPersons();
-		System.out.println("done");
+//		PortfolioData.removeAllPersons();
+//		System.out.println("done");
+		
+		
+		
+		
 	}
 }
