@@ -33,6 +33,8 @@ public class TestingDriver {
 		
 		ADT test = new ADT("OwnerName");
 		for(Portfolio port: listOfPortfolios) {
+//			System.out.println("this is not a good printing asdjflajsdfl;ajdfl;j");
+//			port.print();
 			test.addToList(port);
 		}
 		test.print();

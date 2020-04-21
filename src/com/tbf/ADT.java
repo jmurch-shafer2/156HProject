@@ -39,31 +39,36 @@ public class ADT {
 		}
 	}
 
-	// TODO check that start and end things don't happen
 	public void addToList(Portfolio item) {
+		Boolean inserted = false;
 		if(size == 0) {
 			this.insert(item, 0);
+			inserted = true;
 		} else {
 			for (int i = 0; i < this.size; i++) {
 				if (this.sortBy.equals("OwnerName")) {
-					if (Comparator.sortByOwnerName(item, this.getNode(i).getPortfolio()) > 0) {
-						System.out.println(i);
+					System.out.println("size: "+ size + "    i:" + i);
+					this.getPortfolio(i).print();
+					if (Comparator.sortByOwnerName(item, this.getPortfolio(i)) > 0) {
 						this.insert(item, i);
-						break;
+						inserted = true;
 					}
 				} else if (this.sortBy.equals("Value")) {
 					if (Comparator.sortByValue(item, this.getNode(i).getPortfolio()) > 0) {
 						this.insert(item, i);
-						break;
+						inserted = true;
 					}
 				} else if (this.sortBy.equals("Manager")) {
 					if (Comparator.sortByManager(item, this.getNode(i).getPortfolio()) > 0) {
 						this.insert(item, i);
-						break;
+						inserted = true;
 					}
 				} else {
-					System.out.println("you dun messed up son");
+					// do nothing
 				}
+			}
+			if(!inserted) {
+				this.insert(item,size-1);
 			}
 		}
 	}
@@ -72,6 +77,7 @@ public class ADT {
 //		System.out.println(position);
 		if (position == 0) {
 			if(size > 0) {
+				System.out.println("FIRST ELEMENT INSERT");
 				Node next = this.getNode(position);
 				Node current = new Node(item);
 				this.head = current;
@@ -81,8 +87,10 @@ public class ADT {
 				this.head = current;
 			}
 		} else if (position > size - 1 || position < 0) {
+			System.out.println("MEGABAD");
 			throw new IndexOutOfBoundsException("Invalid position is provided.");
 		} else if (position == size - 1) {
+			System.out.println("LAST ELEMENT INSERT");
 			Node previous = this.getNode(position - 1);
 			Node current = new Node(item);
 			previous.setNext(current);
