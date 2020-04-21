@@ -1,23 +1,23 @@
 package com.tbf;
 
-public class Node {
-	private Node next;
-	private Portfolio item;
+public class Node<T> {
+	private Node<T> next;
+	private T item;
 
-	public Node(Portfolio item) {
+	public Node(T item) {
 		this.item = item;
 		this.next = null;
 	}
 
-	public Portfolio getPortfolio() {
+	public T getItem() {
 		return item;
 	}
 
-	public Node getNext() {
+	public Node<T> getNext() {
 		return next;
 	}
 
-	public void setNext(Node next) {
+	public void setNext(Node<T> next) {
 		this.next = next;
 	}
 }

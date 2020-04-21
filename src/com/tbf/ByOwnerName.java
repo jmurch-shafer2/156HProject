@@ -1,6 +1,8 @@
 package com.tbf;
 
-public class Comparator {
+import java.util.Comparator;
+
+public class ByOwnerName implements Comparator<Portfolio>{
 
 	/**
 	 * Comparator that takes two portfolios as input and sorts by owner name
@@ -89,6 +91,23 @@ public class Comparator {
 			if (one.getManager().getFirstName().compareTo(two.getManager().getFirstName()) > 0) {
 				return 1;
 			} else if (one.getManager().getFirstName().compareTo(two.getManager().getFirstName()) < 0) {
+				return -1;
+			} else {
+				return 0;
+			}
+		}
+	}
+
+	@Override
+	public int compare(Portfolio one, Portfolio two) {
+		if (one.getOwner().getLastName().compareTo(two.getOwner().getLastName()) > 0) {
+			return 1;
+		} else if (one.getOwner().getLastName().compareTo(two.getOwner().getLastName()) < 0) {
+			return -1;
+		} else {
+			if (one.getOwner().getFirstName().compareTo(two.getOwner().getFirstName()) > 0) {
+				return 1;
+			} else if (one.getOwner().getFirstName().compareTo(two.getOwner().getFirstName()) < 0) {
 				return -1;
 			} else {
 				return 0;

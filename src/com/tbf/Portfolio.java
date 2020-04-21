@@ -242,16 +242,16 @@ public class Portfolio {
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("ID: " + portfolioId + " \n");
-		sb.append("Code: " + portfolioCode + " \n");
+//		sb.append("ID: " + portfolioId + " \n");
+//		sb.append("Code: " + portfolioCode + " \n");
 		sb.append(this.owner.toString() + " \n");
-		sb.append(this.manager.toString() + " \n");
-		if (beneficiary != null) {
-			sb.append(this.beneficiary.toString() + " \n");
-		}
-		for (Asset ass : this.assetList) {
-			sb.append(ass.toString());
-		}
+//		sb.append(this.manager.toString() + " \n");
+//		if (beneficiary != null) {
+////			sb.append(this.beneficiary.toString() + " \n");
+//		}
+//		for (Asset ass : this.assetList) {
+//			sb.append(ass.toString());
+//		}
 		return sb.toString();
 	}
 	

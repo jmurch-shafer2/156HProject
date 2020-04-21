@@ -44,3 +44,6 @@ select assetId from Asset where assetcode = "BSS007" && percentageOwned = null &
 
 select typeOfAsset,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue,apr,betaMeasure,stockSymbol,sharePrice from Asset where assetCode = ?;
 
+
+
+select * from Person;

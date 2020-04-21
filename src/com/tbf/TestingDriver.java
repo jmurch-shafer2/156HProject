@@ -30,11 +30,9 @@ public class TestingDriver {
 		ArrayList<Portfolio> listOfPortfolios = DataLoader.getAllPortfolios(listOfAsset, listOfPeople);
 		
 		
-		
-		ADT test = new ADT("OwnerName");
+		ByOwnerName comp = new ByOwnerName();
+		SortedLinkedList <Portfolio> test = new SortedLinkedList<Portfolio>(comp);
 		for(Portfolio port: listOfPortfolios) {
-//			System.out.println("this is not a good printing asdjflajsdfl;ajdfl;j");
-//			port.print();
 			test.addToList(port);
 		}
 		test.print();
