@@ -1,8 +1,5 @@
 package com.tbf;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 //TODO Paramatarize this
 
 public class ADT {
@@ -31,7 +28,7 @@ public class ADT {
 	}
 
 	private Node getNode(int position) {
-		if (position > size || position < 0) {
+		if (position > size - 1 || position < 0) {
 			throw new IndexOutOfBoundsException("Invalid position is provided.");
 		} else {
 			Node node = this.head;
@@ -44,83 +41,89 @@ public class ADT {
 
 	// TODO check that start and end things don't happen
 	public void addToList(Portfolio item) {
-		for (int i = 0; i < this.size; i++) {
-			if (this.sortBy.equals("OwnerName")) {
-				if (Comparator.sortByOwnerName(item, this.getNode(i).getPortfolio()) > 0) {
-					Node next = this.getNode(i);
-					Node previous = this.getNode(i - 1);
-					Node current = new Node(item);
-					previous.setNext(current);
-					current.setNext(next);
-					break;
+		if(size == 0) {
+			this.insert(item, 0);
+		} else {
+			for (int i = 0; i < this.size; i++) {
+				if (this.sortBy.equals("OwnerName")) {
+					if (Comparator.sortByOwnerName(item, this.getNode(i).getPortfolio()) > 0) {
+						System.out.println(i);
+						this.insert(item, i);
+						break;
+					}
+				} else if (this.sortBy.equals("Value")) {
+					if (Comparator.sortByValue(item, this.getNode(i).getPortfolio()) > 0) {
+						this.insert(item, i);
+						break;
+					}
+				} else if (this.sortBy.equals("Manager")) {
+					if (Comparator.sortByManager(item, this.getNode(i).getPortfolio()) > 0) {
+						this.insert(item, i);
+						break;
+					}
+				} else {
+					System.out.println("you dun messed up son");
 				}
-			} else if (this.sortBy.equals("Value")) {
-				if (Comparator.sortByValue(item, this.getNode(i).getPortfolio()) > 0) {
-					Node next = this.getNode(i);
-					Node previous = this.getNode(i - 1);
-					Node current = new Node(item);
-					previous.setNext(current);
-					current.setNext(next);
-					break;
-				}
-			} else if (this.sortBy.equals("Manager")) {
-				if (Comparator.sortByManager(item, this.getNode(i).getPortfolio()) > 0) {
-					Node next = this.getNode(i);
-					Node previous = this.getNode(i - 1);
-					Node current = new Node(item);
-					previous.setNext(current);
-					current.setNext(next);
-					break;
-				}
-			} else {
-				System.out.println("you dun messed up son");
 			}
 		}
-		size++;
 	}
 
-//	private void addToStart(Truck t) {
-//		this.size++;
-//		TruckListNode newHead = new TruckListNode(t);
-//		newHead.setNext(this.head);
-//
-//		this.head = newHead;
-//	}
-//	private void addToEnd() {
-//	
-//  }
+	private void insert(Portfolio item, int position) {
+//		System.out.println(position);
+		if (position == 0) {
+			if(size > 0) {
+				Node next = this.getNode(position);
+				Node current = new Node(item);
+				this.head = current;
+				current.setNext(next);
+			} else {
+				Node current = new Node(item);
+				this.head = current;
+			}
+		} else if (position > size - 1 || position < 0) {
+			throw new IndexOutOfBoundsException("Invalid position is provided.");
+		} else if (position == size - 1) {
+			Node previous = this.getNode(position - 1);
+			Node current = new Node(item);
+			previous.setNext(current);
+		} else {
+			Node next = this.getNode(position);
+			Node previous = this.getNode(position - 1);
+			Node current = new Node(item);
+			previous.setNext(current);
+			current.setNext(next);
+		}
+		this.size++;
+	}
 
-	// Nat, can you do this one?
 	public void remove(int position) {
 		if (position > size - 1 || position < 0) {
 			throw new IndexOutOfBoundsException("Invalid position is provided.");
 		} else {
 			if (position == 0) {
-				this.head = this.getTruckListNode(1);
+				this.head = this.getNode(1);
 			} else {
-				this.getTruckListNode(position - 1).setNext(this.getTruckListNode(position).getNext());
+				this.getNode(position - 1).setNext(this.getNode(position).getNext());
 			}
 			this.size--;
 		}
 	}
 
-	// Nat, can you do this one?
-	public Truck getTruck(int position) {
+	public Portfolio getPortfolio(int position) {
 		if (position > size - 1 || position < 0) {
 			throw new IndexOutOfBoundsException("Invalid position is provided.");
 		}
-		TruckListNode node = this.head;
+		Node node = this.head;
 		for (int i = 0; i < position; i++) {
 			node = node.getNext();
 		}
-		return node.getTruck();
+		return node.getPortfolio();
 	}
 
-	// Nat, can you do this one?
 	public void print() {
-		TruckListNode node = this.head;
+		Node node = this.head;
 		for (int i = 0; i < this.size; i++) {
-			node.getTruck().print();
+			node.getPortfolio().print();
 			node = node.getNext();
 		}
 	}

@@ -254,5 +254,9 @@ public class Portfolio {
 		}
 		return sb.toString();
 	}
+	
+	public void print() {
+		System.out.println(this.toString());
+	}
 
 }

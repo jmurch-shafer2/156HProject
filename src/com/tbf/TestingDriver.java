@@ -1,5 +1,7 @@
 package com.tbf;
 
+import java.util.ArrayList;
+
 import org.apache.log4j.Logger;
 
 public class TestingDriver {
@@ -21,8 +23,19 @@ public class TestingDriver {
 //		Assignment 6
 //		PortfolioData.removeAllPersons();
 //		System.out.println("done");
+		ArrayList<Person> listOfPeople = DataLoader.getAllPeople();
+
+		ArrayList<Asset> listOfAsset = DataLoader.getAllAssets();
+
+		ArrayList<Portfolio> listOfPortfolios = DataLoader.getAllPortfolios(listOfAsset, listOfPeople);
 		
 		
+		
+		ADT test = new ADT("OwnerName");
+		for(Portfolio port: listOfPortfolios) {
+			test.addToList(port);
+		}
+		test.print();
 		
 		
 	}
