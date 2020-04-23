@@ -3,9 +3,10 @@ package com.tbf;
 import java.util.Comparator;
 import java.util.Iterator;
 
-//TODO Paramatarize this
+import org.apache.log4j.Logger;
 
-public class SortedLinkedList<T> implements Iterable {
+public class SortedLinkedList<T> implements Iterable<T> {
+	Logger log = Logger.getLogger(PortfolioReport.class);;
 	private int size;
 	private Node<T> head;
 	private Comparator<T> comp;
@@ -17,9 +18,31 @@ public class SortedLinkedList<T> implements Iterable {
 	}
 
 	@Override
-	public Iterator iterator() {
-		// TODO Auto-generated method stub
-		return null;
+	public Iterator<T> iterator() {
+		Logger log = Logger.getLogger(PortfolioReport.class);
+		return new Iterator<T>() {
+			Node<T> curr = head;
+
+			@Override
+			public boolean hasNext() {
+				if (curr == null)
+					return false;
+				else
+					return true;
+			}
+
+			@Override
+			public T next() {
+				T item = curr.getItem();
+				curr = curr.getNext();
+				return item;
+			}
+
+			@Override
+			public void remove() {
+				log.error("Not implemented because it violated encapsulatoin");
+			}
+		};
 	}
 
 	public int getSize() {
@@ -35,7 +58,8 @@ public class SortedLinkedList<T> implements Iterable {
 
 	private Node<T> getNode(int position) {
 		if (position > size - 1 || position < 0) {
-			throw new IndexOutOfBoundsException("Invalid position is provided.");
+			log.error("Invalid position is provided.");
+			return null;
 		} else {
 			Node<T> node = this.head;
 			for (int i = 0; i < position; i++) {
@@ -50,22 +74,19 @@ public class SortedLinkedList<T> implements Iterable {
 			this.insert(item, 0);
 		} else {
 			int i = 0;
-			while(i < size && comp.compare(item, this.getItem(i)) > 0) {
+			while (i < size && comp.compare(item, this.getItem(i)) > 0) {
 				i++;
 			}
-			insert(item,i);
+			insert(item, i);
 		}
 		this.size++;
 	}
 
 	private void insert(T item, int position) {
-//		System.out.println(position);
-		System.out.println(position + "     size: " + size);
 		if (position > size || position < 0) {
-			
-			throw new IndexOutOfBoundsException("Invalid position is provided.");
-		}else if (position == 0) {
-			 if (size > 0) {
+			log.error("Invalid position is provided.");
+		} else if (position == 0) {
+			if (size > 0) {
 				Node<T> next = this.getNode(position);
 				Node<T> current = new Node<T>(item);
 				this.head = current;
@@ -75,7 +96,7 @@ public class SortedLinkedList<T> implements Iterable {
 				this.head = current;
 			}
 		} else if (position == size) {
-			Node<T> previous = this.getNode(position-1);
+			Node<T> previous = this.getNode(position - 1);
 			Node<T> current = new Node<T>(item);
 			previous.setNext(current);
 		} else {
@@ -88,7 +109,7 @@ public class SortedLinkedList<T> implements Iterable {
 
 	public void remove(int position) {
 		if (position > size - 1 || position < 0) {
-			throw new IndexOutOfBoundsException("Invalid position is provided.");
+			log.error("Invalid position is provided.");
 		} else {
 			if (position == 0) {
 				this.head = this.getNode(1);
