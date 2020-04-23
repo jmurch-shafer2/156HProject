@@ -11,6 +11,11 @@ SELECT * from Person
     
 select * from Asset;
 
+select typeOfAsset,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue,apr,betaMeasure,stockSymbol,sharePrice from Asset where assetCode = 003;
+
+
+-- select typeOfAsset,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue,apr,betaMeasure,stockSymbol,sharePrice from Asset where assetCode = ?
+
 insert Address (street, city, state, zipCode, country) values ("Chinook","Fullerton","CA",92640,"United States"); -- "Brent","Elphinston"
 insert Person(personCode, addressId, firstName, lastName, brokerType, secIdentifier) values ("02a",1,"Brent","Elphinston","","");
 
@@ -39,10 +44,12 @@ update Asset set sharesOwned = 32 where assetId = 18;
 select * from Portfolio;
 select * from PortfolioAsset;
 
+select assetId,typeOfAsset from Asset where assetCode = "AGTSAV" && totalValue = 26534.21;
+
 select * from Asset;
 select assetId from Asset where assetcode = "BSS007" && percentageOwned = null && totalValue = null && sharesOwned = null;
 
-select typeOfAsset,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue,apr,betaMeasure,stockSymbol,sharePrice from Asset where assetCode = ?;
+select percentageOwned,sharesOwned,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue,apr,betaMeasure,stockSymbol,sharePrice from Asset where assetCode = 1;
 
 
 

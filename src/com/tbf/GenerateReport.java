@@ -22,7 +22,7 @@ public class GenerateReport {
 	
 	/**
 	 * Takes a list of portfolios and creates a concise report for an executive
-	 * @param portfolioList
+	 * @param ArrayList<Portfolio>
 	 */
 	public void executiveReport(ArrayList<Portfolio> portfolioList) {
 		System.out.println("Portfolio Executive Report\n===========================================================================================================================================================");
@@ -42,6 +42,35 @@ public class GenerateReport {
 		System.out.println("                                                     ------------------------------------------------------------------------------------------------------" );
 		System.out.println(String.format("%-10.20s %-20.25s %-20.25s $%20.2f$%20.2f %20.4s$%20.2f$%17.2f","","","TOTALS:",totalFees,totalCommisions,"",totalReturn,totalTotal));
 	}
+	
+	/**
+	 * Takes a list of portfolios and creates a concise report for an executive
+	 * @param SortedLinkedList
+	 */
+	public void executiveReport(SortedLinkedList<Portfolio> portfolioList) {
+		System.out.println("Portfolio Executive Report\n===========================================================================================================================================================");
+		System.out.println(String.format("%-10.10s %-20.25s %-20.25s %-20.15s %-20.15s %-20.15s %-20.15s %-20.15s","Portfolio","Owner","Manager","Fees","Commisions","Weighted Risk","Return","Total"));
+		double totalFees= 0;
+		double totalCommisions = 0;
+		double totalReturn = 0;
+		double totalTotal = 0;
+		for(Portfolio port:portfolioList) {
+			this.portfolioShort(port);
+			totalFees += port.getFees();
+			totalCommisions += port.getCommision();
+			totalReturn += port.getReturn();
+			totalTotal += port.getTotalValue();
+		}
+		
+		System.out.println("                                                     ------------------------------------------------------------------------------------------------------" );
+		System.out.println(String.format("%-10.20s %-20.25s %-20.25s $%20.2f$%20.2f %20.4s$%20.2f$%17.2f","","","TOTALS:",totalFees,totalCommisions,"",totalReturn,totalTotal));
+	}
+	
+	
+	
+	
+	
+	
 
 
 	/**
