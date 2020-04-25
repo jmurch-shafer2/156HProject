@@ -125,7 +125,6 @@ public class PortfolioData {
 	 * @param email
 	 */
 	public static void addEmail(String personCode, String email) {
-		// TODO check for email duplicates
 		int personId = DataLoader.getPersonId(personCode);
 
 		SQLFactory conn = new SQLFactory();
