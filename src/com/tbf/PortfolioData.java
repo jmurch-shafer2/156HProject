@@ -385,144 +385,41 @@ public class PortfolioData {
 	 */
 	public static void addAsset(String portfolioCode, String assetCode, double value) {
 		Logger log = Logger.getLogger(PortfolioReport.class);
-		
-//		String assetQuery = "select assetId,typeOfAsset from Asset where assetCode = ?";
-//		SQLFactory assetRequest = new SQLFactory();
-//		assetRequest.startConnection(assetQuery);
-//		assetRequest.setString(assetCode);
-//		assetRequest.runQuery();
-//		if (assetRequest.next()) {
-//			assetId = assetRequest.getInt("assetId");
-//			typeOfAsset = assetRequest.getString("typeOfAsset");
-//		} else {
-//			log.error("Asset does not exist");
-//		}
-//		assetRequest.endConnection();
-
-		
-		//Retreiving all values of an asset from the assetCode
+		int assetId = 0;
 		int portfolioId = 0;
 		String typeOfAsset = null;
-		String label = null;
-		double quarterlyDividend = 0;
-		double baseRateReturn = 0;
-		double baseOmegaMeasure = 0; 
-		double totalValue = 0;
-		double apr = 0;
-		double betaMeasure = 0;
-		String stockSymbol = null;
-		double sharePrice = 0;
-		
-		String assetQuery = "select typeOfAsset,label,quarterlyDividend,baseRateReturn,baseOmegaMeasure,totalValue,apr,betaMeasure,stockSymbol,sharePrice from Asset where assetCode = ?;";
+
+		String assetQuery = "select assetId,typeOfAsset from Asset where assetCode = ?";
 		SQLFactory assetRequest = new SQLFactory();
 		assetRequest.startConnection(assetQuery);
 		assetRequest.setString(assetCode);
 		assetRequest.runQuery();
 		if (assetRequest.next()) {
+			assetId = assetRequest.getInt("assetId");
 			typeOfAsset = assetRequest.getString("typeOfAsset");
-			label = assetRequest.getString("label");
-			quarterlyDividend = assetRequest.getDouble("quarterlyDividend");
-			baseRateReturn = assetRequest.getDouble("baseRateReturn");
-			baseOmegaMeasure = assetRequest.getDouble("baseOmegaMeasure");
-			totalValue = assetRequest.getDouble("totalValue");
-			apr = assetRequest.getDouble("apr");
-			betaMeasure = assetRequest.getDouble("betaMeasure");
-			stockSymbol = assetRequest.getString("stockSymbol");
-			sharePrice = assetRequest.getDouble("sharePrice");
 		} else {
 			log.error("Asset does not exist");
 		}
 		assetRequest.endConnection();
+	
+		SQLFactory updateValue = new SQLFactory();
+		if (typeOfAsset.equals("P")) {
+			String privateQuery = "update Asset set percentageOwned = ? where assetId = ?;";
+			updateValue.startConnection(privateQuery);
+		} else if (typeOfAsset.equals("D")) {
+			String privateQuery = "update Asset set totalValue = ? where assetId = ?;";
+			updateValue.startConnection(privateQuery);
+		} else if (typeOfAsset.equals("S")) {
+			String privateQuery = "update Asset set sharesOwned = ? where assetId = ?;";
+			updateValue.startConnection(privateQuery);
+		} else {
+			log.error("Asset type is invalid");
+		}
+		updateValue.setDouble(value);
+		updateValue.setInt(assetId);
+		updateValue.runUpdate();
+		updateValue.endConnection();
 
-		
-		
-		
-		
-		
-		
-		
-		// inserting a new asset with all the previous values and the added value
-		String insertAssetQuery = null;
-		if(typeOfAsset.equals("D")) {
-			insertAssetQuery = "insert Asset (assetCode,typeOfAsset,apr,totalValue,label) values (?,?,?,?,?);";
-		} else if (typeOfAsset.equals("P")) {
-			insertAssetQuery = "insert Asset (assetCode,typeOfAsset,label,baseRateReturn,quarterlyDividend,baseOmegaMeasure,totalValue,percentageOwned) values (?,?,?,?,?,?,?,?);";
-		} else if (typeOfAsset.equals("S")) {
-			insertAssetQuery = "insert Asset (assetCode,typeOfAsset,stockSymbol,sharesOwned,quarterlyDividend,sharePrice,betaMeasure,baseRateReturn,label) values (?,?,?,?,?,?,?,?,?);";
-		} else {
-			log.error("Improper duplication of asset");
-		}
-		
-		SQLFactory insertAssetConn = new SQLFactory();
-		insertAssetConn.startConnection(insertAssetQuery);
-		insertAssetConn.setString(assetCode);
-		insertAssetConn.setString(typeOfAsset);
-		if(typeOfAsset.equals("D")) {
-			insertAssetConn.setDouble(apr);
-			insertAssetConn.setDouble(totalValue);
-			insertAssetConn.setString(label);
-		} else if (typeOfAsset.equals("P")) {
-			insertAssetConn.setString(label);
-			insertAssetConn.setDouble(baseRateReturn);
-			insertAssetConn.setDouble(quarterlyDividend);
-			insertAssetConn.setDouble(baseOmegaMeasure);
-			insertAssetConn.setDouble(totalValue);
-			insertAssetConn.setDouble(value);
-		} else if (typeOfAsset.equals("S")) {
-			insertAssetConn.setString(stockSymbol);
-			insertAssetConn.setInt((int)value);
-			insertAssetConn.setDouble(quarterlyDividend);
-			insertAssetConn.setDouble(sharePrice);
-			insertAssetConn.setDouble(betaMeasure);
-			insertAssetConn.setDouble(baseRateReturn);
-			insertAssetConn.setString(label);
-		} else {
-			log.error("Improper duplication of asset");
-		}
-		insertAssetConn.runUpdate();
-		insertAssetConn.endConnection();
-		
-		
-		
-		
-		// TODO not doing this part correctly yet
-		// finding assetId of the previously inserted asset
-		int assetId = 0;
-		String findAssetQuery = null;
-		if(typeOfAsset.equals("D")) {
-			findAssetQuery = "select assetId from Asset where assetCode = ? && totalValue = ?";
-		} else if (typeOfAsset.equals("P")) {
-			findAssetQuery = "select assetId from Asset where assetCode = ? && percentageOwned = ?";
-		} else if (typeOfAsset.equals("S")) {
-			findAssetQuery = "select assetId from Asset where assetCode = ? && sharesOwned = ?";
-		} else {
-			log.error("Improper duplication of asset");
-		}
-		
-		SQLFactory findAssetConn = new SQLFactory();
-		findAssetConn.startConnection(findAssetQuery);
-		findAssetConn.setString(assetCode);
-		if(typeOfAsset.equals("D")) {
-			findAssetConn.setDouble(value);
-		} else if (typeOfAsset.equals("P")) {
-			findAssetConn.setDouble(value);
-		} else if (typeOfAsset.equals("S")) {
-			findAssetConn.setInt((int)value);
-		} else {
-			log.error("Invalid asset type");
-		}
-		findAssetConn.runQuery();
-		if(findAssetConn.next()) {
-			assetId = findAssetConn.getInt("assetId");
-		} else {
-			log.error("Asset does not exist");
-		}
-		findAssetConn.endConnection();
-		
-		
-		
-		
-		
 		String portfolioQuery = "select portfolioId from Portfolio where portfolioCode = ?";
 		SQLFactory portfolioRequest = new SQLFactory();
 		portfolioRequest.startConnection(portfolioQuery);
@@ -535,7 +432,6 @@ public class PortfolioData {
 		}
 		portfolioRequest.endConnection();
 
-		System.out.println(assetId + "    " +portfolioId);
 		String query = "insert PortfolioAsset(assetId,portfolioId) values (?,?);";
 
 		SQLFactory conn = new SQLFactory();

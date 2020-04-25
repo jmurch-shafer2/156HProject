@@ -12,6 +12,15 @@ public class Node<T> {
 	public T getItem() {
 		return item;
 	}
+	
+	/**
+	 * Used for implementing the Iterator class within 
+	 * SortedLinked List
+	 * @param item
+	 */
+	public void setItem(T item) {
+		this.item = item;
+	}
 
 	public Node<T> getNext() {
 		return next;

@@ -40,7 +40,7 @@ public class SortedLinkedList<T> implements Iterable<T> {
 
 			@Override
 			public void remove() {
-				log.error("Not implemented because it violated encapsulatoin");
+				curr.setItem(null);
 			}
 		};
 	}
