@@ -97,10 +97,10 @@ public class DataConverter {
 			String stateTemp = addressTokens[2];
 			String zipcodeTemp = addressTokens[3];
 			String countryTemp = addressTokens[4];
-			Address addressTemp = new Address(streetTemp, cityTemp, stateTemp, countryTemp, zipcodeTemp);
+			Address addressTemp = new Address(0, streetTemp, cityTemp, stateTemp, countryTemp, zipcodeTemp);
 			
 //	        Create an instance of a person 			
-			Person localPerson = new Person(localPersonCode, localBrokerState, localSECIdentifier, localFirstName, localLastName,
+			Person localPerson = new Person(0, localPersonCode, localBrokerState, localSECIdentifier, localFirstName, localLastName,
 					addressTemp, localEmailList);
 
 //	        Appends each person to an array list of people
@@ -133,7 +133,7 @@ public class DataConverter {
 		        	
 //		        	Creates a deposit account object from the tokenized line
 		        	String apr = tokens[3];
-		        	DepositAccount holdingAsset = new DepositAccount(accountCode, assetType, label, apr);
+		        	DepositAccount holdingAsset = new DepositAccount(0, accountCode, assetType, label, apr);
 		        	listOfAssets.add(holdingAsset);
 		        
 		        } else if (assetType.equals("S")) {
@@ -144,7 +144,7 @@ public class DataConverter {
 		        	String betaMeasure = tokens[5];
 		        	String stockSymbol = tokens[6];
 		        	String sharePrice = tokens[7];
-		        	Stock holdingAsset = new Stock(accountCode, assetType, label, quarterlyDividend, 
+		        	Stock holdingAsset = new Stock(0, accountCode, assetType, label, quarterlyDividend, 
 		        			baseRateOfReturn, betaMeasure, stockSymbol, sharePrice);
 		        	listOfAssets.add(holdingAsset);
 		        
@@ -155,7 +155,7 @@ public class DataConverter {
 		        	String baseRateOfReturn = tokens[4];
 		        	String baseOmegaMeasure = tokens[5];
 		        	String totalValue = tokens[6];
-		        	PrivateInvestment holdingAsset = new PrivateInvestment(accountCode, assetType, label, 
+		        	PrivateInvestment holdingAsset = new PrivateInvestment(0, accountCode, assetType, label, 
 		        			quarterlyDividend, baseRateOfReturn, baseOmegaMeasure, totalValue);
 		        	listOfAssets.add(holdingAsset);
 		        

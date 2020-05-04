@@ -85,7 +85,7 @@ public class Stock extends Asset {
 	 * @return annual return
 	 */
 	public double getReturn() {
-		double returnVal = ((this.baseRateOfReturn * this.sharePrice) + (4 * this.quarterlyDividend))
+		double returnVal = ((this.baseRateOfReturn * this.sharePrice/100) + (4 * this.quarterlyDividend))
 				* this.sharesOwned;
 		return returnVal;
 	}

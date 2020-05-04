@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 public class GenerateReport {
 	/**
-	 * Takes a portfolio as input and creates a summary of the portfolio
+	 * A functionality class that allows for the creation of reports
+	 * Currently has support for generating reports for: Portfolios
+	 * 
 	 * @param p
 	 */
 	public void portfolioShort(Portfolio p) {
@@ -113,7 +115,7 @@ public class GenerateReport {
 			}
 			totalAnnReturn += annReturn;
 			totalTotal += totalVal;
-			String assetStr = String.format("%.10s %36.30s %15.2f%% %10.2f   $%15.2f   $%13.2f",a.getAssetCode(),a.getLabel(),returnRate,risk,annReturn,totalVal);
+			String assetStr = String.format("%.10s    %27.27s  %15.2f%%%10.2f   $%15.2f   $%13.2f",a.getAssetCode(),a.getLabel(),returnRate,risk,annReturn,totalVal);
 			System.out.println(assetStr);
 		}
 		System.out.println("                                             -----------------------------------------------------------");

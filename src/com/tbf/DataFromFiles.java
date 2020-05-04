@@ -3,24 +3,24 @@ package com.tbf;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Scanner;
 
-public class PortfolioReportOLDDDD {
-	public static void main(String[] argv) {
-//		Loads a file where People objects will be created
-		String personsPath = "data//Persons.dat";
-		Scanner scan = null;
-		ArrayList<Person> listOfPeople = new ArrayList();
+public class DataFromFiles {
 
-//		Implementing a try, catch, finally to safely read from the file and check for a file not found exception
+	public static ArrayList<Person> peopleListFromFile(String pathname) {
+		// Loads a file where People objects will be created
+		ArrayList<Person> listOfPeople = new ArrayList<>();
+
+		Scanner scan = null;
 		ArrayList<String> linesOfPeople = new ArrayList();
+
+		// Implementing a try, catch, finally to safely read from the file and check for
+		// a file not found exception
 		try {
-			File personsFilePath = new File(personsPath);
+			File personsFilePath = new File(pathname);
 			scan = new Scanner(personsFilePath);
 			String numberOfLines = scan.nextLine();
-//	  		Reads the Persons.dat and stores each line in an iterable array
+			// Reads the Persons.dat and stores each line in an iterable array
 			while (scan.hasNextLine()) {
 				String tempLine = scan.nextLine();
 				linesOfPeople.add(tempLine);
@@ -31,6 +31,8 @@ public class PortfolioReportOLDDDD {
 			if (scan != null)
 				scan.close();
 		}
+
+		// iterating line by line and creating a person object
 		for (String line : linesOfPeople) {
 			// Initialize all of the variables
 			String localPersonCode = "";
@@ -41,6 +43,8 @@ public class PortfolioReportOLDDDD {
 			String localFirstName = "";
 			String localLastName = "";
 			String localAddress = "";
+
+			// create objects
 			ArrayList<String> localEmailList = new ArrayList<>();
 			String[] tokens = line.split(";", -1);
 			localPersonCode = tokens[0];
@@ -69,22 +73,27 @@ public class PortfolioReportOLDDDD {
 			String stateTemp = addressTokens[2];
 			String zipcodeTemp = addressTokens[3];
 			String countryTemp = addressTokens[4];
-			addressTemp = new Address(streetTemp, cityTemp, stateTemp, countryTemp, zipcodeTemp);
+			addressTemp = new Address(0, streetTemp, cityTemp, stateTemp, countryTemp, zipcodeTemp);
 			// Create an instance of a person
-			Person localPerson = new Person(localPersonCode, localBrokerState, localSECIdentifier, localFirstName,
+			Person localPerson = new Person(0, localPersonCode, localBrokerState, localSECIdentifier, localFirstName,
 					localLastName, addressTemp, localEmailList);
 			// Appends each person to an array list of people
 			listOfPeople.add(localPerson);
 		}
 
-		// Loads a file where Asset objects will be created
-		String assetsPath = "data//Assets.dat";
+		return listOfPeople;
+	}
+
+	public static ArrayList<Asset> assetsListFromFile(String pathname) {
+
+		Scanner scan = null;
+		ArrayList<Asset> assetList = new ArrayList();
+		ArrayList<String> linesOfAssets = new ArrayList();
+
 		// Implementing a try, catch, finally to safely read from the file and check for
 		// a file not found exception
-		ArrayList<Asset> listOfAssets = new ArrayList();
-		ArrayList<String> linesOfAssets = new ArrayList();
 		try {
-			File assetFilePath = new File(assetsPath);
+			File assetFilePath = new File(pathname);
 			scan = new Scanner(assetFilePath);
 			String numberOfLines = scan.nextLine();
 
@@ -109,8 +118,8 @@ public class PortfolioReportOLDDDD {
 			if (assetType.equals("D")) {
 //	        	Creates a deposit account object from the tokenized line
 				String apr = tokens[3];
-				DepositAccount holdingAsset = new DepositAccount(accountCode, assetType, label, apr);
-				listOfAssets.add(holdingAsset);
+				DepositAccount holdingAsset = new DepositAccount(0, accountCode, assetType, label, apr);
+				assetList.add(holdingAsset);
 			} else if (assetType.equals("S")) {
 //	        	Creates a stock object from the tokenized line
 
@@ -119,31 +128,37 @@ public class PortfolioReportOLDDDD {
 				String betaMeasure = tokens[5];
 				String stockSymbol = tokens[6];
 				String sharePrice = tokens[7];
-				Stock holdingAsset = new Stock(accountCode, assetType, label, quarterlyDividend, baseRateOfReturn,
+				Stock holdingAsset = new Stock(0, accountCode, assetType, label, quarterlyDividend, baseRateOfReturn,
 						betaMeasure, stockSymbol, sharePrice);
-				listOfAssets.add(holdingAsset);
+				assetList.add(holdingAsset);
 			} else if (assetType.equals("P")) {
 //	        	Creates a private investment object from the tolkenized line
 				String quarterlyDividend = tokens[3];
 				String baseRateOfReturn = tokens[4];
 				String baseOmegaMeasure = tokens[5];
 				String totalValue = tokens[6];
-				PrivateInvestment holdingAsset = new PrivateInvestment(accountCode, assetType, label, quarterlyDividend,
-						baseRateOfReturn, baseOmegaMeasure, totalValue);
-				listOfAssets.add(holdingAsset);
+				PrivateInvestment holdingAsset = new PrivateInvestment(0, accountCode, assetType, label,
+						quarterlyDividend, baseRateOfReturn, baseOmegaMeasure, totalValue);
+				assetList.add(holdingAsset);
 			} else {
 				System.out.println(
 						"There is an asset that does not have a specified type. This asset will not be created.");
 			}
 		}
 
-		String portfolioPath = "data//Portfolios.dat";
+		return assetList;
+	}
+
+	public static ArrayList<Portfolio> portfolioListFromFile(String pathname, ArrayList<Person> listOfPeople,
+			ArrayList<Asset> listOfAssets) {
+		Scanner scan = null;
+		ArrayList<Portfolio> listOfPortfolios = new ArrayList<>();
+		ArrayList<String> linesOfPortfolios = new ArrayList<>();
+
 		// Implementing a try, catch, finally to safely read from the file and check for
 		// a file not found exception
-		ArrayList<Portfolio> listOfPortfolios = new ArrayList();
-		ArrayList<String> linesOfPortfolios = new ArrayList();
 		try {
-			File portfolioFilePath = new File(portfolioPath);
+			File portfolioFilePath = new File(pathname);
 			scan = new Scanner(portfolioFilePath);
 			String numberOfLines = scan.nextLine();
 
@@ -179,26 +194,25 @@ public class PortfolioReportOLDDDD {
 						String identifier = asset[0];
 						double value = Double.valueOf(asset[1]);
 
-						/*
-						 * Iterates through a list of assets to find each asset referenced in the
-						 * portfolio to an actual object and then makes a copy of the object that the
-						 * portfolio can "own."
-						 */
+//						Iterates through a list of assets to find each asset referenced in the
+//						portfolio to an actual object and then makes a copy of the object that the
+//						portfolio can "own."
+
 						for (Asset thing : listOfAssets) {
 							String assetType = thing.getAssetType();
 							if (assetType == "Private Investment") {
-								if (identifier.equals(thing.getAccountCode())) {
+								if (identifier.equals(thing.getAssetCode())) {
 									PrivateInvestment tempAsset = new PrivateInvestment((PrivateInvestment) thing,
 											value);
 									localAssetList.add(tempAsset);
 								}
 							} else if (assetType == "Deposit Account") {
-								if (identifier.equals(thing.getAccountCode())) {
+								if (identifier.equals(thing.getAssetCode())) {
 									DepositAccount tempAsset = new DepositAccount((DepositAccount) thing, value);
 									localAssetList.add(tempAsset);
 								}
 							} else if (assetType == "Stock") {
-								if (identifier.equals(thing.getAccountCode())) {
+								if (identifier.equals(thing.getAssetCode())) {
 									Stock tempAsset = new Stock((Stock) thing, value);
 									localAssetList.add(tempAsset);
 								}
@@ -211,10 +225,9 @@ public class PortfolioReportOLDDDD {
 				Person manager = null;
 				Person beneficiary = null;
 
-				/*
-				 * Iterates though a list of people to find each person refrenced in the
-				 * portfolio and make a copy of the person object that the portfolio can own
-				 */
+//				Iterates though a list of people to find each person refrenced in the
+//				portfolio and make a copy of the person object that the portfolio can own
+
 				for (Person loopPerson : listOfPeople) {
 					String personCode = loopPerson.getPersonCode();
 					if (personCode.equals(ownerCode)) {
@@ -230,31 +243,10 @@ public class PortfolioReportOLDDDD {
 					// The owner of the portfolio is also the manager is another manager does not
 					// exist for the portfolio
 				}
-				Portfolio localPortfolio = new Portfolio(portfolioCode, owner, manager, beneficiary, localAssetList);
+				Portfolio localPortfolio = new Portfolio(0, portfolioCode, owner, manager, beneficiary, localAssetList);
 				listOfPortfolios.add(localPortfolio);
 			}
 		}
-
-		// Sorts the list of portfolios into lexogrphic order
-		Collections.sort(listOfPortfolios, new Comparator<Portfolio>() {
-			public int compare(Portfolio port, Portfolio that) {
-				return port.getOwnerName().compareTo(that.getOwnerName());
-			}
-		});
-		// Sorts assets in each portfolio into lexiagraphic order
-		for (Portfolio port : listOfPortfolios) {
-			Collections.sort(port.getAssetList(), new Comparator<Asset>() {
-				public int compare(Asset ass, Asset crack) {
-					return ass.getLabel().compareTo(crack.getLabel());
-				}
-			});
-		}
-
-		// Generates executive report and then the detailed report
-		GenerateReport gen = new GenerateReport();
-		gen.executiveReport(listOfPortfolios);
-		System.out.println("\n\n\n");
-		gen.fullReport(listOfPortfolios);
-
+		return listOfPortfolios;
 	}
 }

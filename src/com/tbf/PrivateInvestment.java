@@ -46,7 +46,7 @@ public class PrivateInvestment extends Asset {
 	 * @return total value of the stock
 	 */
 	public double getValue() {
-		return totalValue * percentageOwned;
+		return totalValue * percentageOwned/100;
 	}
 	
 	public String getAssetType() {
@@ -71,7 +71,7 @@ public class PrivateInvestment extends Asset {
 	 * @return
 	 */
 	public double getReturn() {
-		double returnVal = ((this.baseRateOfReturn * this.totalValue/100) + (4 * this.quarterlyDividend))* this.percentageOwned;
+		double returnVal = ((this.baseRateOfReturn * this.totalValue/100) + (4 * this.quarterlyDividend))* this.percentageOwned/100;
 		return returnVal;
 	}
 	

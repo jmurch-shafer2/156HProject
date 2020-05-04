@@ -6,7 +6,7 @@ import java.util.Iterator;
 import org.apache.log4j.Logger;
 
 public class SortedLinkedList<T> implements Iterable<T> {
-	Logger log = Logger.getLogger(PortfolioReport.class);;
+	Logger log = Logger.getLogger(PortfolioReportDepreciated.class);;
 	private int size;
 	private Node<T> head;
 	private Comparator<T> comp;
@@ -19,7 +19,7 @@ public class SortedLinkedList<T> implements Iterable<T> {
 
 	@Override
 	public Iterator<T> iterator() {
-		Logger log = Logger.getLogger(PortfolioReport.class);
+		Logger log = Logger.getLogger(PortfolioReportDepreciated.class);
 		return new Iterator<T>() {
 			Node<T> curr = head;
 

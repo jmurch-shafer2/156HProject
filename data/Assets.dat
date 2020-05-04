@@ -1,0 +1,91 @@
+90
+001;D;3 year CD;0.55
+002;D;90 year CD;0.024
+003;D;Savings account;0.31
+004;D;3 year CD;0.95
+005;D;Money Market banana account;0.18
+006;D;Monkey Banana storage account;0.17
+007;D;3 year CD;0.87
+008;D;3 year CD;0.83
+009;D;Monkey Banana storage account;0.36
+00a;D;Money Market banana account;0.75
+00b;D;Food Deposit Account;0.052
+00c;D;6 month CD;0.052
+00d;D;3 year CD;0.31
+00e;D;Money Market banana account;0.57
+00f;D;90 year CD;0.42
+010;D;Monkey Banana storage account;0.55
+011;D;90 year CD;0.17
+012;D;Savings account;0.48
+013;D;Savings account;0.23
+014;D;6 month CD;0.68
+015;D;Food Deposit Account;0.18
+016;D;Savings account;0.77
+017;D;Money Market banana account;0.034
+018;D;3 year CD;0.57
+019;D;Piggy bank;0.069
+01a;D;6 month CD;0.73
+01b;D;Food Deposit Account;0.95
+01c;D;Food Deposit Account;0.36
+01d;D;Piggy bank;0.24
+01e;D;Savings account;0.45
+021;S;Zafgen, Inc.;21.57;00.90;0.45;GFDZ;42.13
+022;S;Helix Energy Solutions Group, Inc.;69.75;08.76;0.52;URHB;20.88
+023;S;iShares MSCI Europe Financials Sector Index Fund;66.73;08.57;0.32;TANY;09.65
+024;S;Special Opportunities Fund Inc.;55.91;06.04;0.28;UEST;18.90
+025;S;Zions Bancorporation;91.96;08.25;0.19;CWNK;48.37
+026;S;Exa Corporation;65.97;01.97;0.65;IIBQ;76.25
+027;S;Resource Capital Corp.;54.20;01.32;0.56;SAAH;05.09
+028;S;Aircastle Limited;12.72;04.61;0.62;KJEJ;31.46
+029;S;Dillards, Inc.;64.12;07.88;0.92;QRIW;46.65
+02a;S;Regulus Therapeutics Inc.;62.19;07.68;0.69;IDVI;41.68
+02b;S;MFS Charter Income Trust;00.98;00.09;0.34;JKDR;84.00
+02c;S;Nuveen Ohio Quality Municipal Income Fund;19.27;00.19;0.18;RJVX;31.34
+02d;S;NCI, Inc.;96.85;02.35;0.64;ZHRL;65.66
+02e;S;Merus N.V.;16.67;01.57;0.83;JAEW;97.51
+02f;S;BBVA Banco Frances S.A.;12.37;03.79;0.37;EPRV;79.27
+030;S;Paylocity Holding Corporation;98.15;00.21;0.18;GGTN;44.21
+031;S;Duke Energy Corporation;28.71;06.42;0.15;JJXK;21.24
+032;S;Destination XL Group, Inc.;25.58;03.76;0.85;RZAM;09.31
+033;S;Arena Pharmaceuticals, Inc.;95.57;08.40;0.44;IMQJ;80.08
+034;S;KKR and Co. L.P.;31.90;00.37;0.26;AJDM;72.40
+035;S;Kirby Corporation;16.12;00.11;0.60;ZEME;86.16
+036;S;VictoryShares US 500 Enhanced Volatility Wtd ETF;70.81;04.51;0.63;ABCF;25.51
+037;S;American Axle and Manufacturing Holdings, Inc.;33.25;09.02;0.26;MLXV;57.41
+038;S;Horace Mann Educators Corporation;41.70;07.16;0.73;KGGH;81.41
+039;S;Impax Laboratories, Inc.;94.14;00.34;0.41;VDNP;05.40
+03a;S;Telefonica SA;80.21;05.97;0.33;MONI;13.00
+03b;S;Fogo de Chao, Inc.;17.37;03.44;0.21;KDWA;65.12
+03c;S;Guggenheim Enhanced Equity Income Fund;68.79;03.29;0.24;CLIM;43.11
+03d;S;Lehman ABS Corporation;12.06;01.67;0.58;DGSI;96.80
+03e;S;Safe Bulkers Inc;52.44;06.10;0.07;YJDT;77.54
+021;P;Sabrina;845742.36;07.24;0.65;8139000000
+022;P;It is Alive 2: It Lives Again;916867.56;07.48;0.83;8423000000
+023;P;Costa Brava;766192.86;08.82;0.45;0692000000
+024;P;Carpool;184206.09;07.90;0.23;1117000000
+025;P;Yentl;469621.31;06.50;0.75;8357000000
+026;P;Real Men;082331.41;01.32;0.54;4322000000
+027;P;Monkey Tail, A (Chateau des singes, Le);733414.36;03.04;0.54;2794000000
+028;P;Across 110th Street;204681.15;08.60;0.82;7973000000
+029;P;Dogs of War, The;382382.85;00.17;0.92;5892000000
+02a;P;Destiny in Space;941199.96;07.12;0.92;2114000000
+02b;P;Day of the Outlaw;948127.22;06.11;0.93;6043000000
+02c;P;Buffet froid;172130.06;03.98;0.05;9908000000
+02d;P;Quiet American, The;568513.32;05.37;0.58;9595000000
+02e;P;Excalibur;524096.51;04.93;0.33;5417000000
+02f;P;Forever Yours (Ikuisesti sinun);570061.42;02.04;0.12;3940000000
+030;P;The First Men in the Moon;978699.36;08.37;0.55;7718000000
+031;P;Bravo Two Zero ;957871.72;00.75;0.52;5140000000
+032;P;Bounty Hunter, The;037512.76;05.96;0.93;7788000000
+033;P;Living Wake, The;366285.46;06.95;0.17;6662000000
+034;P;Blood on the Sun;205279.87;00.37;0.31;8453000000
+035;P;World Traveler;416934.52;01.82;0.22;6172000000
+036;P;Brothers Rico, The;203497.16;08.36;0.16;2511000000
+037;P;Vampire Effect (The Twins Effect) (Chin gei bin);681174.08;06.43;0.65;8134000000
+038;P;Curse chucky(Child Play 6);814386.29;05.84;0.49;7963000000
+039;P;Battlestar Galactica;521248.22;05.63;0.42;8621000000
+03a;P;Bullets Do NOT Argue;964918.10;03.97;0.01;8966000000
+03b;P;Candles on Bay Street ;353952.15;09.75;0.08;9339000000
+03c;P;Not Cool;315731.38;06.11;0.90;8598000000
+03d;P;Seven Invisible Men (Septyni nematomi zmones);713651.34;06.80;0.58;3772000000
+03e;P;Cold Fever (Aldum klaka);102399.11;01.12;0.01;4785000000

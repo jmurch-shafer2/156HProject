@@ -17,7 +17,7 @@ public class SQLFactory {
 	PreparedStatement ps;
 	ResultSet rs;
 	int counter = 1;
-	Logger log = Logger.getLogger(PortfolioReport.class);;
+	Logger log = Logger.getLogger(PortfolioReportDepreciated.class);;
 
 	/**
 	 * Begins connection with database and prepares query

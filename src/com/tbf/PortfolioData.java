@@ -68,7 +68,7 @@ public class PortfolioData {
 	 */
 	public static void addPerson(String personCode, String firstName, String lastName, String street, String city,
 			String state, String zip, String country, String brokerType, String secBrokerId) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
+		Logger log = Logger.getLogger(PortfolioReportDepreciated.class);
 		String duplicateQuery = "select personCode from Person";
 		SQLFactory duplicateConn = new SQLFactory();
 		duplicateConn.startConnection(duplicateQuery);
@@ -190,7 +190,7 @@ public class PortfolioData {
 	 * @param apr
 	 */
 	public static void addDepositAccount(String assetCode, String label, double apr) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
+		Logger log = Logger.getLogger(PortfolioReportDepreciated.class);
 		String checkAssetCode = "SELECT assetCode from Asset;";
 		SQLFactory check = new SQLFactory();
 		check.startConnection(checkAssetCode);
@@ -226,7 +226,7 @@ public class PortfolioData {
 	 */
 	public static void addPrivateInvestment(String assetCode, String label, Double quarterlyDividend,
 			Double baseRateOfReturn, Double baseOmega, Double totalValue) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
+		Logger log = Logger.getLogger(PortfolioReportDepreciated.class);
 		String checkAssetCode = "SELECT assetCode from Asset;";
 		SQLFactory check = new SQLFactory();
 		check.startConnection(checkAssetCode);
@@ -264,7 +264,7 @@ public class PortfolioData {
 	 */
 	public static void addStock(String assetCode, String label, Double quarterlyDividend, Double baseRateOfReturn,
 			Double beta, String stockSymbol, Double sharePrice) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
+		Logger log = Logger.getLogger(PortfolioReportDepreciated.class);
 		String checkAssetCode = "SELECT assetCode from Asset;";
 		SQLFactory check = new SQLFactory();
 		check.startConnection(checkAssetCode);
@@ -383,7 +383,7 @@ public class PortfolioData {
 	 * @param value
 	 */
 	public static void addAsset(String portfolioCode, String assetCode, double value) {
-		Logger log = Logger.getLogger(PortfolioReport.class);
+		Logger log = Logger.getLogger(PortfolioReportDepreciated.class);
 		int assetId = 0;
 		int portfolioId = 0;
 		String typeOfAsset = null;
